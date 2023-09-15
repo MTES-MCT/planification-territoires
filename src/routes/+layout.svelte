@@ -13,7 +13,9 @@
   />
   <div class="flex items-center">
     <div class="flex flex-col">
-      <div class="text-3xl font-bold">Simulateur territoires</div>
+      <a href="/" class="block text-3xl font-bold !no-underline"
+        >Simulateur territoires</a
+      >
       <div class="text-xl text-marianne-red">
         Version Beta — ne pas diffuser
       </div>
