@@ -8,16 +8,11 @@
 
   export let data: [];
   export let path; // as an alternative to id and parentId, returns an array identifier, imputing internal nodes
-  export let id = Array.isArray(data) ? (d) => d.id : null; // if tabular data, given a d in data, returns a unique identifier (string)
-  export let parentId = Array.isArray(data) ? (d) => d.parentId : null; // if tabular data, given a node d, returns its parent’s identifier
-  export let children; // if hierarchical data, given a d in data, returns its children
   export let value; // given a node d, returns a quantitative value (for area encoding; null for count)
   export let sort = (a, b) => d3.descending(a.value, b.value); // how to sort nodes prior to layout
   export let label; // given a leaf node d, returns the name to display on the rectangle
   export let group; // given a leaf node d, returns a categorical value (for color encoding)
   export let title; // given a leaf node d, returns its hover text
-  export let link; // given a leaf node d, its link (if any)
-  export let linkTarget = "_blank"; // the target attribute for links (if any)
   export let tile = d3.treemapBinary; // treemap strategy
   export let width = 640; // outer width, in pixels
   export let height = 400; // outer height, in pixels
@@ -50,10 +45,11 @@
 
   // We take special care of any node that has both a value and children, see
   // https://observablehq.com/@d3/treemap-parent-with-value.
-  const stratify = (data) =>
+
+  const stratify = (flatData) =>
     d3
       .stratify()
-      .path(path)(data)
+      .path(path)(flatData)
       .each((node) => {
         if (node.children?.length && node.data != null) {
           const child = new d3.Node(node.data);
@@ -65,39 +61,35 @@
           node.children.unshift(child);
         }
       });
-  const root =
-    path != null
-      ? stratify(data)
-      : id != null || parentId != null
-      ? d3.stratify().id(id).parentId(parentId)(data)
-      : d3.hierarchy(data, children);
 
-  // Compute the values of internal nodes by aggregating from the leaves.
-  value == null
-    ? root.count()
-    : root.sum((d) => Math.max(0, d ? value(d) : null));
+  function updateTreemap(flatData, tile, width, height) {
+    const root = stratify(flatData);
 
-  // Prior to sorting, if a group channel is specified, construct an ordinal color scale.
-  const leaves = root.leaves();
-  const G = group == null ? null : leaves.map((d) => group(d.data, d));
-  if (zDomain === undefined) zDomain = G;
-  zDomain = new d3.InternSet(zDomain);
-  const color = group == null ? null : d3.scaleOrdinal(zDomain, colors);
+    // Compute the values of internal nodes by aggregating from the leaves.
+    value == null
+      ? root.count()
+      : root.sum((d) => Math.max(0, d ? value(d) : null));
 
-  // Compute labels and titles.
-  const L = label == null ? null : leaves.map((d) => label(d.data, d));
-  const T =
-    title === undefined
-      ? L
-      : title == null
-      ? null
-      : leaves.map((d) => title(d.data, d));
+    // Prior to sorting, if a group channel is specified, construct an ordinal color scale.
+    const leaves = root.leaves();
+    const G = group == null ? null : leaves.map((d) => group(d.data, d));
+    if (zDomain === undefined) zDomain = G;
+    zDomain = new d3.InternSet(zDomain);
+    const color = group == null ? null : d3.scaleOrdinal(zDomain, colors);
 
-  // Sort the leaves (typically by descending value for a pleasing layout).
-  if (sort != null) root.sort(sort);
+    // Compute labels and titles.
+    const L = label == null ? null : leaves.map((d) => label(d.data, d));
+    const T =
+      title === undefined
+        ? L
+        : title == null
+        ? null
+        : leaves.map((d) => title(d.data, d));
 
-  // Compute the treemap layout.
-  $: console.log("redraw"),
+    // Sort the leaves (typically by descending value for a pleasing layout).
+    if (sort != null) root.sort(sort);
+
+    // Compute the treemap layout.
     d3
       .treemap()
       .tile(tile)
@@ -112,7 +104,16 @@
       .paddingLeft(paddingLeft)
       .round(round)(root);
 
-  const uid = `O-${Math.random().toString(16).slice(2)}`;
+    const uid = `O-${Math.random().toString(16).slice(2)}`;
+    return { leaves, L, color, G, T, uid };
+  }
+
+  $: ({ leaves, L, color, G, T, uid } = updateTreemap(
+    data,
+    tile,
+    width,
+    height
+  ));
 </script>
 
 {#if leaves}
@@ -121,16 +122,12 @@
     {width}
     {height}
     style="max-width: 100%; height: auto;"
-    font-family="sans"
+    font-family="Marianne"
     font-size="10"
   >
     {#each leaves as d, i}
       {@const lines = L[i].split(/\n/g)}
-      <a
-        xlink:href={link == null ? null : link(d.data, d)}
-        target={link == null ? null : linkTarget}
-        transform="translate({d.x0},{d.y0})"
-      >
+      <g transform="translate({d.x0},{d.y0})">
         <rect
           fill={color ? color(G[i]) : fill}
           fill-opacity={fillOpacity}
@@ -156,7 +153,7 @@
             </tspan>
           {/each}
         </text>
-      </a>
+      </g>
     {/each}
   </svg>
 {/if}
