@@ -42,8 +42,8 @@
         height="110"
       />
     </div>
-    <div class="w-1/2 text-base leading-normal">
-      <div class="mt-4 flex flex-wrap gap-x-8 gap-y-2 font-bold">
+    <div class="w-1/2 leading-normal">
+      <div class="mt-4 flex flex-wrap gap-x-8 gap-y-2 text-sm font-bold">
         <a
           target="_blank"
           title="Ouverture dans une nouvelle fenêtre"
@@ -68,13 +68,15 @@
 
   <hr class="mb-4" />
 
-  <nav class="flex flex-wrap gap-4 text-sm text-gray-400">
+  <nav class="flex flex-wrap gap-4 text-xs text-gray-500">
     <a class="block hover:underline" href="/mentions-legales"
       >Mentions légales</a
     >
+    |
     <a class="block hover:underline" href="/politique-de-confidentialite"
       >Données personnelles</a
     >
+    |
     <a class="block hover:underline" href="/accessibilite"
       >Accessibilité : non conforme</a
     >
