@@ -15,6 +15,17 @@ const config = {
       precompress: true,
       strict: true,
     }),
+    csp: {
+      mode: "auto",
+      directives: {
+        "base-uri": ["none"],
+        "default-src": ["self"],
+        "require-trusted-types-for": ["script"],
+        "object-src": ["none"],
+        "script-src": ["self", "strict-dynamic", "unsafe-inline"],
+        "style-src": ["self", "unsafe-inline"],
+      },
+    },
   },
 };
 
