@@ -24,6 +24,7 @@ const config = {
         "object-src": ["none"],
         "script-src": ["self", "strict-dynamic", "unsafe-inline"],
         "style-src": ["self", "unsafe-inline"],
+        "frame-ancestors": ["none"],
       },
     },
   },
