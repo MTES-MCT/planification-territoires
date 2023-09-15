@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         // https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette
-        "text-title-blue-france": "#000091",
+        "title-blue-france": "#000091",
+        "marianne-red": "#e1000f",
       },
       fontFamily: {
         sans: ["Marianne"],

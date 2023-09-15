@@ -27,4 +27,14 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    "no-irregular-whitespace": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
+  },
 };
