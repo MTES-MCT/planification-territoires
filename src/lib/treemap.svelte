@@ -6,6 +6,8 @@
 
   import * as d3 from "d3";
 
+  export let onClick;
+
   export let data: [];
   export let path; // as an alternative to id and parentId, returns an array identifier, imputing internal nodes
   export let value; // given a node d, returns a quantitative value (for area encoding; null for count)
@@ -125,9 +127,35 @@
     font-family="Marianne"
     font-size="10"
   >
+    <pattern
+      id="diagonalHatch"
+      patternUnits="userSpaceOnUse"
+      width="4"
+      height="4"
+    >
+      <path
+        d="M-1,1 l2,-2
+           M0,4 l4,-4
+           M3,5 l2,-2"
+        style="stroke:black; stroke-width:1"
+      />
+    </pattern>
     {#each leaves as d, i}
       {@const lines = L[i].split(/\n/g)}
-      <g transform="translate({d.x0},{d.y0})">
+      <g
+        transform="translate({d.x0},{d.y0})"
+        on:click={() => {
+          if (onClick) {
+            onClick(d.data);
+          }
+        }}
+        on:keypress={() => {
+          return false; /* TODO */
+        }}
+        cursor="pointer"
+        role="button"
+        tabindex="0"
+      >
         <rect
           fill={color ? color(G[i]) : fill}
           fill-opacity={fillOpacity}
@@ -136,6 +164,17 @@
           stroke-opacity={strokeOpacity}
           stroke-linejoin={strokeLinejoin}
           width={d.x1 - d.x0}
+          height={d.y1 - d.y0}
+        />
+        <rect
+          fill="url(#diagonalHatch)"
+          fill-opacity={fillOpacity}
+          {stroke}
+          stroke-width={strokeWidth}
+          stroke-opacity={strokeOpacity}
+          stroke-linejoin={strokeLinejoin}
+          x={(d.x1 - d.x0) * (1 - d.data.realisationpc)}
+          width={(d.x1 - d.x0) * d.data.realisationpc}
           height={d.y1 - d.y0}
         />
         <title>{T[i]}</title>
