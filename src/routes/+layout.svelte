@@ -9,7 +9,7 @@
 
 <hr />
 
-<main class="mx-8 my-4">
+<main class="fr-container">
   <slot />
 </main>
 

@@ -24,14 +24,17 @@
   <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
-{#each data.regionData as lever}
-  <div class="my-4 rounded border bg-gray-50 p-4">
-    <CompletionLevelInput
-      {lever}
-      bind:completionLevels={data.completionLevels}
-    />
-  </div>
-{/each}
+<h1>Objectifs</h1>
+<form>
+  <fieldset class="fr-fieldset gap-6">
+    {#each data.regionData as lever}
+      <CompletionLevelInput
+        {lever}
+        bind:completionLevels={data.completionLevels}
+      />
+    {/each}
+  </fieldset>
+</form>
 
 <div class="h-96">
   <MainTreemap

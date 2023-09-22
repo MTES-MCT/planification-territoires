@@ -6,11 +6,9 @@
   const regions = rawRegions as Region[];
 </script>
 
-<div class="fr-container">
-  <h1>Régions</h1>
-  <div class="fr-grid-row fr-grid-row--gutters fr-mb-1w w-full">
-    {#each regions as region}
-      <RegionCard {region} />
-    {/each}
-  </div>
+<h1>Régions</h1>
+<div class="fr-grid-row fr-grid-row--gutters fr-mb-1w w-full">
+  {#each regions as region}
+    <RegionCard {region} />
+  {/each}
 </div>
