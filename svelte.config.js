@@ -20,7 +20,7 @@ const config = {
       directives: {
         "base-uri": ["none"],
         "default-src": ["self"],
-        "require-trusted-types-for": ["script"],
+        // "require-trusted-types-for": ["script"],
         "object-src": ["none"],
         "script-src": [
           "self",
