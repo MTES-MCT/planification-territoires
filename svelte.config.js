@@ -11,7 +11,7 @@ const config = {
     adapter: adapter({
       pages: "build",
       assets: "build",
-      fallback: undefined,
+      fallback: "index.html",
       precompress: true,
       strict: true,
     }),
@@ -20,11 +20,17 @@ const config = {
       directives: {
         "base-uri": ["none"],
         "default-src": ["self"],
-        "require-trusted-types-for": ["script"],
+        // "require-trusted-types-for": ["script"],
         "object-src": ["none"],
-        "script-src": ["self", "strict-dynamic", "unsafe-inline"],
+        "script-src": [
+          "self",
+          // "strict-dynamic",
+          "unsafe-inline",
+          "https://netlify-cdp-loader.netlify.app",
+        ],
         "style-src": ["self", "unsafe-inline"],
         "img-src": ["self", "data:"],
+        "frame-src": ["https://app.netlify.com/"],
         "frame-ancestors": ["none"],
       },
     },
