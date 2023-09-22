@@ -24,7 +24,7 @@ const config = {
         "object-src": ["none"],
         "script-src": [
           "self",
-          "strict-dynamic",
+          // "strict-dynamic",
           "unsafe-inline",
           "https://netlify-cdp-loader.netlify.app",
         ],
