@@ -13,10 +13,11 @@
 
 <NavigationBar region={data.region} title="Présentation des objectifs" />
 
-<a
-  class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
-  href={editionLink}>Renseignez vos actions</a
->
+<p class="max-w-xl">
+  Voici les objectifs nationaux déclinés par le SGPE en {data.region}. Veuillez
+  <a class="fr-link" href={editionLink}>renseignez les actions</a> déjà menées ou
+  contractualisées.
+</p>
 
 <a href={editionLink} class="my-8 block h-[75vh]">
   <MainTreemap data={data.regionData} />
@@ -25,6 +26,6 @@
 <div class="mb-8">
   <a
     class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
-    href={editionLink}>Renseignez vos actions</a
+    href={editionLink}>Renseignez les actions</a
   >
 </div>

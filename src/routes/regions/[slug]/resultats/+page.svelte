@@ -16,6 +16,10 @@
   title="Visualisation des objectifs actualisés"
 />
 
+<p class="max-w-2xl">
+  Voici les nouveaux objectifs actualisés sur la base des données renseignées.
+</p>
+
 <div class="mb-4">
   <a
     class="fr-link fr-icon-arrow-left-line fr-link--icon-left block"

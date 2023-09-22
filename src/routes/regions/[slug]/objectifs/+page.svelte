@@ -30,16 +30,19 @@
 </svelte:head>
 
 <NavigationBar region={data.region} title="Définition des objectifs" />
-<a
-  class="fr-link fr-icon-arrow-right-line fr-link--icon-right"
-  href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-  >Visualiser les objectifs actualisés</a
->
+<p class="max-w-3xl">
+  Pour chaque secteur, renseignez les actions déjà menées ou contractualisées
+  afin de réajuster la marche à franchir. Vous pouvez ensuite <a
+    class="fr-link"
+    href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+    >visualiser les objectifs actualisés</a
+  >.
+</p>
 
 <form class="mb-12">
   {#each sectors as sector}
-    <fieldset>
-      <div class="mb-4 mt-8 w-full">
+    <fieldset class="mb-12">
+      <div class="mb-4 mt-2 w-full">
         <legend><h2 class="mb-1">{sector.key}</h2></legend>
       </div>
       <div class="mb-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
