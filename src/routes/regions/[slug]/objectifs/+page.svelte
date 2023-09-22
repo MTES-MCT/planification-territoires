@@ -42,6 +42,8 @@
 
 <button
   class="border"
-  on:click={() => goto(`/regions/${data.region}/resultats`)}
-  >Afficher et partager les résultats</button
+  on:click={() =>
+    goto(
+      `/regions/${data.region}/resultats?${$page.url.searchParams.toString()}`
+    )}>Afficher et partager les résultats</button
 >
