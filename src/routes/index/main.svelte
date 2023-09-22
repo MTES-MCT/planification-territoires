@@ -1,10 +1,7 @@
 <script lang="ts">
-  import { tidy, select, distinct, filter } from "@tidyjs/tidy";
-
-  import MainTreemap from "./main-treemap.svelte";
-  import CompletionLevelInput from "./completion-level-input.svelte";
-
-  import type { CompletionLevels, Lever } from "$lib/types";
+  import { goto } from "$app/navigation";
+  import { tidy, select, distinct } from "@tidyjs/tidy";
+  import type { Lever } from "$lib/types";
 
   import rawData from "$lib/data.json";
   const data = rawData as Lever[];
@@ -14,23 +11,6 @@
   );
 
   let selectedRegion = regionNames[0];
-  let selectedLever: Lever;
-  let completionLevels: CompletionLevels;
-
-  function handleLeverClick(lever: Lever) {
-    selectedLever = lever;
-  }
-
-  let selectedRegionData: Lever[];
-  $: selectedRegionData = tidy(
-    data,
-    filter((d) => d.region === selectedRegion)
-  );
-
-  $: {
-    selectedRegion;
-    completionLevels = Object.fromEntries(data.map((l) => [l.name, 0]));
-  }
 </script>
 
 <div class="mb-8 mt-4 flex flex-wrap gap-x-8 gap-y-2">
@@ -46,23 +26,9 @@
   </label>
 </div>
 
-<div class="my-4 rounded border bg-gray-50 p-4">
-  {#if selectedLever}
-    <CompletionLevelInput lever={selectedLever} bind:completionLevels />
-  {:else}
-    <p class="text-center font-bold">
-      Cliquez sur un levier pour renseigner vos actions
-    </p>
-  {/if}
-</div>
-
-<div class="h-96">
-  <MainTreemap
-    data={selectedRegionData}
-    {completionLevels}
-    onLeverClick={handleLeverClick}
-  />
-</div>
+<button on:click={() => goto(`/regions/${selectedRegion}`)}
+  >Voir la région</button
+>
 
 <style lang="postcss">
   select {

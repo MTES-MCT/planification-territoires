@@ -1,7 +1,7 @@
 <script lang="ts">
   import Treemap from "$lib/treemap.svelte";
-  import type { CompletionLevels, Lever } from "$lib/types.js";
-  import { clamp, prettifyNumber } from "$lib/utils.js";
+  import type { CompletionLevels, Lever } from "$lib/types";
+  import { clamp, prettifyNumber } from "$lib/utils";
 
   export let data: Lever[];
   export let completionLevels: CompletionLevels;
