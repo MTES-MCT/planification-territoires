@@ -4,8 +4,7 @@
   import { clamp, prettifyNumber } from "$lib/utils";
 
   export let data: Lever[];
-  export let completionLevels: CompletionLevels;
-  export let onLeverClick: (lever: Lever) => void;
+  export let completionLevels: CompletionLevels | undefined = undefined;
 
   let width: number;
   let height: number;
@@ -59,7 +58,6 @@
       {getProgressionRatio}
       {width}
       {height}
-      onClick={onLeverClick}
     />
   {/if}
 </div>

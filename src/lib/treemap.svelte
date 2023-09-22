@@ -17,7 +17,6 @@
   export let tile = d3.treemapSquarify; // treemap strategy
   export let width: number; // outer width, in pixels
   export let height: number; // outer height, in pixels
-  export let onClick: (row: Row) => void;
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
@@ -71,17 +70,6 @@
         fill-opacity={0.6}
         width={d.x1 - d.x0}
         height={d.y1 - d.y0}
-        on:click={() => {
-          if (onClick) {
-            onClick(d.data);
-          }
-        }}
-        on:keypress={() => {
-          return false; /* TODO */
-        }}
-        cursor="pointer"
-        role="button"
-        tabindex="0"
       >
       </rect>
       <rect

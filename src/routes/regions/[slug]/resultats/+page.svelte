@@ -1,6 +1,5 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { goto } from "$app/navigation";
 
   import MainTreemap from "$lib/main-treemap.svelte";
 
@@ -26,10 +25,7 @@
   }}>Copier le lien de partage</button
 >
 <br />
-<button
-  class="border"
-  on:click={() =>
-    goto(
-      `/regions/${data.region}/objectifs?${$page.url.searchParams.toString()}`
-    )}>Retour à l’édition</button
+
+<a href="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
+  >Retour à l’édition</a
 >

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
+  import { page } from "$app/stores";
   import { tidy, filter } from "@tidyjs/tidy";
 
   import MainTreemap from "$lib/main-treemap.svelte";
@@ -26,9 +26,6 @@
   <MainTreemap data={selectedRegionData} />
 </div>
 
-<button
-  class="border"
-  on:click={() => goto(`/regions/${data.region}/objectifs`)}
+<a href="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
+  >Renseignez vos objectifs</a
 >
-  Renseignez vos objectifs
-</button>

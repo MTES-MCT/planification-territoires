@@ -38,9 +38,3 @@
     {/each}
   </div>
 </div>
-
-<style lang="postcss">
-  select {
-    @apply rounded border border-gray-300 bg-transparent px-1 py-0.5 leading-9 outline-title-blue-france;
-  }
-</style>

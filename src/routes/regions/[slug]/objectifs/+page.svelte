@@ -11,7 +11,7 @@
   // la querystring
   $: {
     Object.entries(data.completionLevels).forEach((c) =>
-      $page.url.searchParams.set(c[0], c[1])
+      $page.url.searchParams.set(c[0], c[1].toString())
     );
     goto(`?${$page.url.searchParams.toString()}`, {
       keepFocus: true,
@@ -40,10 +40,10 @@
   />
 </div>
 
-<button
-  class="border"
-  on:click={() =>
-    goto(
-      `/regions/${data.region}/resultats?${$page.url.searchParams.toString()}`
-    )}>Afficher et partager les résultats</button
+<a href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+  >Afficher et partager les résultats</a
+>
+<br />
+<a href="/regions/{data.region}?{$page.url.searchParams.toString()}"
+  >Retourner à la visualisation des objectifs de la région</a
 >
