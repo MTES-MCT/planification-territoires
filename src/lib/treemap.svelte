@@ -52,8 +52,8 @@
   >
     <path
       d="M-1,1 l2,-2
-             M0,4 l4,-4
-             M3,5 l2,-2"
+         M0,4 l4,-4
+         M3,5 l2,-2"
       style="stroke:black; stroke-width:1"
     />
   </pattern>
@@ -64,7 +64,7 @@
       </rect>
       <rect
         fill="url(#diagonalHatch)"
-        fill-opacity={1}
+        fill-opacity={0.5}
         x={(d.x1 - d.x0) * (1 - getProgressionRatio(d.data))}
         width={(d.x1 - d.x0) * getProgressionRatio(d.data)}
         height={d.y1 - d.y0}
