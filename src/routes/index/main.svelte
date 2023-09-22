@@ -1,34 +1,43 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
-  import { tidy, select, distinct } from "@tidyjs/tidy";
-  import type { Lever } from "$lib/types";
+  import type { Region } from "$lib/types";
+  import rawRegions from "$lib/regions.json";
 
-  import rawData from "$lib/data.json";
-  const data = rawData as Lever[];
-
-  const regionNames = tidy(data, select("region"), distinct("region")).map(
-    (row) => row.region
-  );
-
-  let selectedRegion = regionNames[0];
+  const regions = rawRegions as Region[];
 </script>
 
-<div class="mb-8 mt-4 flex flex-wrap gap-x-8 gap-y-2">
-  <label>
-    Région :
-    <select bind:value={selectedRegion}>
-      {#each regionNames as name}
-        <option value={name}>
-          {name}
-        </option>
-      {/each}
-    </select>
-  </label>
+<div class="fr-container">
+  <h1>Régions</h1>
+  <div class="fr-grid-row fr-grid-row--gutters fr-mb-1w w-full">
+    {#each regions as region}
+      <div class="fr-col-md-3 fr-col-12">
+        <div class="fr-card fr-enlarge-link">
+          <div class="fr-card__body">
+            <div class="fr-card__content">
+              <h3 class="fr-card__title">
+                <a href="/regions/{region.name}">{region.name}</a>
+              </h3>
+              <div class="fr-card__desc">
+                <div class="mb-2 text-xs text-gray-600">
+                  Objectif de réduction
+                </div>
+                <p class="fr-badge">
+                  {(region.totalObjCO2 / 1000).toFixed(2)}
+                  <span class="ml-2 normal-case">kTCO2</span>
+                </p>
+                <div class="mb-2 mt-4 text-xs text-gray-600">
+                  Part de la population
+                </div>
+                <p class="fr-badge transform-none">
+                  {region.populationShare}%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {/each}
+  </div>
 </div>
-
-<button on:click={() => goto(`/regions/${selectedRegion}`)}
-  >Voir la région</button
->
 
 <style lang="postcss">
   select {

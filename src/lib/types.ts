@@ -1,3 +1,9 @@
+export interface Region {
+  name: string;
+  totalObjCO2: number;
+  populationShare: number;
+}
+
 export interface Lever {
   category: string;
   name: string;
