@@ -22,7 +22,7 @@
   >
 </div>
 
-<div class="h-96">
+<div class="h-[75vh]">
   <MainTreemap
     data={data.regionData}
     completionLevels={data.completionLevels}
