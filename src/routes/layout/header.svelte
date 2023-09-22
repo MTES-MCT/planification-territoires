@@ -16,18 +16,19 @@
               href="/"
               title="Accueil - Simulateur territoires - Secrétariat général à la planification écologique"
             >
-              <p class="fr-header__service-title">Simulateur territorial</p>
+              <p class="fr-header__service-title">
+                Simulateur territorial
+                <span
+                  class="fr-badge fr-badge--error fr-badge--sm fr-badge--no-icon"
+                  >Version Beta - Ne pas diffuser</span
+                >
+              </p>
             </a>
             <p class="fr-header__service-tagline">
               Secrétariat général à la planification écologique - Service de la
               Première ministre
             </p>
           </div>
-        </div>
-        <div
-          class="fr-header__tools text-sm font-semibold uppercase text-marianne-red"
-        >
-          Version Beta - Ne pas diffuser
         </div>
       </div>
     </div>
