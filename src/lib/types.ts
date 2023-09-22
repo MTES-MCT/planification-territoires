@@ -5,8 +5,9 @@ export interface Region {
 }
 
 export interface Lever {
+  id: string;
+  label: string;
   category: string;
-  name: string;
   region: string;
   objCO2: number;
   objPhys: number;

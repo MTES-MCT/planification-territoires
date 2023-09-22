@@ -35,7 +35,7 @@ export function getRegionData(regionName: string): Lever[] {
 export function getCompletionLevels(
   searchParams: URLSearchParams
 ): CompletionLevels {
-  const leversId = tidy(leversData, select("name"), distinct("name"));
+  const leversId = tidy(leversData, select("id"), distinct("id"));
   const levels = Object.fromEntries(leversId.map((l) => [l.id, 0]));
   searchParams.forEach((value, key) => {
     levels[key] = Number(value);

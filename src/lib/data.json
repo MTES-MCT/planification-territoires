@@ -1,7 +1,6 @@
 [
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1408.8501,
     "objPhys": 673020.4952,
@@ -14,7 +13,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 366.1931,
     "objPhys": 2441287160.4866,
@@ -27,7 +25,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 604.2246,
     "objPhys": 4028164011.7264,
@@ -40,7 +37,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 362.5348,
     "objPhys": 2416898407.0358,
@@ -53,7 +49,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 92.8715,
     "objPhys": 1263.5164,
@@ -66,7 +61,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 297.2185,
     "objPhys": 69606.206,
@@ -79,7 +73,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 689.75,
     "objPhys": 314808.9913,
@@ -92,7 +85,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 3772.9793,
     "objPhys": 3772.9793,
@@ -105,7 +97,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 439.7862,
     "objPhys": 3628.2365,
@@ -118,7 +109,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 346.2252,
     "objPhys": 449.1299,
@@ -131,7 +121,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 346.2252,
     "objPhys": 760.0659,
@@ -144,7 +133,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 508.2775,
     "objPhys": 4320358.5754,
@@ -157,7 +145,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 832.7632,
     "objPhys": 832.7632,
@@ -170,7 +157,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 340.6791,
     "objPhys": 851697.773,
@@ -183,7 +169,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 717.0478,
     "objPhys": 717.0478,
@@ -196,7 +181,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1078.7259,
     "objPhys": 16180887.9997,
@@ -209,7 +193,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 497.7515,
     "objPhys": 14621451.19,
@@ -222,7 +205,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1001.7234,
     "objPhys": 286206.6866,
@@ -235,7 +217,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1387.3344,
     "objPhys": 346833.5996,
@@ -248,7 +229,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1050.979,
     "objPhys": 403970.0642,
@@ -261,7 +241,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 243.6689,
     "objPhys": 840.2375,
@@ -274,7 +253,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 243.6689,
     "objPhys": 1282.4678,
@@ -287,7 +265,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 160.8424,
     "objPhys": 5361.4137,
@@ -300,7 +277,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 383.8614,
     "objPhys": 110304.9958,
@@ -313,7 +289,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 64.3973,
     "objPhys": 153327.0038,
@@ -326,7 +301,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Auvergne-Rhône-Alpes",
     "objCO2": 1033.3294,
     "objPhys": 103332.9351,
@@ -339,7 +313,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 499.5294,
     "objPhys": 238629.7216,
@@ -352,7 +325,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 119.6429,
     "objPhys": 797619394.9295,
@@ -365,7 +337,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 189.0833,
     "objPhys": 1260555005.0392,
@@ -378,7 +349,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 113.45,
     "objPhys": 756333003.0235,
@@ -391,7 +361,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 33.8792,
     "objPhys": 460.9266,
@@ -404,7 +373,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 468.497,
     "objPhys": 109718.2708,
@@ -417,7 +385,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 518.468,
     "objPhys": 236634.1038,
@@ -430,7 +397,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 925.7179,
     "objPhys": 925.7179,
@@ -443,7 +409,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 137.2422,
     "objPhys": 1132.2482,
@@ -456,7 +421,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 237.323,
     "objPhys": 307.8599,
@@ -469,7 +433,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 237.323,
     "objPhys": 520.9937,
@@ -482,7 +445,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 221.4033,
     "objPhys": 1881928.1857,
@@ -495,7 +457,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 281.5331,
     "objPhys": 281.5331,
@@ -508,7 +469,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 112.4395,
     "objPhys": 281098.7146,
@@ -521,7 +481,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 219.5288,
     "objPhys": 219.5288,
@@ -534,7 +493,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 381.2756,
     "objPhys": 5719134.0817,
@@ -547,7 +505,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 131.2123,
     "objPhys": 3854362.4866,
@@ -560,7 +517,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 361.8122,
     "objPhys": 103374.9068,
@@ -573,7 +529,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 560.2769,
     "objPhys": 140069.2356,
@@ -586,7 +541,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 316.5555,
     "objPhys": 121676.0014,
@@ -599,7 +553,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 87.6267,
     "objPhys": 302.1609,
@@ -612,7 +565,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 87.6267,
     "objPhys": 461.193,
@@ -625,7 +577,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 132.8021,
     "objPhys": 4426.7369,
@@ -638,7 +589,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 216.0741,
     "objPhys": 62090.2633,
@@ -651,7 +601,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 101.5077,
     "objPhys": 241684.9686,
@@ -664,7 +613,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Bourgogne-Franche-Comté",
     "objCO2": 695.2574,
     "objPhys": 69525.7436,
@@ -677,7 +625,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Bretagne",
     "objCO2": 639.2305,
     "objPhys": 305366.1978,
@@ -690,7 +637,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Bretagne",
     "objCO2": 153.1639,
     "objPhys": 1021092861.1022,
@@ -703,7 +649,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Bretagne",
     "objCO2": 277.0565,
     "objPhys": 1847043003.5097,
@@ -716,7 +661,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Bretagne",
     "objCO2": 166.2339,
     "objPhys": 1108225802.1058,
@@ -729,7 +673,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Bretagne",
     "objCO2": 40.8647,
     "objPhys": 555.9644,
@@ -742,7 +685,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Bretagne",
     "objCO2": 312.059,
     "objPhys": 73081.7421,
@@ -755,7 +697,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Bretagne",
     "objCO2": 539.2661,
     "objPhys": 246126.5893,
@@ -768,7 +709,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Bretagne",
     "objCO2": 703.5113,
     "objPhys": 703.5113,
@@ -781,7 +721,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Bretagne",
     "objCO2": 75.068,
     "objPhys": 619.3109,
@@ -794,7 +733,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Bretagne",
     "objCO2": 135.1307,
     "objPhys": 175.2941,
@@ -807,7 +745,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Bretagne",
     "objCO2": 135.1307,
     "objPhys": 296.6515,
@@ -820,7 +757,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Bretagne",
     "objCO2": 221.9025,
     "objPhys": 1886171.0479,
@@ -833,7 +769,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Bretagne",
     "objCO2": 147.9279,
     "objPhys": 147.9279,
@@ -846,7 +781,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Bretagne",
     "objCO2": 132.6259,
     "objPhys": 331564.8351,
@@ -859,7 +793,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Bretagne",
     "objCO2": 281.8382,
     "objPhys": 281.8382,
@@ -872,7 +805,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Bretagne",
     "objCO2": 484.7903,
     "objPhys": 7271853.7966,
@@ -885,7 +817,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Bretagne",
     "objCO2": 147.963,
     "objPhys": 4346413.6455,
@@ -898,7 +829,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Bretagne",
     "objCO2": 407.1553,
     "objPhys": 116330.0836,
@@ -911,7 +841,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Bretagne",
     "objCO2": 650.9199,
     "objPhys": 162729.9765,
@@ -924,7 +853,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Bretagne",
     "objCO2": 326.1657,
     "objPhys": 125369.9266,
@@ -937,7 +865,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Bretagne",
     "objCO2": 144.9181,
     "objPhys": 499.7176,
@@ -950,7 +877,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Bretagne",
     "objCO2": 144.9181,
     "objPhys": 762.7268,
@@ -963,7 +889,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Bretagne",
     "objCO2": 88.4575,
     "objPhys": 2948.5849,
@@ -976,7 +901,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Bretagne",
     "objCO2": 97.5985,
     "objPhys": 28045.5425,
@@ -989,7 +913,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Bretagne",
     "objCO2": 67.6128,
     "objPhys": 160982.8374,
@@ -1002,7 +925,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Bretagne",
     "objCO2": 168.8369,
     "objPhys": 16883.6857,
@@ -1015,7 +937,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 470.3469,
     "objPhys": 224688.985,
@@ -1028,7 +949,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Centre-Val de Loire",
     "objCO2": 112.0285,
     "objPhys": 746856492.6919,
@@ -1041,7 +961,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Centre-Val de Loire",
     "objCO2": 200.4032,
     "objPhys": 1336021279.0499,
@@ -1054,7 +973,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Centre-Val de Loire",
     "objCO2": 120.2419,
     "objPhys": 801612767.43,
@@ -1067,7 +985,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 23.7456,
     "objPhys": 323.0589,
@@ -1080,7 +997,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Centre-Val de Loire",
     "objCO2": 799.4392,
     "objPhys": 187222.3012,
@@ -1093,7 +1009,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Centre-Val de Loire",
     "objCO2": 159.0673,
     "objPhys": 72599.9357,
@@ -1106,7 +1021,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Centre-Val de Loire",
     "objCO2": 915.362,
     "objPhys": 915.362,
@@ -1119,7 +1033,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Centre-Val de Loire",
     "objCO2": 84.1797,
     "objPhys": 694.4827,
@@ -1132,7 +1045,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Centre-Val de Loire",
     "objCO2": 194.4466,
     "objPhys": 252.2397,
@@ -1145,7 +1057,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Centre-Val de Loire",
     "objCO2": 194.4466,
     "objPhys": 426.8672,
@@ -1158,7 +1069,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Centre-Val de Loire",
     "objCO2": 244.9666,
     "objPhys": 2082216.5044,
@@ -1171,7 +1081,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Centre-Val de Loire",
     "objCO2": 179.728,
     "objPhys": 179.728,
@@ -1184,7 +1093,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Centre-Val de Loire",
     "objCO2": 108.5197,
     "objPhys": 271299.3737,
@@ -1197,7 +1105,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Centre-Val de Loire",
     "objCO2": 209.5947,
     "objPhys": 209.5947,
@@ -1210,7 +1117,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 259.3213,
     "objPhys": 3889818.8161,
@@ -1223,7 +1129,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 121.3873,
     "objPhys": 3565752.2228,
@@ -1236,7 +1141,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Centre-Val de Loire",
     "objCO2": 335.9873,
     "objPhys": 95996.3818,
@@ -1249,7 +1153,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 371.5917,
     "objPhys": 92897.9266,
@@ -1262,7 +1165,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Centre-Val de Loire",
     "objCO2": 285.57,
     "objPhys": 109765.9658,
@@ -1275,7 +1177,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Centre-Val de Loire",
     "objCO2": 107.9621,
     "objPhys": 372.2829,
@@ -1288,7 +1189,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Centre-Val de Loire",
     "objCO2": 107.9621,
     "objPhys": 568.2213,
@@ -1301,7 +1201,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Centre-Val de Loire",
     "objCO2": 125.2331,
     "objPhys": 4174.4381,
@@ -1314,7 +1213,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Centre-Val de Loire",
     "objCO2": 94.1082,
     "objPhys": 27042.573,
@@ -1327,7 +1225,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Centre-Val de Loire",
     "objCO2": 173.2118,
     "objPhys": 412409.1247,
@@ -1340,7 +1237,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Centre-Val de Loire",
     "objCO2": 397.4037,
     "objPhys": 39740.3735,
@@ -1353,7 +1249,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Corse",
     "objCO2": 58.7893,
     "objPhys": 28084.1601,
@@ -1366,7 +1261,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Corse",
     "objCO2": 15.7102,
     "objPhys": 104734953.4673,
@@ -1379,7 +1273,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Corse",
     "objCO2": 14.2737,
     "objPhys": 95158117.5984,
@@ -1392,7 +1285,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Corse",
     "objCO2": 8.5642,
     "objPhys": 57094870.5591,
@@ -1405,7 +1297,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Corse",
     "objCO2": 5.8968,
     "objPhys": 80.2257,
@@ -1418,7 +1309,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Corse",
     "objCO2": 2.6762,
     "objPhys": 626.7424,
@@ -1431,7 +1321,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Corse",
     "objCO2": 16.3139,
     "objPhys": 7445.8253,
@@ -1444,7 +1333,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Corse",
     "objCO2": 20.2861,
     "objPhys": 20.2861,
@@ -1457,7 +1345,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Corse",
     "objCO2": 0,
     "objPhys": 0,
@@ -1470,7 +1357,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Corse",
     "objCO2": 43.1099,
     "objPhys": 55.923,
@@ -1483,7 +1369,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Corse",
     "objCO2": 43.1099,
     "objPhys": 94.6389,
@@ -1496,7 +1381,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Corse",
     "objCO2": 0.4437,
     "objPhys": 3771.4452,
@@ -1509,7 +1393,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Corse",
     "objCO2": 106.5466,
     "objPhys": 106.5466,
@@ -1522,7 +1405,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Corse",
     "objCO2": 24.637,
     "objPhys": 61592.5595,
@@ -1535,7 +1417,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Corse",
     "objCO2": 18.324,
     "objPhys": 18.324,
@@ -1548,7 +1429,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Corse",
     "objCO2": 7.8257,
     "objPhys": 117385.4286,
@@ -1561,7 +1441,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Corse",
     "objCO2": 7.7914,
     "objPhys": 228871.4247,
@@ -1574,7 +1453,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Corse",
     "objCO2": 19.0882,
     "objPhys": 5453.7671,
@@ -1587,7 +1465,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Corse",
     "objCO2": 10.6043,
     "objPhys": 2651.0723,
@@ -1600,7 +1477,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Corse",
     "objCO2": 17.3334,
     "objPhys": 6662.5249,
@@ -1613,7 +1489,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Corse",
     "objCO2": 17.4275,
     "objPhys": 60.095,
@@ -1626,7 +1501,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Corse",
     "objCO2": 17.4275,
     "objPhys": 91.7239,
@@ -1639,7 +1513,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Corse",
     "objCO2": 15.9307,
     "objPhys": 531.0227,
@@ -1652,7 +1525,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Corse",
     "objCO2": 75.0381,
     "objPhys": 21562.6662,
@@ -1665,7 +1537,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Corse",
     "objCO2": 0.5798,
     "objPhys": 1380.5742,
@@ -1678,7 +1549,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Corse",
     "objCO2": 219.0101,
     "objPhys": 21901.0074,
@@ -1691,7 +1561,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Grand Est",
     "objCO2": 937.6566,
     "objPhys": 447927.0807,
@@ -1704,7 +1573,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Grand Est",
     "objCO2": 239.0233,
     "objPhys": 1593488344.9543,
@@ -1717,7 +1585,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Grand Est",
     "objCO2": 395.8032,
     "objPhys": 2638687711.1634,
@@ -1730,7 +1597,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Grand Est",
     "objCO2": 237.4819,
     "objPhys": 1583212626.6981,
@@ -1743,7 +1609,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Grand Est",
     "objCO2": 51.8651,
     "objPhys": 705.6243,
@@ -1756,7 +1621,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Grand Est",
     "objCO2": 844.7682,
     "objPhys": 197837.9957,
@@ -1769,7 +1633,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Grand Est",
     "objCO2": 442.9509,
     "objPhys": 202167.3408,
@@ -1782,7 +1645,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Grand Est",
     "objCO2": 4266.4223,
     "objPhys": 4266.4223,
@@ -1795,7 +1657,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Grand Est",
     "objCO2": 370.9092,
     "objPhys": 3060.0013,
@@ -1808,7 +1669,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Grand Est",
     "objCO2": 285.2853,
     "objPhys": 370.0774,
@@ -1821,7 +1681,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Grand Est",
     "objCO2": 285.2853,
     "objPhys": 626.2849,
@@ -1834,7 +1693,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Grand Est",
     "objCO2": 378.176,
     "objPhys": 3214496.4078,
@@ -1847,7 +1705,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Grand Est",
     "objCO2": 392.661,
     "objPhys": 392.661,
@@ -1860,7 +1717,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Grand Est",
     "objCO2": 246.7764,
     "objPhys": 616941.0067,
@@ -1873,7 +1729,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Grand Est",
     "objCO2": 421.7653,
     "objPhys": 421.7653,
@@ -1886,7 +1741,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Grand Est",
     "objCO2": 708.928,
     "objPhys": 10633920.7145,
@@ -1899,7 +1753,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Grand Est",
     "objCO2": 316.3178,
     "objPhys": 9291836.3663,
@@ -1912,7 +1765,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Grand Est",
     "objCO2": 666.8552,
     "objPhys": 190530.0623,
@@ -1925,7 +1777,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Grand Est",
     "objCO2": 1025.2477,
     "objPhys": 256311.9254,
@@ -1938,7 +1789,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Grand Est",
     "objCO2": 751.0376,
     "objPhys": 288680.0961,
@@ -1951,7 +1801,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Grand Est",
     "objCO2": 123.4055,
     "objPhys": 425.5362,
@@ -1964,7 +1813,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Grand Est",
     "objCO2": 123.4055,
     "objPhys": 649.5026,
@@ -1977,7 +1825,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Grand Est",
     "objCO2": 159.641,
     "objPhys": 5321.3668,
@@ -1990,7 +1837,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Grand Est",
     "objCO2": 150.8114,
     "objPhys": 43336.6072,
@@ -2003,7 +1849,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Grand Est",
     "objCO2": 183.0331,
     "objPhys": 435793.1405,
@@ -2016,7 +1861,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Grand Est",
     "objCO2": 775.6939,
     "objPhys": 77569.3864,
@@ -2029,7 +1873,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 44.0595,
     "objPhys": 21047.6347,
@@ -2042,7 +1885,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Guadeloupe",
     "objCO2": 14.9225,
     "objPhys": 99483618.7531,
@@ -2055,7 +1897,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Guadeloupe",
     "objCO2": 12.3602,
     "objPhys": 82401231.0058,
@@ -2068,7 +1909,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Guadeloupe",
     "objCO2": 7.4161,
     "objPhys": 49440738.6035,
@@ -2081,7 +1921,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 4.3504,
     "objPhys": 59.1867,
@@ -2094,7 +1933,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Guadeloupe",
     "objCO2": 12.3984,
     "objPhys": 2903.5955,
@@ -2107,7 +1945,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Guadeloupe",
     "objCO2": 10.7292,
     "objPhys": 4896.9171,
@@ -2120,7 +1957,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Guadeloupe",
     "objCO2": 5.1624,
     "objPhys": 5.1624,
@@ -2133,7 +1969,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Guadeloupe",
     "objCO2": 0,
     "objPhys": 0,
@@ -2146,7 +1981,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Guadeloupe",
     "objCO2": 4.5146,
     "objPhys": 5.8565,
@@ -2159,7 +1993,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Guadeloupe",
     "objCO2": 4.5146,
     "objPhys": 9.9109,
@@ -2172,7 +2005,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Guadeloupe",
     "objCO2": 13.045,
     "objPhys": 110882.2054,
@@ -2185,7 +2017,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Guadeloupe",
     "objCO2": 43.3937,
     "objPhys": 43.3937,
@@ -2198,7 +2029,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Guadeloupe",
     "objCO2": 26.8583,
     "objPhys": 67145.846,
@@ -2211,7 +2041,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Guadeloupe",
     "objCO2": 25.0966,
     "objPhys": 25.0966,
@@ -2224,7 +2053,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 0,
     "objPhys": 0,
@@ -2237,7 +2065,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 0,
     "objPhys": 0,
@@ -2250,7 +2077,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Guadeloupe",
     "objCO2": 37.251,
     "objPhys": 10643.134,
@@ -2263,7 +2089,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 0,
     "objPhys": 0,
@@ -2276,7 +2101,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Guadeloupe",
     "objCO2": 0,
     "objPhys": 0,
@@ -2289,7 +2113,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Guadeloupe",
     "objCO2": 13.0802,
     "objPhys": 45.104,
@@ -2302,7 +2125,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Guadeloupe",
     "objCO2": 13.0802,
     "objPhys": 68.843,
@@ -2315,7 +2137,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Guadeloupe",
     "objCO2": 2.7335,
     "objPhys": 91.1164,
@@ -2328,7 +2149,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Guadeloupe",
     "objCO2": 8.7448,
     "objPhys": 2512.8615,
@@ -2341,7 +2161,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Guadeloupe",
     "objCO2": 2.6863,
     "objPhys": 6395.9756,
@@ -2354,7 +2173,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Guadeloupe",
     "objCO2": 28.6704,
     "objPhys": 2867.041,
@@ -2367,7 +2185,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Guyane",
     "objCO2": 16.7856,
     "objPhys": 8018.6456,
@@ -2380,7 +2197,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Guyane",
     "objCO2": 14.7037,
     "objPhys": 98024914.6658,
@@ -2393,7 +2209,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Guyane",
     "objCO2": 10.3436,
     "objPhys": 68957320.745,
@@ -2406,7 +2221,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Guyane",
     "objCO2": 6.2062,
     "objPhys": 41374392.447,
@@ -2419,7 +2233,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Guyane",
     "objCO2": 3.7346,
     "objPhys": 50.8097,
@@ -2432,7 +2245,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2445,7 +2257,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Guyane",
     "objCO2": 5.117,
     "objPhys": 2335.4528,
@@ -2458,7 +2269,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Guyane",
     "objCO2": 2.9199,
     "objPhys": 2.9199,
@@ -2471,7 +2281,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2484,7 +2293,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Guyane",
     "objCO2": 32.1536,
     "objPhys": 41.7103,
@@ -2497,7 +2305,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Guyane",
     "objCO2": 32.1536,
     "objPhys": 70.5867,
@@ -2510,7 +2317,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Guyane",
     "objCO2": 7.2429,
     "objPhys": 61564.3195,
@@ -2523,7 +2329,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Guyane",
     "objCO2": 36.6649,
     "objPhys": 36.6649,
@@ -2536,7 +2341,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Guyane",
     "objCO2": 18.9835,
     "objPhys": 47458.7199,
@@ -2549,7 +2353,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Guyane",
     "objCO2": 13.3504,
     "objPhys": 13.3504,
@@ -2562,7 +2365,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2575,7 +2377,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2588,7 +2389,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Guyane",
     "objCO2": 23.3577,
     "objPhys": 6673.6413,
@@ -2601,7 +2401,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2614,7 +2413,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2627,7 +2425,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Guyane",
     "objCO2": 13.1668,
     "objPhys": 45.4029,
@@ -2640,7 +2437,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Guyane",
     "objCO2": 13.1668,
     "objPhys": 69.2991,
@@ -2653,7 +2449,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2666,7 +2461,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Guyane",
     "objCO2": 2.9329,
     "objPhys": 842.7972,
@@ -2679,7 +2473,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Guyane",
     "objCO2": 0,
     "objPhys": 0,
@@ -2692,7 +2485,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Guyane",
     "objCO2": 3186.7957,
     "objPhys": 318679.5684,
@@ -2705,7 +2497,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 924.0535,
     "objPhys": 441428.7741,
@@ -2718,7 +2509,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Hauts-de-France",
     "objCO2": 259.4597,
     "objPhys": 1729731306.7071,
@@ -2731,7 +2521,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Hauts-de-France",
     "objCO2": 456.6033,
     "objPhys": 3044022281.2939,
@@ -2744,7 +2533,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Hauts-de-France",
     "objCO2": 273.962,
     "objPhys": 1826413368.7763,
@@ -2757,7 +2545,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 50.6449,
     "objPhys": 689.0232,
@@ -2770,7 +2557,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Hauts-de-France",
     "objCO2": 733.5131,
     "objPhys": 171782.9217,
@@ -2783,7 +2569,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Hauts-de-France",
     "objCO2": 321.7935,
     "objPhys": 146869.8457,
@@ -2796,7 +2581,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Hauts-de-France",
     "objCO2": 5947.4569,
     "objPhys": 5947.4569,
@@ -2809,7 +2593,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Hauts-de-France",
     "objCO2": 267.3221,
     "objPhys": 2205.4073,
@@ -2822,7 +2605,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Hauts-de-France",
     "objCO2": 157.967,
     "objPhys": 204.9178,
@@ -2835,7 +2617,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Hauts-de-France",
     "objCO2": 157.967,
     "objPhys": 346.784,
@@ -2848,7 +2629,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Hauts-de-France",
     "objCO2": 432.609,
     "objPhys": 3677176.7604,
@@ -2861,7 +2641,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Hauts-de-France",
     "objCO2": 618.821,
     "objPhys": 618.821,
@@ -2874,7 +2653,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Hauts-de-France",
     "objCO2": 254.6949,
     "objPhys": 636737.184,
@@ -2887,7 +2665,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Hauts-de-France",
     "objCO2": 471.1559,
     "objPhys": 471.1559,
@@ -2900,7 +2677,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 463.5401,
     "objPhys": 6953101.2415,
@@ -2913,7 +2689,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 384.8928,
     "objPhys": 11306227.1149,
@@ -2926,7 +2701,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Hauts-de-France",
     "objCO2": 734.6231,
     "objPhys": 209892.3025,
@@ -2939,7 +2713,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 657.9274,
     "objPhys": 164481.8403,
@@ -2952,7 +2725,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Hauts-de-France",
     "objCO2": 896.8955,
     "objPhys": 344744.2264,
@@ -2965,7 +2737,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Hauts-de-France",
     "objCO2": 125.4881,
     "objPhys": 432.7175,
@@ -2978,7 +2749,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Hauts-de-France",
     "objCO2": 125.4881,
     "objPhys": 660.4636,
@@ -2991,7 +2761,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Hauts-de-France",
     "objCO2": 113.4134,
     "objPhys": 3780.4483,
@@ -3004,7 +2773,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Hauts-de-France",
     "objCO2": 68.1072,
     "objPhys": 19571.0219,
@@ -3017,7 +2785,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Hauts-de-France",
     "objCO2": 158.9278,
     "objPhys": 378399.6025,
@@ -3030,7 +2797,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Hauts-de-France",
     "objCO2": 186.3577,
     "objPhys": 18635.7663,
@@ -3043,7 +2809,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 1409.0617,
     "objPhys": 673121.5784,
@@ -3056,7 +2821,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Île-de-France",
     "objCO2": 544.6509,
     "objPhys": 3631006214.0794,
@@ -3069,7 +2833,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Île-de-France",
     "objCO2": 882.7209,
     "objPhys": 5884805865.9107,
@@ -3082,7 +2845,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Île-de-France",
     "objCO2": 529.6325,
     "objPhys": 3530883519.5464,
@@ -3095,7 +2857,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 181.3259,
     "objPhys": 2466.9391,
@@ -3108,7 +2869,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Île-de-France",
     "objCO2": 238.7171,
     "objPhys": 55905.6507,
@@ -3121,7 +2881,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Île-de-France",
     "objCO2": 6.9327,
     "objPhys": 3164.1618,
@@ -3134,7 +2893,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Île-de-France",
     "objCO2": 1802.0708,
     "objPhys": 1802.0708,
@@ -3147,7 +2905,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Île-de-France",
     "objCO2": 2182.9549,
     "objPhys": 18009.3778,
@@ -3160,7 +2917,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Île-de-France",
     "objCO2": 59.6586,
     "objPhys": 77.3902,
@@ -3173,7 +2929,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Île-de-France",
     "objCO2": 59.6586,
     "objPhys": 130.968,
@@ -3186,7 +2941,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Île-de-France",
     "objCO2": 398.3333,
     "objPhys": 3385833.3287,
@@ -3199,7 +2953,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Île-de-France",
     "objCO2": 1189.7873,
     "objPhys": 1189.7873,
@@ -3212,7 +2965,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Île-de-France",
     "objCO2": 547.7541,
     "objPhys": 1369385.2085,
@@ -3225,7 +2977,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Île-de-France",
     "objCO2": 1624.1682,
     "objPhys": 1624.1682,
@@ -3238,7 +2989,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 1048.0103,
     "objPhys": 15720154.2251,
@@ -3251,7 +3001,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 1215.8639,
     "objPhys": 35716001.4,
@@ -3264,7 +3013,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Île-de-France",
     "objCO2": 1671.7003,
     "objPhys": 477628.6641,
@@ -3277,7 +3025,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 957.3898,
     "objPhys": 239347.4397,
@@ -3290,7 +3037,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Île-de-France",
     "objCO2": 1823.558,
     "objPhys": 700930.0964,
@@ -3303,7 +3049,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Île-de-France",
     "objCO2": 78.103,
     "objPhys": 269.3206,
@@ -3316,7 +3061,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Île-de-France",
     "objCO2": 78.103,
     "objPhys": 411.0683,
@@ -3329,7 +3073,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Île-de-France",
     "objCO2": 30.2345,
     "objPhys": 1007.8175,
@@ -3342,7 +3085,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Île-de-France",
     "objCO2": 13.2549,
     "objPhys": 3808.8781,
@@ -3355,7 +3097,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Île-de-France",
     "objCO2": 51.722,
     "objPhys": 123147.7251,
@@ -3368,7 +3109,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Île-de-France",
     "objCO2": 110.6996,
     "objPhys": 11069.9638,
@@ -3381,7 +3121,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "La Réunion",
     "objCO2": 110.6496,
     "objPhys": 52858.3012,
@@ -3394,7 +3133,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "La Réunion",
     "objCO2": 39.0787,
     "objPhys": 260524549.9898,
@@ -3407,7 +3145,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "La Réunion",
     "objCO2": 32.9814,
     "objPhys": 219876265.055,
@@ -3420,7 +3157,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "La Réunion",
     "objCO2": 19.7889,
     "objPhys": 131925759.033,
@@ -3433,7 +3169,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "La Réunion",
     "objCO2": 14.6292,
     "objPhys": 199.03,
@@ -3446,7 +3181,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "La Réunion",
     "objCO2": 12.4029,
     "objPhys": 2904.6683,
@@ -3459,7 +3193,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "La Réunion",
     "objCO2": 8.0607,
     "objPhys": 3678.966,
@@ -3472,7 +3205,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "La Réunion",
     "objCO2": 31.9942,
     "objPhys": 31.9942,
@@ -3485,7 +3217,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "La Réunion",
     "objCO2": 0,
     "objPhys": 0,
@@ -3498,7 +3229,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "La Réunion",
     "objCO2": 7.6088,
     "objPhys": 9.8703,
@@ -3511,7 +3241,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "La Réunion",
     "objCO2": 7.6088,
     "objPhys": 16.7035,
@@ -3524,7 +3253,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "La Réunion",
     "objCO2": 37.0615,
     "objPhys": 315022.9437,
@@ -3537,7 +3265,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "La Réunion",
     "objCO2": 103.1007,
     "objPhys": 103.1007,
@@ -3550,7 +3277,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "La Réunion",
     "objCO2": 43.3899,
     "objPhys": 108474.6395,
@@ -3563,7 +3289,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "La Réunion",
     "objCO2": 59.3377,
     "objPhys": 59.3377,
@@ -3576,7 +3301,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "La Réunion",
     "objCO2": 0,
     "objPhys": 0,
@@ -3589,7 +3313,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "La Réunion",
     "objCO2": 0,
     "objPhys": 0,
@@ -3602,7 +3325,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "La Réunion",
     "objCO2": 84.5055,
     "objPhys": 24144.4413,
@@ -3615,7 +3337,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "La Réunion",
     "objCO2": 0,
     "objPhys": 0,
@@ -3628,7 +3349,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "La Réunion",
     "objCO2": 0,
     "objPhys": 0,
@@ -3641,7 +3361,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "La Réunion",
     "objCO2": 21.03,
     "objPhys": 72.5172,
@@ -3654,7 +3373,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "La Réunion",
     "objCO2": 21.03,
     "objPhys": 110.6841,
@@ -3667,7 +3385,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "La Réunion",
     "objCO2": 2.5028,
     "objPhys": 83.4255,
@@ -3680,7 +3397,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "La Réunion",
     "objCO2": 10.3123,
     "objPhys": 2963.3035,
@@ -3693,7 +3409,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "La Réunion",
     "objCO2": 2.6873,
     "objPhys": 6398.3387,
@@ -3706,7 +3421,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "La Réunion",
     "objCO2": 39.0236,
     "objPhys": 3902.3613,
@@ -3719,7 +3433,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Martinique",
     "objCO2": 43.7046,
     "objPhys": 20878.0717,
@@ -3732,7 +3445,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Martinique",
     "objCO2": 14.0036,
     "objPhys": 93357061.5865,
@@ -3745,7 +3457,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Martinique",
     "objCO2": 11.4631,
     "objPhys": 76420450.4645,
@@ -3758,7 +3469,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Martinique",
     "objCO2": 6.8778,
     "objPhys": 45852270.2787,
@@ -3771,7 +3481,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Martinique",
     "objCO2": 5.7798,
     "objPhys": 78.6345,
@@ -3784,7 +3493,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Martinique",
     "objCO2": 4.8689,
     "objPhys": 1140.2668,
@@ -3797,7 +3505,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Martinique",
     "objCO2": 4.5393,
     "objPhys": 2071.7726,
@@ -3810,7 +3517,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Martinique",
     "objCO2": 12.9702,
     "objPhys": 12.9702,
@@ -3823,7 +3529,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3836,7 +3541,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Martinique",
     "objCO2": 3.0197,
     "objPhys": 3.9172,
@@ -3849,7 +3553,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Martinique",
     "objCO2": 3.0197,
     "objPhys": 6.6291,
@@ -3862,7 +3565,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Martinique",
     "objCO2": 10.2873,
     "objPhys": 87442.335,
@@ -3875,7 +3577,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3888,7 +3589,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Martinique",
     "objCO2": 18.5794,
     "objPhys": 46448.502,
@@ -3901,7 +3601,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Martinique",
     "objCO2": 25.8237,
     "objPhys": 25.8237,
@@ -3914,7 +3613,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3927,7 +3625,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3940,7 +3637,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Martinique",
     "objCO2": 35.7403,
     "objPhys": 10211.5025,
@@ -3953,7 +3649,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3966,7 +3661,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Martinique",
     "objCO2": 0,
     "objPhys": 0,
@@ -3979,7 +3673,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Martinique",
     "objCO2": 9.2213,
     "objPhys": 31.7976,
@@ -3992,7 +3685,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Martinique",
     "objCO2": 9.2213,
     "objPhys": 48.5332,
@@ -4005,7 +3697,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Martinique",
     "objCO2": 1.6562,
     "objPhys": 55.2068,
@@ -4018,7 +3709,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Martinique",
     "objCO2": 5.6575,
     "objPhys": 1625.7053,
@@ -4031,7 +3721,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Martinique",
     "objCO2": 1.0549,
     "objPhys": 2511.7543,
@@ -4044,7 +3733,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Martinique",
     "objCO2": 20.7064,
     "objPhys": 2070.6407,
@@ -4057,7 +3745,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Mayotte",
     "objCO2": 7.2512,
     "objPhys": 3463.9873,
@@ -4070,7 +3757,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Mayotte",
     "objCO2": 15.8415,
     "objPhys": 105610175.9197,
@@ -4083,7 +3769,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Mayotte",
     "objCO2": 8.2076,
     "objPhys": 54717605.7735,
@@ -4096,7 +3781,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Mayotte",
     "objCO2": 4.9246,
     "objPhys": 32830563.4641,
@@ -4109,7 +3793,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Mayotte",
     "objCO2": 4.3972,
     "objPhys": 59.8235,
@@ -4122,7 +3805,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Mayotte",
     "objCO2": 5.8808,
     "objPhys": 1377.2406,
@@ -4135,7 +3817,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Mayotte",
     "objCO2": 5.6397,
     "objPhys": 2574.0205,
@@ -4148,7 +3829,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Mayotte",
     "objCO2": 0.4981,
     "objPhys": 0.4981,
@@ -4161,7 +3841,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4174,7 +3853,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Mayotte",
     "objCO2": 1.1721,
     "objPhys": 1.5205,
@@ -4187,7 +3865,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Mayotte",
     "objCO2": 1.1721,
     "objPhys": 2.5731,
@@ -4200,7 +3877,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Mayotte",
     "objCO2": 6.1483,
     "objPhys": 52260.132,
@@ -4213,7 +3889,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4226,7 +3901,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Mayotte",
     "objCO2": 24.0238,
     "objPhys": 60059.4733,
@@ -4239,7 +3913,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Mayotte",
     "objCO2": 7.2179,
     "objPhys": 7.2179,
@@ -4252,7 +3925,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4265,7 +3937,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4278,7 +3949,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Mayotte",
     "objCO2": 19.7304,
     "objPhys": 5637.2686,
@@ -4291,7 +3961,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4304,7 +3973,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Mayotte",
     "objCO2": 0,
     "objPhys": 0,
@@ -4317,7 +3985,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Mayotte",
     "objCO2": 19.8894,
     "objPhys": 68.5841,
@@ -4330,7 +3997,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Mayotte",
     "objCO2": 19.8894,
     "objPhys": 104.6811,
@@ -4343,7 +4009,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Mayotte",
     "objCO2": 1.045,
     "objPhys": 34.8329,
@@ -4356,7 +4021,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Mayotte",
     "objCO2": 0.22,
     "objPhys": 63.231,
@@ -4369,7 +4033,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Mayotte",
     "objCO2": 1.2742,
     "objPhys": 3033.7549,
@@ -4382,7 +4045,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Mayotte",
     "objCO2": 5.5748,
     "objPhys": 557.4802,
@@ -4395,7 +4057,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Normandie",
     "objCO2": 565.8923,
     "objPhys": 270331.8748,
@@ -4408,7 +4069,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Normandie",
     "objCO2": 142.3549,
     "objPhys": 949032879.1901,
@@ -4421,7 +4081,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Normandie",
     "objCO2": 250.4109,
     "objPhys": 1669406153.3635,
@@ -4434,7 +4093,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Normandie",
     "objCO2": 150.2466,
     "objPhys": 1001643692.0181,
@@ -4447,7 +4105,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Normandie",
     "objCO2": 30.6293,
     "objPhys": 416.7121,
@@ -4460,7 +4117,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Normandie",
     "objCO2": 427.1879,
     "objPhys": 100044.0102,
@@ -4473,7 +4129,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Normandie",
     "objCO2": 582.9257,
     "objPhys": 266053.2752,
@@ -4486,7 +4141,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Normandie",
     "objCO2": 2780.2883,
     "objPhys": 2780.2883,
@@ -4499,7 +4153,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Normandie",
     "objCO2": 144.5669,
     "objPhys": 1192.6773,
@@ -4512,7 +4165,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Normandie",
     "objCO2": 148.5355,
     "objPhys": 192.683,
@@ -4525,7 +4177,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Normandie",
     "objCO2": 148.5355,
     "objPhys": 326.079,
@@ -4538,7 +4189,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Normandie",
     "objCO2": 263.935,
     "objPhys": 2243447.6305,
@@ -4551,7 +4201,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Normandie",
     "objCO2": 245.3568,
     "objPhys": 245.3568,
@@ -4564,7 +4213,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Normandie",
     "objCO2": 160.7347,
     "objPhys": 401836.7759,
@@ -4577,7 +4225,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Normandie",
     "objCO2": 264.0559,
     "objPhys": 264.0559,
@@ -4590,7 +4237,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Normandie",
     "objCO2": 373.9765,
     "objPhys": 5609648.0875,
@@ -4603,7 +4249,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Normandie",
     "objCO2": 141.9151,
     "objPhys": 4168756.9612,
@@ -4616,7 +4261,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Normandie",
     "objCO2": 423.5198,
     "objPhys": 121005.648,
@@ -4629,7 +4273,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Normandie",
     "objCO2": 537.5187,
     "objPhys": 134379.6666,
@@ -4642,7 +4285,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Normandie",
     "objCO2": 334.8801,
     "objPhys": 128719.5199,
@@ -4655,7 +4297,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Normandie",
     "objCO2": 136.9688,
     "objPhys": 472.3063,
@@ -4668,7 +4309,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Normandie",
     "objCO2": 136.9688,
     "objPhys": 720.8886,
@@ -4681,7 +4321,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Normandie",
     "objCO2": 108.2103,
     "objPhys": 3607.0094,
@@ -4694,7 +4333,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Normandie",
     "objCO2": 148.4306,
     "objPhys": 42652.4855,
@@ -4707,7 +4345,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Normandie",
     "objCO2": 92.5574,
     "objPhys": 220374.7225,
@@ -4720,7 +4357,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Normandie",
     "objCO2": 169.2351,
     "objPhys": 16923.5058,
@@ -4733,7 +4369,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 1172.6559,
     "objPhys": 560188.4047,
@@ -4746,7 +4381,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 273.3757,
     "objPhys": 1822504886.6587,
@@ -4759,7 +4393,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 486.4479,
     "objPhys": 3242985886.295,
@@ -4772,7 +4405,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 291.8687,
     "objPhys": 1945791531.777,
@@ -4785,7 +4417,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 73.139,
     "objPhys": 995.0563,
@@ -4798,7 +4429,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 832.8122,
     "objPhys": 195037.9767,
@@ -4811,7 +4441,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 646.0079,
     "objPhys": 294844.6368,
@@ -4824,7 +4453,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 1851.7322,
     "objPhys": 1851.7322,
@@ -4837,7 +4465,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 86.9422,
     "objPhys": 717.2735,
@@ -4850,7 +4477,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 417.3715,
     "objPhys": 541.4221,
@@ -4863,7 +4489,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 417.3715,
     "objPhys": 916.2528,
@@ -4876,7 +4501,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 401.7704,
     "objPhys": 3415048.5977,
@@ -4889,7 +4513,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 320.974,
     "objPhys": 320.974,
@@ -4902,7 +4525,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 288.1905,
     "objPhys": 720476.3336,
@@ -4915,7 +4537,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 500.3938,
     "objPhys": 500.3938,
@@ -4928,7 +4549,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 655.7425,
     "objPhys": 9836137.0428,
@@ -4941,7 +4561,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 298.6284,
     "objPhys": 8772209.3895,
@@ -4954,7 +4573,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 710.8527,
     "objPhys": 203100.78,
@@ -4967,7 +4585,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 872.2926,
     "objPhys": 218073.1481,
@@ -4980,7 +4597,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 652.1858,
     "objPhys": 250683.9359,
@@ -4993,7 +4609,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 308.7774,
     "objPhys": 1064.7498,
@@ -5006,7 +4621,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 308.7774,
     "objPhys": 1625.1444,
@@ -5019,7 +4633,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 220.3342,
     "objPhys": 7344.4742,
@@ -5032,7 +4645,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 312.333,
     "objPhys": 89750.8557,
@@ -5045,7 +4657,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 180.4426,
     "objPhys": 429625.3209,
@@ -5058,7 +4669,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Nouvelle-Aquitaine",
     "objCO2": 1144.4272,
     "objPhys": 114442.7189,
@@ -5071,7 +4681,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Occitanie",
     "objCO2": 1125.3614,
     "objPhys": 537595.3632,
@@ -5084,7 +4693,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Occitanie",
     "objCO2": 274.2072,
     "objPhys": 1828047962.1904,
@@ -5097,7 +4705,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Occitanie",
     "objCO2": 464.1198,
     "objPhys": 3094132033.4065,
@@ -5110,7 +4717,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Occitanie",
     "objCO2": 278.4719,
     "objPhys": 1856479220.0439,
@@ -5123,7 +4729,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Occitanie",
     "objCO2": 76.8815,
     "objPhys": 1045.9729,
@@ -5136,7 +4741,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Occitanie",
     "objCO2": 553.5039,
     "objPhys": 129626.1997,
@@ -5149,7 +4753,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Occitanie",
     "objCO2": 376.2648,
     "objPhys": 171731.1173,
@@ -5162,7 +4765,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Occitanie",
     "objCO2": 1622.9478,
     "objPhys": 1622.9478,
@@ -5175,7 +4777,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Occitanie",
     "objCO2": 58.4802,
     "objPhys": 482.4617,
@@ -5188,7 +4789,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Occitanie",
     "objCO2": 361.1895,
     "objPhys": 468.5418,
@@ -5201,7 +4801,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Occitanie",
     "objCO2": 361.1895,
     "objPhys": 792.9169,
@@ -5214,7 +4813,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Occitanie",
     "objCO2": 342.3834,
     "objPhys": 2910258.9336,
@@ -5227,7 +4825,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Occitanie",
     "objCO2": 390.582,
     "objPhys": 390.582,
@@ -5240,7 +4837,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Occitanie",
     "objCO2": 282.6495,
     "objPhys": 706623.8494,
@@ -5253,7 +4849,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Occitanie",
     "objCO2": 429.2011,
     "objPhys": 429.2011,
@@ -5266,7 +4861,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Occitanie",
     "objCO2": 570.275,
     "objPhys": 8554124.4574,
@@ -5279,7 +4873,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Occitanie",
     "objCO2": 261.202,
     "objPhys": 7672809.0926,
@@ -5292,7 +4885,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Occitanie",
     "objCO2": 557.936,
     "objPhys": 159410.2891,
@@ -5305,7 +4897,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Occitanie",
     "objCO2": 760.035,
     "objPhys": 190008.7524,
@@ -5318,7 +4909,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Occitanie",
     "objCO2": 571.5276,
     "objPhys": 219680.9143,
@@ -5331,7 +4921,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Occitanie",
     "objCO2": 226.7393,
     "objPhys": 781.8597,
@@ -5344,7 +4933,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Occitanie",
     "objCO2": 226.7393,
     "objPhys": 1193.3648,
@@ -5357,7 +4945,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Occitanie",
     "objCO2": 183.0483,
     "objPhys": 6101.6084,
@@ -5370,7 +4957,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Occitanie",
     "objCO2": 353.6111,
     "objPhys": 101612.3957,
@@ -5383,7 +4969,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Occitanie",
     "objCO2": 119.9258,
     "objPhys": 285537.712,
@@ -5396,7 +4981,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Occitanie",
     "objCO2": 1019.7905,
     "objPhys": 101979.0547,
@@ -5409,7 +4993,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 712.6937,
     "objPhys": 340460.2735,
@@ -5422,7 +5005,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Pays de la Loire",
     "objCO2": 175.0007,
     "objPhys": 1166671529.0136,
@@ -5435,7 +5017,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Pays de la Loire",
     "objCO2": 301.0531,
     "objPhys": 2007020638.6443,
@@ -5448,7 +5029,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Pays de la Loire",
     "objCO2": 180.6319,
     "objPhys": 1204212383.1866,
@@ -5461,7 +5041,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 45.1022,
     "objPhys": 613.616,
@@ -5474,7 +5053,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Pays de la Loire",
     "objCO2": 384.3523,
     "objPhys": 90012.2527,
@@ -5487,7 +5065,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Pays de la Loire",
     "objCO2": 646.9983,
     "objPhys": 295296.6599,
@@ -5500,7 +5077,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Pays de la Loire",
     "objCO2": 1362.0049,
     "objPhys": 1362.0049,
@@ -5513,7 +5089,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Pays de la Loire",
     "objCO2": 91.3975,
     "objPhys": 754.0297,
@@ -5526,7 +5101,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Pays de la Loire",
     "objCO2": 159.3378,
     "objPhys": 206.696,
@@ -5539,7 +5113,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Pays de la Loire",
     "objCO2": 159.3378,
     "objPhys": 349.7932,
@@ -5552,7 +5125,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Pays de la Loire",
     "objCO2": 289.3357,
     "objPhys": 2459353.8202,
@@ -5565,7 +5137,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Pays de la Loire",
     "objCO2": 198.2913,
     "objPhys": 198.2913,
@@ -5578,7 +5149,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Pays de la Loire",
     "objCO2": 151.3607,
     "objPhys": 378401.6577,
@@ -5591,7 +5161,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Pays de la Loire",
     "objCO2": 316.7003,
     "objPhys": 316.7003,
@@ -5604,7 +5173,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 387.932,
     "objPhys": 5818979.3688,
@@ -5617,7 +5185,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 185.4178,
     "objPhys": 5446646.5684,
@@ -5630,7 +5197,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Pays de la Loire",
     "objCO2": 447.8377,
     "objPhys": 127953.6319,
@@ -5643,7 +5209,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 516.4994,
     "objPhys": 129124.8455,
@@ -5656,7 +5221,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Pays de la Loire",
     "objCO2": 405.3003,
     "objPhys": 155787.3125,
@@ -5669,7 +5233,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Pays de la Loire",
     "objCO2": 162.6932,
     "objPhys": 561.0111,
@@ -5682,7 +5245,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Pays de la Loire",
     "objCO2": 162.6932,
     "objPhys": 856.2801,
@@ -5695,7 +5257,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Pays de la Loire",
     "objCO2": 114.3976,
     "objPhys": 3813.2535,
@@ -5708,7 +5269,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Pays de la Loire",
     "objCO2": 140.8587,
     "objPhys": 40476.6456,
@@ -5721,7 +5281,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Pays de la Loire",
     "objCO2": 83.2763,
     "objPhys": 198276.9901,
@@ -5734,7 +5293,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Pays de la Loire",
     "objCO2": 159.2801,
     "objPhys": 15928.0054,
@@ -5747,7 +5305,6 @@
   },
   {
     "category": "Electrification VP",
-    "name": "# voitures thermiques remplacées d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 853.4283,
     "objPhys": 407690.4504,
@@ -5760,7 +5317,6 @@
   },
   {
     "category": "Sobriété transport",
-    "name": "km voiture évités (annuel) (Sobriété transport)",
     "region": "Sud-PACA",
     "objCO2": 226.6389,
     "objPhys": 1510925693.6138,
@@ -5773,7 +5329,6 @@
   },
   {
     "category": "Report modal vélo/bus/train",
-    "name": "km voiture évités (annuel) (Report modal vélo/bus/train)",
     "region": "Sud-PACA",
     "objCO2": 402.4438,
     "objPhys": 2682958473.2887,
@@ -5786,7 +5341,6 @@
   },
   {
     "category": "Covoiturage",
-    "name": "km covoiturage additionnels (annuel)",
     "region": "Sud-PACA",
     "objCO2": 241.4663,
     "objPhys": 1609775083.9732,
@@ -5799,7 +5353,6 @@
   },
   {
     "category": "Bus et cars (élec&efficacité)",
-    "name": "# bus thermiques remplacés d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 60.2631,
     "objPhys": 819.8797,
@@ -5812,7 +5365,6 @@
   },
   {
     "category": "Azote",
-    "name": "T engrais azotés évités (annuel)",
     "region": "Sud-PACA",
     "objCO2": 69.7043,
     "objPhys": 16324.1838,
@@ -5825,7 +5377,6 @@
   },
   {
     "category": "Elevage",
-    "name": "réduction têtes bovins",
     "region": "Sud-PACA",
     "objCO2": 19.175,
     "objPhys": 8751.6699,
@@ -5838,7 +5389,6 @@
   },
   {
     "category": "Industrie",
-    "name": "réduction d'emissions du secteur (annuel) (Industrie)",
     "region": "Sud-PACA",
     "objCO2": 4475.6753,
     "objPhys": 4475.6753,
@@ -5851,7 +5401,6 @@
   },
   {
     "category": "Réseaux de chaleur",
-    "name": "Gwh de production de chaleur passé en ENR (annuel)",
     "region": "Sud-PACA",
     "objCO2": 61.1507,
     "objPhys": 504.4931,
@@ -5864,7 +5413,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance éolien installée",
     "region": "Sud-PACA",
     "objCO2": 155.9506,
     "objPhys": 202.302,
@@ -5877,7 +5425,6 @@
   },
   {
     "category": "ENR électriques",
-    "name": "MW puissance PV installée",
     "region": "Sud-PACA",
     "objCO2": 155.9506,
     "objPhys": 342.3573,
@@ -5890,7 +5437,6 @@
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
-    "name": "Tkm PL évités (annuel)",
     "region": "Sud-PACA",
     "objCO2": 222.6785,
     "objPhys": 1892766.8268,
@@ -5903,7 +5449,6 @@
   },
   {
     "category": "Captage méthane ISDND",
-    "name": "réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
     "region": "Sud-PACA",
     "objCO2": 511.8686,
     "objPhys": 511.8686,
@@ -5916,7 +5461,6 @@
   },
   {
     "category": "Valorisation matière",
-    "name": "T valorisées grâce à une plus grande incorporation de MPR (annuel)",
     "region": "Sud-PACA",
     "objCO2": 317.103,
     "objPhys": 792757.5476,
@@ -5929,7 +5473,6 @@
   },
   {
     "category": "Rénovation + sobriété tertiaire",
-    "name": "réduction de consommation d'énergie annuelle (/2010)",
     "region": "Sud-PACA",
     "objCO2": 395.3997,
     "objPhys": 395.3997,
@@ -5942,7 +5485,6 @@
   },
   {
     "category": "Tertiaire fioul",
-    "name": "m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 579.657,
     "objPhys": 8694854.7396,
@@ -5955,7 +5497,6 @@
   },
   {
     "category": "Tertiaire gaz",
-    "name": "m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 289.6566,
     "objPhys": 8508662.1377,
@@ -5968,7 +5509,6 @@
   },
   {
     "category": "Rénovation résidentiel",
-    "name": "# logement (70m²) m2 rénovés en profondeur",
     "region": "Sud-PACA",
     "objCO2": 460.3238,
     "objPhys": 131521.0941,
@@ -5981,7 +5521,6 @@
   },
   {
     "category": "Résidentiel fioul",
-    "name": "# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 692.3623,
     "objPhys": 173090.5713,
@@ -5994,7 +5533,6 @@
   },
   {
     "category": "Résidentiel gaz",
-    "name": "# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
     "region": "Sud-PACA",
     "objCO2": 568.0115,
     "objPhys": 218329.4157,
@@ -6007,7 +5545,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha prairies non artificialisés",
     "region": "Sud-PACA",
     "objCO2": 109.8337,
     "objPhys": 378.7369,
@@ -6020,7 +5557,6 @@
   },
   {
     "category": "ZAN (constr. neuve)",
-    "name": "ha cultures non artificialisés",
     "region": "Sud-PACA",
     "objCO2": 109.8337,
     "objPhys": 578.0722,
@@ -6033,7 +5569,6 @@
   },
   {
     "category": "Haies et Agroforestierie",
-    "name": "kml de haies supplémentaires d'ici 2030 (net)",
     "region": "Sud-PACA",
     "objCO2": 39.5173,
     "objPhys": 1317.244,
@@ -6046,7 +5581,6 @@
   },
   {
     "category": "Retournement prairies",
-    "name": "ha de moindre retournement des prairies",
     "region": "Sud-PACA",
     "objCO2": 118.0454,
     "objPhys": 33921.079,
@@ -6059,7 +5593,6 @@
   },
   {
     "category": "Pratiques stockantes",
-    "name": "ha supplémentaires en couverts intermédiaires",
     "region": "Sud-PACA",
     "objCO2": 15.1026,
     "objPhys": 35958.5494,
@@ -6072,7 +5605,6 @@
   },
   {
     "category": "Forêts",
-    "name": "hectares additionnels de forêt en croissance",
     "region": "Sud-PACA",
     "objCO2": 639.9076,
     "objPhys": 63990.7618,

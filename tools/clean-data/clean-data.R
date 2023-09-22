@@ -129,7 +129,10 @@ final_data <- data |>
     name=="ha supplémentaires en couverts intermédiaires" ~ "Hectares supplémentaires en couverts intermédiaires",
     name=="hectares additionnels de forêt en croissance" ~ "Hectares additionnels de forêt en croissance",
     TRUE ~ ""
-  ))  
+  ))  |>
+
+# Suppression de la colonne name
+  select(-name)
 
 
 # Export
