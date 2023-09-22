@@ -11,19 +11,14 @@
   export let getPath: (row: Row) => string;
   export let getValue: (row: Row) => number; // given a node d, returns a quantitative value (for area encoding; null for count)
   export let getLabel: (row: Row) => string; // given a leaf node d, returns the name to display on the rectangle
-  export let getGroup: (row: Row) => string; // given a leaf node d, returns a categorical value (for color encoding)
   export let getTitle: (row: Row) => string; // given a leaf node d, returns its hover text
+  export let getColor: (row: Row) => string;
   export let getProgressionRatio: (row: Row) => number;
   export let tile = d3.treemapSquarify; // treemap strategy
   export let width: number; // outer width, in pixels
   export let height: number; // outer height, in pixels
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
-
-  $: color = d3.scaleOrdinal(
-    hierarchy.leaves().map((row) => getGroup(row)),
-    d3.schemeTableau10
-  );
 
   $: root = d3
     .treemap()
@@ -65,16 +60,11 @@
   {#each root.leaves() as d, i}
     {@const lines = getLabel(d.data).split(/\n/g)}
     <g transform="translate({d.x0},{d.y0})">
-      <rect
-        fill={color(getGroup(d.data))}
-        fill-opacity={0.6}
-        width={d.x1 - d.x0}
-        height={d.y1 - d.y0}
-      >
+      <rect fill={getColor(d.data)} width={d.x1 - d.x0} height={d.y1 - d.y0}>
       </rect>
       <rect
         fill="url(#diagonalHatch)"
-        fill-opacity={0.6}
+        fill-opacity={1}
         x={(d.x1 - d.x0) * (1 - getProgressionRatio(d.data))}
         width={(d.x1 - d.x0) * getProgressionRatio(d.data)}
         height={d.y1 - d.y0}
