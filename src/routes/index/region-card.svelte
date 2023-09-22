@@ -10,7 +10,7 @@
     <div class="fr-card__body">
       <div class="fr-card__content">
         <h3 class="fr-card__title">
-          <a href="/regions/{region.name}">{region.name}</a>
+          <a href="/regions/{region.name}/objectifs">{region.name}</a>
         </h3>
         <div class="fr-card__desc">
           <div class="mb-2 text-xs text-gray-600">Objectif de réduction</div>

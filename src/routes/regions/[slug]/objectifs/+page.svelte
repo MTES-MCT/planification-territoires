@@ -3,7 +3,6 @@
   import { goto } from "$app/navigation";
   import { tidy, groupBy } from "@tidyjs/tidy";
 
-  import MainTreemap from "$lib/main-treemap.svelte";
   import CompletionLevelInput from "./completion-level-input.svelte";
 
   export let data;
@@ -29,11 +28,20 @@
   <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
-<h1>Objectifs</h1>
-<form class="px-3">
+<h1 class="mb-0 text-base">{data.region}</h1>
+<a class="fr-link text-normal" href="/">Choisir une autre région</a>
+<h2 class="mb-0 mt-4">Définition des objectifs</h2>
+<form class="mb-12 px-3">
   {#each sectors as sector}
     <fieldset class="fr-fieldset gap-6">
-      <legend><h2 class="mb-2 mt-10">{sector.key}</h2></legend>
+      <legend class="mb-4"
+        ><h3 class="mb-1 mt-8">{sector.key}</h3>
+        <a
+          class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
+          href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+          >Visualiser</a
+        ></legend
+      >
       {#each sector.values as category}
         {#each category.values as lever}
           <CompletionLevelInput
@@ -45,18 +53,3 @@
     </fieldset>
   {/each}
 </form>
-
-<div class="h-96">
-  <MainTreemap
-    data={data.regionData}
-    completionLevels={data.completionLevels}
-  />
-</div>
-
-<a href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-  >Afficher et partager les résultats</a
->
-<br />
-<a href="/regions/{data.region}?{$page.url.searchParams.toString()}"
-  >Retourner à la visualisation des objectifs de la région</a
->
