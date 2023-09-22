@@ -10,7 +10,7 @@
   let height: number;
 
   function getLabel(lever: Lever) {
-    return `${lever.category}\n\n${lever.label}\n\n${prettifyNumber(
+    return `${lever.category}\n${lever.label}\n${prettifyNumber(
       lever.objCO2
     )} kt CO₂`;
   }
@@ -20,9 +20,9 @@
   }
 
   function getTitle(lever: Lever) {
-    return `${
-      lever.sector !== lever.category ? lever.sector : ""
-    }\n\n${getLabel(lever)}`;
+    return `${lever.sector !== lever.category ? lever.sector : ""}\n${getLabel(
+      lever
+    )}`.replace(/\n/g, "\n\n");
   }
 
   function getPath(lever: Lever) {
