@@ -93,7 +93,7 @@
         {#each lines as l, j}
           <tspan
             x="6"
-            y="{1.2 + (j === lines.length - 1) * 0.3 + j * 1.2}rem"
+            y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
             class="line-{j}"
           >
             {l}
