@@ -39,8 +39,10 @@
 
   $: extData = data.map((lever: Lever) => ({
     ...lever,
-    progressionRatio: lever.objPhys
-      ? completionLevels[lever.name] / lever.objPhys
+    progressionRatio: completionLevels
+      ? lever.objPhys
+        ? completionLevels[lever.name] / lever.objPhys
+        : 0
       : 0,
   }));
 </script>
