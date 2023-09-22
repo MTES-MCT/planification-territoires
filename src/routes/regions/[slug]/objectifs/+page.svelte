@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-  <title>Objectifs | Simulateur territoires</title>
+  <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
 {#each regionData as lever}
