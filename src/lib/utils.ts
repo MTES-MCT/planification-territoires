@@ -42,3 +42,31 @@ export function getCompletionLevels(
   });
   return levels;
 }
+
+export function getColor(lever: Lever) {
+  // Couleurs issues de https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12
+  switch (lever.sector) {
+    case "Transport":
+      return "#9fceef";
+    case "Agriculture/Forêts/Sols":
+      return "#b3de69";
+
+    case "Industrie":
+      return "#fb8072";
+
+    case "Energie":
+      return "#d9d9d9";
+
+    case "Déchêt":
+      return "#bebada";
+
+    case "Tertiaire":
+      return "#ffed6f";
+
+    case "Résidentiel":
+      return "#fdb462";
+
+    default:
+      return "red";
+  }
+}

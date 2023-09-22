@@ -1,12 +1,17 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
+  import { tidy, groupBy } from "@tidyjs/tidy";
 
   import MainTreemap from "$lib/main-treemap.svelte";
   import CompletionLevelInput from "./completion-level-input.svelte";
 
   export let data;
 
+  const sectors = tidy(
+    data.regionData,
+    groupBy(["sector", "category"], [], groupBy.entriesObject())
+  );
   // À chaque modification de data.completionLevels, on met à jour
   // la querystring
   $: {
@@ -25,15 +30,20 @@
 </svelte:head>
 
 <h1>Objectifs</h1>
-<form>
-  <fieldset class="fr-fieldset gap-6">
-    {#each data.regionData as lever}
-      <CompletionLevelInput
-        {lever}
-        bind:completionLevels={data.completionLevels}
-      />
-    {/each}
-  </fieldset>
+<form class="px-3">
+  {#each sectors as sector}
+    <fieldset class="fr-fieldset gap-6">
+      <legend><h2 class="mb-2 mt-10">{sector.key}</h2></legend>
+      {#each sector.values as category}
+        {#each category.values as lever}
+          <CompletionLevelInput
+            {lever}
+            bind:completionLevels={data.completionLevels}
+          />
+        {/each}
+      {/each}
+    </fieldset>
+  {/each}
 </form>
 
 <div class="h-96">
