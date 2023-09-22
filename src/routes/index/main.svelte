@@ -6,7 +6,7 @@
   const regions = rawRegions as Region[];
 </script>
 
-<h1>Régions</h1>
+<h1 class="mt-4">Régions</h1>
 <div class="fr-grid-row fr-grid-row--gutters fr-mb-1w w-full">
   {#each regions as region}
     <RegionCard {region} />

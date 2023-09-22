@@ -2,6 +2,7 @@
   import { page } from "$app/stores";
 
   import MainTreemap from "$lib/main-treemap.svelte";
+  import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
 </script>
@@ -10,15 +11,16 @@
   <title>{data.region} | Résultats | Simulateur territoires</title>
 </svelte:head>
 
-<h1 class="mb-0 text-base">{data.region}</h1>
-<a class="fr-link text-normal" href="/">Choisir une autre région</a>
-<h2 class="mb-0 mt-4">Visualisation des objectifs</h2>
+<NavigationBar
+  region={data.region}
+  title="Visualisation des objectifs actualisés"
+/>
 
 <div class="mb-4">
   <a
     class="fr-link fr-icon-arrow-left-line fr-link--icon-left block"
     href="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
-    >Éditer</a
+    >Éditer les actions menées</a
   >
 </div>
 

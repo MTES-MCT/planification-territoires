@@ -14,12 +14,12 @@
   $: objShare = (100 * completionLevels[lever.id]) / lever.objPhys;
 </script>
 
-<div class="w-[360px] overflow-hidden rounded-2xl border p-6">
+<div class="overflow-hidden rounded-2xl border p-6">
   <span
     class="rounded-full px-3 py-1 text-xs font-semibold"
     style="background-color: {getColor(lever)}">{lever.category}</span
   >
-  <div class="mt-6 flex h-12 items-end pb-2">
+  <div class="mt-8 flex h-12 items-end pb-2">
     <label class="fr-label" for={lever.id}>{lever.label}</label>
   </div>
   <input

@@ -4,6 +4,7 @@
   import { tidy, groupBy } from "@tidyjs/tidy";
 
   import CompletionLevelInput from "./completion-level-input.svelte";
+  import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
 
@@ -28,28 +29,35 @@
   <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
-<h1 class="mb-0 text-base">{data.region}</h1>
-<a class="fr-link text-normal" href="/">Choisir une autre région</a>
-<h2 class="mb-0 mt-4">Définition des objectifs</h2>
-<form class="mb-12 px-3">
+<NavigationBar region={data.region} title="Définition des objectifs" />
+<a
+  class="fr-link fr-icon-arrow-right-line fr-link--icon-right"
+  href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+  >Visualiser les objectifs actualisés</a
+>
+
+<form class="mb-12">
   {#each sectors as sector}
-    <fieldset class="fr-fieldset gap-6">
-      <legend class="mb-4"
-        ><h3 class="mb-1 mt-8">{sector.key}</h3>
-        <a
-          class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
-          href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-          >Visualiser</a
-        ></legend
-      >
-      {#each sector.values as category}
-        {#each category.values as lever}
-          <CompletionLevelInput
-            {lever}
-            bind:completionLevels={data.completionLevels}
-          />
+    <fieldset>
+      <div class="mb-4 mt-8 w-full">
+        <legend><h2 class="mb-1">{sector.key}</h2></legend>
+      </div>
+      <div class="mb-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {#each sector.values as category}
+          {#each category.values as lever}
+            <CompletionLevelInput
+              {lever}
+              bind:completionLevels={data.completionLevels}
+            />
+          {/each}
         {/each}
-      {/each}
+      </div>
+
+      <a
+        class="fr-link fr-icon-arrow-right-line fr-link--icon-right"
+        href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+        >Visualiser les objectifs actualisés</a
+      >
     </fieldset>
   {/each}
 </form>
