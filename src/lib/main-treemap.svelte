@@ -20,7 +20,9 @@
   }
 
   function getTitle(lever: Lever) {
-    return `${lever.sector}\n\n${lever.label}`;
+    return `${
+      lever.sector !== lever.category ? lever.sector : ""
+    }\n\n${getLabel(lever)}`;
   }
 
   function getPath(lever: Lever) {
