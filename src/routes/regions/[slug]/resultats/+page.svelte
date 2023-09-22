@@ -21,6 +21,12 @@
 </div>
 
 <button
+  on:click={() => {
+    navigator.clipboard.writeText($page.url.href);
+  }}>Copier le lien de partage</button
+>
+<br />
+<button
   class="border"
   on:click={() =>
     goto(
