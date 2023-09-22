@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Region } from "$lib/types";
   import rawRegions from "$lib/regions.json";
+  import { prettifyNumber } from "$lib/utils";
 
   const regions = rawRegions as Region[];
 </script>
@@ -21,8 +22,8 @@
                   Objectif de réduction
                 </div>
                 <p class="fr-badge">
-                  {(region.totalObjCO2 / 1000).toFixed(2)}
-                  <span class="ml-2 normal-case">kTCO2</span>
+                  {prettifyNumber(region.totalObjCO2)}
+                  <span class="ml-1 normal-case">kTCO2</span>
                 </p>
                 <div class="mb-2 mt-4 text-xs text-gray-600">
                   Part de la population
