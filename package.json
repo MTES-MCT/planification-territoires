@@ -41,5 +41,8 @@
   "lint-staged": {
     "*.{js,ts,svelte}": "eslint --cache --fix",
     "*.{js,ts,svelte,html,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@gouvfr/dsfr": "^1.10.1"
   }
 }
