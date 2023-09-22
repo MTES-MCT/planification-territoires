@@ -8,7 +8,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -19,7 +21,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -30,7 +34,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -41,7 +47,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -52,7 +60,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -63,7 +73,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -74,7 +86,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -85,7 +99,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -96,7 +112,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -107,7 +125,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -118,7 +138,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -129,7 +151,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -140,7 +164,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -151,7 +177,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -162,7 +190,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -173,7 +203,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -184,7 +216,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -195,7 +229,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -206,7 +242,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -217,7 +255,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -228,7 +268,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -239,7 +281,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -250,7 +294,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -261,7 +307,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -272,7 +320,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -283,7 +333,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -294,7 +346,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -305,7 +359,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -316,7 +372,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -327,7 +385,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -338,7 +398,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -349,7 +411,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -360,7 +424,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -371,7 +437,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -382,7 +450,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -393,7 +463,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -404,7 +476,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -415,7 +489,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -426,7 +502,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -437,7 +515,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -448,7 +528,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -459,7 +541,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -470,7 +554,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -481,7 +567,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -492,7 +580,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -503,7 +593,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -514,7 +606,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -525,7 +619,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -536,7 +632,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -547,7 +645,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -558,7 +658,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -569,7 +671,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -580,7 +684,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -591,7 +697,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -602,7 +710,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -613,7 +723,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -624,7 +736,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -635,7 +749,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -646,7 +762,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -657,7 +775,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -668,7 +788,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -679,7 +801,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -690,7 +814,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -701,7 +827,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -712,7 +840,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -723,7 +853,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -734,7 +866,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -745,7 +879,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -756,7 +892,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -767,7 +905,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -778,7 +918,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -789,7 +931,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -800,7 +944,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -811,7 +957,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -822,7 +970,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -833,7 +983,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -844,7 +996,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -855,7 +1009,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -866,7 +1022,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -877,7 +1035,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -888,7 +1048,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -899,7 +1061,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -910,7 +1074,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -921,7 +1087,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -932,7 +1100,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -943,7 +1113,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -954,7 +1126,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -965,7 +1139,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -976,7 +1152,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -987,7 +1165,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -998,7 +1178,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -1009,7 +1191,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -1020,7 +1204,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -1031,7 +1217,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -1042,7 +1230,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -1053,7 +1243,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -1064,7 +1256,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -1075,7 +1269,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1086,7 +1282,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1097,7 +1295,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -1108,7 +1308,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -1119,7 +1321,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -1130,7 +1334,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -1141,7 +1347,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -1152,7 +1360,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -1163,7 +1373,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -1174,7 +1386,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -1185,7 +1399,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -1196,7 +1412,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -1207,7 +1425,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -1218,7 +1438,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -1229,7 +1451,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -1240,7 +1464,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -1251,7 +1477,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -1262,7 +1490,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -1273,7 +1503,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -1284,7 +1516,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -1295,7 +1529,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -1306,7 +1542,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -1317,7 +1555,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -1328,7 +1568,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -1339,7 +1581,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -1350,7 +1594,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -1361,7 +1607,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1372,7 +1620,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1383,7 +1633,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -1394,7 +1646,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -1405,7 +1659,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -1416,7 +1672,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -1427,7 +1685,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -1438,7 +1698,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -1449,7 +1711,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -1460,7 +1724,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -1471,7 +1737,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -1482,7 +1750,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -1493,7 +1763,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -1504,7 +1776,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -1515,7 +1789,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -1526,7 +1802,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -1537,7 +1815,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -1548,7 +1828,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -1559,7 +1841,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -1570,7 +1854,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -1581,7 +1867,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -1592,7 +1880,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -1603,7 +1893,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -1614,7 +1906,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -1625,7 +1919,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -1636,7 +1932,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -1647,7 +1945,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1658,7 +1958,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1669,7 +1971,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -1680,7 +1984,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -1691,7 +1997,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -1702,7 +2010,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -1713,7 +2023,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -1724,7 +2036,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -1735,7 +2049,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -1746,7 +2062,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -1757,7 +2075,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -1768,7 +2088,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -1779,7 +2101,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -1790,7 +2114,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -1801,7 +2127,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -1812,7 +2140,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -1823,7 +2153,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -1834,7 +2166,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -1845,7 +2179,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -1856,7 +2192,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -1867,7 +2205,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -1878,7 +2218,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -1889,7 +2231,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -1900,7 +2244,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -1911,7 +2257,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -1922,7 +2270,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -1933,7 +2283,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1944,7 +2296,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -1955,7 +2309,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -1966,7 +2322,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -1977,7 +2335,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -1988,7 +2348,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -1999,7 +2361,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -2010,7 +2374,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -2021,7 +2387,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -2032,7 +2400,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -2043,7 +2413,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -2054,7 +2426,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -2065,7 +2439,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -2076,7 +2452,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -2087,7 +2465,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -2098,7 +2478,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -2109,7 +2491,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -2120,7 +2504,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -2131,7 +2517,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -2142,7 +2530,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -2153,7 +2543,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -2164,7 +2556,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -2175,7 +2569,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -2186,7 +2582,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -2197,7 +2595,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -2208,7 +2608,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -2219,7 +2621,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2230,7 +2634,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2241,7 +2647,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -2252,7 +2660,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -2263,7 +2673,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -2274,7 +2686,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -2285,7 +2699,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -2296,7 +2712,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -2307,7 +2725,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -2318,7 +2738,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -2329,7 +2751,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -2340,7 +2764,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -2351,7 +2777,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -2362,7 +2790,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -2373,7 +2803,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -2384,7 +2816,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -2395,7 +2829,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -2406,7 +2842,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -2417,7 +2855,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -2428,7 +2868,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -2439,7 +2881,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -2450,7 +2894,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -2461,7 +2907,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -2472,7 +2920,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -2483,7 +2933,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -2494,7 +2946,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -2505,7 +2959,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2516,7 +2972,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2527,7 +2985,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -2538,7 +2998,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -2549,7 +3011,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -2560,7 +3024,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -2571,7 +3037,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -2582,7 +3050,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -2593,7 +3063,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -2604,7 +3076,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -2615,7 +3089,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -2626,7 +3102,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -2637,7 +3115,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -2648,7 +3128,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -2659,7 +3141,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -2670,7 +3154,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -2681,7 +3167,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -2692,7 +3180,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -2703,7 +3193,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -2714,7 +3206,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -2725,7 +3219,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -2736,7 +3232,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -2747,7 +3245,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -2758,7 +3258,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -2769,7 +3271,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -2780,7 +3284,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -2791,7 +3297,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2802,7 +3310,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -2813,7 +3323,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -2824,7 +3336,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -2835,7 +3349,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -2846,7 +3362,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -2857,7 +3375,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -2868,7 +3388,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -2879,7 +3401,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -2890,7 +3414,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -2901,7 +3427,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -2912,7 +3440,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -2923,7 +3453,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -2934,7 +3466,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -2945,7 +3479,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -2956,7 +3492,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -2967,7 +3505,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -2978,7 +3518,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -2989,7 +3531,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -3000,7 +3544,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -3011,7 +3557,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -3022,7 +3570,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -3033,7 +3583,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -3044,7 +3596,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -3055,7 +3609,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -3066,7 +3622,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -3077,7 +3635,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3088,7 +3648,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3099,7 +3661,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -3110,7 +3674,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -3121,7 +3687,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -3132,7 +3700,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -3143,7 +3713,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -3154,7 +3726,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -3165,7 +3739,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -3176,7 +3752,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -3187,7 +3765,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -3198,7 +3778,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -3209,7 +3791,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -3220,7 +3804,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -3231,7 +3817,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -3242,7 +3830,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -3253,7 +3843,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -3264,7 +3856,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -3275,7 +3869,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -3286,7 +3882,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -3297,7 +3895,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -3308,7 +3908,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -3319,7 +3921,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -3330,7 +3934,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -3341,7 +3947,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -3352,7 +3960,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -3363,7 +3973,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3374,7 +3986,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3385,7 +3999,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -3396,7 +4012,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -3407,7 +4025,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -3418,7 +4038,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -3429,7 +4051,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -3440,7 +4064,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -3451,7 +4077,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -3462,7 +4090,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -3473,7 +4103,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -3484,7 +4116,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -3495,7 +4129,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -3506,7 +4142,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -3517,7 +4155,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -3528,7 +4168,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -3539,7 +4181,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -3550,7 +4194,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -3561,7 +4207,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -3572,7 +4220,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -3583,7 +4233,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -3594,7 +4246,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -3605,7 +4259,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -3616,7 +4272,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -3627,7 +4285,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -3638,7 +4298,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -3649,7 +4311,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3660,7 +4324,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3671,7 +4337,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -3682,7 +4350,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -3693,7 +4363,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -3704,7 +4376,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -3715,7 +4389,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -3726,7 +4402,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -3737,7 +4415,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -3748,7 +4428,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -3759,7 +4441,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -3770,7 +4454,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -3781,7 +4467,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -3792,7 +4480,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -3803,7 +4493,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -3814,7 +4506,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -3825,7 +4519,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -3836,7 +4532,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -3847,7 +4545,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -3858,7 +4558,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -3869,7 +4571,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -3880,7 +4584,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -3891,7 +4597,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -3902,7 +4610,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -3913,7 +4623,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -3924,7 +4636,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -3935,7 +4649,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3946,7 +4662,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -3957,7 +4675,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -3968,7 +4688,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -3979,7 +4701,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -3990,7 +4714,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -4001,7 +4727,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -4012,7 +4740,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -4023,7 +4753,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -4034,7 +4766,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -4045,7 +4779,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -4056,7 +4792,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -4067,7 +4805,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -4078,7 +4818,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -4089,7 +4831,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -4100,7 +4844,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -4111,7 +4857,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -4122,7 +4870,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -4133,7 +4883,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -4144,7 +4896,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -4155,7 +4909,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -4166,7 +4922,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -4177,7 +4935,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -4188,7 +4948,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -4199,7 +4961,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -4210,7 +4974,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -4221,7 +4987,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4232,7 +5000,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4243,7 +5013,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -4254,7 +5026,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -4265,7 +5039,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -4276,7 +5052,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -4287,7 +5065,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -4298,7 +5078,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -4309,7 +5091,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -4320,7 +5104,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -4331,7 +5117,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -4342,7 +5130,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -4353,7 +5143,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -4364,7 +5156,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -4375,7 +5169,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -4386,7 +5182,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -4397,7 +5195,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -4408,7 +5208,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -4419,7 +5221,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -4430,7 +5234,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -4441,7 +5247,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -4452,7 +5260,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -4463,7 +5273,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -4474,7 +5286,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -4485,7 +5299,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -4496,7 +5312,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -4507,7 +5325,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4518,7 +5338,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4529,7 +5351,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -4540,7 +5364,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -4551,7 +5377,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -4562,7 +5390,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -4573,7 +5403,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -4584,7 +5416,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -4595,7 +5429,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -4606,7 +5442,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -4617,7 +5455,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -4628,7 +5468,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -4639,7 +5481,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -4650,7 +5494,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -4661,7 +5507,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -4672,7 +5520,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -4683,7 +5533,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -4694,7 +5546,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -4705,7 +5559,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -4716,7 +5572,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -4727,7 +5585,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -4738,7 +5598,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -4749,7 +5611,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -4760,7 +5624,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -4771,7 +5637,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -4782,7 +5650,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -4793,7 +5663,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4804,7 +5676,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -4815,7 +5689,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -4826,7 +5702,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -4837,7 +5715,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -4848,7 +5728,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -4859,7 +5741,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   },
   {
     "category": "Electrification VP",
@@ -4870,7 +5754,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 477.7091,
-    "path": "Transport/# voitures thermiques remplacées d'ici 2030"
+    "path": "Transport/# voitures thermiques remplacées d'ici 2030",
+    "id": "n_voitures",
+    "label": "Nombre de voitures thermiques remplacées d’ici 2030"
   },
   {
     "category": "Sobriété transport",
@@ -4881,7 +5767,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Sobriété transport)"
+    "path": "Transport/km voiture évités (annuel) (Sobriété transport)",
+    "id": "km_sobriete",
+    "label": "Kilomètres annuels de voiture évités (sobriété)"
   },
   {
     "category": "Report modal vélo/bus/train",
@@ -4892,7 +5780,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)"
+    "path": "Transport/km voiture évités (annuel) (Report modal vélo-bus-train)",
+    "id": "km_report",
+    "label": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)"
   },
   {
     "category": "Covoiturage",
@@ -4903,7 +5793,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 6666666.6667,
-    "path": "Transport/km covoiturage additionnels (annuel)"
+    "path": "Transport/km covoiturage additionnels (annuel)",
+    "id": "km_covoit",
+    "label": "Kilomètre annuels de covoiturage additionnels"
   },
   {
     "category": "Bus et cars (élec&efficacité)",
@@ -4914,7 +5806,9 @@
     "sector": "Transport",
     "group": "Transport",
     "ratio": 13.605,
-    "path": "Transport/# bus thermiques remplacés d'ici 2030"
+    "path": "Transport/# bus thermiques remplacés d'ici 2030",
+    "id": "n_bus",
+    "label": "Nombre de bus thermiques remplacées d’ici 2030"
   },
   {
     "category": "Azote",
@@ -4925,7 +5819,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 234.192,
-    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)"
+    "path": "Agriculture-Forêts-Sols/T engrais azotés évités (annuel)",
+    "id": "t_engrais",
+    "label": "Tonnes annuelles d’engrais azoté évitées"
   },
   {
     "category": "Elevage",
@@ -4936,7 +5832,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Nourrir",
     "ratio": 456.4103,
-    "path": "Agriculture-Forêts-Sols/réduction têtes bovins"
+    "path": "Agriculture-Forêts-Sols/réduction têtes bovins",
+    "id": "n_bovins",
+    "label": "Réduction du nombre de têtes de bovins"
   },
   {
     "category": "Industrie",
@@ -4947,7 +5845,9 @@
     "sector": "Industrie",
     "group": "Produire",
     "ratio": 1,
-    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)"
+    "path": "Industrie/réduction d'emissions du secteur (annuel) (Industrie)",
+    "id": "indus",
+    "label": "Réductions d’émissions industrielles annuelles"
   },
   {
     "category": "Réseaux de chaleur",
@@ -4958,7 +5858,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 8.25,
-    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)"
+    "path": "Energie/Gwh de production de chaleur passé en ENR (annuel)",
+    "id": "prod_chaleur",
+    "label": "GWh annuels de production de chaleur passés en ENR"
   },
   {
     "category": "ENR électriques",
@@ -4969,7 +5871,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 1.2972,
-    "path": "Energie/MW puissance éolien installée"
+    "path": "Energie/MW puissance éolien installée",
+    "id": "eolien",
+    "label": "Puissance éolienne installée (MW)"
   },
   {
     "category": "ENR électriques",
@@ -4980,7 +5884,9 @@
     "sector": "Energie",
     "group": "Produire",
     "ratio": 2.1953,
-    "path": "Energie/MW puissance PV installée"
+    "path": "Energie/MW puissance PV installée",
+    "id": "pv",
+    "label": "Puissance photovoltaïque installée"
   },
   {
     "category": "Report modal/ferroviaire et fluvial",
@@ -4991,7 +5897,9 @@
     "sector": "Transport",
     "group": "Produire",
     "ratio": 8500,
-    "path": "Transport/Tkm PL évités (annuel)"
+    "path": "Transport/Tkm PL évités (annuel)",
+    "id": "tkm_pl",
+    "label": "t·km annuelles PL évitées"
   },
   {
     "category": "Captage méthane ISDND",
@@ -5002,7 +5910,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 1,
-    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)"
+    "path": "Déchêt/réduction d'emissions du secteur (annuel) (Captage méthane ISDND)",
+    "id": "methane",
+    "label": "Réduction annuelles d’emissions de captage méthane ISDND"
   },
   {
     "category": "Valorisation matière",
@@ -5013,7 +5923,9 @@
     "sector": "Déchêt",
     "group": "Produire",
     "ratio": 2500,
-    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)"
+    "path": "Déchêt/T valorisées grâce à une plus grande incorporation de MPR (annuel)",
+    "id": "valorisation",
+    "label": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR"
   },
   {
     "category": "Rénovation + sobriété tertiaire",
@@ -5024,7 +5936,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 1,
-    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)"
+    "path": "Tertiaire/réduction de consommation d'énergie annuelle (-2010)",
+    "id": "cons_ener",
+    "label": "Réduction de consommation d’énergie annuelle par rapport à 2010"
   },
   {
     "category": "Tertiaire fioul",
@@ -5035,7 +5949,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 15000,
-    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_fioul",
+    "label": "m² chauffés au fioul passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Tertiaire gaz",
@@ -5046,7 +5962,9 @@
     "sector": "Tertiaire",
     "group": "Tertiaire",
     "ratio": 29375,
-    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030"
+    "path": "Tertiaire/m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030",
+    "id": "chauf_gaz",
+    "label": "m² chauffés au gaz passés à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Rénovation résidentiel",
@@ -5057,7 +5975,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 285.7143,
-    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur"
+    "path": "Résidentiel/# logement (70m²) m2 rénovés en profondeur",
+    "id": "renov",
+    "label": "Nombre de logements (70m²) rénovés en profondeur"
   },
   {
     "category": "Résidentiel fioul",
@@ -5068,7 +5988,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 250,
-    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au fioul passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_fioul",
+    "label": "Nombre de chaudières au fioul passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "Résidentiel gaz",
@@ -5079,7 +6001,9 @@
     "sector": "Résidentiel",
     "group": "Logement",
     "ratio": 384.375,
-    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030"
+    "path": "Résidentiel/# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030",
+    "id": "chaud_gaz",
+    "label": "Nombre chaudières au gaz passées à une énergie décarbonnée d’ici 2030"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -5090,7 +6014,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 3.4483,
-    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha prairies non artificialisés",
+    "id": "prairies",
+    "label": "Hectares de prairies non artificialisés"
   },
   {
     "category": "ZAN (constr. neuve)",
@@ -5101,7 +6027,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 5.2632,
-    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés"
+    "path": "Agriculture-Forêts-Sols/ha cultures non artificialisés",
+    "id": "cultures",
+    "label": "Hectares de cultures non artificialisés"
   },
   {
     "category": "Haies et Agroforestierie",
@@ -5112,7 +6040,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 33.3333,
-    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)"
+    "path": "Agriculture-Forêts-Sols/kml de haies supplémentaires d'ici 2030 (net)",
+    "id": "haies",
+    "label": "Kilomètres linéaires de haies supplémentaires d’ici 2030 (nets)"
   },
   {
     "category": "Retournement prairies",
@@ -5123,7 +6053,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 287.3563,
-    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies"
+    "path": "Agriculture-Forêts-Sols/ha de moindre retournement des prairies",
+    "id": "retournement",
+    "label": "Hectares de moindre retournement des prairies"
   },
   {
     "category": "Pratiques stockantes",
@@ -5134,7 +6066,9 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 2380.9524,
-    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires"
+    "path": "Agriculture-Forêts-Sols/ha supplémentaires en couverts intermédiaires",
+    "id": "couvert",
+    "label": "Hectares supplémentaires en couverts intermédiaires"
   },
   {
     "category": "Forêts",
@@ -5145,6 +6079,8 @@
     "sector": "Agriculture/Forêts/Sols",
     "group": "Protéger",
     "ratio": 100,
-    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance"
+    "path": "Agriculture-Forêts-Sols/hectares additionnels de forêt en croissance",
+    "id": "foret",
+    "label": "Hectares additionnels de forêt en croissance"
   }
 ]

@@ -36,7 +36,7 @@ export function getCompletionLevels(
   searchParams: URLSearchParams
 ): CompletionLevels {
   const leversId = tidy(leversData, select("name"), distinct("name"));
-  const levels = Object.fromEntries(leversId.map((l) => [l.name, 0]));
+  const levels = Object.fromEntries(leversId.map((l) => [l.id, 0]));
   searchParams.forEach((value, key) => {
     levels[key] = Number(value);
   });

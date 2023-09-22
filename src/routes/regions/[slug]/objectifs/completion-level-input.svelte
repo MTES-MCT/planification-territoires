@@ -7,13 +7,13 @@
 
   function handleRangeChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    completionLevels[lever.name] = Number(target.value);
+    completionLevels[lever.id] = Number(target.value);
   }
 </script>
 
 <div class="flex flex-row flex-wrap items-start gap-x-12 gap-y-4">
-  <label for={lever.name} class=" ">
-    <p><strong>{lever.name}</strong></p>
+  <label for={lever.id} class=" ">
+    <p><strong>{lever.label}</strong></p>
     <p>
       Objectif (unités physiques) : {prettifyNumber(lever.objPhys)}
     </p>
@@ -22,7 +22,7 @@
     </p>
     <p>
       Reste à faire (ktCO₂) : {prettifyNumber(
-        (lever.objPhys - completionLevels[lever.name]) / lever.ratio
+        (lever.objPhys - completionLevels[lever.id]) / lever.ratio
       )}
     </p>
   </label>
@@ -30,9 +30,9 @@
     <input
       type="number"
       step={1}
-      bind:value={completionLevels[lever.name]}
+      bind:value={completionLevels[lever.id]}
       class=" w-40 border bg-gray-100 p-2"
-      id={lever.name}
+      id={lever.id}
       on:input={handleRangeChanged}
     />
   </div>

@@ -10,7 +10,7 @@
   let height: number;
 
   function getLabel(lever: Lever) {
-    return `${lever.category}\n\n${lever.name}\n\n${prettifyNumber(
+    return `${lever.category}\n\n${lever.label}\n\n${prettifyNumber(
       lever.objCO2
     )} kt CO₂`;
   }
@@ -20,7 +20,7 @@
   }
 
   function getTitle(lever: Lever) {
-    return `${lever.sector}\n\n${lever.name}`;
+    return `${lever.sector}\n\n${lever.label}`;
   }
 
   function getPath(lever: Lever) {
@@ -64,7 +64,7 @@
     ...lever,
     progressionRatio: completionLevels
       ? lever.objPhys
-        ? completionLevels[lever.name] / lever.objPhys
+        ? completionLevels[lever.id] / lever.objPhys
         : 0
       : 0,
   }));
