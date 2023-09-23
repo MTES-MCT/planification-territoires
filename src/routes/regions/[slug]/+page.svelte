@@ -19,9 +19,9 @@
   contractualisées.
 </p>
 
-<a href={editionLink} class="my-8 block h-[75vh]">
+<div class="my-8 block h-[75vh]">
   <MainTreemap data={data.regionData} />
-</a>
+</div>
 
 <div class="mb-8">
   <a

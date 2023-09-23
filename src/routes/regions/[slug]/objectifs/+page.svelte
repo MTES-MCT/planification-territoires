@@ -21,6 +21,7 @@
     goto(`?${$page.url.searchParams.toString()}`, {
       keepFocus: true,
       noScroll: true,
+      replaceState: true,
     });
   }
 </script>
