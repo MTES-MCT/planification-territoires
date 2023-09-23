@@ -66,9 +66,6 @@ final_data <- data |>
     name=="réduction de consommation d'énergie annuelle (/2010)" ~objCO2,
     TRUE ~ objPhys)) |>
 
-# Ajout du chemin pour la création du treemap
-  mutate(path = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(name, '/', '-'))) |>
-
 # Ajout des identifiants 
   mutate(id = case_when(
     name=="# voitures thermiques remplacées d'ici 2030" ~ "n_voitures",
@@ -105,23 +102,23 @@ final_data <- data |>
     name=="# voitures thermiques remplacées d'ici 2030" ~ "Nombre de voitures thermiques remplacées",
     name=="km voiture évités (annuel) (Sobriété transport)" ~ "Kilomètres annuels de voiture évités (sobriété)",
     name=="km voiture évités (annuel) (Report modal vélo/bus/train)" ~ "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    name=="km covoiturage additionnels (annuel)" ~ "Kilomètre annuels de covoiturage additionnels",
-    name=="# bus thermiques remplacés d'ici 2030" ~ "Nombre de bus thermiques remplacées",
+    name=="km covoiturage additionnels (annuel)" ~ "Kilomètres annuels de covoiturage additionnels",
+    name=="# bus thermiques remplacés d'ici 2030" ~ "Nombre de bus thermiques remplacés",
     name=="T engrais azotés évités (annuel)" ~ "Tonnes annuelles d’engrais azoté évitées",
     name=="réduction têtes bovins" ~ "Réduction du nombre de têtes de bovins",
-    name=="réduction d'emissions du secteur (annuel) (Industrie)" ~ "Réductions d’émissions industrielles annuelles",
+    name=="réduction d'emissions du secteur (annuel) (Industrie)" ~ "Réduction d’émissions industrielles annuelles",
     name=="Gwh de production de chaleur passé en ENR (annuel)" ~ "GWh annuels de production de chaleur passés en ENR",
     name=="MW puissance éolien installée" ~ "Puissance éolienne installée (MW)",
-    name=="MW puissance PV installée" ~ "Puissance photovoltaïque installée",
+    name=="MW puissance PV installée" ~ "Puissance photovoltaïque installée (MW)",
     name=="Tkm PL évités (annuel)" ~ "t·km annuelles PL évitées",
-    name=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~ "Réduction annuelles d’emissions de captage méthane ISDND",
+    name=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~ "Réduction annuelle d’émissions de captage méthane ISDND",
     name=="T valorisées grâce à une plus grande incorporation de MPR (annuel)" ~ "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
     name=="réduction de consommation d'énergie annuelle (/2010)" ~ "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    name=="m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030" ~ "m² chauffés au fioul passés à une énergie décarbonnée",
-    name=="m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030" ~ "m² chauffés au gaz passés à une énergie décarbonnée",
+    name=="m² chauffés au fioul passés à une énergie décarbonnée d'ici 2030" ~ "m² chauffés au fioul passés à une énergie décarbonée",
+    name=="m² chauffés au gaz passés à une énergie décarbonnée d'ici 2030" ~ "m² chauffés au gaz passés à une énergie décarbonée",
     name=="# logement (70m²) m2 rénovés en profondeur" ~ "Nombre de logements (70m²) rénovés en profondeur",
-    name=="# chaudières au fioul passées à une énergie décarbonnée d'ici 2030" ~ "Nombre de chaudières au fioul passées à une énergie décarbonnée",
-    name=="# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030" ~ "Nombre chaudières au gaz passées à une énergie décarbonnée",
+    name=="# chaudières au fioul passées à une énergie décarbonnée d'ici 2030" ~ "Nombre de chaudières au fioul passées à une énergie décarbonée",
+    name=="# chaudières au gaz  passées à une énergie décarbonnée d'ici 2030" ~ "Nombre de chaudières au gaz passées à une énergie décarbonée",
     name=="ha prairies non artificialisés" ~ "Hectares de prairies non artificialisés",
     name=="ha cultures non artificialisés" ~ "Hectares de cultures non artificialisés",
     name=="kml de haies supplémentaires d'ici 2030 (net)" ~ "Kilomètres linéaires de haies supplémentaires (nets)",
@@ -131,9 +128,11 @@ final_data <- data |>
     TRUE ~ ""
   ))  |>
 
+# Ajout du chemin pour la création du treemap
+  mutate(path = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(id, '/', '-'))) |>
+  
 # Suppression de la colonne name
   select(-name)
-
 
 # Export
 write_json(final_data, here('../../src/lib/data.json'), pretty = TRUE)
