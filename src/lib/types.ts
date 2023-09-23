@@ -19,5 +19,5 @@ export interface Lever {
 }
 
 export interface CompletionLevels {
-  [leverName: string]: number;
+  [leverName: string]: number | undefined;
 }
