@@ -8,10 +8,11 @@
 
   function handleRangeChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    completionLevels[lever.id] = Number(target.value);
+    completionLevels[lever.id] =
+      target.value !== "" ? Number(target.value) : undefined;
   }
 
-  $: objShare = (100 * completionLevels[lever.id]) / lever.objPhys;
+  $: objShare = (100 * (completionLevels[lever.id] || 0)) / lever.objPhys;
 </script>
 
 <div class="overflow-hidden rounded-2xl border p-6">
@@ -33,7 +34,7 @@
   />
   <div class="mt-2 text-xs text-gray-500">
     Représente une réduction de {prettifyNumber(
-      completionLevels[lever.id] / lever.ratio
+      (completionLevels[lever.id] || 0) / lever.ratio
     )} ktCO₂
   </div>
   <dl class="mb-2 mt-4 border-t pt-4">
@@ -50,8 +51,8 @@
       role="progressbar"
       style="width: {objShare}%; background-color: {getColor(lever)}"
       aria-valuenow={objShare}
-      aria-valuemin="0"
-      aria-valuemax="100"
+      aria-valuemin={0}
+      aria-valuemax={100}
     ></div>
   </div>
 </div>

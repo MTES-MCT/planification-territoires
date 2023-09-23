@@ -16,7 +16,7 @@
   // la querystring
   $: {
     Object.entries(data.completionLevels).forEach((c) =>
-      $page.url.searchParams.set(c[0], c[1].toString())
+      $page.url.searchParams.set(c[0], (c[1] || 0).toString())
     );
     goto(`?${$page.url.searchParams.toString()}`, {
       keepFocus: true,
