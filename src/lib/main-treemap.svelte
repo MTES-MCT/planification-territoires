@@ -20,9 +20,9 @@
   }
 
   function getTitle(lever: Lever) {
-    return `${lever.sector !== lever.category ? lever.sector : ""}\n${getLabel(
-      lever
-    )}`.replace(/\n/g, "\n\n");
+    return `${
+      lever.sector !== lever.category ? lever.sector + "\n" : ""
+    }${getLabel(lever)}`.replace(/\n/g, "\n\n");
   }
 
   function getPath(lever: Lever) {
