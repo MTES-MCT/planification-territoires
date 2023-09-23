@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.postcss";
-  import "$lib/dsfr.css";
+  import "$lib/assets/dsfr.css";
+
   import Header from "./layout/header.svelte";
   import Footer from "./layout/footer.svelte";
 </script>
