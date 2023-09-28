@@ -1,3 +1,11 @@
+# Simulateur des objectifs territoriaux
+
+**Version beta – ne pas diffuser.**
+
+**Les données et algorithmes inclus sont des versions de test, et n’ont pas vocation à être représentatifs de la version finale.**
+
+---
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
