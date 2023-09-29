@@ -5,6 +5,8 @@
   // https://observablehq.com/@d3/treemap
 
   import type { HierarchyNode } from "d3";
+  import DiagonalHatchPattern from "./treemap/diagonalHatchPattern.svelte";
+  import ProgressBlock from "./treemap/progressBlock.svelte";
   import * as d3 from "d3";
 
   type Row = object;
@@ -63,26 +65,15 @@
       fill-opacity: 0.7;
     }
   </style>
-  <pattern
-    id="diagonalHatch"
-    patternUnits="userSpaceOnUse"
-    width="4"
-    height="8"
-    patternTransform="rotate(-45 2 2)"
-  >
-    <path d="M -1,2 l 6,0" stroke="black" stroke-width="6" />
-  </pattern>
+  <DiagonalHatchPattern />
   {#each root.leaves() as d, i}
     {@const lines = getLabel(d.data).split(/\n/g)}
     <g transform="translate({d.x0},{d.y0})">
-      <rect fill={getColor(d.data)} width={d.x1 - d.x0} height={d.y1 - d.y0}>
-      </rect>
-      <rect
-        fill="url(#diagonalHatch)"
-        fill-opacity={0.1}
-        x={0}
-        width={(d.x1 - d.x0) * getProgressionRatio(d.data)}
+      <ProgressBlock
+        width={d.x1 - d.x0}
         height={d.y1 - d.y0}
+        fill={getColor(d.data)}
+        progress={getProgressionRatio(d.data)}
       />
       <title>{getTitle(d.data)}</title>
       <clipPath id="{uid}-clip-{i}">
