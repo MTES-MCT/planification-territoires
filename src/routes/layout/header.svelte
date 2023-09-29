@@ -30,6 +30,15 @@
             </p>
           </div>
         </div>
+        <div class="fr-header__tools">
+          <div class="fr-header__tools-links">
+            <ul class="fr-btns-group">
+              <li>
+                <a class="fr-btn" href="/a-propos">À propos </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
