@@ -19,16 +19,17 @@
   export let getProgressionRatio: (row: Row) => number;
   export let getGroupName: (path: string) => string;
   export let tile = d3.treemapSliceDice; // treemap strategy
-  export let width: number; // outer width, in pixels
-  export let height: number; // outer height, in pixels
+
+  let width: number;
+  let height: number;
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
   $: root = d3
     .treemap()
     .tile(tile)
-    .size([width, height])
-    .paddingRight(3)
+    .size([width + 12, height])
+    .paddingRight(6)
     .paddingInner(1)
     .paddingBottom(20)
     .round(true)(
@@ -42,74 +43,76 @@
   const uid = `O-${Math.random().toString(16).slice(2)}`;
 </script>
 
-<svg
-  viewBox="0 0 {width} {height}"
-  {width}
-  {height}
-  style="max-width: 100%; height: auto;"
-  font-family="Marianne"
-  font-size="12"
->
-  <style>
-    .line-0 {
-      font-size: 13px;
-      font-weight: bold;
-      fill-opacity: 0.8;
-    }
+<div bind:clientWidth={width} bind:clientHeight={height} class="h-full">
+  <svg
+    viewBox="0 0 {width} {height}"
+    {width}
+    {height}
+    style="max-width: 100%; height: auto;"
+    font-family="Marianne"
+    font-size="12"
+  >
+    <style>
+      .line-0 {
+        font-size: 13px;
+        font-weight: bold;
+        fill-opacity: 0.8;
+      }
 
-    .line-1 {
-      font-size: 12px;
-      fill-opacity: 0.8;
-    }
+      .line-1 {
+        font-size: 12px;
+        fill-opacity: 0.8;
+      }
 
-    .line-2 {
-      font-size: 10px;
-      font-style: italic;
-      fill-opacity: 0.7;
-    }
+      .line-2 {
+        font-size: 10px;
+        font-style: italic;
+        fill-opacity: 0.7;
+      }
 
-    .group {
-      font-size: 18px;
-      font-weight: bold;
-      fill-opacity: 1;
-      font-variant-caps: all-small-caps;
-    }
-  </style>
-  <DiagonalHatchPattern />
-  {#each root.leaves() as d, i}
-    {@const lines = getLabel(d.data).split(/\n/g)}
-    <g transform="translate({d.x0},{d.y0})">
-      <ProgressBlock
-        width={d.x1 - d.x0}
-        height={d.y1 - d.y0}
-        fill={getColor(d.data.sector)}
-        progress={getProgressionRatio(d.data)}
-      />
-      <title>{getTitle(d.data)}</title>
-      <clipPath id="{uid}-clip-{i}">
-        <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
-      </clipPath>
-      <text clip-path="url(#{uid}-clip-{i})" pointer-events="none">
-        {#each lines as l, j}
-          <tspan
-            x="6"
-            y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
-            class="line-{j}"
-          >
-            {l}
-          </tspan>
-        {/each}
-      </text>
-    </g>
-  {/each}
-  {#each root.descendants().filter((d) => d.depth === 1) as d, i}
-    <g transform="translate({d.x0},{d.y0})">
-      <clipPath id="{uid}-clipcat-{i}">
-        <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
-      </clipPath>
-      <text clip-path="url(#{uid}-clipcat-{i})" pointer-events="none">
-        <tspan class="group" x="0" y={d.y1}> {getGroupName(d.id)} </tspan>
-      </text>
-    </g>
-  {/each}
-</svg>
+      .group {
+        font-size: 18px;
+        font-weight: bold;
+        fill-opacity: 1;
+        font-variant-caps: all-small-caps;
+      }
+    </style>
+    <DiagonalHatchPattern />
+    {#each root.leaves() as d, i}
+      {@const lines = getLabel(d.data).split(/\n/g)}
+      <g transform="translate({d.x0},{d.y0})">
+        <ProgressBlock
+          width={d.x1 - d.x0}
+          height={d.y1 - d.y0}
+          fill={getColor(d.data.sector)}
+          progress={getProgressionRatio(d.data)}
+        />
+        <title>{getTitle(d.data)}</title>
+        <clipPath id="{uid}-clip-{i}">
+          <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
+        </clipPath>
+        <text clip-path="url(#{uid}-clip-{i})" pointer-events="none">
+          {#each lines as l, j}
+            <tspan
+              x="6"
+              y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
+              class="line-{j}"
+            >
+              {l}
+            </tspan>
+          {/each}
+        </text>
+      </g>
+    {/each}
+    {#each root.descendants().filter((d) => d.depth === 1) as d, i}
+      <g transform="translate({d.x0},{d.y0})">
+        <clipPath id="{uid}-clipcat-{i}">
+          <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
+        </clipPath>
+        <text clip-path="url(#{uid}-clipcat-{i})" pointer-events="none">
+          <tspan class="group" x="0" y={d.y1}> {getGroupName(d.id)} </tspan>
+        </text>
+      </g>
+    {/each}
+  </svg>
+</div>

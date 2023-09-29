@@ -12,8 +12,6 @@
   export let completionLevels: CompletionLevels | undefined = undefined;
   export let substractCompleted = false;
 
-  let width: number;
-  let height: number;
   let treemapVersion: "v1";
 
   function getLabel(lever: Lever) {
@@ -87,17 +85,17 @@
   );
 </script>
 
-<div class="mb-2 flex items-end gap-4">
-  <div class="grow">
-    <ColorLegend items={getLegendItems()} />
+<div class="flex h-full flex-col">
+  <div class="mb-2 flex items-end gap-4">
+    <div class="grow">
+      <ColorLegend items={getLegendItems()} />
+    </div>
+    <select bind:value={treemapVersion} class="fr-select basis-32">
+      <option value="v1"> version 1 </option>
+      <option value="v2"> version 2 </option>
+    </select>
   </div>
-  <select bind:value={treemapVersion} class="fr-select basis-32">
-    <option value="v1"> version 1 </option>
-    <option value="v2"> version 2 </option>
-  </select>
-</div>
-<div bind:clientWidth={width} bind:clientHeight={height} class="h-full">
-  {#if width && height}
+  <div class="flex-auto">
     {#if treemapVersion === "v1"}
       <Treemap
         data={aggData}
@@ -107,8 +105,6 @@
         {getValue}
         {getTitle}
         {getProgressionRatio}
-        {width}
-        height={height - 40}
       />
     {:else}
       <Treemap2
@@ -120,9 +116,7 @@
         {getTitle}
         {getProgressionRatio}
         {getGroupName}
-        {width}
-        height={height - 20}
       />
     {/if}
-  {/if}
+  </div>
 </div>
