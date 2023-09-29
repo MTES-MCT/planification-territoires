@@ -31,6 +31,6 @@
 <div class="mb-8">
   <a
     class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
-    href={editionLink}>Renseignez les actions</a
+    href={editionLink}>Réalisez votre diagnostic territorial</a
   >
 </div>
