@@ -41,58 +41,60 @@
 </script>
 
 <div bind:clientWidth={width} bind:clientHeight={height} class="h-full">
-  <svg
-    viewBox="0 0 {width} {height}"
-    {width}
-    {height}
-    style="max-width: 100%; height: auto;"
-    font-family="Marianne"
-    font-size="12"
-  >
-    <style>
-      .line-0 {
-        font-size: 13px;
-        font-weight: bold;
-        fill-opacity: 0.8;
-      }
+  {#if width && height}
+    <svg
+      viewBox="0 0 {width} {height}"
+      {width}
+      {height}
+      style="max-width: 100%; height: auto;"
+      font-family="Marianne"
+      font-size="12"
+    >
+      <style>
+        .line-0 {
+          font-size: 13px;
+          font-weight: bold;
+          fill-opacity: 0.8;
+        }
 
-      .line-1 {
-        font-size: 12px;
-        fill-opacity: 0.8;
-      }
+        .line-1 {
+          font-size: 12px;
+          fill-opacity: 0.8;
+        }
 
-      .line-2 {
-        font-size: 10px;
-        font-style: italic;
-        fill-opacity: 0.7;
-      }
-    </style>
-    <DiagonalHatchPattern />
-    {#each root.leaves() as d, i}
-      {@const lines = getLabel(d.data).split(/\n/g)}
-      <g transform="translate({d.x0},{d.y0})">
-        <ProgressBlock
-          width={d.x1 - d.x0}
-          height={d.y1 - d.y0}
-          fill={getColor(d.data.sector)}
-          progress={getProgressionRatio(d.data)}
-        />
-        <title>{getTitle(d.data)}</title>
-        <clipPath id="{uid}-clip-{i}">
-          <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
-        </clipPath>
-        <text clip-path="url(#{uid}-clip-{i})" pointer-events="none">
-          {#each lines as l, j}
-            <tspan
-              x="6"
-              y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
-              class="line-{j}"
-            >
-              {l}
-            </tspan>
-          {/each}
-        </text>
-      </g>
-    {/each}
-  </svg>
+        .line-2 {
+          font-size: 10px;
+          font-style: italic;
+          fill-opacity: 0.7;
+        }
+      </style>
+      <DiagonalHatchPattern />
+      {#each root.leaves() as d, i}
+        {@const lines = getLabel(d.data).split(/\n/g)}
+        <g transform="translate({d.x0},{d.y0})">
+          <ProgressBlock
+            width={d.x1 - d.x0}
+            height={d.y1 - d.y0}
+            fill={getColor(d.data.sector)}
+            progress={getProgressionRatio(d.data)}
+          />
+          <title>{getTitle(d.data)}</title>
+          <clipPath id="{uid}-clip-{i}">
+            <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
+          </clipPath>
+          <text clip-path="url(#{uid}-clip-{i})" pointer-events="none">
+            {#each lines as l, j}
+              <tspan
+                x="6"
+                y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
+                class="line-{j}"
+              >
+                {l}
+              </tspan>
+            {/each}
+          </text>
+        </g>
+      {/each}
+    </svg>
+  {/if}
 </div>
