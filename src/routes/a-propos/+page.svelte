@@ -5,8 +5,7 @@
   <title>À propos | Simulateur territoires</title>
 </svelte:head>
 
-<h1 class="mb-2 mt-4">À propos</h1>
-
+<h1 class="mt-4">À propos</h1>
 <p class="max-w-2xl">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -29,4 +28,7 @@
   ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
   voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
   eum fugiat quo voluptas nulla pariatur?
+</p>
+<p class="mb-16">
+  <a class="fr-btn" href="/">Choisir une région</a>
 </p>
