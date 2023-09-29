@@ -6,6 +6,7 @@
 
   import type { HierarchyNode } from "d3";
   import * as d3 from "d3";
+
   type Row = object;
   export let data: Row[];
   export let getPath: (row: Row) => string;
@@ -50,10 +51,12 @@
       font-weight: bold;
       fill-opacity: 0.8;
     }
+
     .line-1 {
       font-size: 12px;
       fill-opacity: 0.8;
     }
+
     .line-2 {
       font-size: 10px;
       font-style: italic;
@@ -64,14 +67,10 @@
     id="diagonalHatch"
     patternUnits="userSpaceOnUse"
     width="4"
-    height="4"
+    height="8"
+    patternTransform="rotate(-45 2 2)"
   >
-    <path
-      d="M-1,1 l2,-2
-         M0,4 l4,-4
-         M3,5 l2,-2"
-      style="stroke:black; stroke-width:1"
-    />
+    <path d="M -1,2 l 6,0" stroke="black" stroke-width="6" />
   </pattern>
   {#each root.leaves() as d, i}
     {@const lines = getLabel(d.data).split(/\n/g)}
@@ -80,8 +79,8 @@
       </rect>
       <rect
         fill="url(#diagonalHatch)"
-        fill-opacity={0.5}
-        x={(d.x1 - d.x0) * (1 - getProgressionRatio(d.data))}
+        fill-opacity={0.1}
+        x={0}
         width={(d.x1 - d.x0) * getProgressionRatio(d.data)}
         height={d.y1 - d.y0}
       />
