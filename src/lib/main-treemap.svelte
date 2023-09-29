@@ -21,20 +21,42 @@
   let treemapVersion = "v2";
 
   function getLabel(lever: Lever) {
-    return `${lever.name}\n−${prettifyNumber(lever.objCO2)} kt CO₂`;
+    return `${lever.name}\n−${prettifyNumber(
+      lever.objCO2 - lever.progressionCO2
+    )} ktCO₂`;
   }
 
   function getValue(lever: Lever) {
-    if (completionLevels != null && substractCompleted) {
+    if (completionLevels && substractCompleted) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
 
   function getTitle(lever: Lever) {
-    return `${
-      lever.sector !== lever.category ? lever.sector + "\n" : ""
-    }${getLabel(lever)}`.replace(/\n/g, "\n\n");
+    if (completionLevels && !substractCompleted) {
+      let title = `${lever.name}\n\nObjectif initial : \n−${prettifyNumber(
+        lever.objCO2
+      )} ktCO₂`;
+      if (lever.progressionCO2) {
+        title += `\n\nRéalisé ou contractualisé : \n−${prettifyNumber(
+          lever.progressionCO2
+        )} ktCO₂
+        `;
+      }
+      return title;
+    }
+    if (completionLevels && substractCompleted) {
+      let title = `${lever.name}\n\nObjectif restant : \n−${prettifyNumber(
+        lever.objCO2 - lever.progressionCO2
+      )} ktCO₂`;
+
+      return title;
+    }
+
+    return `${lever.name}\n\nObjectif initial : \n−${prettifyNumber(
+      lever.objCO2
+    )} ktCO₂`;
   }
 
   function getPathV1(lever: Lever) {
@@ -66,16 +88,21 @@
   function getGroupTotal(path: string) {
     const group = _getGroupFromPath(path);
     const total = tidy(
-      extData,
+      aggData,
       groupBy("group", [
         summarize({
           totalObjCO2: sum("objCO2"),
+          totalCompleted: sum("progressionCO2"),
         }),
       ]),
       filter((row) => row.group === group)
-    )[0].totalObjCO2;
-
-    return `−${prettifyNumberWithoutSuffix(total)} ktCO₂`;
+    )[0];
+    if (substractCompleted) {
+      return `−${prettifyNumberWithoutSuffix(
+        total.totalObjCO2 - total.totalCompleted
+      )} ktCO₂`;
+    }
+    return `−${prettifyNumberWithoutSuffix(total.totalObjCO2)} ktCO₂`;
   }
 
   function getLegendItems() {
@@ -87,7 +114,7 @@
 
   function getTotalObjectives() {
     const objectives = tidy(
-      extData,
+      aggData,
       summarize({
         totalObjCO2: sum("objCO2"),
         totalCompleted: sum("progressionCO2"),
@@ -97,6 +124,17 @@
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
+  }
+
+  function getTotalCompleted() {
+    const objectives = tidy(
+      aggData,
+      summarize({
+        totalCompleted: sum("progressionCO2"),
+      })
+    )?.[0];
+
+    return objectives?.totalCompleted;
   }
 
   // On injecte le niveau de progression, en ktCO₂
@@ -130,6 +168,14 @@
       getTotalObjectives()
     )} ktCO₂
   </div>
+  {#if completionLevels && !substractCompleted}
+    <div class="max-w-2xl font-bold">
+      Les zones hachurées correspondent à ce que vous avez déjà réalisé ou
+      contractualisé, soit un total de {prettifyNumberWithoutSuffix(
+        getTotalCompleted()
+      )} ktCO₂
+    </div>
+  {/if}
   <div class="mb-2 flex items-end gap-4">
     <div class="grow">
       <ColorLegend items={getLegendItems()} />
