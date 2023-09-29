@@ -13,7 +13,7 @@
   let height: number;
 
   function getLabel(lever: Lever) {
-    return `${lever.category}\n${lever.label}\n−${prettifyNumber(
+    return `${lever.name}\n${lever.tradPhys}\n−${prettifyNumber(
       lever.objCO2
     )} kt CO₂`;
   }
@@ -73,7 +73,7 @@
       {getTitle}
       {getProgressionRatio}
       {width}
-      {height}
+      height={height - 20}
     />
   {/if}
 </div>

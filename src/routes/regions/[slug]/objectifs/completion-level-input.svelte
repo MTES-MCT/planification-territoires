@@ -18,10 +18,10 @@
 <div class="overflow-hidden rounded-2xl border p-6">
   <span
     class="rounded-full px-3 py-1 text-xs font-semibold"
-    style="background-color: {getColor(lever.sector)}">{lever.category}</span
+    style="background-color: {getColor(lever.sector)}">{lever.name}</span
   >
   <div class="mt-8 flex h-12 items-end pb-2">
-    <label class="fr-label" for={lever.id}>{lever.label}</label>
+    <label class="fr-label" for={lever.id}>{lever.tradPhys}</label>
   </div>
   <input
     class="fr-input max-w-md"

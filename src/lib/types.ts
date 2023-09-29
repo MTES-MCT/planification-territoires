@@ -1,7 +1,7 @@
 export interface Lever {
   id: string;
-  label: string;
-  category: string;
+  name: string;
+  tradPhys: string;
   region: string;
   objCO2: number;
   objPhys: number;
