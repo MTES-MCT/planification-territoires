@@ -97,12 +97,9 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (substractCompleted) {
-      return `−${prettifyNumberWithoutSuffix(
-        total.totalObjCO2 - total.totalCompleted
-      )} ktCO₂`;
-    }
-    return `−${prettifyNumberWithoutSuffix(total.totalObjCO2)} ktCO₂`;
+    return `−${prettifyNumberWithoutSuffix(
+      total.totalObjCO2 - total.totalCompleted
+    )} ktCO₂`;
   }
 
   function getLegendItems() {
