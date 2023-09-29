@@ -1,6 +1,6 @@
 import rawLeversData from "$lib/data.json";
 import type { CompletionLevels, Lever } from "$lib/types";
-import { filter, tidy, select, distinct } from "@tidyjs/tidy";
+import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
 const leversData = rawLeversData as Lever[];
 
@@ -30,6 +30,15 @@ export function getRegionData(regionName: string): Lever[] {
     leversData,
     filter((d) => d.region === regionName)
   );
+}
+
+export function getRegionNames(): string[] {
+  return tidy(
+    leversData,
+    select("region"),
+    distinct("region"),
+    arrange((a, b) => a.region.localeCompare(b.region, "fr"))
+  ).map((row) => row.region);
 }
 
 export function getCompletionLevels(

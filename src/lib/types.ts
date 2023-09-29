@@ -1,9 +1,3 @@
-export interface Region {
-  name: string;
-  totalObjCO2: number;
-  populationShare: number;
-}
-
 export interface Lever {
   id: string;
   label: string;
