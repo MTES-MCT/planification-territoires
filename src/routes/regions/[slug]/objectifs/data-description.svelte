@@ -5,9 +5,9 @@
   export let unit: string;
 </script>
 
-<div class="flex flex-1 items-end">
-  <span class="text-2xl font-semibold tracking-tight text-gray-900">
+<div class="flex-1">
+  <div class="text-xl font-semibold tracking-tight text-gray-900 md:text-2xl">
     {prettifyNumberWithoutSuffix(value)}
-  </span>
-  <span class="ml-2 pb-1 text-xs font-medium text-gray-600">{unit}</span>
+  </div>
+  <div class="text-xs font-medium text-gray-600">{unit}</div>
 </div>

@@ -62,14 +62,14 @@
     style={`border-color:${getColor(lever.sector)}`}
   >
     <SubTitle label="Objectif à atteindre en 2030" />
-    <div class="mb-6 flex gap-x-4 rounded-xl border px-4 py-3">
+    <div class="mb-6 flex gap-x-3 rounded-xl border px-4 py-2">
       <DataDescription value={lever.objPhys} unit="unités physique" />
-      <div class="flex h-full items-center pt-2 text-lg">⇄</div>
+      <div class="flex h-full items-center pt-2 text-sm md:text-lg">⇄</div>
       <DataDescription value={lever.objPhys / lever.ratio} unit="ktCO₂" />
     </div>
 
     <SubTitle label="Action déjà menée ou contractualisée" />
-    <div class="flex items-end gap-x-4">
+    <div class="flex items-end gap-x-3">
       <div class="flex-1">
         <label class="fr-label !text-sm" for={lever.id}
           >L'unité est : {lever.tradPhys}</label
@@ -84,7 +84,7 @@
           on:input={handlePhysRangeChanged}
         />
       </div>
-      <div class="flex h-full items-end pb-1 text-lg">⇄</div>
+      <div class="flex h-full items-end pb-1 text-sm md:text-lg">⇄</div>
       <div class="flex-1">
         <label class="fr-label mt-5 !text-sm" for={`${lever.id}-co2`}
           >L'unité est : ktCO₂
