@@ -26,7 +26,7 @@
 
   function getValue(lever: Lever) {
     if (completionLevels != null && substractCompleted) {
-      return lever.objCO2 - completionLevels[lever.id] / lever.ratio;
+      return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
@@ -66,6 +66,20 @@
     }));
   }
 
+  function getTotalObjectives() {
+    const objectives = tidy(
+      extData.slice(),
+      summarize({
+        totalObjCO2: sum("objCO2"),
+        totalCompleted: sum("progressionCO2"),
+      })
+    )?.[0];
+    if (substractCompleted) {
+      return objectives?.totalObjCO2 - objectives?.totalCompleted;
+    }
+    return objectives?.totalObjCO2;
+  }
+
   // On injecte le niveau de progression, en ktCO₂
   $: extData = data.map((lever: Lever) => ({
     ...lever,
@@ -89,19 +103,12 @@
       ]
     )
   );
-
-  $: totalObjectives = tidy(
-    data.slice(),
-    summarize({
-      totalObjCO2: sum("objCO2"),
-    })
-  )?.[0].totalObjCO2;
 </script>
 
 <div class="flex h-full flex-col">
   <div class="font-bold">
     Total d’objectif de baisse des émissions de GES : {prettifyNumberWithoutSuffix(
-      totalObjectives
+      getTotalObjectives()
     )} ktCO₂
   </div>
   <div class="mb-2 flex items-end gap-4">
