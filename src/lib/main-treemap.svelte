@@ -5,6 +5,7 @@
 
   export let data: Lever[];
   export let completionLevels: CompletionLevels | undefined = undefined;
+  export let substractCompleted = false;
 
   let width: number;
   let height: number;
@@ -16,6 +17,9 @@
   }
 
   function getValue(lever: Lever) {
+    if (completionLevels != null && substractCompleted) {
+      return lever.objCO2 - completionLevels[lever.id] / lever.ratio;
+    }
     return lever.objCO2;
   }
 
@@ -30,6 +34,9 @@
   }
 
   function getProgressionRatio(lever: Lever) {
+    if (substractCompleted) {
+      return 0;
+    }
     if (lever.progressionRatio) return clamp(lever.progressionRatio, 0, 1);
     return 0;
   }

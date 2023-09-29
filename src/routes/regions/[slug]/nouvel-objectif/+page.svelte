@@ -8,28 +8,24 @@
 </script>
 
 <svelte:head>
-  <title>{data.region} | Résultats | Simulateur territoires</title>
+  <title>{data.region} | Nouvel objectif | Simulateur territoires</title>
 </svelte:head>
 
 <NavigationBar
   region={data.region}
-  title="Visualisation du réalisé par rapport à l’objectif 2030"
+  title="Votre nouvel objectif 2030 sur la base du diagnostic mené"
 />
 
 <p class="max-w-2xl">
-  Voici les nouveaux objectifs actualisés sur la base des données renseignées.
-  Vous pouvez ensuite <a
-    class="fr-link"
-    href="/regions/{data.region}/nouvel-objectif?{$page.url.searchParams.toString()}"
-    >visualiser les objectifs restant.</a
-  >
+  Voici le nouveau flux annuel de baisse des émissions de GES par rapport à 2019
+  que vous devez atteindre en 2030.
 </p>
 
 <div class="mb-4">
   <a
     class="fr-link fr-icon-arrow-left-line fr-link--icon-left block"
-    href="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
-    >Éditer les actions menées</a
+    href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+    >Visualiser le réalisé</a
   >
 </div>
 
@@ -37,6 +33,7 @@
   <MainTreemap
     data={data.regionData}
     completionLevels={data.completionLevels}
+    substractCompleted
   />
 </div>
 
