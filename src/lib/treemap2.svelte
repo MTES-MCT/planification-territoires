@@ -102,9 +102,12 @@
       </text>
     </g>
   {/each}
-  {#each root.descendants().filter((d) => d.depth === 1) as d}
+  {#each root.descendants().filter((d) => d.depth === 1) as d, i}
     <g transform="translate({d.x0},{d.y0})">
-      <text pointer-events="none">
+      <clipPath id="{uid}-clipcat-{i}">
+        <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
+      </clipPath>
+      <text clip-path="url(#{uid}-clipcat-{i})" pointer-events="none">
         <tspan class="group" x="0" y={d.y1}> {getGroupName(d.id)} </tspan>
       </text>
     </g>
