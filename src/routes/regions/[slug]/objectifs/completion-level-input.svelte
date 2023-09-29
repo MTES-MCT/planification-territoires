@@ -9,13 +9,28 @@
   export let lever: Lever;
   export let completionLevels: CompletionLevels;
 
-  const handleRangeChanged = (ratio: number) => (evt: Event) => {
-    const target = evt.target as HTMLInputElement;
+  $: completionCO2 = toC02();
+
+  function toC02() {
+    return ((completionLevels[lever.id] ?? 0) / lever.ratio).toFixed(2);
+  }
+
+  function updateCompletionLevels(evt: Event, ratio = 1) {
+    let target = evt.target as HTMLInputElement;
     completionLevels[lever.id] =
       target.value !== ""
         ? Math.floor(Number(target.value) * ratio)
         : undefined;
-  };
+  }
+
+  function handlePhysRangeChanged(evt: Event) {
+    updateCompletionLevels(evt);
+    completionCO2 = toC02();
+  }
+
+  function handleCO2RangeChanged(evt: Event) {
+    updateCompletionLevels(evt, lever.ratio);
+  }
 </script>
 
 <div class="flex flex-col">
@@ -66,7 +81,7 @@
           step={Math.floor(lever.objPhys / 20)}
           id={lever.id}
           value={completionLevels[lever.id]}
-          on:input={handleRangeChanged(1)}
+          on:input={handlePhysRangeChanged}
         />
       </div>
       <div class="flex h-full items-end pb-1 text-lg">⇄</div>
@@ -80,8 +95,8 @@
           type="number"
           step={10}
           id={`${lever.id}-co2`}
-          value={((completionLevels[lever.id] ?? 0) / lever.ratio).toFixed(2)}
-          on:input={handleRangeChanged(lever.ratio)}
+          value={completionCO2}
+          on:input={handleCO2RangeChanged}
         />
       </div>
     </div>
