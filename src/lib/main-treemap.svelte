@@ -18,7 +18,7 @@
   export let completionLevels: CompletionLevels | undefined = undefined;
   export let substractCompleted = false;
 
-  let treemapVersion: "v1";
+  let treemapVersion = "v2";
 
   function getLabel(lever: Lever) {
     return `${lever.name}\n−${prettifyNumber(lever.objCO2)} kt CO₂`;
@@ -116,8 +116,8 @@
       <ColorLegend items={getLegendItems()} />
     </div>
     <select bind:value={treemapVersion} class="fr-select basis-32">
-      <option value="v1"> version 1 </option>
-      <option value="v2"> version 2 </option>
+      <option value="v1">version 1</option>
+      <option value="v2">version 2</option>
     </select>
   </div>
   <div class="flex-auto">
