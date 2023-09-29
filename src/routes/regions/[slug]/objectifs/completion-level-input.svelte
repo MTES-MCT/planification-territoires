@@ -42,12 +42,12 @@
   </svg>
 
   <h1 class="sr-only">{lever.name}</h1>
-  <div class="flex flex-grow flex-col justify-between border border-t-0 p-6">
+  <div
+    class="flex flex-grow flex-col justify-between border border-t-0 p-6"
+    style={`border-color:${getColor(lever.sector)}`}
+  >
     <SubTitle label="Objectif à atteindre en 2030" />
-    <div
-      class="mb-6 flex gap-x-4 rounded-xl border px-4 py-3"
-      style={`border-color:${getColor(lever.sector)}`}
-    >
+    <div class="mb-6 flex gap-x-4 rounded-xl border px-4 py-3">
       <DataDescription value={lever.objPhys} unit="unités physique" />
       <div class="flex h-full items-center pt-2 text-lg">⇄</div>
       <DataDescription value={lever.objPhys / lever.ratio} unit="ktCO₂" />
