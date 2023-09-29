@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { tidy, groupBy, sum, summarize } from "@tidyjs/tidy";
+
   import Treemap from "$lib/treemap.svelte";
   import Treemap2 from "$lib/treemap2.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
@@ -43,7 +45,9 @@
     if (substractCompleted) {
       return 0;
     }
-    if (lever.progressionRatio) return clamp(lever.progressionRatio, 0, 1);
+    if (lever.progressionCO2) {
+      return clamp(lever.progressionCO2 / lever.objCO2, 0, 1);
+    }
     return 0;
   }
 
@@ -57,14 +61,30 @@
       color: getColor(sector),
     }));
   }
+
+  // On injecte le niveau de progression, en ktCO₂
   $: extData = data.map((lever: Lever) => ({
     ...lever,
-    progressionRatio: completionLevels
-      ? lever.objPhys
-        ? completionLevels[lever.id] / lever.objPhys
+    progressionCO2: completionLevels
+      ? lever.ratio
+        ? completionLevels[lever.id] / lever.ratio
         : 0
       : 0,
   }));
+
+  // On groupe les traductions physiques par nom de levier
+  $: aggData = tidy(
+    extData,
+    groupBy(
+      ["name", "group", "sector", "path", "path2"],
+      [
+        summarize({
+          objCO2: sum("objCO2"),
+          progressionCO2: sum("progressionCO2"),
+        }),
+      ]
+    )
+  );
 </script>
 
 <div class="mb-2 flex items-end gap-4">
@@ -80,7 +100,7 @@
   {#if width && height}
     {#if treemapVersion === "v1"}
       <Treemap
-        data={extData}
+        data={aggData}
         getPath={getPathV1}
         {getLabel}
         {getColor}
@@ -92,7 +112,7 @@
       />
     {:else}
       <Treemap2
-        data={extData}
+        data={aggData}
         getPath={getPathV2}
         {getLabel}
         {getColor}

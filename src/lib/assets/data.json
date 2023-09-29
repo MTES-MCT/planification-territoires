@@ -9,8 +9,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -22,8 +22,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -35,8 +35,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -48,8 +48,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -61,8 +61,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -74,8 +74,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -87,8 +87,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -100,8 +100,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -113,8 +113,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -126,8 +126,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -139,8 +139,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -152,8 +152,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -165,8 +165,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -178,8 +178,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -191,8 +191,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -204,8 +204,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -217,8 +217,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -230,8 +230,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -243,8 +243,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -256,8 +256,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -269,8 +269,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -282,8 +282,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -295,8 +295,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -308,8 +308,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -321,8 +321,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -334,8 +334,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -347,8 +347,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -360,8 +360,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -373,8 +373,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -386,8 +386,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -399,8 +399,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -412,8 +412,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -425,8 +425,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -438,8 +438,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -451,8 +451,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -464,8 +464,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -477,8 +477,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -490,8 +490,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -503,8 +503,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -516,8 +516,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -529,8 +529,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -542,8 +542,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -555,8 +555,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -568,8 +568,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -581,8 +581,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -594,8 +594,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -607,8 +607,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -620,8 +620,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -633,8 +633,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -646,8 +646,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -659,8 +659,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -672,8 +672,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -685,8 +685,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -698,8 +698,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -711,8 +711,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -724,8 +724,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -737,8 +737,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -750,8 +750,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -763,8 +763,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -776,8 +776,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -789,8 +789,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -802,8 +802,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -815,8 +815,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -828,8 +828,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -841,8 +841,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -854,8 +854,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -867,8 +867,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -880,8 +880,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -893,8 +893,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -906,8 +906,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -919,8 +919,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -932,8 +932,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -945,8 +945,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -958,8 +958,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -971,8 +971,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -984,8 +984,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -997,8 +997,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -1010,8 +1010,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -1023,8 +1023,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -1036,8 +1036,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -1049,8 +1049,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -1062,8 +1062,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -1075,8 +1075,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -1088,8 +1088,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -1101,8 +1101,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -1114,8 +1114,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -1127,8 +1127,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -1140,8 +1140,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -1153,8 +1153,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -1166,8 +1166,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -1179,8 +1179,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -1192,8 +1192,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -1205,8 +1205,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -1218,8 +1218,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -1231,8 +1231,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -1244,8 +1244,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -1257,8 +1257,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -1270,8 +1270,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1283,8 +1283,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1296,8 +1296,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -1309,8 +1309,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -1322,8 +1322,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -1335,8 +1335,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -1348,8 +1348,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -1361,8 +1361,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -1374,8 +1374,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -1387,8 +1387,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -1400,8 +1400,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -1413,8 +1413,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -1426,8 +1426,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -1439,8 +1439,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -1452,8 +1452,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -1465,8 +1465,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -1478,8 +1478,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -1491,8 +1491,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -1504,8 +1504,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -1517,8 +1517,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -1530,8 +1530,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -1543,8 +1543,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -1556,8 +1556,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -1569,8 +1569,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -1582,8 +1582,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -1595,8 +1595,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -1608,8 +1608,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1621,8 +1621,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1634,8 +1634,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -1647,8 +1647,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -1660,8 +1660,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -1673,8 +1673,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -1686,8 +1686,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -1699,8 +1699,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -1712,8 +1712,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -1725,8 +1725,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -1738,8 +1738,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -1751,8 +1751,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -1764,8 +1764,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -1777,8 +1777,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -1790,8 +1790,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -1803,8 +1803,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -1816,8 +1816,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -1829,8 +1829,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -1842,8 +1842,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -1855,8 +1855,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -1868,8 +1868,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -1881,8 +1881,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -1894,8 +1894,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -1907,8 +1907,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -1920,8 +1920,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -1933,8 +1933,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -1946,8 +1946,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1959,8 +1959,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -1972,8 +1972,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -1985,8 +1985,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -1998,8 +1998,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -2011,8 +2011,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -2024,8 +2024,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -2037,8 +2037,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -2050,8 +2050,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -2063,8 +2063,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -2076,8 +2076,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -2089,8 +2089,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -2102,8 +2102,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -2115,8 +2115,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -2128,8 +2128,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -2141,8 +2141,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -2154,8 +2154,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -2167,8 +2167,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -2180,8 +2180,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -2193,8 +2193,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -2206,8 +2206,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -2219,8 +2219,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -2232,8 +2232,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -2245,8 +2245,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -2258,8 +2258,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -2271,8 +2271,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -2284,8 +2284,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2297,8 +2297,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2310,8 +2310,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -2323,8 +2323,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -2336,8 +2336,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -2349,8 +2349,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -2362,8 +2362,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -2375,8 +2375,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -2388,8 +2388,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -2401,8 +2401,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -2414,8 +2414,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -2427,8 +2427,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -2440,8 +2440,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -2453,8 +2453,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -2466,8 +2466,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -2479,8 +2479,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -2492,8 +2492,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -2505,8 +2505,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -2518,8 +2518,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -2531,8 +2531,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -2544,8 +2544,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -2557,8 +2557,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -2570,8 +2570,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -2583,8 +2583,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -2596,8 +2596,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -2609,8 +2609,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -2622,8 +2622,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2635,8 +2635,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2648,8 +2648,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -2661,8 +2661,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -2674,8 +2674,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -2687,8 +2687,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -2700,8 +2700,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -2713,8 +2713,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -2726,8 +2726,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -2739,8 +2739,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -2752,8 +2752,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -2765,8 +2765,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -2778,8 +2778,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -2791,8 +2791,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -2804,8 +2804,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -2817,8 +2817,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -2830,8 +2830,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -2843,8 +2843,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -2856,8 +2856,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -2869,8 +2869,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -2882,8 +2882,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -2895,8 +2895,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -2908,8 +2908,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -2921,8 +2921,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -2934,8 +2934,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -2947,8 +2947,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -2960,8 +2960,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2973,8 +2973,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -2986,8 +2986,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -2999,8 +2999,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -3012,8 +3012,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -3025,8 +3025,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -3038,8 +3038,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -3051,8 +3051,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -3064,8 +3064,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -3077,8 +3077,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -3090,8 +3090,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -3103,8 +3103,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -3116,8 +3116,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -3129,8 +3129,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -3142,8 +3142,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -3155,8 +3155,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -3168,8 +3168,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -3181,8 +3181,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -3194,8 +3194,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -3207,8 +3207,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -3220,8 +3220,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -3233,8 +3233,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -3246,8 +3246,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -3259,8 +3259,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -3272,8 +3272,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -3285,8 +3285,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -3298,8 +3298,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -3311,8 +3311,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -3324,8 +3324,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -3337,8 +3337,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -3350,8 +3350,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -3363,8 +3363,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -3376,8 +3376,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -3389,8 +3389,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -3402,8 +3402,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -3415,8 +3415,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -3428,8 +3428,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -3441,8 +3441,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -3454,8 +3454,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -3467,8 +3467,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -3480,8 +3480,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -3493,8 +3493,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -3506,8 +3506,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -3519,8 +3519,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -3532,8 +3532,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -3545,8 +3545,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -3558,8 +3558,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -3571,8 +3571,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -3584,8 +3584,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -3597,8 +3597,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -3610,8 +3610,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -3623,8 +3623,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -3636,8 +3636,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -3649,8 +3649,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -3662,8 +3662,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -3675,8 +3675,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -3688,8 +3688,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -3701,8 +3701,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -3714,8 +3714,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -3727,8 +3727,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -3740,8 +3740,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -3753,8 +3753,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -3766,8 +3766,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -3779,8 +3779,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -3792,8 +3792,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -3805,8 +3805,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -3818,8 +3818,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -3831,8 +3831,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -3844,8 +3844,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -3857,8 +3857,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -3870,8 +3870,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -3883,8 +3883,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -3896,8 +3896,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -3909,8 +3909,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -3922,8 +3922,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -3935,8 +3935,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -3948,8 +3948,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -3961,8 +3961,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -3974,8 +3974,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -3987,8 +3987,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -4000,8 +4000,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -4013,8 +4013,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -4026,8 +4026,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -4039,8 +4039,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -4052,8 +4052,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -4065,8 +4065,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -4078,8 +4078,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -4091,8 +4091,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -4104,8 +4104,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -4117,8 +4117,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -4130,8 +4130,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -4143,8 +4143,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -4156,8 +4156,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -4169,8 +4169,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -4182,8 +4182,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -4195,8 +4195,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -4208,8 +4208,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -4221,8 +4221,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -4234,8 +4234,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -4247,8 +4247,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -4260,8 +4260,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -4273,8 +4273,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -4286,8 +4286,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -4299,8 +4299,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -4312,8 +4312,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -4325,8 +4325,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -4338,8 +4338,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -4351,8 +4351,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -4364,8 +4364,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -4377,8 +4377,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -4390,8 +4390,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -4403,8 +4403,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -4416,8 +4416,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -4429,8 +4429,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -4442,8 +4442,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -4455,8 +4455,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -4468,8 +4468,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -4481,8 +4481,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -4494,8 +4494,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -4507,8 +4507,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -4520,8 +4520,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -4533,8 +4533,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -4546,8 +4546,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -4559,8 +4559,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -4572,8 +4572,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -4585,8 +4585,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -4598,8 +4598,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -4611,8 +4611,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -4624,8 +4624,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -4637,8 +4637,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -4650,8 +4650,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -4663,8 +4663,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -4676,8 +4676,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -4689,8 +4689,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -4702,8 +4702,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -4715,8 +4715,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -4728,8 +4728,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -4741,8 +4741,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -4754,8 +4754,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -4767,8 +4767,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -4780,8 +4780,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -4793,8 +4793,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -4806,8 +4806,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -4819,8 +4819,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -4832,8 +4832,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -4845,8 +4845,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -4858,8 +4858,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -4871,8 +4871,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -4884,8 +4884,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -4897,8 +4897,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -4910,8 +4910,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -4923,8 +4923,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -4936,8 +4936,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -4949,8 +4949,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -4962,8 +4962,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -4975,8 +4975,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -4988,8 +4988,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5001,8 +5001,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5014,8 +5014,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -5027,8 +5027,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -5040,8 +5040,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -5053,8 +5053,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -5066,8 +5066,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -5079,8 +5079,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -5092,8 +5092,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -5105,8 +5105,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -5118,8 +5118,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -5131,8 +5131,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -5144,8 +5144,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -5157,8 +5157,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -5170,8 +5170,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -5183,8 +5183,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -5196,8 +5196,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -5209,8 +5209,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -5222,8 +5222,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -5235,8 +5235,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -5248,8 +5248,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -5261,8 +5261,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -5274,8 +5274,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -5287,8 +5287,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -5300,8 +5300,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -5313,8 +5313,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -5326,8 +5326,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5339,8 +5339,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5352,8 +5352,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -5365,8 +5365,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -5378,8 +5378,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -5391,8 +5391,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -5404,8 +5404,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -5417,8 +5417,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -5430,8 +5430,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -5443,8 +5443,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -5456,8 +5456,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -5469,8 +5469,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -5482,8 +5482,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -5495,8 +5495,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -5508,8 +5508,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -5521,8 +5521,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -5534,8 +5534,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -5547,8 +5547,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -5560,8 +5560,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -5573,8 +5573,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -5586,8 +5586,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -5599,8 +5599,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -5612,8 +5612,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -5625,8 +5625,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -5638,8 +5638,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -5651,8 +5651,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -5664,8 +5664,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5677,8 +5677,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -5690,8 +5690,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -5703,8 +5703,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -5716,8 +5716,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -5729,8 +5729,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -5742,8 +5742,8 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   },
   {
     "name": "Electrification VP",
@@ -5755,8 +5755,8 @@
     "ratio": 477.7091,
     "id": "n_voitures",
     "tradPhys": "Nombre de voitures thermiques remplacées",
-    "path": "Transport/n_voitures",
-    "path2": "Transport/n_voitures"
+    "path": "Transport/Electrification VP",
+    "path2": "Transport/Electrification VP"
   },
   {
     "name": "Sobriété transport",
@@ -5768,8 +5768,8 @@
     "ratio": 6666666.6667,
     "id": "km_sobriete",
     "tradPhys": "Kilomètres annuels de voiture évités (sobriété)",
-    "path": "Transport/km_sobriete",
-    "path2": "Transport/km_sobriete"
+    "path": "Transport/Sobriété transport",
+    "path2": "Transport/Sobriété transport"
   },
   {
     "name": "Report modal vélo/bus/train",
@@ -5781,8 +5781,8 @@
     "ratio": 6666666.6667,
     "id": "km_report",
     "tradPhys": "Kilomètres annuels de voiture évités (report modal vélo/bus/train)",
-    "path": "Transport/km_report",
-    "path2": "Transport/km_report"
+    "path": "Transport/Report modal vélo-bus-train",
+    "path2": "Transport/Report modal vélo-bus-train"
   },
   {
     "name": "Covoiturage",
@@ -5794,8 +5794,8 @@
     "ratio": 6666666.6667,
     "id": "km_covoit",
     "tradPhys": "Kilomètres annuels de covoiturage additionnels",
-    "path": "Transport/km_covoit",
-    "path2": "Transport/km_covoit"
+    "path": "Transport/Covoiturage",
+    "path2": "Transport/Covoiturage"
   },
   {
     "name": "Bus et cars (élec&efficacité)",
@@ -5807,8 +5807,8 @@
     "ratio": 13.605,
     "id": "n_bus",
     "tradPhys": "Nombre de bus thermiques remplacés",
-    "path": "Transport/n_bus",
-    "path2": "Transport/n_bus"
+    "path": "Transport/Bus et cars (élec&efficacité)",
+    "path2": "Transport/Bus et cars (élec&efficacité)"
   },
   {
     "name": "Azote",
@@ -5820,8 +5820,8 @@
     "ratio": 234.192,
     "id": "t_engrais",
     "tradPhys": "Tonnes annuelles d’engrais azoté évitées",
-    "path": "Agriculture-Forêts-Sols/t_engrais",
-    "path2": "Nourrir/t_engrais"
+    "path": "Agriculture-Forêts-Sols/Azote",
+    "path2": "Nourrir/Azote"
   },
   {
     "name": "Elevage",
@@ -5833,8 +5833,8 @@
     "ratio": 456.4103,
     "id": "n_bovins",
     "tradPhys": "Réduction du nombre de têtes de bovins",
-    "path": "Agriculture-Forêts-Sols/n_bovins",
-    "path2": "Nourrir/n_bovins"
+    "path": "Agriculture-Forêts-Sols/Elevage",
+    "path2": "Nourrir/Elevage"
   },
   {
     "name": "Industrie",
@@ -5846,8 +5846,8 @@
     "ratio": 1,
     "id": "indus",
     "tradPhys": "Réduction d’émissions industrielles annuelles",
-    "path": "Industrie/indus",
-    "path2": "Produire/indus"
+    "path": "Industrie/Industrie",
+    "path2": "Produire/Industrie"
   },
   {
     "name": "Réseaux de chaleur",
@@ -5859,8 +5859,8 @@
     "ratio": 8.25,
     "id": "prod_chaleur",
     "tradPhys": "GWh annuels de production de chaleur passés en ENR",
-    "path": "Energie/prod_chaleur",
-    "path2": "Produire/prod_chaleur"
+    "path": "Energie/Réseaux de chaleur",
+    "path2": "Produire/Réseaux de chaleur"
   },
   {
     "name": "ENR électriques",
@@ -5872,8 +5872,8 @@
     "ratio": 1.2972,
     "id": "eolien",
     "tradPhys": "Puissance éolienne installée (MW)",
-    "path": "Energie/eolien",
-    "path2": "Produire/eolien"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "ENR électriques",
@@ -5885,8 +5885,8 @@
     "ratio": 2.1953,
     "id": "pv",
     "tradPhys": "Puissance photovoltaïque installée (MW)",
-    "path": "Energie/pv",
-    "path2": "Produire/pv"
+    "path": "Energie/ENR électriques",
+    "path2": "Produire/ENR électriques"
   },
   {
     "name": "Report modal/ferroviaire et fluvial",
@@ -5898,8 +5898,8 @@
     "ratio": 8500,
     "id": "tkm_pl",
     "tradPhys": "t·km annuelles PL évitées",
-    "path": "Transport/tkm_pl",
-    "path2": "Produire/tkm_pl"
+    "path": "Transport/Report modal-ferroviaire et fluvial",
+    "path2": "Produire/Report modal-ferroviaire et fluvial"
   },
   {
     "name": "Captage méthane ISDND",
@@ -5911,8 +5911,8 @@
     "ratio": 1,
     "id": "methane",
     "tradPhys": "Réduction annuelle d’émissions de captage méthane ISDND",
-    "path": "Déchêt/methane",
-    "path2": "Produire/methane"
+    "path": "Déchêt/Captage méthane ISDND",
+    "path2": "Produire/Captage méthane ISDND"
   },
   {
     "name": "Valorisation matière",
@@ -5924,8 +5924,8 @@
     "ratio": 2500,
     "id": "valorisation",
     "tradPhys": "Tonnes annuelles valorisées grâce à une plus grande incorporation de MPR",
-    "path": "Déchêt/valorisation",
-    "path2": "Produire/valorisation"
+    "path": "Déchêt/Valorisation matière",
+    "path2": "Produire/Valorisation matière"
   },
   {
     "name": "Rénovation + sobriété tertiaire",
@@ -5937,8 +5937,8 @@
     "ratio": 1,
     "id": "cons_ener",
     "tradPhys": "Réduction de consommation d’énergie annuelle par rapport à 2010",
-    "path": "Tertiaire/cons_ener",
-    "path2": "Tertiaire/cons_ener"
+    "path": "Tertiaire/Rénovation + sobriété tertiaire",
+    "path2": "Tertiaire/Rénovation + sobriété tertiaire"
   },
   {
     "name": "Tertiaire fioul",
@@ -5950,8 +5950,8 @@
     "ratio": 15000,
     "id": "chauf_fioul",
     "tradPhys": "m² chauffés au fioul passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_fioul",
-    "path2": "Tertiaire/chauf_fioul"
+    "path": "Tertiaire/Tertiaire fioul",
+    "path2": "Tertiaire/Tertiaire fioul"
   },
   {
     "name": "Tertiaire gaz",
@@ -5963,8 +5963,8 @@
     "ratio": 29375,
     "id": "chauf_gaz",
     "tradPhys": "m² chauffés au gaz passés à une énergie décarbonée",
-    "path": "Tertiaire/chauf_gaz",
-    "path2": "Tertiaire/chauf_gaz"
+    "path": "Tertiaire/Tertiaire gaz",
+    "path2": "Tertiaire/Tertiaire gaz"
   },
   {
     "name": "Rénovation résidentiel",
@@ -5976,8 +5976,8 @@
     "ratio": 285.7143,
     "id": "renov",
     "tradPhys": "Nombre de logements (70m²) rénovés en profondeur",
-    "path": "Résidentiel/renov",
-    "path2": "Logement/renov"
+    "path": "Résidentiel/Rénovation résidentiel",
+    "path2": "Logement/Rénovation résidentiel"
   },
   {
     "name": "Résidentiel fioul",
@@ -5989,8 +5989,8 @@
     "ratio": 250,
     "id": "chaud_fioul",
     "tradPhys": "Nombre de chaudières au fioul passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_fioul",
-    "path2": "Logement/chaud_fioul"
+    "path": "Résidentiel/Résidentiel fioul",
+    "path2": "Logement/Résidentiel fioul"
   },
   {
     "name": "Résidentiel gaz",
@@ -6002,8 +6002,8 @@
     "ratio": 384.375,
     "id": "chaud_gaz",
     "tradPhys": "Nombre de chaudières au gaz passées à une énergie décarbonée",
-    "path": "Résidentiel/chaud_gaz",
-    "path2": "Logement/chaud_gaz"
+    "path": "Résidentiel/Résidentiel gaz",
+    "path2": "Logement/Résidentiel gaz"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -6015,8 +6015,8 @@
     "ratio": 3.4483,
     "id": "prairies",
     "tradPhys": "Hectares de prairies non artificialisés",
-    "path": "Agriculture-Forêts-Sols/prairies",
-    "path2": "Protéger/prairies"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "ZAN (constr. neuve)",
@@ -6028,8 +6028,8 @@
     "ratio": 5.2632,
     "id": "cultures",
     "tradPhys": "Hectares de cultures non artificialisés",
-    "path": "Agriculture-Forêts-Sols/cultures",
-    "path2": "Protéger/cultures"
+    "path": "Agriculture-Forêts-Sols/ZAN (constr. neuve)",
+    "path2": "Protéger/ZAN (constr. neuve)"
   },
   {
     "name": "Haies et Agroforestierie",
@@ -6041,8 +6041,8 @@
     "ratio": 33.3333,
     "id": "haies",
     "tradPhys": "Kilomètres linéaires de haies supplémentaires (nets)",
-    "path": "Agriculture-Forêts-Sols/haies",
-    "path2": "Protéger/haies"
+    "path": "Agriculture-Forêts-Sols/Haies et Agroforestierie",
+    "path2": "Protéger/Haies et Agroforestierie"
   },
   {
     "name": "Retournement prairies",
@@ -6054,8 +6054,8 @@
     "ratio": 287.3563,
     "id": "retournement",
     "tradPhys": "Hectares de moindre retournement des prairies",
-    "path": "Agriculture-Forêts-Sols/retournement",
-    "path2": "Protéger/retournement"
+    "path": "Agriculture-Forêts-Sols/Retournement prairies",
+    "path2": "Protéger/Retournement prairies"
   },
   {
     "name": "Pratiques stockantes",
@@ -6067,8 +6067,8 @@
     "ratio": 2380.9524,
     "id": "couvert",
     "tradPhys": "Hectares supplémentaires en couverts intermédiaires",
-    "path": "Agriculture-Forêts-Sols/couvert",
-    "path2": "Protéger/couvert"
+    "path": "Agriculture-Forêts-Sols/Pratiques stockantes",
+    "path2": "Protéger/Pratiques stockantes"
   },
   {
     "name": "Forêts",
@@ -6080,7 +6080,7 @@
     "ratio": 100,
     "id": "foret",
     "tradPhys": "Hectares additionnels de forêt en croissance",
-    "path": "Agriculture-Forêts-Sols/foret",
-    "path2": "Protéger/foret"
+    "path": "Agriculture-Forêts-Sols/Forêts",
+    "path2": "Protéger/Forêts"
   }
 ]
