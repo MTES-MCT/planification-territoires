@@ -11,12 +11,17 @@
   <title>Région {data.region} | Simulateur territoires</title>
 </svelte:head>
 
-<NavigationBar region={data.region} title="Présentation des objectifs" />
+<NavigationBar
+  region={data.region}
+  title="Présentation de vos objectifs territoriaux pour 2030"
+/>
 
 <p class="max-w-xl">
-  Voici les objectifs nationaux déclinés par le SGPE en {data.region}. Veuillez
-  <a class="fr-link" href={editionLink}>renseignez les actions</a> déjà menées ou
-  contractualisées.
+  Voici le flux annuel de baisse des émissions de GES par rapport à 2019 que
+  vous devez atteindre en 2030. A partir de ce tableau et grâce à l’outil
+  suivant, <a class="fr-link" href={editionLink}
+    >réalisez votre diagnostic territorial</a
+  >.
 </p>
 
 <div class="my-8 block h-[75vh]">

@@ -10,7 +10,7 @@
   let height: number;
 
   function getLabel(lever: Lever) {
-    return `${lever.category}\n${lever.label}\n${prettifyNumber(
+    return `${lever.category}\n${lever.label}\n−${prettifyNumber(
       lever.objCO2
     )} kt CO₂`;
   }
