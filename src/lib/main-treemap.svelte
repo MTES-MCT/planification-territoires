@@ -1,5 +1,6 @@
 <script lang="ts">
-  import Treemap from "$lib/treemap.svelte";
+  // import Treemap from "$lib/treemap.svelte";
+  import Treemap from "$lib/treemap2.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
 
   import type { CompletionLevels, Lever } from "$lib/types";
@@ -43,6 +44,11 @@
     return 0;
   }
 
+  function getGroupName(path: string) {
+    console.log(path);
+    return path.split("/")[1];
+  }
+
   function getLegendItems() {
     return getSectorsNames().map((sector) => ({
       label: sector,
@@ -72,6 +78,7 @@
       {getValue}
       {getTitle}
       {getProgressionRatio}
+      {getGroupName}
       {width}
       height={height - 20}
     />

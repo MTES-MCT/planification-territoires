@@ -128,7 +128,7 @@ final_data <- data |>
   ))  |>
 
 # Ajout du chemin pour la création du treemap
-  mutate(path = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(id, '/', '-'))) |>
+  mutate(path = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(id, '/', '-'))) |>
   
 # Suppression de la colonne name
   select(-traduction_physique)
