@@ -30,7 +30,7 @@
   <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
-<NavigationBar region={data.region} title="Définition des objectifs" />
+<NavigationBar region={data.region} title="Votre diagnostic territorial" />
 <p class="max-w-3xl">
   Pour chaque secteur, renseignez les actions déjà menées ou contractualisées
   afin de réajuster la marche à franchir. Vous pouvez ensuite <a
