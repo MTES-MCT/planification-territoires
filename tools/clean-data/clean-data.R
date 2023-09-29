@@ -134,5 +134,5 @@ final_data <- data |>
   select(-traduction_physique)
 
 # Export
-write_json(final_data, here('../../src/lib/data.json'), pretty = TRUE)
+write_json(final_data, here('../../src/lib/assets/data.json'), pretty = TRUE)
 print("done")

@@ -1,4 +1,4 @@
-import rawLeversData from "$lib/data.json";
+import rawLeversData from "$lib/assets/data.json";
 import type { CompletionLevels, Lever } from "$lib/types";
 import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
