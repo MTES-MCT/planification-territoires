@@ -21,6 +21,12 @@ export function prettifyNumber(number: number) {
   return "";
 }
 
+export function prettifyNumberWithoutSuffix(number: number) {
+  return number.toLocaleString("fr-FR", {
+    maximumFractionDigits: number < 1000 ? 2 : 0,
+  });
+}
+
 export function clamp(x: number, min: number, max: number) {
   return Math.max(min, Math.min(max, x));
 }

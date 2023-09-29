@@ -46,7 +46,7 @@
       <div class="mb-4 mt-2 w-full">
         <legend><h2 class="mb-1">{sector.key}</h2></legend>
       </div>
-      <div class="mb-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="mb-4 grid gap-6 md:grid-cols-2">
         {#each sector.values as category}
           {#each category.values as lever}
             <CompletionLevelInput

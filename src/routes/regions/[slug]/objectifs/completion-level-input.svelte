@@ -1,58 +1,89 @@
 <script lang="ts">
-  import { getColor, prettifyNumber } from "$lib/utils";
+  import { getColor } from "$lib/utils";
   import type { CompletionLevels, Lever } from "$lib/types";
   import DataDescription from "./data-description.svelte";
+  import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
+  import ProgressBlock from "$lib/treemap/progressBlock.svelte";
+  import SubTitle from "./sub-title.svelte";
 
   export let lever: Lever;
   export let completionLevels: CompletionLevels;
 
-  function handleRangeChanged(evt: Event) {
+  const handleRangeChanged = (ratio: number) => (evt: Event) => {
     const target = evt.target as HTMLInputElement;
     completionLevels[lever.id] =
-      target.value !== "" ? Number(target.value) : undefined;
-  }
-
-  $: objShare = (100 * (completionLevels[lever.id] || 0)) / lever.objPhys;
+      target.value !== ""
+        ? Math.floor(Number(target.value) * ratio)
+        : undefined;
+  };
 </script>
 
-<div class="overflow-hidden rounded-2xl border p-6">
-  <span
-    class="rounded-full px-3 py-1 text-xs font-semibold"
-    style="background-color: {getColor(lever.sector)}">{lever.name}</span
-  >
-  <div class="mt-8 flex h-12 items-end pb-2">
-    <label class="fr-label" for={lever.id}>{lever.tradPhys}</label>
-  </div>
-  <input
-    class="fr-input max-w-md"
-    name={lever.id}
-    type="number"
-    step={Math.floor(lever.objPhys / 20)}
-    bind:value={completionLevels[lever.id]}
-    id={lever.id}
-    on:input={handleRangeChanged}
-  />
-  <div class="mt-2 text-xs text-gray-500">
-    Représente une réduction de {prettifyNumber(
-      (completionLevels[lever.id] || 0) / lever.ratio
-    )} ktCO₂
-  </div>
-  <dl class="mb-2 mt-4 border-t pt-4">
-    <DataDescription
-      label="Objectif en unité physique"
-      value={prettifyNumber(lever.objPhys)}
+<div class="flex flex-col">
+  <svg width="100%" height={50}>
+    <style>
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+        fill-opacity: 0.75;
+      }
+    </style>
+    <DiagonalHatchPattern />
+    <ProgressBlock
+      height={200}
+      fill={getColor(lever.sector)}
+      progress={(completionLevels[lever.id] || 0) / lever.objPhys}
     />
-  </dl>
-  <div
-    class="flex h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700"
-  >
+    <title>{lever.name}</title>
+    <text>
+      <tspan class="title" x="16" y="32">
+        {lever.name}
+      </tspan>
+    </text>
+  </svg>
+
+  <h1 class="sr-only">{lever.name}</h1>
+  <div class="flex flex-grow flex-col justify-between border border-t-0 p-6">
+    <SubTitle label="Objectif à atteindre en 2030" />
     <div
-      class="flex flex-col justify-center overflow-hidden"
-      role="progressbar"
-      style="width: {objShare}%; background-color: {getColor(lever.sector)}"
-      aria-valuenow={objShare}
-      aria-valuemin={0}
-      aria-valuemax={100}
-    ></div>
+      class="mb-6 flex gap-x-4 rounded-xl border px-4 py-3"
+      style={`border-color:${getColor(lever.sector)}`}
+    >
+      <DataDescription value={lever.objPhys} unit="unités physique" />
+      <div class="flex h-full items-center pt-2 text-lg">⇄</div>
+      <DataDescription value={lever.objPhys / lever.ratio} unit="ktCO₂" />
+    </div>
+
+    <SubTitle label="Action déjà menée ou contractualisée" />
+    <div class="flex items-end gap-x-4">
+      <div class="flex-1">
+        <label class="fr-label !text-sm" for={lever.id}
+          >L'unité est : {lever.tradPhys}</label
+        >
+        <input
+          class="fr-input"
+          name={lever.id}
+          type="number"
+          step={Math.floor(lever.objPhys / 20)}
+          id={lever.id}
+          value={completionLevels[lever.id]}
+          on:input={handleRangeChanged(1)}
+        />
+      </div>
+      <div class="flex h-full items-end pb-1 text-lg">⇄</div>
+      <div class="flex-1">
+        <label class="fr-label mt-5 !text-sm" for={`${lever.id}-co2`}
+          >L'unité est : ktCO₂
+        </label>
+        <input
+          class="fr-input"
+          name={`${lever.id}-co2`}
+          type="number"
+          step={10}
+          id={`${lever.id}-co2`}
+          value={((completionLevels[lever.id] ?? 0) / lever.ratio).toFixed(2)}
+          on:input={handleRangeChanged(lever.ratio)}
+        />
+      </div>
+    </div>
   </div>
 </div>
