@@ -6,7 +6,13 @@
   import ColorLegend from "$lib/color-legend.svelte";
 
   import type { CompletionLevels, Lever } from "$lib/types";
-  import { clamp, getColor, getSectorsNames, prettifyNumber } from "$lib/utils";
+  import {
+    clamp,
+    getColor,
+    getSectorsNames,
+    prettifyNumber,
+    prettifyNumberWithoutSuffix,
+  } from "$lib/utils";
 
   export let data: Lever[];
   export let completionLevels: CompletionLevels | undefined = undefined;
@@ -83,9 +89,21 @@
       ]
     )
   );
+
+  $: totalObjectives = tidy(
+    data.slice(),
+    summarize({
+      totalObjCO2: sum("objCO2"),
+    })
+  )?.[0].totalObjCO2;
 </script>
 
 <div class="flex h-full flex-col">
+  <div class="font-bold">
+    Total d’objectif de baisse des émissions de GES : {prettifyNumberWithoutSuffix(
+      totalObjectives
+    )} ktCO₂
+  </div>
   <div class="mb-2 flex items-end gap-4">
     <div class="grow">
       <ColorLegend items={getLegendItems()} />
