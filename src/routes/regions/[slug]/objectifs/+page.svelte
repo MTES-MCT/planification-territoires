@@ -32,12 +32,14 @@
 
 <NavigationBar region={data.region} title="Votre diagnostic territorial" />
 <p class="max-w-3xl">
-  Pour chaque secteur, renseignez les actions déjà menées ou contractualisées
-  afin de réajuster la marche à franchir. Vous pouvez ensuite <a
+  Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
+  En conséquence, le <a
     class="fr-link"
     href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-    >visualiser les objectifs actualisés</a
-  >.
+    >panorama des leviers</a
+  > se mettra mécaniquement à jour. Pour permettre une harmonisation de l’évaluation
+  de la baisse des émissions de GES, nous avons utilisé un traducteur de vos politiques
+  publiques qui convertit le résultat d’actions concrètes en kTCO2 évités.
 </p>
 
 <form class="mb-12">
@@ -60,7 +62,7 @@
       <a
         class="fr-link fr-icon-arrow-right-line fr-link--icon-right"
         href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-        >Visualiser les objectifs actualisés</a
+        >Visualisez votre panorama des leviers actualisé</a
       >
     </fieldset>
   {/each}
