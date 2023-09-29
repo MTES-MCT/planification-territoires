@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getRegionNames } from "$lib/utils";
+  import { getRegionsNames } from "$lib/utils";
   import RegionCard from "./region-card.svelte";
 
-  const regions = getRegionNames();
+  const regions = getRegionsNames();
 </script>
 
 <p class="max-w-2xl">

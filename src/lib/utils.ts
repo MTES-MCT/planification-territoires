@@ -32,13 +32,22 @@ export function getRegionData(regionName: string): Lever[] {
   );
 }
 
-export function getRegionNames(): string[] {
+export function getRegionsNames(): string[] {
   return tidy(
     leversData,
     select("region"),
     distinct("region"),
     arrange((a, b) => a.region.localeCompare(b.region, "fr"))
   ).map((row) => row.region);
+}
+
+export function getSectorsNames(): string[] {
+  return tidy(
+    leversData,
+    select("sector"),
+    distinct("sector"),
+    arrange((a, b) => a.sector.localeCompare(b.sector, "fr"))
+  ).map((row) => row.sector);
 }
 
 export function getCompletionLevels(
@@ -52,9 +61,9 @@ export function getCompletionLevels(
   return levels;
 }
 
-export function getColor(lever: Lever) {
+export function getColor(sector: string) {
   // Couleurs issues de https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12
-  switch (lever.sector) {
+  switch (sector) {
     case "Transport":
       return "#9fceef";
     case "Agriculture/Forêts/Sols":

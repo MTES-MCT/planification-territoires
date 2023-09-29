@@ -18,7 +18,7 @@
 <div class="overflow-hidden rounded-2xl border p-6">
   <span
     class="rounded-full px-3 py-1 text-xs font-semibold"
-    style="background-color: {getColor(lever)}">{lever.category}</span
+    style="background-color: {getColor(lever.sector)}">{lever.category}</span
   >
   <div class="mt-8 flex h-12 items-end pb-2">
     <label class="fr-label" for={lever.id}>{lever.label}</label>
@@ -49,7 +49,7 @@
     <div
       class="flex flex-col justify-center overflow-hidden"
       role="progressbar"
-      style="width: {objShare}%; background-color: {getColor(lever)}"
+      style="width: {objShare}%; background-color: {getColor(lever.sector)}"
       aria-valuenow={objShare}
       aria-valuemin={0}
       aria-valuemax={100}

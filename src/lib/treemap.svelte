@@ -72,7 +72,7 @@
       <ProgressBlock
         width={d.x1 - d.x0}
         height={d.y1 - d.y0}
-        fill={getColor(d.data)}
+        fill={getColor(d.data.sector)}
         progress={getProgressionRatio(d.data)}
       />
       <title>{getTitle(d.data)}</title>
