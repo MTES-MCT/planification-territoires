@@ -1,6 +1,6 @@
 <script lang="ts">
-  // import Treemap from "$lib/treemap.svelte";
-  import Treemap from "$lib/treemap2.svelte";
+  import Treemap from "$lib/treemap.svelte";
+  import Treemap2 from "$lib/treemap2.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
 
   import type { CompletionLevels, Lever } from "$lib/types";
@@ -12,11 +12,10 @@
 
   let width: number;
   let height: number;
+  let treemapVersion: "v1";
 
   function getLabel(lever: Lever) {
-    return `${lever.name}\n${lever.tradPhys}\n−${prettifyNumber(
-      lever.objCO2
-    )} kt CO₂`;
+    return `${lever.name}\n−${prettifyNumber(lever.objCO2)} kt CO₂`;
   }
 
   function getValue(lever: Lever) {
@@ -32,8 +31,12 @@
     }${getLabel(lever)}`.replace(/\n/g, "\n\n");
   }
 
-  function getPath(lever: Lever) {
+  function getPathV1(lever: Lever) {
     return lever.path;
+  }
+
+  function getPathV2(lever: Lever) {
+    return lever.path2;
   }
 
   function getProgressionRatio(lever: Lever) {
@@ -45,7 +48,6 @@
   }
 
   function getGroupName(path: string) {
-    console.log(path);
     return path.split("/")[1];
   }
 
@@ -65,22 +67,42 @@
   }));
 </script>
 
-<div class="mb-2">
-  <ColorLegend items={getLegendItems()} />
+<div class="mb-2 flex items-end gap-4">
+  <div class="grow">
+    <ColorLegend items={getLegendItems()} />
+  </div>
+  <select bind:value={treemapVersion} class="fr-select basis-32">
+    <option value="v1"> version 1 </option>
+    <option value="v2"> version 2 </option>
+  </select>
 </div>
 <div bind:clientWidth={width} bind:clientHeight={height} class="h-full">
   {#if width && height}
-    <Treemap
-      data={extData}
-      {getPath}
-      {getLabel}
-      {getColor}
-      {getValue}
-      {getTitle}
-      {getProgressionRatio}
-      {getGroupName}
-      {width}
-      height={height - 20}
-    />
+    {#if treemapVersion === "v1"}
+      <Treemap
+        data={extData}
+        getPath={getPathV1}
+        {getLabel}
+        {getColor}
+        {getValue}
+        {getTitle}
+        {getProgressionRatio}
+        {width}
+        height={height - 40}
+      />
+    {:else}
+      <Treemap2
+        data={extData}
+        getPath={getPathV2}
+        {getLabel}
+        {getColor}
+        {getValue}
+        {getTitle}
+        {getProgressionRatio}
+        {getGroupName}
+        {width}
+        height={height - 20}
+      />
+    {/if}
   {/if}
 </div>
