@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tidy, groupBy, sum, summarize } from "@tidyjs/tidy";
+  import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
 
   import Treemap from "$lib/treemap.svelte";
   import Treemap2 from "$lib/treemap2.svelte";
@@ -55,8 +55,27 @@
     return 0;
   }
 
-  function getGroupName(path: string) {
+  function _getGroupFromPath(path: string) {
     return path.split("/")[1];
+  }
+
+  function getGroupName(path: string) {
+    return _getGroupFromPath(path);
+  }
+
+  function getGroupTotal(path: string) {
+    const group = _getGroupFromPath(path);
+    const total = tidy(
+      extData,
+      groupBy("group", [
+        summarize({
+          totalObjCO2: sum("objCO2"),
+        }),
+      ]),
+      filter((row) => row.group === group)
+    )[0].totalObjCO2;
+
+    return `−${prettifyNumberWithoutSuffix(total)} ktCO₂`;
   }
 
   function getLegendItems() {
@@ -68,7 +87,7 @@
 
   function getTotalObjectives() {
     const objectives = tidy(
-      extData.slice(),
+      extData,
       summarize({
         totalObjCO2: sum("objCO2"),
         totalCompleted: sum("progressionCO2"),
@@ -141,6 +160,7 @@
         {getTitle}
         {getProgressionRatio}
         {getGroupName}
+        {getGroupTotal}
       />
     {/if}
   </div>

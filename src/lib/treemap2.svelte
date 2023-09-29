@@ -18,6 +18,7 @@
   export let getColor: (row: Row) => string;
   export let getProgressionRatio: (row: Row) => number;
   export let getGroupName: (path: string) => string;
+  export let getGroupTotal: (path: string) => string;
   export let tile = d3.treemapSliceDice; // treemap strategy
 
   let width: number;
@@ -31,7 +32,7 @@
     .size([width + 12, height])
     .paddingRight(6)
     .paddingInner(1)
-    .paddingBottom(20)
+    .paddingBottom(24)
     .round(true)(
     hierarchy
       .sum((row) => Math.max(0, row ? getValue(row) : 0))
@@ -77,6 +78,11 @@
           fill-opacity: 1;
           font-variant-caps: all-small-caps;
         }
+        .total {
+          font-size: 12px;
+          font-style: italic;
+          fill-opacity: 0.7;
+        }
       </style>
       <DiagonalHatchPattern />
       {#each root.leaves() as d, i}
@@ -108,10 +114,13 @@
       {#each root.descendants().filter((d) => d.depth === 1) as d, i}
         <g transform="translate({d.x0},{d.y0})">
           <clipPath id="{uid}-clipcat-{i}">
-            <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
+            <rect width={d.x1 - d.x0} height={d.y1 - d.y0 + 40} />
           </clipPath>
           <text clip-path="url(#{uid}-clipcat-{i})" pointer-events="none">
-            <tspan class="group" x="0" y={d.y1}> {getGroupName(d.id)} </tspan>
+            <tspan class="group" x="0" y={d.y1}>{getGroupName(d.id)}</tspan>
+            <tspan class="total" x="0" y={d.y1 + 20}>
+              {getGroupTotal(d.id)}
+            </tspan>
           </text>
         </g>
       {/each}
