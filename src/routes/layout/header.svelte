@@ -10,6 +10,18 @@
                 <br />Française
               </p>
             </div>
+            <div class="fr-header__navbar">
+              <button
+                class="fr-btn--menu fr-btn"
+                data-fr-opened="false"
+                aria-controls="fermer-modal"
+                aria-haspopup="menu"
+                id="button-menu"
+                title="Menu"
+              >
+                Menu
+              </button>
+            </div>
           </div>
           <div class="fr-header__service">
             <a
@@ -40,6 +52,22 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div
+    class="fr-header__menu fr-modal"
+    id="fermer-modal"
+    aria-labelledby="button-menu"
+  >
+    <div class="fr-container">
+      <button
+        class="fr-btn--close fr-btn"
+        aria-controls="fermer-modal"
+        title="Fermer"
+      >
+        Fermer
+      </button>
+      <div class="fr-header__menu-links"></div>
     </div>
   </div>
 </header>

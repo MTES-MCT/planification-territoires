@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "@gouvfr/dsfr/dist/dsfr.module.min.js";
   import "../app.postcss";
   import "$lib/assets/dsfr.css";
 
