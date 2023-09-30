@@ -24,7 +24,7 @@
   </p>
 </div>
 
-<h2 id="territoires" class="mb-2 mt-4">Choisir une région</h2>
+<h2 id="territoires" class="mb-2 mt-4">Choisir un territoire</h2>
 <div class="mb-16">
   <p class="max-w-2xl">
     Sélectionnez votre région pour visualiser à titre indicatif la part de votre
