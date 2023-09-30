@@ -23,10 +23,16 @@
   step="4"
 />
 
-<p class="max-w-2xl">
-  Voici le nouveau flux annuel de baisse des émissions de GES par rapport à 2019
-  que vous devez atteindre en 2030.
-</p>
+<div class="fr-notice fr-notice--info mb-6">
+  <div class="fr-container">
+    <div class="fr-notice__body">
+      <p class="fr-notice__title">
+        Voici le nouveau flux annuel de baisse des émissions de GES par rapport
+        à 2019 que vous devez atteindre en 2030.
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="h-[75vh]">
   <MainTreemap

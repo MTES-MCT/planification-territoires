@@ -43,7 +43,7 @@
   backUrl={`/regions/${data.region}?${$page.url.searchParams.toString()}`}
   step="2"
 />
-<p class="max-w-3xl">
+<p class="max-w-2xl text-lg">
   Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
   En conséquence, le <a class="fr-link" href={resultatsUrl}
     >panorama des leviers</a

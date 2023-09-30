@@ -25,12 +25,18 @@
   step="3"
 />
 
-<p class="max-w-2xl">
-  Voici les nouveaux objectifs actualisés sur la base des données renseignées.
-  Vous pouvez ensuite <a class="fr-link" href={nouvelObjectifUrl}
-    >visualiser les objectifs restant.</a
-  >
-</p>
+<div class="fr-notice fr-notice--info mb-6">
+  <div class="fr-container">
+    <div class="fr-notice__body">
+      <p class="fr-notice__title">
+        Voici les nouveaux objectifs actualisés sur la base des données
+        renseignées. Vous pouvez ensuite <a href={nouvelObjectifUrl}
+          >visualiser les objectifs restant.</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
 
 <div class="h-[75vh]">
   <MainTreemap
