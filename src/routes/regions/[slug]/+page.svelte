@@ -14,6 +14,11 @@
 <NavigationBar
   region={data.region}
   title="Présentation de vos objectifs territoriaux pour 2030"
+  nextLabel="Réaliser le diagnostic territorial"
+  nextUrl={editionLink}
+  backUrl="/"
+  backLabel="Choisir un autre territoire"
+  step="1"
 />
 
 <p class="max-w-xl">

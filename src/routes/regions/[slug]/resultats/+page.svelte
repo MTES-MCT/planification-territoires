@@ -18,6 +18,11 @@
 <NavigationBar
   region={data.region}
   title="Visualisation du réalisé par rapport à l’objectif 2030"
+  nextLabel="Visualiser les objectifs restants"
+  nextUrl={nouvelObjectifUrl}
+  backLabel="Éditer le diagnostic territorial"
+  backUrl="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
+  step="3"
 />
 
 <p class="max-w-2xl">
@@ -26,14 +31,6 @@
     >visualiser les objectifs restant.</a
   >
 </p>
-
-<div class="mb-4">
-  <a
-    class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-    href="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
-    >Éditer les actions menées</a
-  >
-</div>
 
 <div class="h-[75vh]">
   <MainTreemap

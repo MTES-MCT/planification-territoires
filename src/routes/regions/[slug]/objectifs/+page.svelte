@@ -34,7 +34,15 @@
   <title>{data.region} | Objectifs | Simulateur territoires</title>
 </svelte:head>
 
-<NavigationBar region={data.region} title="Votre diagnostic territorial" />
+<NavigationBar
+  region={data.region}
+  title="Votre diagnostic territorial"
+  nextLabel="Visualiser le panorama des leviers actualisé"
+  nextUrl={resultatsUrl}
+  backLabel="Réinitialiser et lire les objectifs territoriaux"
+  backUrl={`/regions/${data.region}?${$page.url.searchParams.toString()}`}
+  step="2"
+/>
 <p class="max-w-3xl">
   Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
   En conséquence, le <a class="fr-link" href={resultatsUrl}
