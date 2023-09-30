@@ -4,26 +4,9 @@ import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
 const leversData = rawLeversData as Lever[];
 
-export function prettifyNumber(number: number) {
-  if (Number.isFinite(number)) {
-    let suffix = "";
-    if (number > 10e6) {
-      number /= 1e6;
-      suffix = " M";
-    } else if (number > 10000) {
-      number /= 1000;
-      suffix = " K";
-    }
-    return `${number.toLocaleString("fr-FR", {
-      maximumFractionDigits: 2,
-    })}${suffix}`;
-  }
-  return "";
-}
-
-export function prettifyNumberWithoutSuffix(number: number) {
+export function prettyNum(number: number, roundBig = false) {
   return number.toLocaleString("fr-FR", {
-    maximumFractionDigits: number < 1000 ? 2 : 0,
+    maximumFractionDigits: number < 1000 || !roundBig ? 2 : 0,
   });
 }
 

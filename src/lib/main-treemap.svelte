@@ -6,13 +6,7 @@
   import ColorLegend from "$lib/color-legend.svelte";
 
   import type { CompletionLevels, Lever } from "$lib/types";
-  import {
-    clamp,
-    getColor,
-    getSectorsNames,
-    prettifyNumber,
-    prettifyNumberWithoutSuffix,
-  } from "$lib/utils";
+  import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
 
   export let data: Lever[];
   export let completionLevels: CompletionLevels | undefined = undefined;
@@ -21,7 +15,7 @@
   let treemapVersion = "v2";
 
   function getLabel(lever: Lever) {
-    return `${lever.name}\n−${prettifyNumber(
+    return `${lever.name}\n−${prettyNum(
       lever.objCO2 - lever.progressionCO2
     )} ktCO₂`;
   }
@@ -35,11 +29,11 @@
 
   function getTitle(lever: Lever) {
     if (completionLevels && !substractCompleted) {
-      let title = `${lever.name}\n\nObjectif initial : \n−${prettifyNumber(
+      let title = `${lever.name}\n\nObjectif initial : \n−${prettyNum(
         lever.objCO2
       )} ktCO₂`;
       if (lever.progressionCO2) {
-        title += `\n\nRéalisé ou contractualisé : \n−${prettifyNumber(
+        title += `\n\nRéalisé ou contractualisé : \n−${prettyNum(
           lever.progressionCO2
         )} ktCO₂
         `;
@@ -47,14 +41,14 @@
       return title;
     }
     if (completionLevels && substractCompleted) {
-      let title = `${lever.name}\n\nObjectif restant : \n−${prettifyNumber(
+      let title = `${lever.name}\n\nObjectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
 
       return title;
     }
 
-    return `${lever.name}\n\nObjectif initial : \n−${prettifyNumber(
+    return `${lever.name}\n\nObjectif initial : \n−${prettyNum(
       lever.objCO2
     )} ktCO₂`;
   }
@@ -97,9 +91,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    return `−${prettifyNumberWithoutSuffix(
-      total.totalObjCO2 - total.totalCompleted
-    )} ktCO₂`;
+    return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
   }
 
   function getLegendItems() {
@@ -161,16 +153,14 @@
 
 <div class="flex h-full flex-col">
   <div class="font-bold">
-    Total d’objectif de baisse des émissions de GES : {prettifyNumberWithoutSuffix(
+    Total d’objectif de baisse des émissions de GES : {prettyNum(
       getTotalObjectives()
     )} ktCO₂
   </div>
   {#if completionLevels && !substractCompleted}
     <div class="max-w-2xl font-bold">
       Les zones hachurées correspondent à ce que vous avez déjà réalisé ou
-      contractualisé, soit un total de {prettifyNumberWithoutSuffix(
-        getTotalCompleted()
-      )} ktCO₂
+      contractualisé, soit un total de {prettyNum(getTotalCompleted())} ktCO₂
     </div>
   {/if}
   <div class="mb-2 flex items-end gap-4">
