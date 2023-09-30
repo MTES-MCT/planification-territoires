@@ -5,7 +5,7 @@
   export let unit: string;
 </script>
 
-<div class="flex-1">
+<div class="flex-1 rounded-lg border px-4 py-2">
   <div class="text-xl font-semibold tracking-tight text-gray-900 md:text-2xl">
     {prettyNum(value, true)}
   </div>
