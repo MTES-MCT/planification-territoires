@@ -78,10 +78,10 @@ export function getColor(sector: string) {
     case "Industrie":
       return "#fb8072";
 
-    case "Energie":
+    case "Énergie":
       return "#d9d9d9";
 
-    case "Déchêt":
+    case "Déchet":
       return "#bebada";
 
     case "Tertiaire":
@@ -91,6 +91,6 @@ export function getColor(sector: string) {
       return "#fdb462";
 
     default:
-      return "red";
+      return "black";
   }
 }

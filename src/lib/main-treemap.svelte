@@ -138,8 +138,8 @@
   $: extData = data.map((lever: Lever) => ({
     ...lever,
     progressionCO2: completionLevels
-      ? lever.ratio
-        ? completionLevels[lever.id] / lever.ratio
+      ? lever.ratioCO2toPhys
+        ? completionLevels[lever.id] / lever.ratioCO2toPhys
         : 0
       : 0,
   }));
