@@ -39,10 +39,7 @@
 </div>
 
 <div class="h-[75vh]">
-  <MainTreemap
-    data={data.regionData}
-    completionLevels={data.completionLevels}
-  />
+  <MainTreemap data={data.regionData} showProgression />
 </div>
 
 <ul class="fr-btns-group fr-btns-group--inline-sm my-12">

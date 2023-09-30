@@ -1,5 +1,5 @@
 import rawLeversData from "$lib/assets/data.json";
-import type { CompletionLevels, Lever } from "$lib/types";
+import type { Lever, RegionCompletionLevels } from "$lib/types";
 import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
 const leversData = rawLeversData as Lever[];
@@ -39,15 +39,21 @@ export function getSectorsNames(): string[] {
   ).map((row) => row.sector);
 }
 
-export function getCompletionLevels(
+export function getIdNames(): string[] {
+  return tidy(
+    leversData,
+    select("id"),
+    distinct("id"),
+    arrange((a, b) => a.id.localeCompare(b.sector, "id"))
+  ).map((row) => row.id);
+}
+
+export function getCompletionLevelsFromURL(
   searchParams: URLSearchParams
-): CompletionLevels {
-  const leversId = tidy(leversData, select("id"), distinct("id"));
-  const levels = Object.fromEntries(leversId.map((l) => [l.id, 0]));
-  searchParams.forEach((value, key) => {
-    levels[key] = Number(value);
-  });
-  return levels;
+): RegionCompletionLevels {
+  return Object.fromEntries(
+    getIdNames().map((l) => [l, Number(searchParams.get(l)) || 0])
+  );
 }
 
 export function getColor(sector: string) {

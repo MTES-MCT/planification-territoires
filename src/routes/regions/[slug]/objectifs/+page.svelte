@@ -1,10 +1,12 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import { goto } from "$app/navigation";
   import { tidy, groupBy } from "@tidyjs/tidy";
 
-  import CompletionLevelInput from "./completion-level-input.svelte";
+  import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
+
+  import completionLevels from "$lib/completion-levels-store";
   import NavigationBar from "../navigation-bar.svelte";
+  import CompletionLevelInput from "./completion-level-input.svelte";
 
   export let data;
 
@@ -12,12 +14,13 @@
     data.regionData,
     groupBy(["sector", "category"], [], groupBy.entriesObject())
   );
-  // À chaque modification de data.completionLevels, on met à jour
+
+  // À chaque modification de completionLevels, on met à jour
   // la querystring
   $: {
-    Object.entries(data.completionLevels).forEach((c) =>
-      $page.url.searchParams.set(c[0], (c[1] || 0).toString())
-    );
+    Object.entries($completionLevels[data.region])
+      .filter((c) => c[1] !== 0)
+      .forEach((c) => $page.url.searchParams.set(c[0], (c[1] || 0).toString()));
     goto(`?${$page.url.searchParams.toString()}`, {
       keepFocus: true,
       noScroll: true,
@@ -39,8 +42,8 @@
   title="Votre diagnostic territorial"
   nextLabel="Visualiser le panorama des leviers actualisé"
   nextUrl={resultatsUrl}
-  backLabel="Réinitialiser et lire les objectifs territoriaux"
-  backUrl={`/regions/${data.region}?${$page.url.searchParams.toString()}`}
+  backLabel="Voir les objectifs territoriaux"
+  backUrl="/regions/{data.region}"
   step="2"
 />
 <p class="max-w-2xl text-lg">
@@ -61,10 +64,7 @@
       <div class="mb-4 grid gap-6 md:grid-cols-2">
         {#each sector.values as category}
           {#each category.values as lever}
-            <CompletionLevelInput
-              {lever}
-              bind:completionLevels={data.completionLevels}
-            />
+            <CompletionLevelInput {lever} />
           {/each}
         {/each}
       </div>
