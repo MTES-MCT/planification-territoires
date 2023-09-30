@@ -5,8 +5,8 @@
   // https://observablehq.com/@d3/treemap
 
   import type { HierarchyNode } from "d3";
-  import DiagonalHatchPattern from "./treemap/diagonalHatchPattern.svelte";
-  import ProgressBlock from "./treemap/progressBlock.svelte";
+  import DiagonalHatchPattern from "./diagonalHatchPattern.svelte";
+  import ProgressBlock from "./progressBlock.svelte";
   import * as d3 from "d3";
 
   type Row = object;

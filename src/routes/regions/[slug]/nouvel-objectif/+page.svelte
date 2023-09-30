@@ -6,9 +6,7 @@
 
   export let data;
 
-  let resultatsUrl = `/regions/${
-    data.region
-  }/resultats?${$page.url.searchParams.toString()}`;
+  let resultatsUrl = `/regions/${data.region}/resultats`;
 </script>
 
 <svelte:head>
@@ -35,22 +33,18 @@
 </div>
 
 <div class="h-[75vh]">
-  <MainTreemap
-    data={data.regionData}
-    completionLevels={data.completionLevels}
-    substractCompleted
-  />
+  <MainTreemap data={data.regionData} substractCompleted />
 </div>
 
 <ul class="fr-btns-group fr-btns-group--inline-sm my-12">
   <li>
-    <a class="fr-btn" href={resultatsUrl}
+    <a class="fr-btn fr-btn--secondary" href={resultatsUrl}
       >Visualiser le panorama des leviers actualisé</a
     >
   </li>
   <li>
     <button
-      class="fr-btn fr-btn--secondary"
+      class="fr-btn"
       on:click={() => {
         navigator.clipboard.writeText($page.url.href);
       }}

@@ -1,16 +1,16 @@
 <script lang="ts">
   import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
 
-  import Treemap from "$lib/treemap.svelte";
-  import Treemap2 from "$lib/treemap2.svelte";
+  import completionLevels from "$lib/completion-levels-store";
+  import Treemap from "$lib/treemap/treemap.svelte";
+  import Treemap2 from "$lib/treemap/treemap2.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
-
-  import type { CompletionLevels, Lever } from "$lib/types";
   import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
+  import type { Lever } from "$lib/types";
 
   export let data: Lever[];
-  export let completionLevels: CompletionLevels | undefined = undefined;
   export let substractCompleted = false;
+  export let showProgression = false;
 
   let treemapVersion = "v2";
 
@@ -21,14 +21,18 @@
   }
 
   function getValue(lever: Lever) {
-    if (completionLevels && substractCompleted) {
+    if (substractCompleted) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
 
   function getTitle(lever: Lever) {
-    if (completionLevels && !substractCompleted) {
+    if (substractCompleted) {
+      return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
+        lever.objCO2 - lever.progressionCO2
+      )} ktCO₂`;
+    } else {
       let title = `${lever.name}\n\nObjectif initial : \n−${prettyNum(
         lever.objCO2
       )} ktCO₂`;
@@ -40,17 +44,6 @@
       }
       return title;
     }
-    if (completionLevels && substractCompleted) {
-      let title = `${lever.name}\n\nObjectif restant : \n−${prettyNum(
-        lever.objCO2 - lever.progressionCO2
-      )} ktCO₂`;
-
-      return title;
-    }
-
-    return `${lever.name}\n\nObjectif initial : \n−${prettyNum(
-      lever.objCO2
-    )} ktCO₂`;
   }
 
   function getPathV1(lever: Lever) {
@@ -62,7 +55,7 @@
   }
 
   function getProgressionRatio(lever: Lever) {
-    if (substractCompleted) {
+    if (substractCompleted || !showProgression) {
       return 0;
     }
     if (lever.progressionCO2) {
@@ -129,11 +122,8 @@
   // On injecte le niveau de progression, en ktCO₂
   $: extData = data.map((lever: Lever) => ({
     ...lever,
-    progressionCO2: completionLevels
-      ? lever.ratioCO2toPhys
-        ? completionLevels[lever.id] / lever.ratioCO2toPhys
-        : 0
-      : 0,
+    progressionCO2:
+      $completionLevels[lever.region][lever.id] / lever.ratioCO2toPhys,
   }));
 
   // On groupe les traductions physiques par nom de levier
@@ -157,7 +147,7 @@
       getTotalObjectives()
     )} ktCO₂
   </div>
-  {#if completionLevels && !substractCompleted}
+  {#if showProgression}
     <div class="max-w-2xl font-bold">
       Les zones hachurées correspondent à ce que vous avez déjà réalisé ou
       contractualisé, soit un total de {prettyNum(getTotalCompleted())} ktCO₂

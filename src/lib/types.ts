@@ -16,6 +16,9 @@ export interface Lever {
 
 // État actuel de l'objectif, en unités physiques
 // à diviser par ratioCO2toPhys pour l'obtenir en ktCO₂eq
-export interface CompletionLevels {
-  [leverName: string]: number | undefined;
-}
+export type RegionCompletionLevels = {
+  [leverName: string]: number;
+};
+export type CompletionLevels = {
+  [region: string]: RegionCompletionLevels;
+};

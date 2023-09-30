@@ -1,25 +1,24 @@
 <script lang="ts">
   import { getColor } from "$lib/utils";
-  import type { CompletionLevels, Lever } from "$lib/types";
-  import DataDescription from "./data-description.svelte";
+  import completionLevels from "$lib/completion-levels-store";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "./sub-title.svelte";
+  import DataDescription from "./data-description.svelte";
+  import type { Lever } from "$lib/types";
 
   export let lever: Lever;
-  export let completionLevels: CompletionLevels;
-
   $: completionCO2 = toC02();
 
   function toC02() {
-    return ((completionLevels[lever.id] ?? 0) / lever.ratioCO2toPhys).toFixed(
-      2
-    );
+    return (
+      $completionLevels[lever.region][lever.id] / lever.ratioCO2toPhys
+    ).toFixed(2);
   }
 
   function updateCompletionLevels(evt: Event, ratio = 1) {
     let target = evt.target as HTMLInputElement;
-    completionLevels[lever.id] =
+    $completionLevels[lever.region][lever.id] =
       target.value !== ""
         ? Math.floor(Number(target.value) * ratio)
         : undefined;
@@ -48,7 +47,7 @@
     <ProgressBlock
       height={200}
       fill={getColor(lever.sector)}
-      progress={(completionLevels[lever.id] || 0) / lever.objPhys}
+      progress={$completionLevels[lever.region][lever.id] / lever.objPhys}
     />
     <title>{lever.name}</title>
     <text>
@@ -76,8 +75,9 @@
           name={lever.id}
           type="number"
           step={Math.floor(lever.objPhys / 20)}
+          min={0}
           id={lever.id}
-          value={completionLevels[lever.id]}
+          value={$completionLevels[lever.region][lever.id]}
           on:input={handlePhysRangeChanged}
         />
       </div>
@@ -92,6 +92,7 @@
           name={`${lever.id}-co2`}
           type="number"
           step={10}
+          min={0}
           id={`${lever.id}-co2`}
           value={completionCO2}
           on:input={handleCO2RangeChanged}
