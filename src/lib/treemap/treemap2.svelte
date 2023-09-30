@@ -21,8 +21,8 @@
   export let getGroupTotal: (path: string) => string;
   export let tile = d3.treemapSliceDice; // treemap strategy
 
-  let width: number;
-  let height: number;
+  export let width: number;
+  export let height: number;
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
@@ -40,11 +40,10 @@
         d3.descending(a.value, b.value)
       )
   );
-
   const uid = `O-${Math.random().toString(16).slice(2)}`;
 </script>
 
-<div bind:clientWidth={width} bind:clientHeight={height} class="h-full">
+<div class="h-full">
   {#if width && height}
     <svg
       viewBox="0 0 {width} {height}"

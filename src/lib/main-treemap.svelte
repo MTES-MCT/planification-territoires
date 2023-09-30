@@ -13,6 +13,8 @@
   export let showProgression = false;
 
   let treemapVersion = "v2";
+  let width: number;
+  let height: number;
 
   function getLabel(lever: Lever) {
     return `${lever.name}\n−${prettyNum(
@@ -162,7 +164,11 @@
       <option value="v2">version 2</option>
     </select>
   </div>
-  <div class="flex-auto">
+  <div
+    class="min-h-0 flex-1"
+    bind:clientWidth={width}
+    bind:clientHeight={height}
+  >
     {#if treemapVersion === "v1"}
       <Treemap
         data={aggData}
@@ -172,6 +178,8 @@
         {getValue}
         {getTitle}
         {getProgressionRatio}
+        {width}
+        {height}
       />
     {:else}
       <Treemap2
@@ -184,6 +192,8 @@
         {getProgressionRatio}
         {getGroupName}
         {getGroupTotal}
+        {width}
+        {height}
       />
     {/if}
   </div>
