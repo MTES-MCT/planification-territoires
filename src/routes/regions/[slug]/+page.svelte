@@ -30,7 +30,7 @@
 
 <div class="mb-8">
   <a
-    class="fr-link fr-icon-arrow-right-line fr-link--icon-right block"
+    class="fr-btn fr-icon-arrow-right-line fr-btn--icon-right block"
     href={editionLink}>Réalisez votre diagnostic territorial</a
   >
 </div>

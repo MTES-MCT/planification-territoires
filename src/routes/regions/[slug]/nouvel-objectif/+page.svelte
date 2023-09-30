@@ -5,6 +5,10 @@
   import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
+
+  let resultatsUrl = `/regions/${
+    data.region
+  }/resultats?${$page.url.searchParams.toString()}`;
 </script>
 
 <svelte:head>
@@ -24,8 +28,7 @@
 <div class="mb-4">
   <a
     class="fr-link fr-icon-arrow-left-line fr-link--icon-left block"
-    href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-    >Visualiser le réalisé</a
+    href={resultatsUrl}>Visualiser le réalisé</a
   >
 </div>
 
@@ -37,10 +40,15 @@
   />
 </div>
 
-<button
-  class="fr-btn mb-12 mt-4"
-  on:click={() => {
-    navigator.clipboard.writeText($page.url.href);
-  }}
-  >Copier le lien de partage
-</button>
+<ul class="fr-btns-group fr-btns-group--inline-sm my-12">
+  <li><a class="fr-btn" href={resultatsUrl}>Visualiser le réalisé</a></li>
+  <li>
+    <button
+      class="fr-btn fr-btn--secondary"
+      on:click={() => {
+        navigator.clipboard.writeText($page.url.href);
+      }}
+      >Copier le lien de partage
+    </button>
+  </li>
+</ul>

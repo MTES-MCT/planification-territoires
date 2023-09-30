@@ -24,6 +24,10 @@
       replaceState: true,
     });
   }
+
+  $: resultatsUrl = `/regions/${
+    data.region
+  }/resultats?${$page.url.searchParams.toString()}`;
 </script>
 
 <svelte:head>
@@ -33,9 +37,7 @@
 <NavigationBar region={data.region} title="Votre diagnostic territorial" />
 <p class="max-w-3xl">
   Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
-  En conséquence, le <a
-    class="fr-link"
-    href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
+  En conséquence, le <a class="fr-link" href={resultatsUrl}
     >panorama des leviers</a
   > se mettra mécaniquement à jour. Pour permettre une harmonisation de l’évaluation
   de la baisse des émissions de GES, nous avons utilisé un traducteur de vos politiques
@@ -58,11 +60,9 @@
           {/each}
         {/each}
       </div>
-
       <a
-        class="fr-link fr-icon-arrow-right-line fr-link--icon-right"
-        href="/regions/{data.region}/resultats?{$page.url.searchParams.toString()}"
-        >Visualisez votre panorama des leviers actualisé</a
+        class="fr-btn fr-btn--secondary fr-icon-arrow-right-line fr-btn--icon-right"
+        href={resultatsUrl}>Visualisez votre panorama des leviers actualisé</a
       >
     </fieldset>
   {/each}
