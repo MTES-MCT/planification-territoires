@@ -5,6 +5,25 @@
   <title>À propos | Simulateur territoires</title>
 </svelte:head>
 
+<nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
+  <button
+    class="fr-breadcrumb__button"
+    aria-expanded="false"
+    aria-controls="breadcrumb-1"
+    >Voir le fil d’Ariane
+  </button>
+  <div class="fr-collapse" id="breadcrumb-1">
+    <ol class="fr-breadcrumb__list">
+      <li>
+        <a class="fr-breadcrumb__link" href="/">Accueil</a>
+      </li>
+      <li>
+        <span class="fr-breadcrumb__link" aria-current="page">À propos</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
 <h1 class="mt-4">À propos</h1>
 <p class="max-w-2xl">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -30,5 +49,5 @@
   eum fugiat quo voluptas nulla pariatur?
 </p>
 <p class="mb-16">
-  <a class="fr-btn" href="/">Choisir une région</a>
+  <a class="fr-btn" href="/#territoires">Choisir un territoire</a>
 </p>
