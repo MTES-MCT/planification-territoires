@@ -67,6 +67,7 @@ final_data <- data |>
 
 # Corrections des textes
   mutate(unitCO2 = str_replace(unitCO2, "kTCO2 évités", "ktCO₂ évitées")) |>
+  mutate(unitPhys = str_replace(unitPhys, "kTCO2 évités", "ktCO₂ évitées")) |>
   mutate(sector = str_replace(sector, "Energie", "Énergie")) |>
 
 # Ajout du chemin pour la création du treemap
