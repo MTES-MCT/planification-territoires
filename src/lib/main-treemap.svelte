@@ -17,9 +17,12 @@
   let height: number;
 
   function getLabel(lever: Lever) {
-    return `${lever.name}\n−${prettyNum(
-      lever.objCO2 - lever.progressionCO2
-    )} ktCO₂`;
+    if (substractCompleted || showProgression) {
+      return `${lever.name}\n−${prettyNum(
+        lever.objCO2 - lever.progressionCO2
+      )} ktCO₂`;
+    }
+    return `${lever.name}\n−${prettyNum(lever.objCO2)} ktCO₂`;
   }
 
   function getValue(lever: Lever) {
@@ -38,7 +41,7 @@
       let title = `${lever.name}\n\nObjectif initial : \n−${prettyNum(
         lever.objCO2
       )} ktCO₂`;
-      if (lever.progressionCO2) {
+      if (showProgression && lever.progressionCO2) {
         title += `\n\nRéalisé ou contractualisé : \n−${prettyNum(
           lever.progressionCO2
         )} ktCO₂
@@ -86,7 +89,10 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
+    if (showProgression || substractCompleted) {
+      return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
+    }
+    return `−${prettyNum(total.totalObjCO2)} ktCO₂`;
   }
 
   function getLegendItems() {
