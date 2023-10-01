@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { getColor } from "$lib/utils";
-  import completionLevels from "$lib/completion-levels-store";
+  import { clamp, getColor } from "$lib/utils";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "./sub-title.svelte";
@@ -8,29 +7,28 @@
   import type { Lever } from "$lib/types";
 
   export let lever: Lever;
-  $: completionCO2 = toC02();
+  export let valuePhys: number;
+  export let onUpdate: (newValuePhys: number, lever: Lever) => void;
 
-  function toC02() {
-    return (
-      $completionLevels[lever.region][lever.id] / lever.ratioCO2toPhys
-    ).toFixed(2);
+  let valueCO2 = +(valuePhys / lever.ratioCO2toPhys).toFixed(4);
+
+  function handlePhysInputChanged(evt: Event) {
+    const target = evt.target as HTMLInputElement;
+    const newValuePhys = Number(target.value) || 0;
+    valueCO2 = +(newValuePhys / lever.ratioCO2toPhys).toFixed(4);
+    onUpdate(newValuePhys, lever);
   }
 
-  function updateCompletionLevels(evt: Event, ratio = 1) {
-    let target = evt.target as HTMLInputElement;
-    $completionLevels[lever.region][lever.id] =
-      target.value !== ""
-        ? Math.floor(Number(target.value) * ratio)
-        : undefined;
+  function handleCO2InputChanged(evt: Event) {
+    const target = evt.target as HTMLInputElement;
+    valueCO2 = Number(target.value) || 0;
+    const newValuePhys = +(valueCO2 * lever.ratioCO2toPhys).toFixed(4);
+    onUpdate(newValuePhys, lever);
   }
 
-  function handlePhysRangeChanged(evt: Event) {
-    updateCompletionLevels(evt);
-    completionCO2 = toC02();
-  }
-
-  function handleCO2RangeChanged(evt: Event) {
-    updateCompletionLevels(evt, lever.ratioCO2toPhys);
+  function focusOnClick(evt: Event) {
+    const target = evt.target as HTMLInputElement;
+    target.select();
   }
 </script>
 
@@ -47,7 +45,7 @@
     <ProgressBlock
       height={200}
       fill={getColor(lever.sector)}
-      progress={$completionLevels[lever.region][lever.id] / lever.objPhys}
+      progress={clamp(valuePhys / lever.objPhys, 0, 1)}
     />
     <title>{lever.name}</title>
     <text>
@@ -74,11 +72,12 @@
           class="fr-input"
           name={lever.id}
           type="number"
-          step={Math.floor(lever.objPhys / 20)}
+          step="any"
           min={0}
           id={lever.id}
-          value={$completionLevels[lever.region][lever.id]}
-          on:input={handlePhysRangeChanged}
+          value={valuePhys}
+          on:input={handlePhysInputChanged}
+          on:focus={focusOnClick}
         />
       </div>
       <div class="flex h-full items-end pb-1 text-sm md:text-lg">⇄</div>
@@ -91,11 +90,12 @@
           class="fr-input"
           name={`${lever.id}-co2`}
           type="number"
-          step={10}
+          step="any"
           min={0}
           id={`${lever.id}-co2`}
-          value={completionCO2}
-          on:input={handleCO2RangeChanged}
+          value={valueCO2}
+          on:input={handleCO2InputChanged}
+          on:focus={focusOnClick}
         />
       </div>
     </div>
@@ -111,3 +111,14 @@
     </div>
   </div>
 </div>
+
+<style lang="postcss">
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+</style>

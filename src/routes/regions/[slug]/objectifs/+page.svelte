@@ -8,6 +8,8 @@
   import NavigationBar from "../navigation-bar.svelte";
   import CompletionLevelInput from "./completion-level-input.svelte";
 
+  import type { Lever } from "$lib/types";
+
   export let data;
 
   const sectors = tidy(
@@ -15,19 +17,21 @@
     groupBy(["sector", "category"], [], groupBy.entriesObject())
   );
 
-  // À chaque modification de completionLevels, on met à jour
-  // la querystring
-  $: {
-    Object.entries($completionLevels[data.region])
-      .filter((c) => c[1] !== 0)
-      .forEach((c) => $page.url.searchParams.set(c[0], (c[1] || 0).toString()));
-    goto(`?${$page.url.searchParams.toString()}`, {
+  function handleInputUpdate(newValuePhys: number, lever: Lever) {
+    $completionLevels[data.region][lever.id] = newValuePhys;
+    // Mise à jour de l'URL
+    const newSearchParams = new URLSearchParams($page.url.searchParams);
+    if (!newValuePhys) {
+      newSearchParams.delete(lever.id);
+    } else {
+      newSearchParams.set(lever.id, Number(newValuePhys.toFixed(4)).toString());
+    }
+    goto(`?${newSearchParams.toString()}`, {
       keepFocus: true,
       noScroll: true,
       replaceState: true,
     });
   }
-
   $: resultatsUrl = `/regions/${
     data.region
   }/resultats?${$page.url.searchParams.toString()}`;
@@ -64,7 +68,12 @@
       <div class="mb-4 grid gap-6 md:grid-cols-2">
         {#each sector.values as category}
           {#each category.values as lever}
-            <CompletionLevelInput {lever} />
+            <CompletionLevelInput
+              {lever}
+              valuePhys={$completionLevels[lever.region][lever.id]}
+              onUpdate={(newValuePhys, lever) =>
+                handleInputUpdate(newValuePhys, lever)}
+            />
           {/each}
         {/each}
       </div>
