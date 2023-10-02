@@ -25,11 +25,6 @@
     const newValuePhys = +(valueCO2 * lever.ratioCO2toPhys).toFixed(4);
     onUpdate(newValuePhys, lever);
   }
-
-  function focusOnClick(evt: Event) {
-    const target = evt.target as HTMLInputElement;
-    target.select();
-  }
 </script>
 
 <div class="flex flex-col">
@@ -77,7 +72,6 @@
           id={lever.id}
           value={valuePhys}
           on:input={handlePhysInputChanged}
-          on:focus={focusOnClick}
         />
       </div>
       <div class="flex h-full items-end pb-1 text-sm md:text-lg">⇄</div>
@@ -95,7 +89,6 @@
           id={`${lever.id}-co2`}
           value={valueCO2}
           on:input={handleCO2InputChanged}
-          on:focus={focusOnClick}
         />
       </div>
     </div>
@@ -111,14 +104,3 @@
     </div>
   </div>
 </div>
-
-<style lang="postcss">
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
-</style>
