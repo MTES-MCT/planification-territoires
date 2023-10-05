@@ -1,6 +1,4 @@
 <script lang="ts">
-  import vizImg from "@gouvfr/dsfr/dist/artwork/pictograms/digital/data-visualization.svg";
-
   export let region: string;
 </script>
 
@@ -14,11 +12,6 @@
         <h3 class="fr-tile__title">
           <a href="/regions/{region}/">{region}</a>
         </h3>
-      </div>
-    </div>
-    <div class="fr-tile__header">
-      <div class="fr-tile__pictogram">
-        <img src={vizImg} alt="" />
       </div>
     </div>
   </div>
