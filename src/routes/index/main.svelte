@@ -8,7 +8,7 @@
 <h1 class="mt-12 max-w-xl">
   Visualiser les objectifs nationaux de baisse des GES
 </h1>
-<div class="mb-16">
+<div class="mb-8 max-w-2xl">
   <p class="max-w-2xl">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -20,17 +20,13 @@
       >En savoir plus sur le simulateur territorial</a
     >
   </p>
-</div>
-
-<h2 id="territoires" class="mb-2 mt-4">Choisir un territoire</h2>
-<div class="mb-16">
-  <p class="max-w-2xl">
+  <p>
     Sélectionnez votre région pour visualiser à titre indicatif la part de votre
     territoire dans les objectifs nationaux de baisse des GES.
   </p>
-  <div class="fr-grid-row fr-grid-row--gutters fr-mb-1w w-full">
-    {#each regions as region}
-      <RegionCard {region} />
-    {/each}
-  </div>
+</div>
+<div class="fr-grid-row fr-grid-row--gutters !mb-16 w-full">
+  {#each regions as region}
+    <RegionCard {region} />
+  {/each}
 </div>
