@@ -23,36 +23,27 @@
   backLabel="Éditer le diagnostic territorial"
   backUrl="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
   step="3"
-/>
-
-<div class="fr-notice fr-notice--info mb-6">
-  <div class="fr-container">
-    <div class="fr-notice__body">
-      <p class="fr-notice__title">
-        Voici les nouveaux objectifs actualisés sur la base des données
-        renseignées. Vous pouvez ensuite visualiser les objectifs restants.
-      </p>
+>
+  <div class="fr-notice fr-notice--info mb-6">
+    <div class="fr-container">
+      <div class="fr-notice__body">
+        <p class="fr-notice__title">
+          Voici les nouveaux objectifs actualisés sur la base des données
+          renseignées. Vous pouvez ensuite visualiser les objectifs restants.
+        </p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="h-[75vh]">
-  <MainTreemap data={data.regionData} showProgression />
-</div>
+  <div class="h-[75vh]">
+    <MainTreemap data={data.regionData} showProgression />
+  </div>
 
-<ul class="fr-btns-group fr-btns-group--inline-sm my-12">
-  <li>
-    <a class="fr-btn" href={nouvelObjectifUrl}
-      >Visualiser les objectifs restants</a
-    >
-  </li>
-  <li>
-    <button
-      class="fr-btn fr-btn--secondary mb-12 mt-4"
-      on:click={() => {
-        navigator.clipboard.writeText($page.url.href);
-      }}
-      >Copier le lien de partage
-    </button>
-  </li>
-</ul>
+  <button
+    class="fr-btn fr-btn--secondary mb-12 mt-4"
+    on:click={() => {
+      navigator.clipboard.writeText($page.url.href);
+    }}
+    >Copier le lien de partage
+  </button>
+</NavigationBar>

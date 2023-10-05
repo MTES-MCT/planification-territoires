@@ -50,37 +50,52 @@
   backLabel="Voir les objectifs territoriaux"
   backUrl="/regions/{data.region}"
   step="2"
-/>
-<p class="max-w-2xl text-lg">
-  Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
-  En conséquence, le panorama des leviers se mettra mécaniquement à jour. Pour
-  permettre une harmonisation de l’évaluation de la baisse des émissions de GES,
-  nous avons utilisé un traducteur de vos politiques publiques qui convertit le
-  résultat d’actions concrètes en ktCO₂ évitées.
-</p>
+>
+  <p class="max-w-2xl text-lg">
+    Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
+    En conséquence, le panorama des leviers se mettra mécaniquement à jour. Pour
+    permettre une harmonisation de l’évaluation de la baisse des émissions de
+    GES, nous avons utilisé un traducteur de vos politiques publiques qui
+    convertit le résultat d’actions concrètes en ktCO₂ évitées.
+  </p>
 
-<form class="mb-12">
-  {#each sectors as sector}
-    <fieldset class="mb-12">
-      <div class="mb-4 mt-2 w-full">
-        <legend><h2 class="mb-1">{sector.key}</h2></legend>
-      </div>
-      <div class="mb-4 grid gap-6 md:grid-cols-2">
-        {#each sector.values as category}
-          {#each category.values as lever}
-            <CompletionLevelInput
-              {lever}
-              valuePhys={$completionLevels[lever.region][lever.id]}
-              onUpdate={(newValuePhys, lever) =>
-                handleInputUpdate(newValuePhys, lever)}
-            />
+  <form class="mb-6 border-b">
+    {#each sectors as sector}
+      <fieldset class="mb-10">
+        <div class="mb-4 mt-2 w-full">
+          <legend><h2 class="mb-1">{sector.key}</h2></legend>
+        </div>
+        <div class="mb-4 grid gap-6 md:grid-cols-2">
+          {#each sector.values as category}
+            {#each category.values as lever}
+              <CompletionLevelInput
+                {lever}
+                valuePhys={$completionLevels[lever.region][lever.id]}
+                onUpdate={(newValuePhys, lever) =>
+                  handleInputUpdate(newValuePhys, lever)}
+              />
+            {/each}
           {/each}
-        {/each}
-      </div>
-      <a
-        class="fr-btn fr-btn--secondary fr-icon-arrow-right-line fr-btn--icon-right"
-        href={resultatsUrl}>Visualisez votre panorama des leviers actualisé</a
-      >
-    </fieldset>
-  {/each}
-</form>
+        </div>
+        <ul
+          class="fr-btns-group fr-btns-group--sm fr-btns-group--inline-sm fr-btns-group--icon-left"
+        >
+          <li>
+            <a
+              class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
+              href="/regions/{data.region}">Voir les objectifs territoriaux</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="fr-btn fr-btn--tertiary fr-icon-arrow-right-line fr-btn--icon-right"
+              href={resultatsUrl}
+              >Visualiser le panorama des leviers actualisé</a
+            >
+          </li>
+        </ul>
+      </fieldset>
+    {/each}
+  </form>
+</NavigationBar>
