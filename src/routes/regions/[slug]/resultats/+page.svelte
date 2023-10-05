@@ -30,9 +30,7 @@
     <div class="fr-notice__body">
       <p class="fr-notice__title">
         Voici les nouveaux objectifs actualisés sur la base des données
-        renseignées. Vous pouvez ensuite <a href={nouvelObjectifUrl}
-          >visualiser les objectifs restant.</a
-        >
+        renseignées. Vous pouvez ensuite visualiser les objectifs restants.
       </p>
     </div>
   </div>
