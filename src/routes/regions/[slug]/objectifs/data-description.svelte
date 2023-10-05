@@ -5,9 +5,13 @@
   export let unit: string;
 </script>
 
-<div class="flex-1 rounded-lg border px-4 py-2">
-  <div class="text-xl font-semibold tracking-tight text-gray-900 md:text-2xl">
-    {prettyNum(value, true)}
+<div class="flex flex-1 flex-col items-end justify-end border-r text-right">
+  <div class="pr-4">
+    <div
+      class="-mt-1 text-base font-semibold leading-tight tracking-tight text-gray-900 md:text-lg"
+    >
+      {prettyNum(value, true)}
+    </div>
+    <div class="text-xs leading-tight text-gray-800 md:text-sm">{unit}</div>
   </div>
-  <div class="text-xs font-medium text-gray-600">{unit}</div>
 </div>

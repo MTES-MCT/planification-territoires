@@ -52,17 +52,24 @@
 
   <h1 class="sr-only">{lever.name}</h1>
   <div
-    class="flex flex-grow flex-col justify-between border border-t-0 p-6"
+    class="flex flex-col border border-t-0 p-4"
     style={`border-color:${getColor(lever.sector)}`}
   >
-    <SubTitle label="Action déjà menée ou contractualisée" />
-    <div class="mb-8 flex items-end gap-x-3">
+    <div class="flex gap-x-4">
+      <div class="flex-1 border-r pb-6">
+        <div class="max-w-[180px] pr-4">
+          <SubTitle label="Objectif à atteindre en 2030" />
+        </div>
+      </div>
+      <SubTitle label="Action déjà menée ou contractualisée" />
+    </div>
+
+    <div class="flex gap-x-4">
+      <DataDescription value={lever.objPhys} unit={lever.unitPhys} />
       <div class="flex-1">
-        <label class="fr-label !text-sm" for={lever.id}>
-          <span class="block text-xs text-gray-500"
-            >L'unité est :
-          </span>{lever.unitPhys}</label
-        >
+        <label class="sr-only" for={lever.id}>
+          {lever.unitPhys}
+        </label>
         <input
           class="fr-input"
           name={lever.id}
@@ -74,12 +81,28 @@
           on:input={handlePhysInputChanged}
         />
       </div>
-      <div class="flex h-full items-end pb-1 text-sm md:text-lg">⇄</div>
+    </div>
+
+    <div class="flex gap-x-4">
+      <div
+        class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
+      >
+        <span class="pr-4">Soit</span>
+      </div>
+      <div class="flex-1 py-2 text-right text-xs font-medium text-gray-500">
+        Soit
+      </div>
+    </div>
+
+    <div class="flex gap-x-4">
+      <DataDescription
+        value={lever.objPhys / lever.ratioCO2toPhys}
+        unit={lever.unitCO2}
+      />
       <div class="flex-1">
-        <label class="fr-label !text-sm" for={`${lever.id}-co2`}>
-          <span class="block text-xs text-gray-500">L'unité est : </span>
-          {lever.unitCO2}</label
-        >
+        <label class="sr-only" for={`${lever.id}-co2`}>
+          {lever.unitCO2}
+        </label>
         <input
           class="fr-input"
           name={`${lever.id}-co2`}
@@ -91,16 +114,6 @@
           on:input={handleCO2InputChanged}
         />
       </div>
-    </div>
-
-    <SubTitle label="Objectif à atteindre en 2030" />
-    <div class="flex gap-x-3">
-      <DataDescription value={lever.objPhys} unit="unités physique" />
-      <div class="flex h-full items-center pt-2 text-sm md:text-lg">⇄</div>
-      <DataDescription
-        value={lever.objPhys / lever.ratioCO2toPhys}
-        unit="ktCO₂"
-      />
     </div>
   </div>
 </div>
