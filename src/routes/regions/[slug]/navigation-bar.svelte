@@ -32,7 +32,7 @@
   </div>
 </nav>
 
-<div class="mb-8 border-t border-gray-200 px-8 pb-3 pt-5 shadow-md">
+<div class="border-t border-gray-200 py-4">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
       <span class="fr-stepper__state">Étape {step} sur 4</span>
