@@ -12,7 +12,7 @@
   export let substractCompleted = false;
   export let showProgression = false;
 
-  let treemapVersion = "v2";
+  let treemapVersion = "v1";
   let width: number;
   let height: number;
 
