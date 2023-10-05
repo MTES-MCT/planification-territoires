@@ -49,7 +49,7 @@
   </div>
 
   <ul
-    class="fr-btns-group fr-btns-group--sm fr-btns-group--inline-sm fr-btns-group--icon-left"
+    class="fr-btns-group fr-btns-group--sm fr-btns-group--inline-sm fr-btns-group--icon-left flex justify-end"
   >
     <li>
       <a
