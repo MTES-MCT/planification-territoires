@@ -3,8 +3,6 @@ import { vitePreprocess } from "@sveltejs/kit/vite";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  // Consult https://kit.svelte.dev/docs/integrations#preprocessors
-  // for more information about preprocessors
   preprocess: vitePreprocess(),
 
   kit: {
@@ -15,18 +13,6 @@ const config = {
       precompress: true,
       strict: true,
     }),
-    // csp: {
-    //   mode: "nonce",
-    //   directives: {
-    //     "base-uri": ["none"],
-    //     "default-src": ["self"],
-    //     "connect-src": ["https://stats.beta.gouv.fr/"],
-    //     "script-src": ["self", "unsafe-inline", "https://stats.beta.gouv.fr/"],
-    //     "style-src": ["self", "unsafe-inline"],
-    //     "img-src": ["self", "data:"],
-    //     "frame-ancestors": ["none"],
-    //   },
-    // },
   },
   vitePlugin: {
     inspector: {

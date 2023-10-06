@@ -38,10 +38,6 @@
   }/resultats?${$page.url.searchParams.toString()}`;
 </script>
 
-<svelte:head>
-  <title>{data.region} | Objectifs | Simulateur territoires</title>
-</svelte:head>
-
 <NavigationBar
   region={data.region}
   title="Votre diagnostic territorial"

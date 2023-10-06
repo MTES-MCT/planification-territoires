@@ -7,10 +7,6 @@
   const editionLink = `/regions/${data.region}/objectifs`;
 </script>
 
-<svelte:head>
-  <title>Région {data.region} | Simulateur territoires</title>
-</svelte:head>
-
 <NavigationBar
   region={data.region}
   title="Présentation de vos objectifs territoriaux pour 2030"
