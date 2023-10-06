@@ -30,7 +30,7 @@ const config = {
         ],
         "style-src": ["self", "unsafe-inline"],
         "img-src": ["self", "data:"],
-        "frame-src": ["https://app.netlify.com/"],
+        "frame-src": [],
         "frame-ancestors": ["none"],
       },
     },
