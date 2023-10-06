@@ -23,25 +23,27 @@ file_path <- args
 
 # Chargement des onglets, et nettoyage initial
 
-data <- read_excel(file_path, "Table des Données") |> 
+data <- read_excel(file_path, "Table des Données") |>
   clean_names()
-corr1 <- read_excel(file_path, "Table de Correspondance (1)") |> 
-  clean_names() 
-corr2 <- read_excel(file_path, "Table de Correspondance (2)") |> 
+corr1 <- read_excel(file_path, "Table de Correspondance (1)") |>
   clean_names()
-formulae <- read_excel(file_path, "Formules (traduction physique)") |> 
-  clean_names() |> 
+corr2 <- read_excel(file_path, "Table de Correspondance (2)") |>
+  clean_names()
+formulae <- read_excel(file_path, "Formules (traduction physique)") |>
+  clean_names() |>
   rename(levier = leviers_en_vert_leviers_avec_deux_traductions_physiques) |>
   select(traduction_physique, cle_de_traduction)
 
 
 # Jointures
 final_data <- data |>
-  left_join(corr1, by = join_by(traduction_physique, leviers)) |>
+  left_join(corr1, by = join_by(traduction_physique, leviers==lien_leviers)) |>
+  rename(lien_leviers = leviers,
+         leviers = leviers.y) |>
   left_join(corr2, by = join_by(lien_leviers)) |>
   left_join(formulae, by = join_by(traduction_physique))|>
   select(-lien_leviers) |>
-  
+
 # Rename columns
   rename(id = identifiant_stable,
          name = leviers,
@@ -73,7 +75,7 @@ final_data <- data |>
 # Ajout du chemin pour la création du treemap
   mutate(path = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(name, '/', '-'))) |>
   mutate(path2 = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(name, '/', '-'))) |>
-  
+
 # Suppression de la colonne name
   select(-traduction_physique)
 
