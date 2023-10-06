@@ -20,16 +20,12 @@
   backUrl="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
   step="3"
 >
-  <div class="fr-notice fr-notice--info mb-6 print:hidden">
-    <div class="fr-container">
-      <div class="fr-notice__body">
-        <p class="fr-notice__title">
-          Voici les nouveaux objectifs actualisés sur la base des données
-          renseignées. Vous pouvez ensuite visualiser les objectifs restants.
-        </p>
-      </div>
-    </div>
-  </div>
+  <p class="mb-2">
+    Voici les nouveaux objectifs actualisés sur la base des données renseignées.
+    <span class="print:hidden">
+      Vous pouvez ensuite visualiser les objectifs restants.</span
+    >
+  </p>
 
   <div class="h-[75vh]">
     <MainTreemap data={data.regionData} showProgression />
