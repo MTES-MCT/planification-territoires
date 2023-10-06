@@ -48,8 +48,8 @@
     <div class="fr-footer__bottom">
       <ul class="fr-footer__bottom-list">
         <li class="fr-footer__bottom-item">
-          <span class="fr-footer__bottom-link"
-            >Accessibilité : non conforme</span
+          <a class="fr-footer__bottom-link" href="/accessibilite"
+            >Accessibilité : non conforme</a
           >
         </li>
         <li class="fr-footer__bottom-item">
