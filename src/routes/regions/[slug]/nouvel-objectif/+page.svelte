@@ -9,10 +9,6 @@
   let resultatsUrl = `/regions/${data.region}/resultats`;
 </script>
 
-<svelte:head>
-  <title>{data.region} | Nouvel objectif | Simulateur territoires</title>
-</svelte:head>
-
 <NavigationBar
   region={data.region}
   title="Votre nouvel objectif 2030 sur la base du diagnostic mené"

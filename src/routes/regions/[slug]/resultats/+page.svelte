@@ -11,10 +11,6 @@
   }/nouvel-objectif?${$page.url.searchParams.toString()}`;
 </script>
 
-<svelte:head>
-  <title>{data.region} | Résultats | Simulateur territoires</title>
-</svelte:head>
-
 <NavigationBar
   region={data.region}
   title="Visualisation du réalisé par rapport à l’objectif 2030"

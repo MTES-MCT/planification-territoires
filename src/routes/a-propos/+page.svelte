@@ -1,10 +1,6 @@
 <script>
 </script>
 
-<svelte:head>
-  <title>À propos | Simulateur territoires</title>
-</svelte:head>
-
 <nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
   <button
     class="fr-breadcrumb__button"
