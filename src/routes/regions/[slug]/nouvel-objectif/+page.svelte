@@ -6,7 +6,9 @@
 
   export let data;
 
-  let resultatsUrl = `/regions/${data.region}/resultats`;
+  let resultatsUrl = `/regions/${
+    data.region
+  }/resultats?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
