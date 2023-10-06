@@ -32,7 +32,7 @@
   </div>
 
   <button
-    class="fr-btn"
+    class="fr-btn print:!hidden"
     on:click={() => {
       navigator.clipboard.writeText($page.url.href);
     }}

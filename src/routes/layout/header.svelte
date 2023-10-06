@@ -1,4 +1,4 @@
-<header class="fr-header">
+<header class="fr-header print:!hidden">
   <div class="fr-header__body">
     <div class="fr-container">
       <div class="fr-header__body-row">

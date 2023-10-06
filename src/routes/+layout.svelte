@@ -39,8 +39,6 @@
 
 <Header />
 
-<hr />
-
 <main class="fr-container">
   <slot />
 </main>

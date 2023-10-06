@@ -8,7 +8,10 @@
   export let backUrl;
 </script>
 
-<nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
+<nav
+  class="fr-breadcrumb !mb-3 !mt-6 print:hidden"
+  aria-label="vous êtes ici :"
+>
   <button
     class="fr-breadcrumb__button"
     aria-expanded="false"
@@ -32,7 +35,14 @@
   </div>
 </nav>
 
-<div class="border-t border-gray-200 py-4">
+<h1 class="my-2 hidden text-3xl print:block">
+  <span class="block text-base font-medium text-gray-600">
+    Planification des territoires
+  </span>
+  {region}
+</h1>
+
+<div class="border-t border-gray-200 py-4 print:hidden">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
       <span class="fr-stepper__state">Étape {step} sur 4</span>
@@ -71,7 +81,7 @@
 <slot />
 
 <ul
-  class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end"
+  class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
 >
   <li>
     <a

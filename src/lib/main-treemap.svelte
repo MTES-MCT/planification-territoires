@@ -150,22 +150,27 @@
 </script>
 
 <div class="flex h-full flex-col">
-  <div class="font-bold">
-    Total d’objectif de baisse des émissions de GES : {prettyNum(
-      getTotalObjectives()
-    )} ktCO₂
-  </div>
-  {#if showProgression}
-    <div class="max-w-2xl font-bold">
-      Les zones hachurées correspondent à ce que vous avez déjà réalisé ou
-      contractualisé, soit un total de {prettyNum(getTotalCompleted())} ktCO₂
+  <div class=" print:mb-4">
+    <div class="font-bold">
+      Total d’objectif de baisse des émissions de GES : {prettyNum(
+        getTotalObjectives()
+      )} ktCO₂
     </div>
-  {/if}
+    {#if showProgression}
+      <div class="max-w-2xl font-bold print:max-w-5xl">
+        Les zones hachurées correspondent à ce que vous avez déjà réalisé ou
+        contractualisé, soit un total de {prettyNum(getTotalCompleted())} ktCO₂
+      </div>
+    {/if}
+  </div>
   <div class="mb-2 flex items-end gap-4">
     <div class="grow">
       <ColorLegend items={getLegendItems()} />
     </div>
-    <select bind:value={treemapVersion} class="fr-select basis-32">
+    <select
+      bind:value={treemapVersion}
+      class="fr-select basis-32 print:!hidden"
+    >
       <option value="v1">version 1</option>
       <option value="v2">version 2</option>
     </select>

@@ -20,7 +20,7 @@
   backUrl="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
   step="3"
 >
-  <div class="fr-notice fr-notice--info mb-6">
+  <div class="fr-notice fr-notice--info mb-6 print:hidden">
     <div class="fr-container">
       <div class="fr-notice__body">
         <p class="fr-notice__title">
@@ -36,7 +36,7 @@
   </div>
 
   <button
-    class="fr-btn fr-btn--secondary mb-12 mt-4"
+    class="fr-btn fr-btn--secondary mb-12 mt-4 print:!hidden"
     on:click={() => {
       navigator.clipboard.writeText($page.url.href);
     }}
