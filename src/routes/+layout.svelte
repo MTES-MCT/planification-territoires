@@ -4,8 +4,10 @@
   import { browser } from "$app/environment";
   import { page } from "$app/stores";
 
-  import "$lib/assets/dsfr.css";
   import "../app.postcss";
+
+  import "@gouvfr/dsfr/dist/dsfr.main.css";
+  import "@gouvfr/dsfr/dist/utility/utility.main.css";
 
   import Header from "./layout/header.svelte";
   import Footer from "./layout/footer.svelte";
