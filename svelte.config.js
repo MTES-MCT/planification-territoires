@@ -15,25 +15,18 @@ const config = {
       precompress: true,
       strict: true,
     }),
-    csp: {
-      mode: "auto",
-      directives: {
-        "base-uri": ["none"],
-        "default-src": ["self"],
-        // "require-trusted-types-for": ["script"],
-        "object-src": ["none"],
-        "script-src": [
-          "self",
-          // "strict-dynamic",
-          "unsafe-inline",
-          "https://netlify-cdp-loader.netlify.app",
-        ],
-        "style-src": ["self", "unsafe-inline"],
-        "img-src": ["self", "data:"],
-        "frame-src": [],
-        "frame-ancestors": ["none"],
-      },
-    },
+    // csp: {
+    //   mode: "nonce",
+    //   directives: {
+    //     "base-uri": ["none"],
+    //     "default-src": ["self"],
+    //     "connect-src": ["https://stats.beta.gouv.fr/"],
+    //     "script-src": ["self", "unsafe-inline", "https://stats.beta.gouv.fr/"],
+    //     "style-src": ["self", "unsafe-inline"],
+    //     "img-src": ["self", "data:"],
+    //     "frame-ancestors": ["none"],
+    //   },
+    // },
   },
   vitePlugin: {
     inspector: {
