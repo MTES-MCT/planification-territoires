@@ -2,14 +2,19 @@
   export let items: { label: string; color: string }[];
 </script>
 
-<div class="flex flex-row flex-wrap items-center gap-x-4 gap-y-1">
+<div class="mb-1 flex flex-row flex-wrap items-center gap-x-4 gap-y-2">
   {#each items as item}
-    <div class="flex flex-row items-center gap-2">
-      <div
-        style="background-color: {item.color}"
-        class="h-4 w-6 border border-gray-200 p-0"
-      ></div>
-      <div class="text-sm" style="font-variant-caps: all-small-caps;">
+    <div class="flex gap-1">
+      <svg
+        width="28"
+        height="14"
+        stroke-width="2"
+        stroke="#555"
+        fill={item.color}
+      >
+        <rect width="100%" height="100%"></rect>
+      </svg>
+      <div class="text-xs uppercase tracking-tight">
         {item.label}
       </div>
     </div>
