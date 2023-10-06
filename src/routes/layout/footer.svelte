@@ -69,9 +69,9 @@
           Sauf mention explicite de propriété intellectuelle détenue par des
           tiers, les contenus de ce site sont proposés sous
           <a
-            href="https://github.com/etalab/licence-ouverte/blob/master/LO.md"
+            href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/"
             target="_blank"
-            >licence etalab-2.0
+            >Licence Ouverte Version 2.0
           </a>
         </p>
       </div>
