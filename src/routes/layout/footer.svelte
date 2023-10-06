@@ -58,6 +58,11 @@
         <li class="fr-footer__bottom-item">
           <span class="fr-footer__bottom-link">Données personnelles</span>
         </li>
+        <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" target="_blank" href="/statistiques"
+            >Statistiques</a
+          >
+        </li>
       </ul>
       <div class="fr-footer__bottom-copy">
         <p>
