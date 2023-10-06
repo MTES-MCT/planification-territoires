@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  import MainTreemap from "$lib/main-treemap.svelte";
+  import MainViz from "$lib/main-viz.svelte";
   import { getRegionName } from "$lib/utils";
   import NavigationBar from "../navigation-bar.svelte";
 
@@ -29,7 +29,7 @@
   </p>
 
   <div class="h-[75vh]">
-    <MainTreemap data={data.regionData} showProgression />
+    <MainViz data={data.regionData} showProgression />
   </div>
 
   <button

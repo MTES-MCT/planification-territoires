@@ -2,8 +2,8 @@
   import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
 
   import completionLevels from "$lib/completion-levels-store";
-  import Treemap from "$lib/treemap/treemap.svelte";
-  import Treemap2 from "$lib/treemap/treemap2.svelte";
+  import Mondrian from "$lib/treemap/mondrian.svelte";
+  import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
   import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
   import type { Lever } from "$lib/types";
@@ -13,7 +13,7 @@
   export let substractCompleted = false;
   export let showProgression = false;
 
-  let treemapVersion = "v1";
+  let selectedViz = "mondrian";
   let width: number;
   let height: number;
 
@@ -52,11 +52,11 @@
     }
   }
 
-  function getPathV1(lever: Lever) {
+  function getPathMondrian(lever: Lever) {
     return lever.path;
   }
 
-  function getPathV2(lever: Lever) {
+  function getPathMarimekko(lever: Lever) {
     return lever.path2;
   }
 
@@ -128,6 +128,17 @@
     return objectives?.totalCompleted;
   }
 
+  function handleSelectVizVersion(evt: Event) {
+    const target = evt.target as HTMLInputElement;
+    selectedViz = target.value;
+    window._paq.push([
+      "trackEvent",
+      "Options",
+      "Choix visualisation",
+      selectedViz,
+    ]);
+  }
+
   // On injecte le niveau de progression, en ktCO₂
   $: extData = data.map((lever: Lever) => ({
     ...lever,
@@ -181,11 +192,12 @@
       <ColorLegend items={getLegendItems()} />
     </div>
     <select
-      bind:value={treemapVersion}
-      class="fr-select basis-32 print:!hidden"
+      bind:value={selectedViz}
+      on:change={handleSelectVizVersion}
+      class="fr-select basis-48 print:!hidden"
     >
-      <option value="v1">version 1</option>
-      <option value="v2">version 2</option>
+      <option value="mondrian">Mondrian</option>
+      <option value="marimekko">Marimekko</option>
     </select>
   </div>
   <div
@@ -193,10 +205,10 @@
     bind:clientWidth={width}
     bind:clientHeight={height}
   >
-    {#if treemapVersion === "v1"}
-      <Treemap
+    {#if selectedViz === "mondrian"}
+      <Mondrian
         data={aggData}
-        getPath={getPathV1}
+        getPath={getPathMondrian}
         {getLabel}
         {getColor}
         {getValue}
@@ -206,9 +218,9 @@
         {height}
       />
     {:else}
-      <Treemap2
+      <Marimekko
         data={aggData}
-        getPath={getPathV2}
+        getPath={getPathMarimekko}
         {getLabel}
         {getColor}
         {getValue}

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MainTreemap from "$lib/main-treemap.svelte";
+  import MainViz from "$lib/main-viz.svelte";
   import { getRegionName } from "$lib/utils";
   import NavigationBar from "../navigation-bar.svelte";
 
@@ -24,6 +24,6 @@
   </p>
 
   <div class="my-8 block h-[75vh]">
-    <MainTreemap data={data.regionData} />
+    <MainViz data={data.regionData} />
   </div>
 </NavigationBar>
