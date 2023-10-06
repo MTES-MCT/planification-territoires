@@ -7,9 +7,9 @@ const leversData = rawLeversData.map((row) => ({
   regionSlug: normalizeString(row.region),
 })) as Lever[];
 
-export function prettyNum(number: number, roundBig = false) {
+export function prettyNum(number: number, roundBig = false, roundAll = true) {
   return number.toLocaleString("fr-FR", {
-    maximumFractionDigits: number < 1000 || !roundBig ? 2 : 0,
+    maximumFractionDigits: roundAll ? 0 : number < 1000 || !roundBig ? 2 : 0,
   });
 }
 
