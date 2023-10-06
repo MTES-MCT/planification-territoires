@@ -1,5 +1,5 @@
 {
-  "name": "simobjter",
+  "name": "planification-territoires",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
     "husky": "8.0.3",
     "lint-staged": "14.0.1",
     "lodash": "4.17.21",
-    "postcss": "8.4.29",
+    "postcss": "8.4.31",
     "prettier": "3.0.3",
     "prettier-plugin-svelte": "3.0.3",
     "prettier-plugin-tailwindcss": "0.5.4",
