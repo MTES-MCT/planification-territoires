@@ -2,7 +2,10 @@ import rawLeversData from "$lib/assets/data.json";
 import type { Lever, RegionCompletionLevels } from "$lib/types";
 import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
-const leversData = rawLeversData as Lever[];
+const leversData = rawLeversData.map((row) => ({
+  ...row,
+  regionSlug: normalizeString(row.region),
+})) as Lever[];
 
 export function prettyNum(number: number, roundBig = false) {
   return number.toLocaleString("fr-FR", {
@@ -14,10 +17,10 @@ export function clamp(x: number, min: number, max: number) {
   return Math.max(min, Math.min(max, x));
 }
 
-export function getRegionData(regionName: string): Lever[] {
+export function getRegionData(regionSlug: string): Lever[] {
   return tidy(
     leversData,
-    filter((d) => d.region === regionName)
+    filter((d) => d.regionSlug === regionSlug)
   );
 }
 
@@ -28,6 +31,19 @@ export function getRegionsNames(): string[] {
     distinct("region"),
     arrange((a, b) => a.region.localeCompare(b.region, "fr"))
   ).map((row) => row.region);
+}
+
+export function getRegionsSlugs(): string[] {
+  return tidy(
+    leversData,
+    select("regionSlug"),
+    distinct("regionSlug"),
+    arrange((a, b) => a.regionSlug.localeCompare(b.regionSlug, "fr"))
+  ).map((row) => row.regionSlug);
+}
+
+export function getRegionName(regionSlug: string): string {
+  return getRegionsNames().find((name) => normalizeString(name) === regionSlug);
 }
 
 export function getSectorsNames(): string[] {
@@ -82,4 +98,19 @@ export function getColor(sector: string) {
     default:
       return "black";
   }
+}
+
+export function normalizeString(str: string): string {
+  return (
+    str
+      .trim()
+      .toLowerCase()
+      // décomposition canonique, les caractères accentués vont être décomposé en
+      // caractère ascii + diacritique
+      .normalize("NFD")
+      // on supprime les diacritiques…
+      .replace(/[\u0300-\u036f]/g, "")
+      // et enfin on remplace tous les caractères non ascii
+      .replace(/([^0-9a-zA-Z])/g, "-")
+  );
 }

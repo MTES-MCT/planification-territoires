@@ -7,18 +7,17 @@ import completionLevels from "$lib/completion-levels-store";
 import type { LayoutLoad } from "./$types";
 
 export const load: LayoutLoad = async ({ params, url }) => {
-  const region = params.slug as string;
+  const regionSlug = params.slug as string;
 
   if (url.searchParams.toString()) {
-    const currentRegionData = get(completionLevels)[region];
+    const currentRegionData = get(completionLevels)[regionSlug];
     const dataFromQS = getCompletionLevelsFromURL(url.searchParams);
     if (!isEqual(currentRegionData, dataFromQS)) {
-      completionLevels.update((cls) => ({ ...cls, [region]: dataFromQS }));
+      completionLevels.update((cls) => ({ ...cls, [regionSlug]: dataFromQS }));
     }
   }
-
   return {
-    region,
-    regionData: getRegionData(region),
+    regionSlug,
+    regionData: getRegionData(regionSlug),
   };
 };

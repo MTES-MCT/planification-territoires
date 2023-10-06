@@ -1,14 +1,15 @@
 <script lang="ts">
   import MainTreemap from "$lib/main-treemap.svelte";
-  import NavigationBar from "./navigation-bar.svelte";
+  import { getRegionName } from "$lib/utils";
+  import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
 
-  const editionLink = `/regions/${data.region}/objectifs`;
+  const editionLink = `/territoire/${data.regionSlug}/diagnostic`;
 </script>
 
 <NavigationBar
-  region={data.region}
+  territoryName={getRegionName(data.regionSlug)}
   title="Présentation de vos objectifs territoriaux pour 2030"
   nextLabel="Réaliser le diagnostic territorial"
   nextUrl={editionLink}

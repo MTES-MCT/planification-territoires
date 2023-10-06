@@ -132,7 +132,7 @@
   $: extData = data.map((lever: Lever) => ({
     ...lever,
     progressionCO2:
-      $completionLevels[lever.region][lever.id] / lever.ratioCO2toPhys,
+      $completionLevels[lever.regionSlug][lever.id] / lever.ratioCO2toPhys,
   }));
 
   // On groupe les traductions physiques par nom de levier

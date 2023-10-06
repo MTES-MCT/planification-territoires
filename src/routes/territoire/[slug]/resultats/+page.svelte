@@ -2,22 +2,23 @@
   import { page } from "$app/stores";
 
   import MainTreemap from "$lib/main-treemap.svelte";
+  import { getRegionName } from "$lib/utils";
   import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
 
-  let nouvelObjectifUrl = `/regions/${
-    data.region
+  let nouvelObjectifUrl = `/territoire/${
+    data.regionSlug
   }/nouvel-objectif?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
-  region={data.region}
+  territoryName={getRegionName(data.regionSlug)}
   title="Visualisation du réalisé par rapport à l’objectif 2030"
   nextLabel="Visualiser les objectifs restants"
   nextUrl={nouvelObjectifUrl}
   backLabel="Éditer le diagnostic territorial"
-  backUrl="/regions/{data.region}/objectifs?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
   step="3"
 >
   <p class="mb-2">

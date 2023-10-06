@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { getRegionName } from "$lib/utils";
   import { tidy, groupBy } from "@tidyjs/tidy";
 
   import { page } from "$app/stores";
@@ -18,7 +19,7 @@
   );
 
   function handleInputUpdate(newValuePhys: number, lever: Lever) {
-    $completionLevels[data.region][lever.id] = newValuePhys;
+    $completionLevels[data.regionSlug][lever.id] = newValuePhys;
     // Mise à jour de l'URL
     const newSearchParams = new URLSearchParams($page.url.searchParams);
     if (!newValuePhys) {
@@ -33,18 +34,18 @@
     });
   }
 
-  $: resultatsUrl = `/regions/${
-    data.region
+  $: resultatsUrl = `/territoire/${
+    data.regionSlug
   }/resultats?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
-  region={data.region}
+  territoryName={getRegionName(data.regionSlug)}
   title="Votre diagnostic territorial"
   nextLabel="Visualiser le panorama des leviers actualisé"
   nextUrl={resultatsUrl}
   backLabel="Voir les objectifs territoriaux"
-  backUrl="/regions/{data.region}"
+  backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"
 >
   <p class="max-w-2xl text-lg">
@@ -66,7 +67,7 @@
             {#each category.values as lever}
               <CompletionLevelInput
                 {lever}
-                valuePhys={$completionLevels[lever.region][lever.id]}
+                valuePhys={$completionLevels[lever.regionSlug][lever.id]}
                 onUpdate={(newValuePhys, lever) =>
                   handleInputUpdate(newValuePhys, lever)}
               />
@@ -79,7 +80,8 @@
           <li>
             <a
               class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-              href="/regions/{data.region}">Voir les objectifs territoriaux</a
+              href="/territoire/{data.regionSlug}"
+              >Voir les objectifs territoriaux</a
             >
           </li>
 

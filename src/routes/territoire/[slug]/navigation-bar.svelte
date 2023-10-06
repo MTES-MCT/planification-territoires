@@ -1,5 +1,5 @@
 <script>
-  export let region;
+  export let territoryName;
   export let title;
   export let step;
   export let nextLabel = "";
@@ -29,7 +29,9 @@
         >
       </li>
       <li>
-        <span class="fr-breadcrumb__link" aria-current="page">{region}</span>
+        <span class="fr-breadcrumb__link" aria-current="page"
+          >{territoryName}</span
+        >
       </li>
     </ol>
   </div>
@@ -39,7 +41,7 @@
   <span class="block text-base font-medium text-gray-600">
     Planification des territoires
   </span>
-  {region}
+  {territoryName}
 </h1>
 
 <div class="border-t border-gray-200 py-4 print:hidden">
