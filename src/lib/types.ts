@@ -11,7 +11,8 @@ export interface Lever {
   ratioCO2toPhys: number;
   path: string;
   path2: string;
-  progressionRatio?: number;
+  progressionCO2?: number;
+  regionSlug?: string;
 }
 
 // État actuel de l'objectif, en unités physiques
