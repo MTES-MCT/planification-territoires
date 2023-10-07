@@ -7,10 +7,14 @@ const actionsData = rawActionsData.map((row) => ({
   regionSlug: normalizeString(row.region),
 })) as Action[];
 
-export function prettyNum(number: number, roundBig = false, roundAll = true) {
-  return number.toLocaleString("fr-FR", {
+export function prettyNum(
+  number: number,
+  { roundBig = false, roundAll = true, unitCO2 = true } = {}
+) {
+  const numberStr = number.toLocaleString("fr-FR", {
     maximumFractionDigits: roundAll ? 0 : number < 1000 || !roundBig ? 2 : 0,
   });
+  return unitCO2 ? `${numberStr} ktCO₂` : numberStr;
 }
 
 export function clamp(x: number, min: number, max: number) {

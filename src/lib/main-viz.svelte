@@ -17,9 +17,9 @@
     if ($displayOptions.showRemainingOnly || showProgression) {
       return `${lever.name}\n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
-      )} ktCO₂`;
+      )}`;
     }
-    return `${lever.name}\n−${prettyNum(lever.objCO2)} ktCO₂`;
+    return `${lever.name}\n−${prettyNum(lever.objCO2)}`;
   }
 
   function getValue(lever: Lever) {
@@ -33,15 +33,15 @@
     if ($displayOptions.showRemainingOnly) {
       return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
-      )} ktCO₂`;
+      )}`;
     } else {
       let title = `${lever.name}\n\nObjectif initial : \n−${prettyNum(
         lever.objCO2
-      )} ktCO₂`;
+      )}`;
       if (showProgression && lever.progressionCO2) {
         title += `\n\nRéalisé ou contractualisé : \n−${prettyNum(
           lever.progressionCO2
-        )} ktCO₂
+        )}
         `;
       }
       return title;
@@ -87,9 +87,9 @@
       filter((row) => row.group === group)
     )[0];
     if (showProgression || $displayOptions.showRemainingOnly) {
-      return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
+      return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)}`;
     }
-    return `−${prettyNum(total.totalObjCO2)} ktCO₂`;
+    return `−${prettyNum(total.totalObjCO2)}`;
   }
 
   function getLegendItems() {
@@ -173,7 +173,7 @@
         Baisse des émissions de GES à atteindre d'ici 2030
       </div>
       <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
-        {prettyNum(getTotalObjectives())} ktCO₂
+        {prettyNum(getTotalObjectives())}
       </div>
     </div>
 
@@ -187,7 +187,7 @@
           Total des actions déjà menées ou contractualisées
         </div>
         <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
-          {prettyNum(getTotalCompleted())} ktCO₂
+          {prettyNum(getTotalCompleted())}
         </div>
       {/if}
     </div>

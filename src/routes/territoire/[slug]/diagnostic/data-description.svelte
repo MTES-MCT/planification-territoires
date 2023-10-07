@@ -10,7 +10,7 @@
     <div
       class="-mt-1 text-base font-semibold leading-tight tracking-tight text-gray-900 md:text-lg"
     >
-      {prettyNum(value, true, false)}
+      {prettyNum(value, { roundBig: true, roundAll: false, unitCO2: false })}
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">{unit}</div>
   </div>
