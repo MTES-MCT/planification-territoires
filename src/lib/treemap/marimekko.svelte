@@ -8,6 +8,7 @@
   import DiagonalHatchPattern from "./diagonalHatchPattern.svelte";
   import ProgressBlock from "./progressBlock.svelte";
   import * as d3 from "d3";
+  import Label from "./label.svelte";
 
   type Row = object;
   export let data: Row[];
@@ -32,7 +33,7 @@
     .size([width + 12, height])
     .paddingRight(6)
     .paddingInner(1)
-    .paddingBottom(24)
+    .paddingBottom(48)
     .round(true)(
     hierarchy
       .sum((row) => Math.max(0, row ? getValue(row) : 0))
@@ -40,87 +41,44 @@
         d3.descending(a.value, b.value)
       )
   );
-  const uid = `O-${Math.random().toString(16).slice(2)}`;
 </script>
 
 <div class="h-full">
   {#if width && height}
-    <svg
-      viewBox="0 0 {width} {height}"
-      {width}
-      {height}
-      style="max-width: 100%; height: auto;"
-      font-family="Marianne"
-      font-size="12"
-    >
-      <style>
-        .line-0 {
-          font-size: 13px;
-          font-weight: bold;
-          fill-opacity: 0.8;
-        }
-
-        .line-1 {
-          font-size: 12px;
-          fill-opacity: 0.8;
-        }
-
-        .line-2 {
-          font-size: 10px;
-          font-style: italic;
-          fill-opacity: 0.7;
-        }
-
-        .group {
-          font-size: 18px;
-          font-weight: bold;
-          fill-opacity: 1;
-          font-variant-caps: all-small-caps;
-        }
-        .total {
-          font-size: 12px;
-          font-style: italic;
-          fill-opacity: 0.7;
-        }
-      </style>
+    <svg viewBox="0 0 {width} {height}">
       <DiagonalHatchPattern />
-      {#each root.leaves() as d, i}
+      {#each root.leaves() as d}
         {@const lines = getLabel(d.data).split(/\n/g)}
+        {@const width = d.x1 - d.x0}
+        {@const height = d.y1 - d.y0}
         <g transform="translate({d.x0},{d.y0})">
           <ProgressBlock
-            width={d.x1 - d.x0}
-            height={d.y1 - d.y0}
+            {width}
+            {height}
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
           <title>{getTitle(d.data)}</title>
-          <clipPath id="{uid}-clip-{i}">
-            <rect width={d.x1 - d.x0} height={d.y1 - d.y0} />
-          </clipPath>
-          <text clip-path="url(#{uid}-clip-{i})" pointer-events="none">
-            {#each lines as l, j}
-              <tspan
-                x="6"
-                y="{1.2 + (j === lines.length - 1) * 1.2 + j * 1.6}em"
-                class="line-{j}"
-              >
-                {l}
-              </tspan>
-            {/each}
-          </text>
+          <Label {height} {width} {lines} />
         </g>
       {/each}
-      {#each root.descendants().filter((d) => d.depth === 1) as d, i}
-        <g transform="translate({d.x0},{d.y0})">
-          <clipPath id="{uid}-clipcat-{i}">
-            <rect width={d.x1 - d.x0} height={d.y1 - d.y0 + 40} />
-          </clipPath>
-          <text clip-path="url(#{uid}-clipcat-{i})" pointer-events="none">
-            <tspan class="group" x="0" y={d.y1}>{getGroupName(d.id)}</tspan>
-            <tspan class="total" x="0" y={d.y1 + 20}>
-              {getGroupTotal(d.id)}
-            </tspan>
-          </text>
+      {#each root.descendants().filter((d) => d.depth === 1) as d}
+        {@const width = d.x1 - d.x0}
+        <g transform="translate({d.x0},{d.y1 - 48})">
+          <foreignObject {width} height="72">
+            <div
+              class="flex h-full flex-col justify-end border-l-2 pl-2 pt-2 font-semibold tracking-tighter"
+            >
+              <div
+                class="mb-[1px] max-h-8 overflow-hidden truncate hyphens-auto text-sm uppercase leading-[1.1] md:whitespace-normal"
+              >
+                {getGroupName(d.id)}
+              </div>
+              <div class="truncate text-sm font-normal">
+                {getGroupTotal(d.id)}
+              </div>
+            </div>
+          </foreignObject>
         </g>
       {/each}
     </svg>
