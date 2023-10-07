@@ -29,7 +29,7 @@
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
-  let columnTotalHeight = 56;
+  let columnTotalHeight = 96;
 
   $: root = d3
     .treemap()
