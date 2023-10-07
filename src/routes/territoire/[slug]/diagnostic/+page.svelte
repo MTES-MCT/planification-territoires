@@ -9,23 +9,26 @@
   import NavigationBar from "../navigation-bar.svelte";
   import CompletionLevelInput from "./completion-level-input.svelte";
 
-  import type { Lever } from "$lib/types";
+  import type { Action } from "$lib/types";
 
   export let data;
 
   const sectors = tidy(
     data.regionData,
-    groupBy(["sector", "category"], [], groupBy.entriesObject())
+    groupBy(["sector", "group"], [], groupBy.entriesObject())
   );
 
-  function handleInputUpdate(newValuePhys: number, lever: Lever) {
-    $completionLevels[data.regionSlug][lever.id] = newValuePhys;
+  function handleInputUpdate(newValuePhys: number, action: Action) {
+    $completionLevels[data.regionSlug][action.id] = newValuePhys;
     // Mise à jour de l'URL
     const newSearchParams = new URLSearchParams($page.url.searchParams);
     if (!newValuePhys) {
-      newSearchParams.delete(lever.id);
+      newSearchParams.delete(action.id);
     } else {
-      newSearchParams.set(lever.id, Number(newValuePhys.toFixed(4)).toString());
+      newSearchParams.set(
+        action.id,
+        Number(newValuePhys.toFixed(4)).toString()
+      );
     }
     goto(`?${newSearchParams.toString()}`, {
       keepFocus: true,
@@ -66,13 +69,13 @@
           <legend><h2 class="mb-1">{sector.key}</h2></legend>
         </div>
         <div class="mb-4 grid gap-6 md:grid-cols-2">
-          {#each sector.values as category}
-            {#each category.values as lever}
+          {#each sector.values as group}
+            {#each group.values as action}
               <CompletionLevelInput
-                {lever}
-                valuePhys={$completionLevels[lever.regionSlug][lever.id]}
-                onUpdate={(newValuePhys, lever) =>
-                  handleInputUpdate(newValuePhys, lever)}
+                {action}
+                valuePhys={$completionLevels[action.regionSlug][action.id]}
+                onUpdate={(newValuePhys, action) =>
+                  handleInputUpdate(newValuePhys, action)}
               />
             {/each}
           {/each}

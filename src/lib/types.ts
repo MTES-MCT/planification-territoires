@@ -1,6 +1,6 @@
-export interface Lever {
+export interface Action {
   id: string;
-  name: string;
+  leverName: string;
   region: string;
   objCO2: number;
   objPhys: number;
@@ -9,10 +9,19 @@ export interface Lever {
   sector: string;
   group: string;
   ratioCO2toPhys: number;
-  path: string;
-  path2: string;
-  progressionCO2?: number;
-  regionSlug?: string;
+  pathSector: string;
+  pathGroup: string;
+  regionSlug: string;
+}
+
+export interface Lever {
+  name: string;
+  group: string;
+  sector: string;
+  pathSector: string;
+  pathGroup: string;
+  objCO2: number;
+  progressionCO2: number;
 }
 
 // État actuel de l'objectif, en unités physiques

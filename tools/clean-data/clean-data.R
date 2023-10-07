@@ -46,7 +46,7 @@ final_data <- data |>
 
 # Rename columns
   rename(id = identifiant_stable,
-         name = leviers,
+         leverName = leviers,
          sector = secteurs,
          group = correspondance_secteurs,
          ratioCO2toPhys = cle_de_traduction,
@@ -73,8 +73,8 @@ final_data <- data |>
   mutate(sector = str_replace(sector, "Energie", "Énergie")) |>
 
 # Ajout du chemin pour la création du treemap
-  mutate(path = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(name, '/', '-'))) |>
-  mutate(path2 = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(name, '/', '-'))) |>
+  mutate(pathSector = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(leverName, '/', '-'))) |>
+  mutate(pathGroup = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(leverName, '/', '-'))) |>
 
 # Suppression de la colonne name
   select(-traduction_physique)

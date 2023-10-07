@@ -4,26 +4,26 @@
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "./sub-title.svelte";
   import DataDescription from "./data-description.svelte";
-  import type { Lever } from "$lib/types";
+  import type { Action } from "$lib/types";
 
-  export let lever: Lever;
+  export let action: Action;
   export let valuePhys: number;
-  export let onUpdate: (newValuePhys: number, lever: Lever) => void;
+  export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  let valueCO2 = +(valuePhys / lever.ratioCO2toPhys).toFixed(4);
+  let valueCO2 = +(valuePhys / action.ratioCO2toPhys).toFixed(4);
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     const newValuePhys = Number(target.value) || 0;
-    valueCO2 = +(newValuePhys / lever.ratioCO2toPhys).toFixed(4);
-    onUpdate(newValuePhys, lever);
+    valueCO2 = +(newValuePhys / action.ratioCO2toPhys).toFixed(4);
+    onUpdate(newValuePhys, action);
   }
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     valueCO2 = Number(target.value) || 0;
-    const newValuePhys = +(valueCO2 * lever.ratioCO2toPhys).toFixed(4);
-    onUpdate(newValuePhys, lever);
+    const newValuePhys = +(valueCO2 * action.ratioCO2toPhys).toFixed(4);
+    onUpdate(newValuePhys, action);
   }
 </script>
 
@@ -39,21 +39,21 @@
     <DiagonalHatchPattern />
     <ProgressBlock
       height={200}
-      fill={getColor(lever.sector)}
-      progress={lever.objPhys ? clamp(valuePhys / lever.objPhys, 0, 1) : 0}
+      fill={getColor(action.sector)}
+      progress={action.objPhys ? clamp(valuePhys / action.objPhys, 0, 1) : 0}
     />
-    <title>{lever.name}</title>
+    <title>{action.leverName}</title>
     <text>
       <tspan class="title" x="16" y="32">
-        {lever.name}
+        {action.leverName}
       </tspan>
     </text>
   </svg>
 
-  <h1 class="sr-only">{lever.name}</h1>
+  <h1 class="sr-only">{action.leverName}</h1>
   <div
     class="flex flex-col border border-t-0 p-4"
-    style={`border-color:${getColor(lever.sector)}`}
+    style={`border-color:${getColor(action.sector)}`}
   >
     <div class="flex gap-x-4">
       <div class="flex-1 border-r pb-6">
@@ -65,18 +65,18 @@
     </div>
 
     <div class="flex gap-x-4">
-      <DataDescription value={lever.objPhys} unit={lever.unitPhys} />
+      <DataDescription value={action.objPhys} unit={action.unitPhys} />
       <div class="flex-1">
-        <label class="sr-only" for={lever.id}>
-          {lever.unitPhys}
+        <label class="sr-only" for={action.id}>
+          {action.unitPhys}
         </label>
         <input
           class="fr-input"
-          name={lever.id}
+          name={action.id}
           type="number"
           step="any"
           min={0}
-          id={lever.id}
+          id={action.id}
           value={valuePhys}
           on:input={handlePhysInputChanged}
         />
@@ -96,20 +96,20 @@
 
     <div class="flex gap-x-4">
       <DataDescription
-        value={lever.objPhys / lever.ratioCO2toPhys}
-        unit={lever.unitCO2}
+        value={action.objPhys / action.ratioCO2toPhys}
+        unit={action.unitCO2}
       />
       <div class="flex-1">
-        <label class="sr-only" for={`${lever.id}-co2`}>
-          {lever.unitCO2}
+        <label class="sr-only" for={`${action.id}-co2`}>
+          {action.unitCO2}
         </label>
         <input
           class="fr-input"
-          name={`${lever.id}-co2`}
+          name={`${action.id}-co2`}
           type="number"
           step="any"
           min={0}
-          id={`${lever.id}-co2`}
+          id={`${action.id}-co2`}
           value={valueCO2}
           on:input={handleCO2InputChanged}
         />

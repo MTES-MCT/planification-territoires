@@ -11,7 +11,7 @@
       >Planification territoires</strong
     >
     <span>
-      (<span>http://planification-territoires.ecologie.gouv.fr/</span>)</span
+      (<span>https://planification-territoires.ecologie.gouv.fr/</span>)</span
     >.
   </p>
   <h2>État de conformité</h2>

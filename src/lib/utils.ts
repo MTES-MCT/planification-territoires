@@ -1,11 +1,11 @@
-import rawLeversData from "$lib/assets/data.json";
-import type { Lever, RegionCompletionLevels } from "$lib/types";
+import rawActionsData from "$lib/assets/data.json";
+import type { Action, RegionCompletionLevels } from "$lib/types";
 import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
-const leversData = rawLeversData.map((row) => ({
+const actionsData = rawActionsData.map((row) => ({
   ...row,
   regionSlug: normalizeString(row.region),
-})) as Lever[];
+})) as Action[];
 
 export function prettyNum(number: number, roundBig = false, roundAll = true) {
   return number.toLocaleString("fr-FR", {
@@ -17,16 +17,16 @@ export function clamp(x: number, min: number, max: number) {
   return Math.max(min, Math.min(max, x));
 }
 
-export function getRegionData(regionSlug: string): Lever[] {
+export function getRegionData(regionSlug: string): Action[] {
   return tidy(
-    leversData,
+    actionsData,
     filter((d) => d.regionSlug === regionSlug)
   );
 }
 
 export function getRegionsNames(): string[] {
   return tidy(
-    leversData,
+    actionsData,
     select("region"),
     distinct("region"),
     arrange((a, b) => a.region.localeCompare(b.region, "fr"))
@@ -35,7 +35,7 @@ export function getRegionsNames(): string[] {
 
 export function getRegionsSlugs(): string[] {
   return tidy(
-    leversData,
+    actionsData,
     select("regionSlug"),
     distinct("regionSlug"),
     arrange((a, b) => a.regionSlug.localeCompare(b.regionSlug, "fr"))
@@ -48,7 +48,7 @@ export function getRegionName(regionSlug: string): string {
 
 export function getSectorsNames(): string[] {
   return tidy(
-    leversData,
+    actionsData,
     select("sector"),
     distinct("sector"),
     arrange((a, b) => a.sector.localeCompare(b.sector, "fr"))
@@ -57,7 +57,7 @@ export function getSectorsNames(): string[] {
 
 export function getIdNames(): string[] {
   return tidy(
-    leversData,
+    actionsData,
     select("id"),
     distinct("id"),
     arrange((a, b) => a.id.localeCompare(b.sector, "id"))
@@ -105,7 +105,7 @@ export function normalizeString(str: string): string {
     str
       .trim()
       .toLowerCase()
-      // décomposition canonique, les caractères accentués vont être décomposé en
+      // décomposition canonique, les caractères accentués vont être décomposés en
       // caractère ascii + diacritique
       .normalize("NFD")
       // on supprime les diacritiques…

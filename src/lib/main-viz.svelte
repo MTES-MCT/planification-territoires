@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
+  import { tidy, groupBy, sum, summarize, filter, rename } from "@tidyjs/tidy";
 
   import completionLevels from "$lib/completion-levels-store";
   import displayOptions from "$lib/display-options-store";
@@ -7,10 +7,10 @@
   import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
   import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
-  import type { Lever } from "$lib/types";
+  import type { Action, Lever } from "$lib/types";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
 
-  export let data: Lever[];
+  export let data: Action[];
   export let showProgression = false;
 
   function getLabel(lever: Lever) {
@@ -49,11 +49,11 @@
   }
 
   function getPathMondrian(lever: Lever) {
-    return lever.path;
+    return lever.pathSector;
   }
 
   function getPathMarimekko(lever: Lever) {
-    return lever.path2;
+    return lever.pathGroup;
   }
 
   function getProgressionRatio(lever: Lever) {
@@ -77,7 +77,7 @@
   function getGroupTotal(path: string) {
     const group = _getGroupFromPath(path);
     const total = tidy(
-      aggData,
+      leversData,
       groupBy("group", [
         summarize({
           totalObjCO2: sum("objCO2"),
@@ -101,7 +101,7 @@
 
   function getTotalObjectives() {
     const objectives = tidy(
-      aggData,
+      leversData,
       summarize({
         totalObjCO2: sum("objCO2"),
         totalCompleted: sum("progressionCO2"),
@@ -115,7 +115,7 @@
 
   function getTotalCompleted() {
     const objectives = tidy(
-      aggData,
+      leversData,
       summarize({
         totalCompleted: sum("progressionCO2"),
       })
@@ -142,29 +142,28 @@
     ]);
   }
 
-  // On injecte le niveau de progression, en ktCO₂
-  $: extData = data.map((lever: Lever) => ({
-    ...lever,
-    progressionCO2:
-      $completionLevels[lever.regionSlug][lever.id] / lever.ratioCO2toPhys,
-  }));
-
-  // On groupe les traductions physiques par nom de levier
-  $: aggData = tidy(
-    extData,
+  // On injecte le niveau de progression, en ktCO2, et groupe les traductions physiques par nom de levier
+  let leversData: Lever[];
+  $: leversData = tidy(
+    data.map((action: Action) => ({
+      ...action,
+      progressionCO2:
+        $completionLevels[action.regionSlug][action.id] / action.ratioCO2toPhys,
+    })),
     groupBy(
-      ["name", "group", "sector", "path", "path2"],
+      ["leverName", "group", "sector", "pathSector", "pathGroup"],
       [
         summarize({
           objCO2: sum("objCO2"),
           progressionCO2: sum("progressionCO2"),
         }),
       ]
-    )
+    ),
+    rename({ leverName: "name" })
   );
 
   $: canHideCompletedObjectives =
-    showProgression && aggData.some((lever) => !!lever.progressionCO2);
+    showProgression && leversData.some((level) => !!level.progressionCO2);
 </script>
 
 <div class="flex h-full flex-col">
@@ -241,7 +240,7 @@
       {#if $displayOptions.selectedViz === "mondrian"}
         <div class="hidden md:block">
           <Mondrian
-            data={aggData}
+            data={leversData}
             getPath={getPathMondrian}
             {getLabel}
             {getColor}
@@ -254,7 +253,7 @@
         </div>
         <div class="block md:hidden">
           <Mondrian
-            data={aggData}
+            data={leversData}
             getPath={getPathMondrian}
             {getLabel}
             {getColor}
@@ -268,7 +267,7 @@
       {:else}
         <div class="hidden md:block">
           <Marimekko
-            data={aggData}
+            data={leversData}
             getPath={getPathMarimekko}
             {getLabel}
             {getColor}
@@ -283,7 +282,7 @@
         </div>
         <div class="block md:hidden">
           <Marimekko
-            data={aggData}
+            data={leversData}
             getPath={getPathMarimekko}
             {getLabel}
             {getColor}
