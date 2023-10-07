@@ -9,8 +9,8 @@
   import "@gouvfr/dsfr/dist/dsfr.main.css";
   import "@gouvfr/dsfr/dist/utility/utility.main.css";
 
-  import Header from "./layout/header.svelte";
-  import Footer from "./layout/footer.svelte";
+  import Header from "./_layout/header.svelte";
+  import Footer from "./_layout/footer.svelte";
 
   let previousPathName = "";
 
