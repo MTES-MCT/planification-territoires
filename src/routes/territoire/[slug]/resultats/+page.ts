@@ -1,8 +1,9 @@
+import { getRegionName } from "$lib/utils";
 import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async ({ parent }) => {
-  const { regionData } = await parent();
+  const { regionSlug } = await parent();
   return {
-    title: `Résultats | ${regionData[0]?.region}`,
+    title: `Résultats | ${getRegionName(regionSlug)}`,
   };
 };
