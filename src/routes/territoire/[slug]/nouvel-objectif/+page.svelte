@@ -24,7 +24,7 @@
     2019 que vous devez atteindre en 2030.
   </p>
 
-  <div class="mb-4 h-[75vh]">
+  <div class="mb-4">
     <MainViz data={data.regionData} substractCompleted />
   </div>
 

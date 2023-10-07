@@ -28,9 +28,7 @@
     >
   </p>
 
-  <div class="h-[75vh]">
-    <MainViz data={data.regionData} showProgression />
-  </div>
+  <MainViz data={data.regionData} showProgression />
 
   <button
     class="fr-btn fr-btn--secondary mb-12 mt-4 print:!hidden"

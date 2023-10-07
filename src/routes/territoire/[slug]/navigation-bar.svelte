@@ -37,10 +37,7 @@
   </div>
 </nav>
 
-<h1 class="my-2 hidden text-3xl print:block">
-  <span class="block text-base font-medium text-gray-600">
-    Planification des territoires
-  </span>
+<h1 class="mb-1 mt-2 hidden text-3xl print:block">
   {territoryName}
 </h1>
 
