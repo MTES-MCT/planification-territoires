@@ -124,23 +124,7 @@
   }
 
   function getSectorTotalInGroup(sector: string, group: string) {
-    const grouped = tidy(
-      leversData,
-      groupBy(
-        ["group", "sector"],
-        [
-          summarize({
-            totalObjCO2: sum("objCO2"),
-            totalCompleted: sum("progressionCO2"),
-          }),
-          mutate({
-            totalRemaining: (d) => d.totalObjCO2 - d.totalCompleted,
-          }),
-        ]
-      )
-    );
-    console.log(grouped);
-    const sectorTotal = grouped.find(
+    const sectorTotal = groupedSectors.find(
       (row) => row.group === group && row.sector === sector
     );
     return $displayOptions.showRemainingOnly
@@ -216,6 +200,22 @@
       ]
     ),
     rename({ leverName: "name" })
+  );
+
+  $: groupedSectors = tidy(
+    leversData,
+    groupBy(
+      ["group", "sector"],
+      [
+        summarize({
+          totalObjCO2: sum("objCO2"),
+          totalCompleted: sum("progressionCO2"),
+        }),
+        mutate({
+          totalRemaining: (d) => d.totalObjCO2 - d.totalCompleted,
+        }),
+      ]
+    )
   );
 
   $: canHideCompletedObjectives =
