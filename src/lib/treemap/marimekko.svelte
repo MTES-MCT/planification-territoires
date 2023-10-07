@@ -20,6 +20,7 @@
   export let getProgressionRatio: (row: Row) => number;
   export let getGroupName: (path: string) => string;
   export let getGroupTotal: (path: string) => string;
+  export let getGroupTitle: (path: string) => string;
   export let tile = d3.treemapSliceDice; // treemap strategy
 
   export let width: number;
@@ -67,7 +68,7 @@
       {#each root.descendants().filter((d) => d.depth === 1) as d}
         {@const width = d.x1 - d.x0}
         <g transform="translate({d.x0},{d.y1 - columnTotalHeight})">
-          <title>{`${getGroupName(d.id)}\n\n${getGroupTotal(d.id)}`}</title>
+          <title>{getGroupTitle(d.id)}</title>
           <foreignObject {width} height={columnTotalHeight}>
             <div
               class="flex h-full flex-col justify-end border-l-2 pl-2 pt-2 font-semibold tracking-tighter"

@@ -30,22 +30,18 @@
   }
 
   function getTitle(lever: Lever) {
-    if ($displayOptions.showRemainingOnly) {
-      return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
+    let title = `« ${lever.group} »\n${lever.sector}\n\n${
+      lever.name
+    }\n\nObjectif initial : \n−${prettyNum(lever.objCO2)}\n\n`;
+    if (showProgression && lever.progressionCO2) {
+      title += `Réalisé ou contractualisé : \n−${prettyNum(
+        lever.progressionCO2
+      )}\n\n`;
+      title += `Objectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )}`;
-    } else {
-      let title = `${lever.name}\n\nObjectif initial : \n−${prettyNum(
-        lever.objCO2
-      )}`;
-      if (showProgression && lever.progressionCO2) {
-        title += `\n\nRéalisé ou contractualisé : \n−${prettyNum(
-          lever.progressionCO2
-        )}
-        `;
-      }
-      return title;
     }
+    return title;
   }
 
   function getPathMondrian(lever: Lever) {
@@ -90,6 +86,33 @@
       return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)}`;
     }
     return `−${prettyNum(total.totalObjCO2)}`;
+  }
+
+  function getGroupTitle(path: string) {
+    const group = _getGroupFromPath(path);
+    const total = tidy(
+      leversData,
+      groupBy("group", [
+        summarize({
+          totalObjCO2: sum("objCO2"),
+          totalCompleted: sum("progressionCO2"),
+        }),
+      ]),
+      filter((row) => row.group === group)
+    )[0];
+
+    let title = `${total.group}\n\nObjectif initial : \n−${prettyNum(
+      total.totalObjCO2
+    )}\n\n`;
+    if (showProgression && total.totalCompleted) {
+      title += `Réalisé ou contractualisé : \n−${prettyNum(
+        total.totalCompleted
+      )}\n\n`;
+      title += `Objectif restant : \n−${prettyNum(
+        total.totalObjCO2 - total.totalCompleted
+      )}`;
+    }
+    return title;
   }
 
   function getLegendItems() {
@@ -276,6 +299,7 @@
             {getProgressionRatio}
             {getGroupName}
             {getGroupTotal}
+            {getGroupTitle}
             width={1248}
             height={580}
           />
@@ -291,6 +315,7 @@
             {getProgressionRatio}
             {getGroupName}
             {getGroupTotal}
+            {getGroupTitle}
             width={720}
             height={780}
           />
