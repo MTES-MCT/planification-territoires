@@ -265,7 +265,7 @@
     </div>
 
     {#if canHideCompletedObjectives}
-      <div class="fr-toggle fr-toggle--label-left shrink-0">
+      <div class="fr-toggle fr-toggle--label-left">
         <input
           type="checkbox"
           class="fr-toggle__input"
@@ -275,7 +275,7 @@
           bind:checked={$displayOptions.showRemainingOnly}
         />
         <label
-          class="fr-toggle__label basis-96"
+          class="fr-toggle__label wrap basis-96"
           for="show-completed-toggle"
           data-fr-checked-label="Restants"
           data-fr-unchecked-label="Tout"
