@@ -6,6 +6,7 @@
   export let nextUrl = "";
   export let backLabel;
   export let backUrl;
+  export let stickyFooter = false;
 </script>
 
 <nav
@@ -81,6 +82,7 @@
 
 <ul
   class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
+  class:sticky-footer={stickyFooter}
 >
   <li>
     <a
@@ -97,3 +99,9 @@
     </li>
   {/if}
 </ul>
+
+<style lang="postcss">
+  .sticky-footer {
+    @apply sticky bottom-0 border-t bg-white pt-4;
+  }
+</style>

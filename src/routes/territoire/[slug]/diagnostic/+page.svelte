@@ -47,6 +47,7 @@
   backLabel="Voir les objectifs territoriaux"
   backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"
+  stickyFooter
 >
   <p class="max-w-2xl text-lg">
     Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
@@ -56,7 +57,7 @@
     convertit le résultat d’actions concrètes en ktCO₂ évitées.
   </p>
 
-  <form class="mb-6 border-b">
+  <form class="mb-6">
     {#each sectors as sector}
       <fieldset class="mb-10">
         <div class="mb-4 mt-2 w-full">
@@ -74,25 +75,6 @@
             {/each}
           {/each}
         </div>
-        <ul
-          class="fr-btns-group fr-btns-group--sm fr-btns-group--inline-sm fr-btns-group--icon-left"
-        >
-          <li>
-            <a
-              class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-              href="/territoire/{data.regionSlug}"
-              >Voir les objectifs territoriaux</a
-            >
-          </li>
-
-          <li>
-            <a
-              class="fr-btn fr-btn--tertiary fr-icon-arrow-right-line fr-btn--icon-right"
-              href={resultatsUrl}
-              >Visualiser le panorama des leviers actualisé</a
-            >
-          </li>
-        </ul>
       </fieldset>
     {/each}
   </form>
