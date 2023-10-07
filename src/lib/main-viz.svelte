@@ -12,14 +12,11 @@
   export let data: Lever[];
   export let showProgression = false;
 
-  $: canHideCompletedObjectives =
-    showProgression && aggData.some((lever) => !!lever.progressionCO2);
-
   let selectedViz = "mondrian";
-  let hideCompletedObjectives = false;
+  let showRemainingOnly = false;
 
   function getLabel(lever: Lever) {
-    if (hideCompletedObjectives || showProgression) {
+    if (showRemainingOnly || showProgression) {
       return `${lever.name}\n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -28,14 +25,14 @@
   }
 
   function getValue(lever: Lever) {
-    if (hideCompletedObjectives) {
+    if (showRemainingOnly) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
 
   function getTitle(lever: Lever) {
-    if (hideCompletedObjectives) {
+    if (showRemainingOnly) {
       return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -62,7 +59,7 @@
   }
 
   function getProgressionRatio(lever: Lever) {
-    if (hideCompletedObjectives || !showProgression) {
+    if (showRemainingOnly || !showProgression) {
       return 0;
     }
     if (lever.progressionCO2) {
@@ -91,7 +88,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (showProgression || hideCompletedObjectives) {
+    if (showProgression || showRemainingOnly) {
       return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
     }
     return `−${prettyNum(total.totalObjCO2)} ktCO₂`;
@@ -112,7 +109,7 @@
         totalCompleted: sum("progressionCO2"),
       })
     )?.[0];
-    if (hideCompletedObjectives) {
+    if (showRemainingOnly) {
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
@@ -129,14 +126,21 @@
     return objectives?.totalCompleted;
   }
 
-  function handleSelectVizVersion(evt: Event) {
-    const target = evt.target as HTMLInputElement;
-    selectedViz = target.value;
+  function handleSelectVizVersion(_evt: Event) {
     window._paq.push([
       "trackEvent",
       "Options",
       "Choix visualisation",
       selectedViz,
+    ]);
+  }
+
+  function handleShowRemainingToggle(_evt: Event) {
+    window._paq.push([
+      "trackEvent",
+      "Options",
+      "Masquer le réalisé",
+      !showRemainingOnly,
     ]);
   }
 
@@ -160,6 +164,9 @@
       ]
     )
   );
+
+  $: canHideCompletedObjectives =
+    showProgression && aggData.some((lever) => !!lever.progressionCO2);
 </script>
 
 <div class="flex h-full flex-col">
@@ -211,7 +218,8 @@
           class="fr-toggle__input"
           id="show-completed-toggle"
           aria-describedby="show-completed-toggle-hint-text"
-          bind:checked={hideCompletedObjectives}
+          on:click={handleShowRemainingToggle}
+          bind:checked={showRemainingOnly}
         />
         <label
           class="fr-toggle__label basis-96"
@@ -229,7 +237,7 @@
   <div class="mb-2">
     <ColorLegend items={getLegendItems()} />
   </div>
-  {#key hideCompletedObjectives}
+  {#key showRemainingOnly}
     <!--  Visualisation -->
     <div class="min-h-0 flex-1">
       {#if selectedViz === "mondrian"}
