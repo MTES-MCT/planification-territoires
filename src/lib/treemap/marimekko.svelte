@@ -27,13 +27,15 @@
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
+  let columnTotalHeight = 56;
+
   $: root = d3
     .treemap()
     .tile(tile)
     .size([width + 12, height])
     .paddingRight(6)
     .paddingInner(1)
-    .paddingBottom(48)
+    .paddingBottom(columnTotalHeight)
     .round(true)(
     hierarchy
       .sum((row) => Math.max(0, row ? getValue(row) : 0))
@@ -64,13 +66,14 @@
       {/each}
       {#each root.descendants().filter((d) => d.depth === 1) as d}
         {@const width = d.x1 - d.x0}
-        <g transform="translate({d.x0},{d.y1 - 48})">
-          <foreignObject {width} height="72">
+        <g transform="translate({d.x0},{d.y1 - columnTotalHeight})">
+          <title>{`${getGroupName(d.id)}\n\n${getGroupTotal(d.id)}`}</title>
+          <foreignObject {width} height={columnTotalHeight}>
             <div
               class="flex h-full flex-col justify-end border-l-2 pl-2 pt-2 font-semibold tracking-tighter"
             >
               <div
-                class="mb-[1px] max-h-8 overflow-hidden truncate hyphens-auto text-sm uppercase leading-[1.1] md:whitespace-normal"
+                class="mb-1 max-h-8 overflow-hidden truncate hyphens-auto text-sm uppercase leading-[1.1] md:whitespace-normal"
               >
                 {getGroupName(d.id)}
               </div>

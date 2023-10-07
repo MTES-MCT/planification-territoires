@@ -45,17 +45,17 @@
       <DiagonalHatchPattern />
       {#each root.leaves() as d}
         {@const lines = getLabel(d.data).split(/\n/g)}
-        {@const width = d.x1 - d.x0}
-        {@const height = d.y1 - d.y0}
+        {@const leafWidth = d.x1 - d.x0}
+        {@const leafHeight = d.y1 - d.y0}
         <g transform="translate({d.x0},{d.y0})">
           <ProgressBlock
-            {width}
-            {height}
+            width={leafWidth}
+            height={leafHeight}
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
           <title>{getTitle(d.data)}</title>
-          <Label {height} {width} {lines} />
+          <Label height={leafHeight} width={leafWidth} {lines} />
         </g>
       {/each}
     </svg>
