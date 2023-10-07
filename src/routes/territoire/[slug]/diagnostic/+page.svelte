@@ -49,14 +49,16 @@
   step="2"
   stickyFooter
 >
-  <p class="max-w-2xl text-lg">
-    Pour chaque secteur, renseignez les actions déjà menées ou contractualisées.
-    En conséquence, le panorama des leviers se mettra mécaniquement à jour. Pour
-    permettre une harmonisation de l’évaluation de la baisse des émissions de
-    GES, nous avons utilisé un traducteur de vos politiques publiques qui
-    convertit le résultat d’actions concrètes en ktCO₂ évitées.
-  </p>
-
+  <div slot="no-sticky">
+    <p class="max-w-2xl text-lg">
+      Pour chaque secteur, renseignez les actions déjà menées ou
+      contractualisées. En conséquence, le panorama des leviers se mettra
+      mécaniquement à jour. Pour permettre une harmonisation de l’évaluation de
+      la baisse des émissions de GES, nous avons utilisé un traducteur de vos
+      politiques publiques qui convertit le résultat d’actions concrètes en
+      ktCO₂ évitées.
+    </p>
+  </div>
   <form class="mb-6">
     {#each sectors as sector}
       <fieldset class="mb-10">

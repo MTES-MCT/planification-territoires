@@ -77,28 +77,30 @@
     {/if}
   </ul>
 </div>
+<slot name="no-sticky" />
 
-<slot />
-
-<ul
-  class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
-  class:sticky-footer={stickyFooter}
->
-  <li>
-    <a
-      class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-      href={backUrl}>{backLabel}</a
-    >
-  </li>
-  {#if nextLabel}
+<div>
+  <slot />
+  <ul
+    class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
+    class:sticky-footer={stickyFooter}
+  >
     <li>
       <a
-        class="fr-btn fr-btn--primary fr-icon-arrow-right-line fr-btn--icon-right"
-        href={nextUrl}>{nextLabel}</a
+        class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
+        href={backUrl}>{backLabel}</a
       >
     </li>
-  {/if}
-</ul>
+    {#if nextLabel}
+      <li>
+        <a
+          class="fr-btn fr-btn--primary fr-icon-arrow-right-line fr-btn--icon-right"
+          href={nextUrl}>{nextLabel}</a
+        >
+      </li>
+    {/if}
+  </ul>
+</div>
 
 <style lang="postcss">
   .sticky-footer {
