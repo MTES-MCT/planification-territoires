@@ -1,5 +1,13 @@
 <script lang="ts">
-  import { tidy, groupBy, sum, summarize, filter, rename } from "@tidyjs/tidy";
+  import {
+    tidy,
+    groupBy,
+    sum,
+    summarize,
+    filter,
+    rename,
+    mutate,
+  } from "@tidyjs/tidy";
 
   import completionLevels from "$lib/completion-levels-store";
   import displayOptions from "$lib/display-options-store";
@@ -113,6 +121,31 @@
       )}`;
     }
     return title;
+  }
+
+  function getSectorTotalInGroup(sector: string, group: string) {
+    const grouped = tidy(
+      leversData,
+      groupBy(
+        ["group", "sector"],
+        [
+          summarize({
+            totalObjCO2: sum("objCO2"),
+            totalCompleted: sum("progressionCO2"),
+          }),
+          mutate({
+            totalRemaining: (d) => d.totalObjCO2 - d.totalCompleted,
+          }),
+        ]
+      )
+    );
+    console.log(grouped);
+    const sectorTotal = grouped.find(
+      (row) => row.group === group && row.sector === sector
+    );
+    return $displayOptions.showRemainingOnly
+      ? sectorTotal.totalRemaining
+      : sectorTotal.totalObjCO2;
   }
 
   function getLegendItems() {
@@ -300,6 +333,7 @@
             {getGroupName}
             {getGroupTotal}
             {getGroupTitle}
+            {getSectorTotalInGroup}
             width={1248}
             height={580}
           />
@@ -316,6 +350,7 @@
             {getGroupName}
             {getGroupTotal}
             {getGroupTitle}
+            {getSectorTotalInGroup}
             width={720}
             height={780}
           />

@@ -21,6 +21,7 @@
   export let getGroupName: (path: string) => string;
   export let getGroupTotal: (path: string) => string;
   export let getGroupTitle: (path: string) => string;
+  export let getSectorTotalInGroup: (sector: string, group: string) => number;
   export let tile = d3.treemapSliceDice; // treemap strategy
 
   export let width: number;
@@ -40,9 +41,18 @@
     .round(true)(
     hierarchy
       .sum((row) => Math.max(0, row ? getValue(row) : 0))
-      .sort((a: HierarchyNode<unknown>, b: HierarchyNode<unknown>) =>
-        d3.descending(a.value, b.value)
-      )
+      .sort((a: HierarchyNode<unknown>, b: HierarchyNode<unknown>) => {
+        if (a.depth === 1) {
+          return d3.descending(a.value, b.value);
+        } else {
+          return (
+            d3.descending(
+              getSectorTotalInGroup(a.data.sector, a.data.group),
+              getSectorTotalInGroup(b.data.sector, b.data.group)
+            ) || d3.descending(a.value, b.value)
+          );
+        }
+      })
   );
 </script>
 
