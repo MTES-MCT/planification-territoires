@@ -45,7 +45,7 @@
 <div class="border-t border-gray-200 py-4 print:hidden">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
-      <span class="fr-stepper__state">Étape {step} sur 4</span>
+      <span class="fr-stepper__state">Étape {step} sur 3</span>
       {title}
     </h2>
     <div

@@ -6,17 +6,11 @@
   import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
-
-  let nouvelObjectifUrl = `/territoire/${
-    data.regionSlug
-  }/nouvel-objectif?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Visualisation du réalisé par rapport à l’objectif 2030"
-  nextLabel="Visualiser les objectifs restants"
-  nextUrl={nouvelObjectifUrl}
   backLabel="Éditer le diagnostic territorial"
   backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
   step="3"

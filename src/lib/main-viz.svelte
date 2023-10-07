@@ -10,13 +10,16 @@
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
 
   export let data: Lever[];
-  export let substractCompleted = false;
   export let showProgression = false;
 
+  $: canHideCompletedObjectives =
+    showProgression && aggData.some((lever) => !!lever.progressionCO2);
+
   let selectedViz = "mondrian";
+  let hideCompletedObjectives = false;
 
   function getLabel(lever: Lever) {
-    if (substractCompleted || showProgression) {
+    if (hideCompletedObjectives || showProgression) {
       return `${lever.name}\n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -25,14 +28,14 @@
   }
 
   function getValue(lever: Lever) {
-    if (substractCompleted) {
+    if (hideCompletedObjectives) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
 
   function getTitle(lever: Lever) {
-    if (substractCompleted) {
+    if (hideCompletedObjectives) {
       return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -59,7 +62,7 @@
   }
 
   function getProgressionRatio(lever: Lever) {
-    if (substractCompleted || !showProgression) {
+    if (hideCompletedObjectives || !showProgression) {
       return 0;
     }
     if (lever.progressionCO2) {
@@ -88,7 +91,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (showProgression || substractCompleted) {
+    if (showProgression || hideCompletedObjectives) {
       return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
     }
     return `−${prettyNum(total.totalObjCO2)} ktCO₂`;
@@ -109,7 +112,7 @@
         totalCompleted: sum("progressionCO2"),
       })
     )?.[0];
-    if (substractCompleted) {
+    if (hideCompletedObjectives) {
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
@@ -185,78 +188,109 @@
       {/if}
     </div>
   </div>
-  <div class="mb-2 flex items-end gap-4">
-    <div class="grow">
-      <ColorLegend items={getLegendItems()} />
+
+  <!--  Options -->
+  <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
+    <div class="fr-select-group shrink-0">
+      <select
+        bind:value={selectedViz}
+        on:change={handleSelectVizVersion}
+        class="fr-select"
+        id="viz-select"
+        name="viz-select"
+      >
+        <option value="mondrian">Mondrian</option>
+        <option value="marimekko">Marimekko</option>
+      </select>
     </div>
-    <select
-      bind:value={selectedViz}
-      on:change={handleSelectVizVersion}
-      class="fr-select basis-48 print:!hidden"
-    >
-      <option value="mondrian">Mondrian</option>
-      <option value="marimekko">Marimekko</option>
-    </select>
-  </div>
-  <div class="min-h-0 flex-1">
-    {#if selectedViz === "mondrian"}
-      <div class="hidden md:block">
-        <Mondrian
-          data={aggData}
-          getPath={getPathMondrian}
-          {getLabel}
-          {getColor}
-          {getValue}
-          {getTitle}
-          {getProgressionRatio}
-          width={1248}
-          height={580}
+
+    {#if canHideCompletedObjectives}
+      <div class="fr-toggle fr-toggle--label-left shrink-0">
+        <input
+          type="checkbox"
+          class="fr-toggle__input"
+          id="show-completed-toggle"
+          aria-describedby="show-completed-toggle-hint-text"
+          bind:checked={hideCompletedObjectives}
         />
-      </div>
-      <div class="block md:hidden">
-        <Mondrian
-          data={aggData}
-          getPath={getPathMondrian}
-          {getLabel}
-          {getColor}
-          {getValue}
-          {getTitle}
-          {getProgressionRatio}
-          width={720}
-          height={780}
-        />
-      </div>
-    {:else}
-      <div class="hidden md:block">
-        <Marimekko
-          data={aggData}
-          getPath={getPathMarimekko}
-          {getLabel}
-          {getColor}
-          {getValue}
-          {getTitle}
-          {getProgressionRatio}
-          {getGroupName}
-          {getGroupTotal}
-          width={1248}
-          height={580}
-        />
-      </div>
-      <div class="block md:hidden">
-        <Marimekko
-          data={aggData}
-          getPath={getPathMarimekko}
-          {getLabel}
-          {getColor}
-          {getValue}
-          {getTitle}
-          {getProgressionRatio}
-          {getGroupName}
-          {getGroupTotal}
-          width={720}
-          height={780}
-        />
+        <label
+          class="fr-toggle__label basis-96"
+          for="show-completed-toggle"
+          data-fr-checked-label="Restants"
+          data-fr-unchecked-label="Tout"
+        >
+          Afficher uniquement les objectifs restants</label
+        >
       </div>
     {/if}
   </div>
+
+  <!--  Légende-->
+  <div class="mb-2">
+    <ColorLegend items={getLegendItems()} />
+  </div>
+  {#key hideCompletedObjectives}
+    <!--  Visualisation -->
+    <div class="min-h-0 flex-1">
+      {#if selectedViz === "mondrian"}
+        <div class="hidden md:block">
+          <Mondrian
+            data={aggData}
+            getPath={getPathMondrian}
+            {getLabel}
+            {getColor}
+            {getValue}
+            {getTitle}
+            {getProgressionRatio}
+            width={1248}
+            height={580}
+          />
+        </div>
+        <div class="block md:hidden">
+          <Mondrian
+            data={aggData}
+            getPath={getPathMondrian}
+            {getLabel}
+            {getColor}
+            {getValue}
+            {getTitle}
+            {getProgressionRatio}
+            width={720}
+            height={780}
+          />
+        </div>
+      {:else}
+        <div class="hidden md:block">
+          <Marimekko
+            data={aggData}
+            getPath={getPathMarimekko}
+            {getLabel}
+            {getColor}
+            {getValue}
+            {getTitle}
+            {getProgressionRatio}
+            {getGroupName}
+            {getGroupTotal}
+            width={1248}
+            height={580}
+          />
+        </div>
+        <div class="block md:hidden">
+          <Marimekko
+            data={aggData}
+            getPath={getPathMarimekko}
+            {getLabel}
+            {getColor}
+            {getValue}
+            {getTitle}
+            {getProgressionRatio}
+            {getGroupName}
+            {getGroupTotal}
+            width={720}
+            height={780}
+          />
+        </div>
+      {/if}
+    </div>
+  {/key}
 </div>
