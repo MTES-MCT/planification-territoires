@@ -1,8 +1,8 @@
 import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async ({ parent }) => {
-  const { region } = await parent();
+  const { regionData } = await parent();
   return {
-    title: `Résultats | ${region}`,
+    title: `Résultats | ${regionData[0]?.region}`,
   };
 };
