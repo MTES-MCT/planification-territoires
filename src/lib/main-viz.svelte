@@ -2,6 +2,7 @@
   import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
 
   import completionLevels from "$lib/completion-levels-store";
+  import displayOptions from "$lib/display-options-store";
   import Mondrian from "$lib/treemap/mondrian.svelte";
   import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
@@ -12,11 +13,8 @@
   export let data: Lever[];
   export let showProgression = false;
 
-  let selectedViz = "mondrian";
-  let showRemainingOnly = false;
-
   function getLabel(lever: Lever) {
-    if (showRemainingOnly || showProgression) {
+    if ($displayOptions.showRemainingOnly || showProgression) {
       return `${lever.name}\n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -25,14 +23,14 @@
   }
 
   function getValue(lever: Lever) {
-    if (showRemainingOnly) {
+    if ($displayOptions.showRemainingOnly) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
   }
 
   function getTitle(lever: Lever) {
-    if (showRemainingOnly) {
+    if ($displayOptions.showRemainingOnly) {
       return `${lever.name}\n\nObjectif restant : \n−${prettyNum(
         lever.objCO2 - lever.progressionCO2
       )} ktCO₂`;
@@ -59,7 +57,7 @@
   }
 
   function getProgressionRatio(lever: Lever) {
-    if (showRemainingOnly || !showProgression) {
+    if ($displayOptions.showRemainingOnly || !showProgression) {
       return 0;
     }
     if (lever.progressionCO2) {
@@ -88,7 +86,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (showProgression || showRemainingOnly) {
+    if (showProgression || $displayOptions.showRemainingOnly) {
       return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)} ktCO₂`;
     }
     return `−${prettyNum(total.totalObjCO2)} ktCO₂`;
@@ -109,7 +107,7 @@
         totalCompleted: sum("progressionCO2"),
       })
     )?.[0];
-    if (showRemainingOnly) {
+    if ($displayOptions.showRemainingOnly) {
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
@@ -131,7 +129,7 @@
       "trackEvent",
       "Options",
       "Choix visualisation",
-      selectedViz,
+      $displayOptions.selectedViz,
     ]);
   }
 
@@ -140,7 +138,7 @@
       "trackEvent",
       "Options",
       "Masquer le réalisé",
-      !showRemainingOnly,
+      !$displayOptions.showRemainingOnly,
     ]);
   }
 
@@ -200,7 +198,7 @@
   <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
     <div class="fr-select-group shrink-0">
       <select
-        bind:value={selectedViz}
+        bind:value={$displayOptions.selectedViz}
         on:change={handleSelectVizVersion}
         class="fr-select"
         id="viz-select"
@@ -219,7 +217,7 @@
           id="show-completed-toggle"
           aria-describedby="show-completed-toggle-hint-text"
           on:click={handleShowRemainingToggle}
-          bind:checked={showRemainingOnly}
+          bind:checked={$displayOptions.showRemainingOnly}
         />
         <label
           class="fr-toggle__label basis-96"
@@ -237,10 +235,10 @@
   <div class="mb-2">
     <ColorLegend items={getLegendItems()} />
   </div>
-  {#key showRemainingOnly}
+  {#key $displayOptions.showRemainingOnly}
     <!--  Visualisation -->
     <div class="min-h-0 flex-1">
-      {#if selectedViz === "mondrian"}
+      {#if $displayOptions.selectedViz === "mondrian"}
         <div class="hidden md:block">
           <Mondrian
             data={aggData}
