@@ -51,7 +51,7 @@
     <div
       class="fr-stepper__steps"
       data-fr-current-step={step}
-      data-fr-steps="4"
+      data-fr-steps="3"
     ></div>
     <p class="fr-stepper__details">
       <span class="fr-text--bold">Étape suivante : </span>{nextLabel}
