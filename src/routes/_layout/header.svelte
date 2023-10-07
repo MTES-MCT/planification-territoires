@@ -29,16 +29,15 @@
               title="Accueil - Simulateur territoires - Secrétariat général à la planification écologique"
             >
               <p class="fr-header__service-title">
-                Simulateur territorial
-                <span
+                Simulateur territorial <span
                   class="fr-badge fr-badge--error fr-badge--sm fr-badge--no-icon"
                   >Version Beta - Ne pas diffuser</span
                 >
               </p>
             </a>
+
             <p class="fr-header__service-tagline">
-              Secrétariat général à la planification écologique - Service de la
-              Première ministre
+              Un outil de simulation des objectifs territoriaux
             </p>
           </div>
         </div>
