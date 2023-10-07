@@ -40,7 +40,7 @@
     <ProgressBlock
       height={200}
       fill={getColor(lever.sector)}
-      progress={clamp(valuePhys / lever.objPhys, 0, 1)}
+      progress={lever.objPhys ? clamp(valuePhys / lever.objPhys, 0, 1) : 0}
     />
     <title>{lever.name}</title>
     <text>
