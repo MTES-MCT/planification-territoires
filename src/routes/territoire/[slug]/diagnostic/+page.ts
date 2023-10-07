@@ -5,5 +5,6 @@ export const load: PageLoad = async ({ parent }) => {
   const { regionSlug } = await parent();
   return {
     title: `Diagnostic | ${getRegionName(regionSlug)}`,
+    hasNavigation: true,
   };
 };

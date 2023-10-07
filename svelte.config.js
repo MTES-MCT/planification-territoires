@@ -20,6 +20,14 @@ const config = {
       toggleButtonPos: "bottom-right",
     },
   },
+  onwarn(warning, defaultHandler) {
+    if (warning.code === "a11y-no-redundant-roles") {
+      if (warning.message.includes("Redundant role 'navigation'")) {
+        return;
+      }
+    }
+    defaultHandler(warning);
+  },
 };
 
 export default config;

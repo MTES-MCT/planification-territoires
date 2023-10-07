@@ -9,6 +9,7 @@
   import "@gouvfr/dsfr/dist/dsfr.main.css";
   import "@gouvfr/dsfr/dist/utility/utility.main.css";
 
+  import SkipLink from "./_layout/skip-link.svelte";
   import Header from "./_layout/header.svelte";
   import Footer from "./_layout/footer.svelte";
 
@@ -39,9 +40,13 @@
   {/key}
 </svelte:head>
 
+<SkipLink />
 <Header />
 
-<main class="fr-container">
+<main
+  class="fr-container"
+  id={$page.data.hasNavigation ? undefined : "contenu"}
+>
   <slot />
 </main>
 

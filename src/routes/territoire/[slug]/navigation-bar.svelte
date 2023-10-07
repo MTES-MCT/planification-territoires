@@ -42,7 +42,7 @@
   {territoryName}
 </h1>
 
-<div class="border-t border-gray-200 py-4 print:hidden">
+<div class="border-t border-gray-200 py-4 print:hidden" id="navigation">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
       <span class="fr-stepper__state">Étape {step} sur 3</span>
@@ -77,29 +77,31 @@
     {/if}
   </ul>
 </div>
-<slot name="no-sticky" />
+<div id="contenu">
+  <slot name="no-sticky" />
 
-<div>
-  <slot />
-  <ul
-    class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
-    class:sticky-footer={stickyFooter}
-  >
-    <li>
-      <a
-        class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-        href={backUrl}>{backLabel}</a
-      >
-    </li>
-    {#if nextLabel}
+  <div>
+    <slot />
+    <ul
+      class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
+      class:sticky-footer={stickyFooter}
+    >
       <li>
         <a
-          class="fr-btn fr-btn--primary fr-icon-arrow-right-line fr-btn--icon-right"
-          href={nextUrl}>{nextLabel}</a
+          class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
+          href={backUrl}>{backLabel}</a
         >
       </li>
-    {/if}
-  </ul>
+      {#if nextLabel}
+        <li>
+          <a
+            class="fr-btn fr-btn--primary fr-icon-arrow-right-line fr-btn--icon-right"
+            href={nextUrl}>{nextLabel}</a
+          >
+        </li>
+      {/if}
+    </ul>
+  </div>
 </div>
 
 <style lang="postcss">

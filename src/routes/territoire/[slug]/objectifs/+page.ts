@@ -6,5 +6,6 @@ export const load: PageLoad = async ({ parent }) => {
 
   return {
     title: getRegionName(regionSlug),
+    hasNavigation: true,
   };
 };

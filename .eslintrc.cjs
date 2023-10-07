@@ -29,6 +29,7 @@ module.exports = {
   ],
   rules: {
     "no-irregular-whitespace": "off",
+    "svelte/valid-compile": "warn",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
