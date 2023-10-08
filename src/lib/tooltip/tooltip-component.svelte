@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { ComponentType } from "svelte";
+  import clickOutside from "./click-anywhere-action";
 
+  export let onClickAnywhere: () => void;
   export let innerComponent: ComponentType;
   export let data: object;
 
@@ -33,6 +35,9 @@
     style={alignementStyle}
     class:right={x > width / 2}
     class:left={x <= width / 2}
+    use:clickOutside
+    on:clickoutside={onClickAnywhere}
+    on:clickinside={onClickAnywhere}
   >
     <svelte:component this={innerComponent} {data} />
   </div>
