@@ -4,25 +4,29 @@
   // Released under the ISC license.
   // https://observablehq.com/@d3/treemap
 
-  import type { HierarchyNode } from "d3";
   import DiagonalHatchPattern from "./diagonalHatchPattern.svelte";
   import ProgressBlock from "./progressBlock.svelte";
   import * as d3 from "d3";
   import Label from "./label.svelte";
+  import { tooltipAction } from "../tooltip/tooltip-action";
+
+  import type { HierarchyNode } from "d3";
+  import type { ComponentType } from "svelte";
 
   type Row = object;
   export let data: Row[];
   export let getPath: (row: Row) => string;
-  export let getValue: (row: Row) => number; // given a node d, returns a quantitative value (for area encoding; null for count)
-  export let getLabel: (row: Row) => string; // given a leaf node d, returns the name to display on the rectangle
-  export let getTitle: (row: Row) => string; // given a leaf node d, returns its hover text
+  export let getValue: (row: Row) => number;
+  export let getLabel: (row: Row) => string;
   export let getColor: (row: Row) => string;
   export let getProgressionRatio: (row: Row) => number;
+  export let showProgression: boolean;
   export let getGroupName: (path: string) => string;
   export let getGroupTotal: (path: string) => string;
-  export let getGroupTitle: (path: string) => string;
   export let getSectorTotalInGroup: (sector: string, group: string) => number;
-  export let tile = d3.treemapSliceDice; // treemap strategy
+  export let tile = d3.treemapSliceDice;
+  export let titleComponent: ComponentType;
+  export let groupTitleComponent: ComponentType;
 
   export let width: number;
   export let height: number;
@@ -64,22 +68,33 @@
         {@const lines = getLabel(d.data).split(/\n/g)}
         {@const width = d.x1 - d.x0}
         {@const height = d.y1 - d.y0}
-        <g transform="translate({d.x0},{d.y0})">
+        <g
+          transform="translate({d.x0},{d.y0})"
+          use:tooltipAction={{
+            data: { lever: d.data, showProgression },
+            innerComponent: titleComponent,
+          }}
+        >
           <ProgressBlock
             {width}
             {height}
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
-          <title>{getTitle(d.data)}</title>
           <Label {height} {width} {lines} />
         </g>
       {/each}
       {#each root.descendants().filter((d) => d.depth === 1) as d}
         {@const width = d.x1 - d.x0}
         <g transform="translate({d.x0},{d.y1 - columnTotalHeight})">
-          <title>{getGroupTitle(d.id)}</title>
-          <foreignObject {width} height={columnTotalHeight}>
+          <foreignObject
+            {width}
+            height={columnTotalHeight}
+            use:tooltipAction={{
+              data: { path: d.id, leversData: data, showProgression },
+              innerComponent: groupTitleComponent,
+            }}
+          >
             <div
               class="flex h-full flex-col justify-end border-l-2 pl-2 pt-2 font-semibold tracking-tighter"
             >

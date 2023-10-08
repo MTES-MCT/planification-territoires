@@ -17,6 +17,8 @@
   import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
   import type { Action, Lever } from "$lib/types";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
+  import TitlePopup from "$lib/treemap/title-popup.svelte";
+  import GroupTitlePopup from "$lib/treemap/group-title-popup.svelte";
 
   export let data: Action[];
   export let showProgression = false;
@@ -35,21 +37,6 @@
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
-  }
-
-  function getTitle(lever: Lever) {
-    let title = `« ${lever.group} »\n${lever.sector}\n\n${
-      lever.name
-    }\n\nObjectif initial : \n−${prettyNum(lever.objCO2)}\n\n`;
-    if (showProgression && lever.progressionCO2) {
-      title += `Réalisé ou contractualisé : \n−${prettyNum(
-        lever.progressionCO2
-      )}\n\n`;
-      title += `Objectif restant : \n−${prettyNum(
-        lever.objCO2 - lever.progressionCO2
-      )}`;
-    }
-    return title;
   }
 
   function getPathMondrian(lever: Lever) {
@@ -94,33 +81,6 @@
       return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)}`;
     }
     return `−${prettyNum(total.totalObjCO2)}`;
-  }
-
-  function getGroupTitle(path: string) {
-    const group = _getGroupFromPath(path);
-    const total = tidy(
-      leversData,
-      groupBy("group", [
-        summarize({
-          totalObjCO2: sum("objCO2"),
-          totalCompleted: sum("progressionCO2"),
-        }),
-      ]),
-      filter((row) => row.group === group)
-    )[0];
-
-    let title = `${total.group}\n\nObjectif initial : \n−${prettyNum(
-      total.totalObjCO2
-    )}\n\n`;
-    if (showProgression && total.totalCompleted) {
-      title += `Réalisé ou contractualisé : \n−${prettyNum(
-        total.totalCompleted
-      )}\n\n`;
-      title += `Objectif restant : \n−${prettyNum(
-        total.totalObjCO2 - total.totalCompleted
-      )}`;
-    }
-    return title;
   }
 
   function getSectorTotalInGroup(sector: string, group: string) {
@@ -301,8 +261,9 @@
             {getLabel}
             {getColor}
             {getValue}
-            {getTitle}
             {getProgressionRatio}
+            {showProgression}
+            titleComponent={TitlePopup}
             width={1248}
             height={580}
           />
@@ -314,8 +275,9 @@
             {getLabel}
             {getColor}
             {getValue}
-            {getTitle}
             {getProgressionRatio}
+            {showProgression}
+            titleComponent={TitlePopup}
             width={720}
             height={780}
           />
@@ -328,12 +290,13 @@
             {getLabel}
             {getColor}
             {getValue}
-            {getTitle}
             {getProgressionRatio}
+            {showProgression}
             {getGroupName}
             {getGroupTotal}
-            {getGroupTitle}
             {getSectorTotalInGroup}
+            titleComponent={TitlePopup}
+            groupTitleComponent={GroupTitlePopup}
             width={1248}
             height={580}
           />
@@ -345,12 +308,13 @@
             {getLabel}
             {getColor}
             {getValue}
-            {getTitle}
             {getProgressionRatio}
+            {showProgression}
             {getGroupName}
             {getGroupTotal}
-            {getGroupTitle}
             {getSectorTotalInGroup}
+            titleComponent={TitlePopup}
+            groupTitleComponent={GroupTitlePopup}
             width={720}
             height={780}
           />
