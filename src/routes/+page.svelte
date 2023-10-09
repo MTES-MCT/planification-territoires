@@ -22,7 +22,7 @@
   </p>
   <p>
     Sélectionnez votre région pour visualiser à titre indicatif la part de votre
-    territoire dans les objectifs nationaux de baisse des GES.
+    territoire dans les objectifs nationaux de baisse des émissions de GES.
   </p>
 </div>
 <div class="fr-grid-row fr-grid-row--gutters !mb-16 w-full">
