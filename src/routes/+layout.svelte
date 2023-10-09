@@ -1,6 +1,10 @@
 <script lang="ts">
   import "@gouvfr/dsfr/dist/dsfr.module.min.js";
 
+  import {
+    PUBLIC_ENVIRONMENT,
+    PUBLIC_ALLOW_INDEXING,
+  } from "$env/static/public";
   import { browser } from "$app/environment";
   import { page } from "$app/stores";
 
@@ -31,6 +35,10 @@
 </script>
 
 <svelte:head>
+  {#if PUBLIC_ENVIRONMENT !== "production" || PUBLIC_ALLOW_INDEXING !== "true"}
+    <meta name="robots" content="noindex,nofollow" />
+  {/if}
+
   {#key $page.data}
     {#if $page.data.title !== "Simulateur territoires"}
       <title>{$page.data.title} | Simulateur territoires</title>
