@@ -5,7 +5,6 @@
     PUBLIC_ENVIRONMENT,
     PUBLIC_ALLOW_INDEXING,
   } from "$env/static/public";
-  import { browser } from "$app/environment";
   import { page } from "$app/stores";
 
   import "../app.postcss";
@@ -20,7 +19,7 @@
   let previousPathName = "";
 
   function trackPageView() {
-    if (browser && window._paq) {
+    if (window._paq) {
       window._paq.push(["setCustomUrl", $page.url.pathname]);
       window._paq.push(["setDocumentTitle", $page.data.title]);
       window._paq.push(["trackPageView"]);

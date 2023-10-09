@@ -125,21 +125,25 @@
   }
 
   function handleSelectVizVersion(_evt: Event) {
-    window._paq.push([
-      "trackEvent",
-      "Options",
-      "Choix visualisation",
-      $displayOptions.selectedViz,
-    ]);
+    if (window._paq) {
+      window._paq.push([
+        "trackEvent",
+        "Options",
+        "Choix visualisation",
+        $displayOptions.selectedViz,
+      ]);
+    }
   }
 
   function handleShowRemainingToggle(_evt: Event) {
-    window._paq.push([
-      "trackEvent",
-      "Options",
-      "Masquer le réalisé",
-      !$displayOptions.showRemainingOnly,
-    ]);
+    if (window._paq) {
+      window._paq.push([
+        "trackEvent",
+        "Options",
+        "Masquer le réalisé",
+        !$displayOptions.showRemainingOnly,
+      ]);
+    }
   }
 
   // On injecte le niveau de progression, en ktCO2, et groupe les traductions physiques par nom de levier
