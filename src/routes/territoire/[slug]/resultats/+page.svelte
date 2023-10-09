@@ -10,7 +10,7 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Visualisation du réalisé par rapport à l’objectif 2030"
+  title="Visualisation de la progression par rapport à l’objectif 2030"
   backLabel="Éditer le diagnostic territorial"
   backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
   step="3"
