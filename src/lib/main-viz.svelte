@@ -226,7 +226,8 @@
 
   <!--  Options -->
   <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
-    <div class="fr-select-group shrink-0">
+    <div class="fr-select-group flex shrink-0 items-baseline gap-4">
+      <label class=" shrink-0" for="viz-select">Vision par</label>
       <select
         bind:value={$displayOptions.selectedViz}
         on:change={handleSelectVizVersion}
@@ -234,8 +235,8 @@
         id="viz-select"
         name="viz-select"
       >
-        <option value="mondrian">Mondrian</option>
-        <option value="marimekko">Marimekko</option>
+        <option value="secteurs">Secteurs</option>
+        <option value="chantiers">Chantiers</option>
       </select>
     </div>
 
@@ -268,7 +269,7 @@
   {#key $displayOptions.showRemainingOnly}
     <!--  Visualisation -->
     <div class="min-h-0 flex-1">
-      {#if $displayOptions.selectedViz === "mondrian"}
+      {#if $displayOptions.selectedViz === "secteurs"}
         <div class="hidden md:block">
           <Mondrian
             data={leversData}
