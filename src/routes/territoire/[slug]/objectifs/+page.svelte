@@ -19,7 +19,7 @@
 >
   <p class="max-w-2xl text-lg">
     Voici le flux annuel de baisse des émissions de GES par rapport à 2019 que
-    vous devez atteindre en 2030. A partir de ce tableau et grâce à l’outil
+    vous devez atteindre d'ici 2030. À partir de ce tableau et grâce à l’outil
     suivant, réalisez votre diagnostic territorial.
   </p>
 
