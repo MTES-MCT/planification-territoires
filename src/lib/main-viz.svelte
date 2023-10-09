@@ -189,7 +189,7 @@
 <div class="flex h-full flex-col">
   <div class="mb-4 border p-3 font-medium leading-tight text-gray-600 sm:flex">
     <div
-      class="mb-8 mr-4 flex-1 border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-6"
+      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-6"
     >
       <div class="mb-2 max-w-[220px] lg:mb-0">
         Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
@@ -199,7 +199,7 @@
       </div>
     </div>
 
-    <div class="flex-1">
+    <div class="flex flex-1 flex-col justify-between">
       {#if showProgression}
         <div class="mb-2 flex max-w-[260px] gap-2 lg:mb-0">
           <svg
