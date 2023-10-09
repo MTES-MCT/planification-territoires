@@ -187,11 +187,13 @@
 </script>
 
 <div class="flex h-full flex-col">
-  <div class="mb-4 border p-3 font-medium leading-tight text-gray-600 sm:flex">
+  <div
+    class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
+  >
     <div
-      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-6"
+      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4"
     >
-      <div class="mb-2 max-w-[220px] lg:mb-0">
+      <div class="mb-2 leading-tight lg:mb-0">
         Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
       </div>
       <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
@@ -201,7 +203,7 @@
 
     <div class="flex flex-1 flex-col justify-between">
       {#if showProgression}
-        <div class="mb-2 flex max-w-[260px] gap-2 lg:mb-0">
+        <div class="mb-2 flex items-center gap-3 lg:mb-0">
           <svg
             width="38"
             height="38"
@@ -212,7 +214,7 @@
             <DiagonalHatchPattern />
             <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
           </svg>
-          <div>
+          <div class="leading-tight">
             Flux annuel de baisse des émissions de GES provoquée par les actions
             menées, contractualisées ou planifiées
           </div>
