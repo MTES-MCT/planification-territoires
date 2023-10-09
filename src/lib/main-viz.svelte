@@ -188,7 +188,9 @@
 
 <div class="flex h-full flex-col">
   <div class="mb-4 border p-3 font-medium leading-tight text-gray-600 sm:flex">
-    <div class="mb-8 mr-4 flex-1 sm:mb-0 sm:border-r sm:pr-6">
+    <div
+      class="mb-8 mr-4 flex-1 border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-6"
+    >
       <div class="mb-2 max-w-[220px] lg:mb-0">
         Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
       </div>
@@ -200,11 +202,20 @@
     <div class="flex-1">
       {#if showProgression}
         <div class="mb-2 flex max-w-[260px] gap-2 lg:mb-0">
-          <svg width="38" height="38" stroke-width="2" stroke="#bbb">
+          <svg
+            width="38"
+            height="38"
+            stroke-width="2"
+            stroke="#bbb"
+            class="shrink-0"
+          >
             <DiagonalHatchPattern />
             <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
           </svg>
-          Total des actions déjà menées ou contractualisées
+          <div>
+            Flux annuel de baisse des émissions de GES provoquée par les actions
+            menées, contractualisées ou planifiées
+          </div>
         </div>
         <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
           {prettyNum(getTotalCompleted())}
