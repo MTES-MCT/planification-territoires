@@ -6,7 +6,7 @@
 </script>
 
 <h1 class="mt-12 max-w-xl">
-  Visualiser les objectifs nationaux de baisse des GES
+  Visualisez vos objectifs territoriaux de baisse des émissions de GES
 </h1>
 <div class="mb-8 max-w-2xl">
   <p class="max-w-2xl">
