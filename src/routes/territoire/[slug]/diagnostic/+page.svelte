@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { getRegionName } from "$lib/utils";
   import { tidy, groupBy } from "@tidyjs/tidy";
+  import { onMount } from "svelte";
 
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
+  import { getRegionName } from "$lib/utils";
 
   import completionLevels from "$lib/completion-levels-store";
   import NavigationBar from "../navigation-bar.svelte";
@@ -18,24 +19,30 @@
     groupBy(["sector", "group"], [], groupBy.entriesObject())
   );
 
-  function handleInputUpdate(newValuePhys: number, action: Action) {
-    $completionLevels[data.regionSlug][action.id] = newValuePhys;
-    // Mise à jour de l'URL
+  function updateURL() {
     const newSearchParams = new URLSearchParams($page.url.searchParams);
-    if (!newValuePhys) {
-      newSearchParams.delete(action.id);
-    } else {
-      newSearchParams.set(
-        action.id,
-        Number(newValuePhys.toFixed(4)).toString()
-      );
-    }
+
+    Object.entries($completionLevels[data.regionSlug]).forEach(
+      ([key, value]) => {
+        if (value) {
+          newSearchParams.set(key, Number(value.toFixed(4)).toString());
+        } else {
+          newSearchParams.delete(key);
+        }
+      }
+    );
     goto(`?${newSearchParams.toString()}`, {
       keepFocus: true,
       noScroll: true,
       replaceState: true,
     });
   }
+  function handleInputUpdate(newValuePhys: number, action: Action) {
+    $completionLevels[data.regionSlug][action.id] = newValuePhys;
+    updateURL();
+  }
+
+  onMount(() => updateURL());
 
   $: resultatsUrl = `/territoire/${
     data.regionSlug
