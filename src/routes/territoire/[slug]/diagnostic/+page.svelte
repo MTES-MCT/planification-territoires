@@ -59,7 +59,7 @@
       mettra mécaniquement à jour. Pour permettre une harmonisation de
       l’évaluation de la baisse des émissions de GES, nous avons utilisé un
       traducteur de vos politiques publiques qui convertit le résultat d’actions
-      concrètes en ktCO₂ évitées.
+      concrètes en ktCO₂e évitées.
     </p>
   </div>
   <form class="mb-6">

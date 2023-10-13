@@ -14,7 +14,7 @@ export function prettyNum(
   const numberStr = number.toLocaleString("fr-FR", {
     maximumFractionDigits: roundAll ? 0 : number < 1000 || !roundBig ? 2 : 0,
   });
-  return unitCO2 ? `${numberStr} ktCO₂` : numberStr;
+  return unitCO2 ? `${numberStr} ktCO₂e` : numberStr;
 }
 
 export function clamp(x: number, min: number, max: number) {

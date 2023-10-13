@@ -25,7 +25,7 @@ export interface Lever {
 }
 
 // État actuel de l'objectif, en unités physiques
-// à diviser par ratioCO2toPhys pour l'obtenir en ktCO₂eq
+// à diviser par ratioCO2toPhys pour l'obtenir en ktCO₂e
 export type RegionCompletionLevels = {
   [leverName: string]: number;
 };
