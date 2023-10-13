@@ -25,11 +25,11 @@
 
   function getLabel(lever: Lever) {
     if ($displayOptions.showRemainingOnly || showProgression) {
-      return `${lever.name}\n−${prettyNum(
-        lever.objCO2 - lever.progressionCO2
-      )}`;
+      return `${lever.name}\n${prettyNum(lever.objCO2 - lever.progressionCO2, {
+        negate: true,
+      })}`;
     }
-    return `${lever.name}\n−${prettyNum(lever.objCO2)}`;
+    return `${lever.name}\n${prettyNum(lever.objCO2, { negate: true })}`;
   }
 
   function getValue(lever: Lever) {
@@ -78,9 +78,11 @@
       filter((row) => row.group === group)
     )[0];
     if (showProgression || $displayOptions.showRemainingOnly) {
-      return `−${prettyNum(total.totalObjCO2 - total.totalCompleted)}`;
+      return `${prettyNum(total.totalObjCO2 - total.totalCompleted, {
+        negate: true,
+      })}`;
     }
-    return `−${prettyNum(total.totalObjCO2)}`;
+    return `${prettyNum(total.totalObjCO2, { negate: true })}`;
   }
 
   function getSectorTotalInGroup(sector: string, group: string) {

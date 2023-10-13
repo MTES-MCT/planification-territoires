@@ -27,19 +27,25 @@
   <div class="text-base font-semibold">{groupData.group}</div>
   <div class="value-row">
     <div class="desc">Objectif initial :</div>
-    <div class="value">−{prettyNum(groupData.totalObjCO2)}</div>
+    <div class="value">
+      {prettyNum(groupData.totalObjCO2, { negate: true })}
+    </div>
   </div>
 
   {#if data.showProgression && groupData.totalCompleted}
     <div class="value-row">
       <div class="desc">Réalisé :</div>
-      <div class="value">−{prettyNum(groupData.totalCompleted)}</div>
+      <div class="value">
+        {prettyNum(groupData.totalCompleted, { negate: true })}
+      </div>
     </div>
 
     <div class="value-row">
       <div class="desc">Objectif restant :</div>
       <div class="value">
-        −{prettyNum(groupData.totalObjCO2 - groupData.totalCompleted)}
+        {prettyNum(groupData.totalObjCO2 - groupData.totalCompleted, {
+          negate: true,
+        })}
       </div>
     </div>
   {/if}
@@ -47,7 +53,7 @@
 
 <style lang="postcss">
   .value-row {
-    @apply flex flex-row justify-between gap-2;
+    @apply flex flex-row justify-between gap-1;
   }
 
   .value-row .desc {

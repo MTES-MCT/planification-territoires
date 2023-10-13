@@ -9,12 +9,22 @@ const actionsData = rawActionsData.map((row) => ({
 
 export function prettyNum(
   number: number,
-  { roundBig = false, roundAll = true, unitCO2 = true } = {}
+  { roundBig = false, roundAll = true, unitCO2 = true, negate = false } = {}
 ) {
-  const numberStr = number.toLocaleString("fr-FR", {
-    maximumFractionDigits: roundAll ? 0 : number < 1000 || !roundBig ? 2 : 0,
+  const absNumber = Math.abs(number);
+  const numberStr = absNumber.toLocaleString("fr-FR", {
+    maximumFractionDigits: roundAll ? 0 : absNumber < 1000 || !roundBig ? 2 : 0,
   });
-  return unitCO2 ? `${numberStr} ktCO₂e` : numberStr;
+  let prefix = "";
+  if (negate && numberStr !== "0") {
+    if (number > 0) {
+      prefix = "−";
+    } else if (number < 0) {
+      prefix = "+";
+    }
+  }
+  const suffix = unitCO2 ? ` ktCO₂e` : "";
+  return `${prefix}${numberStr}${suffix}`;
 }
 
 export function clamp(x: number, min: number, max: number) {
