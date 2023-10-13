@@ -10,15 +10,14 @@
 </h1>
 <div class="mb-8 max-w-2xl">
   <p class="max-w-2xl">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Le simulateur territorial est un outil qui vous permet de comprendre et de
+    vous approprier les objectifs de baisse des émissions de GES à l’échelle de
+    votre territoire. L’outil donne des ordres de grandeur indicatifs qui
+    pourront être affinés et permet de les illustrer par des grandeurs
+    physiques.
     <a class="fr-link" href="/a-propos"
       >En savoir plus sur le simulateur territorial</a
-    >
+    >.
   </p>
   <p>
     Sélectionnez votre région pour visualiser à titre indicatif la part de votre
