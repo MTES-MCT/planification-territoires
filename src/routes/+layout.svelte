@@ -39,8 +39,8 @@
   {/if}
 
   {#key $page.data}
-    {#if $page.data.title !== "Simulateur territoires"}
-      <title>{$page.data.title} | Simulateur territoires</title>
+    {#if $page.data.title !== "Simulateur territorial"}
+      <title>{$page.data.title} | Simulateur territorial</title>
     {:else}
       <title>{$page.data.title}</title>
     {/if}

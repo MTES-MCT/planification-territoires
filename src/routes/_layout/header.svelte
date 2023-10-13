@@ -24,10 +24,7 @@
             </div>
           </div>
           <div class="fr-header__service">
-            <a
-              href="/"
-              title="Accueil - Simulateur territoires - Secrétariat général à la planification écologique"
-            >
+            <a href="/" title="Accueil - Simulateur territorial">
               <p class="fr-header__service-title">
                 Simulateur territorial <span
                   class="fr-badge fr-badge--error fr-badge--sm fr-badge--no-icon"

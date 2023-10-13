@@ -1,4 +1,4 @@
-# Simulateur des objectifs territoriaux
+# Simulateur territorial
 
 **Version beta – ne pas diffuser.**
 
