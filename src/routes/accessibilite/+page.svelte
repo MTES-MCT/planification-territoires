@@ -2,7 +2,7 @@
   <h1>Déclaration d’accessibilité</h1>
   <p>Établie le <span>16 octobre 2023</span>.</p>
   <p>
-    <span>Le secrétariat général de la planification écologique</span> s’engage à
+    <span>Le secrétariat général à la planification écologique</span> s’engage à
     rendre son service accessible, conformément à l’article 47 de la loi n° 2005-102
     du 11 février 2005.
   </p>
@@ -32,7 +32,7 @@
   </p>
   <ul class="basic-information feedback h-card">
     <li>
-      Téléphone&nbsp;: <span>01 42 75 80 00</span>
+      Téléphone&nbsp;: <span>01 42 75 57 13 / 01 42 75 57 59</span>
     </li>
     <li>
       E-mail&nbsp;: <a
@@ -43,7 +43,7 @@
 
     <li>
       Adresse&nbsp;: <span
-        >Secrétariat général de la planification écologique, 19 rue de
+        >Secrétariat général à la planification écologique, 19 rue de
         Constantine 75007 Paris</span
       >
     </li>
