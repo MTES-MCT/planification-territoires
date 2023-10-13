@@ -38,15 +38,15 @@
   </div>
 </nav>
 
-<h1 class="mb-1 hidden text-xl print:block">
-  {territoryName}
+<h1 class="mb-1 hidden text-lg tracking-tight print:block">
+  {territoryName} : {title}
 </h1>
 
 <div class="border-t border-gray-200 py-4 print:hidden" id="navigation">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
       <span class="fr-stepper__state">Étape {step} sur 3</span>
-      {title}
+      {territoryName} : {title}
     </h2>
     <div
       class="fr-stepper__steps"
