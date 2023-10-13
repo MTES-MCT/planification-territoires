@@ -56,6 +56,11 @@
           <span class="fr-footer__bottom-link">Mentions légales</span>
         </li>
         <li class="fr-footer__bottom-item">
+          <a class="fr-footer__bottom-link" href="/cgu"
+            >Conditions générales d’utilisation</a
+          >
+        </li>
+        <li class="fr-footer__bottom-item">
           <span class="fr-footer__bottom-link">Données personnelles</span>
         </li>
         <li class="fr-footer__bottom-item">
