@@ -24,7 +24,7 @@
   export let showProgression = false;
 
   function getLabel(lever: Lever) {
-    if ($displayOptions.showRemainingOnly || showProgression) {
+    if (showProgression && $displayOptions.showRemainingOnly) {
       return `${lever.name}\n${prettyNum(lever.objCO2 - lever.progressionCO2, {
         negate: true,
       })}`;
@@ -33,7 +33,7 @@
   }
 
   function getValue(lever: Lever) {
-    if ($displayOptions.showRemainingOnly) {
+    if (showProgression && $displayOptions.showRemainingOnly) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
@@ -77,7 +77,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (showProgression || $displayOptions.showRemainingOnly) {
+    if (showProgression && $displayOptions.showRemainingOnly) {
       return `${prettyNum(total.totalObjCO2 - total.totalCompleted, {
         negate: true,
       })}`;
@@ -89,7 +89,7 @@
     const sectorTotal = groupedSectors.find(
       (row) => row.group === group && row.sector === sector
     );
-    return $displayOptions.showRemainingOnly
+    return showProgression && $displayOptions.showRemainingOnly
       ? sectorTotal.totalRemaining
       : sectorTotal.totalObjCO2;
   }
@@ -109,7 +109,7 @@
         totalCompleted: sum("progressionCO2"),
       })
     )?.[0];
-    if ($displayOptions.showRemainingOnly) {
+    if (showProgression && $displayOptions.showRemainingOnly) {
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
@@ -188,95 +188,96 @@
     showProgression && leversData.some((level) => !!level.progressionCO2);
 </script>
 
-<div class="flex h-full flex-col">
-  <div
-    class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
-  >
+{#key $displayOptions.showRemainingOnly}
+  <div class="flex h-full flex-col">
     <div
-      class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
+      class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
     >
+      <div
+      class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
+      >
       <div
         class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
       >
-        Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
-      </div>
+          Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
+        </div>
       <div
         class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
       >
-        {prettyNum(getTotalObjectives())}
+          {prettyNum(getTotalObjectives())}
+        </div>
+      </div>
+
+      <div class="flex flex-1 flex-col justify-between">
+        {#if showProgression}
+          <div class="mb-2 flex items-center gap-3 lg:mb-0">
+            <svg
+              width="38"
+              height="38"
+              stroke-width="2"
+              stroke="#bbb"
+              class="shrink-0"
+            >
+              <DiagonalHatchPattern />
+              <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
+            </svg>
+            <div class="!leading-tight print:text-sm print:font-normal">
+              Flux annuel de baisse des émissions de GES provoquée par les
+              actions menées, contractualisées ou planifiées
+            </div>
+          </div>
+          <div
+            class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-baselg:text-2xl"
+          >
+            {prettyNum(getTotalCompleted())}
+          </div>
+        {/if}
       </div>
     </div>
 
-    <div class="flex flex-1 flex-col justify-between">
-      {#if showProgression}
-        <div class="mb-2 flex items-center gap-3 lg:mb-0">
-          <svg
-            width="38"
-            height="38"
-            stroke-width="2"
-            stroke="#bbb"
-            class="shrink-0"
-          >
-            <DiagonalHatchPattern />
-            <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
-          </svg>
-          <div class="!leading-tight print:text-sm print:font-normal">
-            Flux annuel de baisse des émissions de GES provoquée par les actions
-            menées, contractualisées ou planifiées
-          </div>
-        </div>
-        <div
-          class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
+    <!--  Options -->
+    <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
+      <div class="fr-select-group flex shrink-0 items-baseline gap-4">
+        <label class=" shrink-0" for="viz-select">Vision par</label>
+        <select
+          bind:value={$displayOptions.selectedViz}
+          on:change={handleSelectVizVersion}
+          class="fr-select"
+          id="viz-select"
+          name="viz-select"
         >
-          {prettyNum(getTotalCompleted())}
+          <option value="secteurs">Secteurs</option>
+          <option value="chantiers">Chantiers</option>
+        </select>
+      </div>
+
+      {#if canHideCompletedObjectives}
+        <div class="fr-toggle fr-toggle--label-left">
+          <input
+            type="checkbox"
+            class="fr-toggle__input"
+            id="show-completed-toggle"
+            aria-describedby="show-completed-toggle-hint-text"
+            on:click={handleShowRemainingToggle}
+            bind:checked={$displayOptions.showRemainingOnly}
+          />
+          <label
+            class="fr-toggle__label wrap basis-96"
+            for="show-completed-toggle"
+            data-fr-checked-label="Restants"
+            data-fr-unchecked-label="Tout"
+          >
+            Afficher uniquement les objectifs restants</label
+          >
         </div>
       {/if}
     </div>
-  </div>
 
-  <!--  Options -->
-  <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
-    <div class="fr-select-group flex shrink-0 items-baseline gap-4">
-      <label class="shrink-0" for="viz-select">Vision par</label>
-      <select
-        bind:value={$displayOptions.selectedViz}
-        on:change={handleSelectVizVersion}
-        class="fr-select"
-        id="viz-select"
-        name="viz-select"
-      >
-        <option value="secteurs">Secteurs</option>
-        <option value="chantiers">Chantiers</option>
-      </select>
+    <!--  Légende-->
+    <div class="mb-2">
+      <ColorLegend items={getLegendItems()} />
     </div>
 
-    {#if canHideCompletedObjectives}
-      <div class="fr-toggle fr-toggle--label-left">
-        <input
-          type="checkbox"
-          class="fr-toggle__input"
-          id="show-completed-toggle"
-          aria-describedby="show-completed-toggle-hint-text"
-          on:click={handleShowRemainingToggle}
-          bind:checked={$displayOptions.showRemainingOnly}
-        />
-        <label
-          class="fr-toggle__label wrap basis-96"
-          for="show-completed-toggle"
-          data-fr-checked-label="Restants"
-          data-fr-unchecked-label="Tout"
-        >
-          Afficher uniquement les objectifs restants</label
-        >
-      </div>
-    {/if}
-  </div>
-
-  <!--  Légende-->
-  <div class="mb-2">
-    <ColorLegend items={getLegendItems()} />
-  </div>
-  {#key $displayOptions.showRemainingOnly}
     <!--  Visualisation -->
     <div class="min-h-0 flex-1">
       {#if $displayOptions.selectedViz === "secteurs"}
@@ -347,5 +348,5 @@
         </div>
       {/if}
     </div>
-  {/key}
-</div>
+  </div>
+{/key}
