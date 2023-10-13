@@ -1,11 +1,11 @@
 <script lang="ts">
   import MainViz from "$lib/main-viz.svelte";
   import { getRegionName } from "$lib/utils";
-  import NavigationBar from "../navigation-bar.svelte";
+  import NavigationBar from "./navigation-bar.svelte";
 
   export let data;
 
-  const editionLink = `/territoire/${data.regionSlug}/diagnostic`;
+  const editionLink = `/territoire/${data.regionSlug}/diagnostic/edition`;
 </script>
 
 <NavigationBar
