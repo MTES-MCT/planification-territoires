@@ -193,12 +193,16 @@
     class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
   >
     <div
-      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4"
+      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4 md:min-h-[68px]"
     >
-      <div class="mb-2 leading-tight lg:mb-0">
+      <div
+        class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
+      >
         Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
       </div>
-      <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
+      <div
+        class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
+      >
         {prettyNum(getTotalObjectives())}
       </div>
     </div>
@@ -216,12 +220,14 @@
             <DiagonalHatchPattern />
             <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
           </svg>
-          <div class="leading-tight">
+          <div class="!leading-tight print:text-sm print:font-normal">
             Flux annuel de baisse des émissions de GES provoquée par les actions
             menées, contractualisées ou planifiées
           </div>
         </div>
-        <div class="text-right text-xl font-semibold text-gray-900 lg:text-2xl">
+        <div
+          class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
+        >
           {prettyNum(getTotalCompleted())}
         </div>
       {/if}
@@ -231,7 +237,7 @@
   <!--  Options -->
   <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
     <div class="fr-select-group flex shrink-0 items-baseline gap-4">
-      <label class=" shrink-0" for="viz-select">Vision par</label>
+      <label class="shrink-0" for="viz-select">Vision par</label>
       <select
         bind:value={$displayOptions.selectedViz}
         on:change={handleSelectVizVersion}
@@ -285,7 +291,7 @@
             {showProgression}
             titleComponent={TitlePopup}
             width={1248}
-            height={580}
+            height={520}
           />
         </div>
         <div class="block md:hidden">
@@ -299,7 +305,7 @@
             {showProgression}
             titleComponent={TitlePopup}
             width={720}
-            height={780}
+            height={720}
           />
         </div>
       {:else}
@@ -318,7 +324,7 @@
             titleComponent={TitlePopup}
             groupTitleComponent={GroupTitlePopup}
             width={1248}
-            height={580}
+            height={520}
           />
         </div>
         <div class="block md:hidden">
@@ -336,7 +342,7 @@
             titleComponent={TitlePopup}
             groupTitleComponent={GroupTitlePopup}
             width={720}
-            height={780}
+            height={720}
           />
         </div>
       {/if}

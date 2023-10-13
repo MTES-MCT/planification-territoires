@@ -38,7 +38,7 @@
   </div>
 </nav>
 
-<h1 class="mb-1 mt-2 hidden text-3xl print:block">
+<h1 class="mb-1 hidden text-xl print:block">
   {territoryName}
 </h1>
 

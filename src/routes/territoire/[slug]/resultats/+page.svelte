@@ -18,8 +18,8 @@
   <p class="mb-2">
     Voici les nouveaux objectifs actualisés sur la base des données renseignées.
     <span class="print:hidden">
-      Vous pouvez ensuite visualiser les objectifs restants.</span
-    >
+      Vous pouvez ensuite visualiser les objectifs restants.
+    </span>
   </p>
 
   <MainViz data={data.regionData} showProgression />
