@@ -20,7 +20,7 @@
 
   $: resultatsAjusteUrl = `/territoire/${
     data.regionSlug
-  }/resultats-ajuste?${$page.url.searchParams.toString()}`;
+  }/ambition/visualiser?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
