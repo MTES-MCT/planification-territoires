@@ -31,7 +31,7 @@
 <svelte:window bind:innerWidth={width} bind:innerHeight={height} bind:scrollY />
 {#if validValues}
   <div
-    class="absolute"
+    class="absolute print:hidden"
     style={alignementStyle}
     class:right={x > width / 2}
     class:left={x <= width / 2}
