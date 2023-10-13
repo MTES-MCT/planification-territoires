@@ -7,6 +7,8 @@
   export let backLabel;
   export let backUrl;
   export let stickyFooter = false;
+
+  let totalSteps = 5;
 </script>
 
 <nav
@@ -45,13 +47,13 @@
 <div class="border-t border-gray-200 py-4 print:hidden" id="navigation">
   <div class="fr-stepper" style={nextLabel ? "" : "margin-bottom:64px"}>
     <h2 class="fr-stepper__title">
-      <span class="fr-stepper__state">Étape {step} sur 3</span>
+      <span class="fr-stepper__state">Étape {step} sur {totalSteps}</span>
       {territoryName} : {title}
     </h2>
     <div
       class="fr-stepper__steps"
       data-fr-current-step={step}
-      data-fr-steps="5"
+      data-fr-steps={totalSteps}
     ></div>
     <p class="fr-stepper__details">
       <span class="fr-text--bold">Étape suivante : </span>{nextLabel}
