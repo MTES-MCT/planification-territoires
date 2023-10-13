@@ -2,9 +2,8 @@
   <h1>Conditions générales d’utilisation</h1>
   <p>
     Les présentes conditions générales d’utilisation (dites « CGU ») fixent le
-    cadre juridique de la Plateforme <strong>Planification territoires</strong> et
-    définissent les conditions d’accès et d’utilisation des services proposés par
-    l’Utilisateur.
+    cadre juridique de la Plateforme <strong>Simulateur territorial</strong> et définissent
+    les conditions d’accès et d’utilisation des services proposés par l’Utilisateur.
   </p>
 
   <h2>Quel est le produit concerné par le présent document ?</h2>
@@ -30,7 +29,7 @@
       « Utilisateur » vient désigner toute personne utilisant la Plateforme ;
     </li>
     <li>
-      « Plateforme » vient désigner le site internet Planification territoires ;
+      « Plateforme » vient désigner le site internet Simulateur territorial ;
     </li>
   </ul>
   <h2>Quelles sont les fonctionnalités de la plateforme ?</h2>

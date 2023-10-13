@@ -8,7 +8,7 @@
   </p>
   <p>
     Cette déclaration d’accessibilité s’applique à <strong
-      >Planification territoires</strong
+      >Simulateur territorial</strong
     >
     <span>
       (<span>https://planification-territoires.ecologie.gouv.fr/</span>)</span
@@ -16,7 +16,7 @@
   </p>
   <h2>État de conformité</h2>
   <p>
-    <strong>Planification territoires</strong> est
+    <strong>Simulateur territorial</strong> est
     <strong><span data-printfilter="lowercase">non conforme</span></strong> avec
     le
     <abbr title="Référentiel général d’amélioration de l’accessibilité"
@@ -26,9 +26,8 @@
   <h2>Amélioration et contact</h2>
   <p>
     Si vous n’arrivez pas à accéder à un contenu ou à un service, vous pouvez
-    contacter le responsable de <span>Planification territoires</span> pour être
-    orienté vers une alternative accessible ou obtenir le contenu sous une autre
-    forme.
+    contacter le responsable de <span>Simulateur territorial</span> pour être orienté
+    vers une alternative accessible ou obtenir le contenu sous une autre forme.
   </p>
   <ul class="basic-information feedback h-card">
     <li>
