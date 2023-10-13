@@ -194,16 +194,16 @@
       class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
     >
       <div
-      class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
+        class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
       >
-      <div
-        class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
-      >
+        <div
+          class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
+        >
           Flux annuel de baisse des émissions de GES à atteindre d’ici 2030
         </div>
-      <div
-        class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
-      >
+        <div
+          class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
+        >
           {prettyNum(getTotalObjectives())}
         </div>
       </div>
@@ -227,7 +227,7 @@
             </div>
           </div>
           <div
-            class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-baselg:text-2xl"
+            class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
             {prettyNum(getTotalCompleted())}
           </div>
@@ -238,7 +238,7 @@
     <!--  Options -->
     <div class="mb-4 flex flex-row flex-wrap items-end gap-x-10 print:!hidden">
       <div class="fr-select-group flex shrink-0 items-baseline gap-4">
-        <label class=" shrink-0" for="viz-select">Vision par</label>
+        <label class="shrink-0" for="viz-select">Vision par</label>
         <select
           bind:value={$displayOptions.selectedViz}
           on:change={handleSelectVizVersion}
