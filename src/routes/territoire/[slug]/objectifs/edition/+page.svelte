@@ -4,7 +4,7 @@
 
   import { page } from "$app/stores";
 
-  import NavigationBar from "../navigation-bar.svelte";
+  import NavigationBar from "../../navigation-bar.svelte";
   import CompletionLevelInput from "./completion-level-input.svelte";
 
   import type { Action } from "$lib/types";
@@ -20,7 +20,7 @@
 
   $: resultatsAjusteUrl = `/territoire/${
     data.regionSlug
-  }/ambition/visualiser?${$page.url.searchParams.toString()}`;
+  }/objectifs?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
@@ -29,7 +29,7 @@
   nextLabel="Visualisez l’ambition de votre territoire"
   nextUrl={resultatsAjusteUrl}
   backLabel="Visualiser le panorama des leviers actualisé"
-  backUrl="/territoire/{data.regionSlug}/resultats?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
   step="4"
   stickyFooter
 >

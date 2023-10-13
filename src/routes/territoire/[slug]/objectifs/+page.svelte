@@ -3,7 +3,7 @@
   import MainViz from "$lib/main-viz.svelte";
   import ShareButtons from "$lib/share-buttons.svelte";
   import { getRegionName } from "$lib/utils";
-  import NavigationBar from "../../navigation-bar.svelte";
+  import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
 </script>
@@ -12,7 +12,7 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Visualisez l’ambition de votre territoire"
   backLabel="Réajustez votre ambition"
-  backUrl="/territoire/{data.regionSlug}/ambition?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/objectifs/edition?{$page.url.searchParams.toString()}"
   step="5"
 >
   <p class="mb-2">

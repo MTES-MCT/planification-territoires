@@ -15,7 +15,7 @@
   backLabel="Éditer le diagnostic territorial"
   backUrl="/territoire/{data.regionSlug}/diagnostic/edition?{$page.url.searchParams.toString()}"
   nextLabel="Réajustez votre ambition"
-  nextUrl="/territoire/{data.regionSlug}/ambition?{$page.url.searchParams.toString()}"
+  nextUrl="/territoire/{data.regionSlug}/objectifs/edition?{$page.url.searchParams.toString()}"
   step="3"
 >
   <p class="mb-2">
