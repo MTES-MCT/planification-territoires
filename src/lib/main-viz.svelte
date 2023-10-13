@@ -193,7 +193,7 @@
     class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
   >
     <div
-      class="mb-8 mr-4 flex flex-1 flex-col justify-between border-b pb-6 sm:mb-0 sm:border-b-0 sm:border-r sm:pb-0 sm:pr-4 md:min-h-[68px]"
+      class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
     >
       <div
         class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
