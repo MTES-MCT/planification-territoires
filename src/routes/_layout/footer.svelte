@@ -48,12 +48,9 @@
     <div class="fr-footer__bottom">
       <ul class="fr-footer__bottom-list">
         <li class="fr-footer__bottom-item">
-          <a class="fr-footer__bottom-link" href="/accessibilite"
-            >Accessibilité : non conforme</a
+          <a class="fr-footer__bottom-link" href="/mentions-legales"
+            >Mentions légales</a
           >
-        </li>
-        <li class="fr-footer__bottom-item">
-          <span class="fr-footer__bottom-link">Mentions légales</span>
         </li>
         <li class="fr-footer__bottom-item">
           <a class="fr-footer__bottom-link" href="/cgu"
@@ -61,7 +58,9 @@
           >
         </li>
         <li class="fr-footer__bottom-item">
-          <span class="fr-footer__bottom-link">Données personnelles</span>
+          <a class="fr-footer__bottom-link" href="/accessibilite"
+            >Accessibilité : non conforme</a
+          >
         </li>
         <li class="fr-footer__bottom-item">
           <a class="fr-footer__bottom-link" target="_blank" href="/statistiques"
