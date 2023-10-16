@@ -19,7 +19,7 @@
     const newSearchParams = new URLSearchParams($page.url.searchParams);
 
     Object.entries($newTargets[data.regionSlug]).forEach(([key, value]) => {
-      if (value) {
+      if (value != null) {
         newSearchParams.set(
           getQVKeyForNewTarget(key),
           Number(value.toFixed(4)).toString()
