@@ -34,7 +34,7 @@
         <DoubleEntryInput
           {action}
           progress={targetValuePhys && !noProgress
-            ? clamp(initialValuePhys ?? 0 / targetValuePhys, 0, 1)
+            ? clamp((initialValuePhys ?? 0) / targetValuePhys, 0, 1)
             : 0}
           {inputLabel}
           onUpdate={(newValuePhys, action) => onUpdate(newValuePhys, action)}
