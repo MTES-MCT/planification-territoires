@@ -1,33 +1,71 @@
 <script lang="ts">
-  import { getRegionName } from "$lib/utils";
-  import { tidy, groupBy } from "@tidyjs/tidy";
+  import { onMount } from "svelte";
 
   import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
+
+  import { getQVKeyForNewTarget, getRegionName } from "$lib/utils";
+  import { completionLevels, newTargets } from "$lib/stores";
+  import ActionsForm from "$lib/actions-form.svelte";
 
   import NavigationBar from "../../navigation-bar.svelte";
-  import CompletionLevelInput from "./completion-level-input.svelte";
+  import NewTargetsGauge from "../new-targets-gauge.svelte";
 
   import type { Action } from "$lib/types";
 
   export let data;
 
-  const sectors = tidy(
-    data.regionData,
-    groupBy(["sector", "group"], [], groupBy.entriesObject())
+  function updateURL() {
+    const newSearchParams = new URLSearchParams($page.url.searchParams);
+
+    Object.entries($newTargets[data.regionSlug]).forEach(([key, value]) => {
+      if (value) {
+        newSearchParams.set(
+          getQVKeyForNewTarget(key),
+          Number(value.toFixed(4)).toString()
+        );
+      } else {
+        newSearchParams.delete(getQVKeyForNewTarget(key));
+      }
+    });
+    goto(`?${newSearchParams.toString()}`, {
+      keepFocus: true,
+      noScroll: true,
+      replaceState: true,
+    });
+  }
+
+  function handleInputUpdate(newValuePhys: number, action: Action) {
+    $newTargets[data.regionSlug][action.id] = newValuePhys;
+    updateURL();
+  }
+
+  onMount(() => {
+    data.regionData.forEach((action) => {
+      if ($newTargets[data.regionSlug][action.id] == null) {
+        $newTargets[data.regionSlug][action.id] =
+          action.objPhys - $completionLevels[data.regionSlug][action.id];
+      }
+    });
+    updateURL();
+  });
+
+  $: initialValuesPhys = $newTargets[data.regionSlug];
+  $: targetValuesPhys = Object.fromEntries(
+    data.regionData.map((action) => [
+      action.id,
+      action.objPhys - $completionLevels[data.regionSlug][action.id],
+    ])
   );
-
-  function handleInputUpdate(_newValuePhys: number, _action: Action) {}
-
-  $: resultatsAjusteUrl = `/territoire/${
-    data.regionSlug
-  }/objectifs?${$page.url.searchParams.toString()}`;
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Réajustez votre ambition"
   nextLabel="Visualisez l’ambition de votre territoire"
-  nextUrl={resultatsAjusteUrl}
+  nextUrl={`/territoire/${
+    data.regionSlug
+  }/objectifs?${$page.url.searchParams.toString()}`}
   backLabel="Visualiser le panorama des leviers actualisé"
   backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
   step="4"
@@ -42,25 +80,19 @@
       les ktCO₂e qu’il vous reste à répartir.
     </p>
   </div>
+  <div slot="sticky-top" class="mb-4">
+    <NewTargetsGauge regionData={data.regionData} hideWhenOk={false}
+    ></NewTargetsGauge>
+  </div>
+
   <form class="mb-6">
-    {#each sectors as sector}
-      <fieldset class="mb-10">
-        <div class="mb-4 mt-2 w-full">
-          <legend><h2 class="mb-1">{sector.key}</h2></legend>
-        </div>
-        <div class="mb-4 grid gap-6 md:grid-cols-2">
-          {#each sector.values as group}
-            {#each group.values as action}
-              <CompletionLevelInput
-                {action}
-                valuePhys={action.objPhys}
-                onUpdate={(newValuePhys, action) =>
-                  handleInputUpdate(newValuePhys, action)}
-              />
-            {/each}
-          {/each}
-        </div>
-      </fieldset>
-    {/each}
+    <ActionsForm
+      onUpdate={handleInputUpdate}
+      regionData={data.regionData}
+      inputLabel="Objectif estimé comme atteignable en 2030"
+      {initialValuesPhys}
+      {targetValuesPhys}
+      noProgress
+    />
   </form>
 </NavigationBar>

@@ -1,23 +1,18 @@
 <script lang="ts">
-  import { tidy, groupBy } from "@tidyjs/tidy";
   import { onMount } from "svelte";
 
   import { page } from "$app/stores";
   import { goto } from "$app/navigation";
-  import { getRegionName } from "$lib/utils";
 
-  import completionLevels from "$lib/completion-levels-store";
+  import { getQVKeyForCompleted, getRegionName } from "$lib/utils";
+  import { completionLevels } from "$lib/stores";
+  import ActionsForm from "$lib/actions-form.svelte";
+
   import NavigationBar from "../../navigation-bar.svelte";
-  import CompletionLevelInput from "./completion-level-input.svelte";
 
   import type { Action } from "$lib/types";
 
   export let data;
-
-  const sectors = tidy(
-    data.regionData,
-    groupBy(["sector", "group"], [], groupBy.entriesObject())
-  );
 
   function updateURL() {
     const newSearchParams = new URLSearchParams($page.url.searchParams);
@@ -25,9 +20,12 @@
     Object.entries($completionLevels[data.regionSlug]).forEach(
       ([key, value]) => {
         if (value) {
-          newSearchParams.set(key, Number(value.toFixed(4)).toString());
+          newSearchParams.set(
+            getQVKeyForCompleted(key),
+            Number(value.toFixed(4)).toString()
+          );
         } else {
-          newSearchParams.delete(key);
+          newSearchParams.delete(getQVKeyForCompleted(key));
         }
       }
     );
@@ -44,16 +42,19 @@
 
   onMount(() => updateURL());
 
-  $: resultatsUrl = `/territoire/${
-    data.regionSlug
-  }/diagnostic?${$page.url.searchParams.toString()}`;
+  $: initialValuesPhys = $completionLevels[data.regionSlug];
+  $: targetValuesPhys = Object.fromEntries(
+    data.regionData.map((action) => [action.id, action.objPhys])
+  );
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Votre diagnostic territorial"
   nextLabel="Visualiser le panorama des leviers actualisé"
-  nextUrl={resultatsUrl}
+  nextUrl={`/territoire/${
+    data.regionSlug
+  }/diagnostic?${$page.url.searchParams.toString()}`}
   backLabel="Voir les objectifs territoriaux"
   backUrl="/territoire/{data.regionSlug}"
   step="2"
@@ -70,24 +71,12 @@
     </p>
   </div>
   <form class="mb-6">
-    {#each sectors as sector}
-      <fieldset class="mb-10">
-        <div class="mb-4 mt-2 w-full">
-          <legend><h2 class="mb-1">{sector.key}</h2></legend>
-        </div>
-        <div class="mb-4 grid gap-6 md:grid-cols-2">
-          {#each sector.values as group}
-            {#each group.values as action}
-              <CompletionLevelInput
-                {action}
-                valuePhys={$completionLevels[action.regionSlug][action.id]}
-                onUpdate={(newValuePhys, action) =>
-                  handleInputUpdate(newValuePhys, action)}
-              />
-            {/each}
-          {/each}
-        </div>
-      </fieldset>
-    {/each}
+    <ActionsForm
+      onUpdate={handleInputUpdate}
+      regionData={data.regionData}
+      inputLabel="Action déjà menée ou contractualisée"
+      {initialValuesPhys}
+      {targetValuesPhys}
+    />
   </form>
 </NavigationBar>

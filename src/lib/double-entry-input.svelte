@@ -8,13 +8,13 @@
 
   export let action: Action;
   export let progress: number | undefined = undefined;
-  export let valuePhys: number;
-
   export let inputLabel: string;
+  export let initialValuePhys: number;
+  export let targetValuePhys: number;
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  let valueCO2 = +(valuePhys / action.ratioCO2toPhys).toFixed(4);
+  let valueCO2: number;
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
@@ -29,6 +29,8 @@
     const newValuePhys = +(valueCO2 * action.ratioCO2toPhys).toFixed(4);
     onUpdate(newValuePhys, action);
   }
+
+  $: valueCO2 = +(initialValuePhys / action.ratioCO2toPhys).toFixed(4);
 </script>
 
 <div class="flex flex-col">
@@ -65,7 +67,7 @@
     </div>
 
     <div class="flex gap-x-4">
-      <DataDescription value={action.objPhys} unit={action.unitPhys} />
+      <DataDescription value={targetValuePhys} unit={action.unitPhys} />
       <div class="flex-1">
         <label class="sr-only" for={action.id}>
           {action.unitPhys}
@@ -77,7 +79,7 @@
           step="any"
           min={0}
           id={action.id}
-          value={valuePhys}
+          value={initialValuePhys}
           on:input={handlePhysInputChanged}
         />
       </div>
@@ -96,7 +98,7 @@
 
     <div class="flex gap-x-4">
       <DataDescription
-        value={action.objPhys / action.ratioCO2toPhys}
+        value={targetValuePhys / action.ratioCO2toPhys}
         unit={action.unitCO2}
       />
       <div class="flex-1">

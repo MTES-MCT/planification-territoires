@@ -9,7 +9,7 @@
     mutate,
   } from "@tidyjs/tidy";
 
-  import completionLevels from "$lib/completion-levels-store";
+  import { completionLevels } from "$lib/stores";
   import displayOptions from "$lib/display-options-store";
   import Mondrian from "$lib/treemap/mondrian.svelte";
   import Marimekko from "$lib/treemap/marimekko.svelte";

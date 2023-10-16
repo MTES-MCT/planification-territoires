@@ -1,5 +1,9 @@
 import rawActionsData from "$lib/assets/data.json";
-import type { Action, RegionCompletionLevels } from "$lib/types";
+import type {
+  Action,
+  RegionNewTargets,
+  RegionCompletionLevels,
+} from "$lib/types";
 import { filter, tidy, select, distinct, arrange } from "@tidyjs/tidy";
 
 const actionsData = rawActionsData.map((row) => ({
@@ -25,6 +29,14 @@ export function prettyNum(
   }
   const suffix = unitCO2 ? ` ktCO₂e` : "";
   return `${prefix}${numberStr}${suffix}`;
+}
+
+export function getQVKeyForNewTarget(key: string) {
+  return `t-${key}`;
+}
+
+export function getQVKeyForCompleted(key: string) {
+  return `c-${key}`;
 }
 
 export function clamp(x: number, min: number, max: number) {
@@ -57,7 +69,9 @@ export function getRegionsSlugs(): string[] {
 }
 
 export function getRegionName(regionSlug: string): string {
-  return getRegionsNames().find((name) => normalizeString(name) === regionSlug);
+  return getRegionsNames().find(
+    (name) => normalizeString(name) === regionSlug
+  ) as string;
 }
 
 export function getSectorsNames(): string[] {
@@ -74,7 +88,7 @@ export function getIdNames(): string[] {
     actionsData,
     select("id"),
     distinct("id"),
-    arrange((a, b) => a.id.localeCompare(b.sector, "id"))
+    arrange((a, b) => a.id.localeCompare(b.id, "fr"))
   ).map((row) => row.id);
 }
 
@@ -82,7 +96,21 @@ export function getCompletionLevelsFromURL(
   searchParams: URLSearchParams
 ): RegionCompletionLevels {
   return Object.fromEntries(
-    getIdNames().map((l) => [l, Number(searchParams.get(l)) || 0])
+    getIdNames().map((id) => [
+      id,
+      Number(searchParams.get(getQVKeyForCompleted(id))) || 0,
+    ])
+  );
+}
+
+export function getNewTargetsFromURL(
+  searchParams: URLSearchParams
+): RegionNewTargets {
+  return Object.fromEntries(
+    getIdNames().map((id) => {
+      const newTarget = searchParams.get(getQVKeyForNewTarget(id));
+      return [id, newTarget != null ? Number(newTarget) : null];
+    })
   );
 }
 
@@ -124,7 +152,7 @@ export function normalizeString(str: string): string {
       .normalize("NFD")
       // on supprime les diacritiques…
       .replace(/[\u0300-\u036f]/g, "")
-      // et enfin on remplace tous les caractères non ascii
+      // et enfin, on remplace tous les caractères non ascii
       .replace(/([^0-9a-zA-Z])/g, "-")
   );
 }

@@ -2,6 +2,7 @@
   import { page } from "$app/stores";
 </script>
 
+<slot />
 <button
   class="fr-btn fr-btn--secondary mt-4 print:!hidden"
   on:click={() => {

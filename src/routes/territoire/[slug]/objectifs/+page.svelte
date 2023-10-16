@@ -1,11 +1,26 @@
 <script lang="ts">
   import { page } from "$app/stores";
+
   import MainViz from "$lib/main-viz.svelte";
   import ShareButtons from "$lib/share-buttons.svelte";
   import { getRegionName } from "$lib/utils";
+  import { newTargets } from "$lib/stores";
+
   import NavigationBar from "../navigation-bar.svelte";
+  import NewTargetsGauge from "./new-targets-gauge.svelte";
+
+  import type { Action } from "$lib/types";
 
   export let data;
+
+  $: targetData = data.regionData.map((action: Action) => {
+    const valuePhys = $newTargets[action.regionSlug][action.id] ?? 0;
+    return {
+      ...action,
+      objPhys: valuePhys,
+      objCO2: +(valuePhys / action.ratioCO2toPhys).toFixed(4),
+    };
+  });
 </script>
 
 <NavigationBar
@@ -20,6 +35,10 @@
     territoriale
   </p>
 
-  <MainViz data={data.regionData} showProgression />
+  <div class="mb-4">
+    <NewTargetsGauge regionData={data.regionData}></NewTargetsGauge>
+  </div>
+
+  <MainViz data={targetData} />
   <ShareButtons />
 </NavigationBar>

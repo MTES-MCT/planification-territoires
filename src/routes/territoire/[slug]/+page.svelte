@@ -4,15 +4,13 @@
   import NavigationBar from "./navigation-bar.svelte";
 
   export let data;
-
-  const editionLink = `/territoire/${data.regionSlug}/diagnostic/edition`;
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Présentation de vos objectifs territoriaux pour 2030"
   nextLabel="Réaliser le diagnostic territorial"
-  nextUrl={editionLink}
+  nextUrl={`/territoire/${data.regionSlug}/diagnostic/edition`}
   backUrl="/#territoires"
   backLabel="Choisir un autre territoire"
   step="1"
