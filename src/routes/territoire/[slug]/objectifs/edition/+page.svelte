@@ -41,12 +41,6 @@
   }
 
   onMount(() => {
-    data.regionData.forEach((action) => {
-      if ($newTargets[data.regionSlug][action.id] == null) {
-        $newTargets[data.regionSlug][action.id] =
-          action.objPhys - $completionLevels[data.regionSlug][action.id];
-      }
-    });
     updateURL();
   });
 

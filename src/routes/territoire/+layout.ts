@@ -12,7 +12,7 @@ import type { LayoutLoad } from "./$types";
 
 export const load: LayoutLoad = async ({ params, url }) => {
   const regionSlug = params.slug as string;
-
+  const regionData = getRegionData(regionSlug);
   if (url.searchParams.toString()) {
     // Rechargement des paramètres du réalisé
     const currentCompletionRegionData = get(completionLevels)[regionSlug];
@@ -34,8 +34,22 @@ export const load: LayoutLoad = async ({ params, url }) => {
       }));
     }
   }
+
+  // Mise à jour des nouveaux objectifs à partir des objectifs initiaux
+  regionData.forEach((action) => {
+    if (get(newTargets)[regionSlug][action.id] == null) {
+      newTargets.update((cls) => ({
+        ...cls,
+        [regionSlug]: {
+          ...cls[regionSlug],
+          [action.id]:
+            action.objPhys - get(completionLevels)[regionSlug][action.id],
+        },
+      }));
+    }
+  });
   return {
     regionSlug,
-    regionData: getRegionData(regionSlug),
+    regionData,
   };
 };
