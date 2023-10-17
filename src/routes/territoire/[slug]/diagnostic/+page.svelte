@@ -1,21 +1,26 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-
+  import { onMount } from "svelte";
   import MainViz from "$lib/main-viz.svelte";
   import ShareButtons from "$lib/share-buttons.svelte";
   import { getRegionName } from "$lib/utils";
+  import { updateURLfromStores } from "$lib/url-utils";
+
   import NavigationBar from "../navigation-bar.svelte";
 
   export let data;
+
+  onMount(() => {
+    updateURLfromStores(data.regionSlug);
+  });
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Visualisation de la progression par rapport à l’objectif 2030"
   backLabel="Éditer le diagnostic territorial"
-  backUrl="/territoire/{data.regionSlug}/diagnostic/edition?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/diagnostic/edition"
   nextLabel="Réajustez votre ambition"
-  nextUrl="/territoire/{data.regionSlug}/objectifs/edition?{$page.url.searchParams.toString()}"
+  nextUrl="/territoire/{data.regionSlug}/objectifs/edition"
   step="3"
 >
   <p class="mb-2">

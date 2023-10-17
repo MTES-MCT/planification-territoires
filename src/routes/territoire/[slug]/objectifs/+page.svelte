@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { onMount } from "svelte";
 
+  import { updateURLfromStores } from "$lib/url-utils";
   import MainViz from "$lib/main-viz.svelte";
   import ShareButtons from "$lib/share-buttons.svelte";
   import { getRegionName } from "$lib/utils";
@@ -12,6 +13,10 @@
   import type { Action } from "$lib/types";
 
   export let data;
+
+  onMount(() => {
+    updateURLfromStores(data.regionSlug);
+  });
 
   $: targetData = data.regionData.map((action: Action) => {
     const valuePhys = $newTargets[action.regionSlug][action.id] ?? 0;
@@ -27,7 +32,7 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Visualisez l’ambition de votre territoire"
   backLabel="Réajustez votre ambition"
-  backUrl="/territoire/{data.regionSlug}/objectifs/edition?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/objectifs/edition"
   step="5"
 >
   <p class="mb-2">

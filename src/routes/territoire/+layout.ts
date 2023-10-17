@@ -1,33 +1,49 @@
-import { get } from "svelte/store";
-import isEqual from "lodash/isEqual";
+import type { RegionCompletionLevels, RegionNewTargets } from "$lib/types";
+import { getQVKeyForCompleted, getQVKeyForNewTarget } from "$lib/url-utils";
 
-import {
-  getRegionData,
-  getCompletionLevelsFromURL,
-  getNewTargetsFromURL,
-} from "$lib/utils";
+import { getIdNames, getRegionData } from "$lib/utils";
 import { completionLevels, newTargets } from "$lib/stores";
 
 import type { LayoutLoad } from "./$types";
 
+let initialLoad = true;
+
+function getCompletionLevelsFromURL(
+  searchParams: URLSearchParams
+): RegionCompletionLevels {
+  return Object.fromEntries(
+    getIdNames().map((id) => [
+      id,
+      Number(searchParams.get(getQVKeyForCompleted(id))) || 0,
+    ])
+  );
+}
+
+function getNewTargetsFromURL(searchParams: URLSearchParams): RegionNewTargets {
+  return Object.fromEntries(
+    getIdNames().map((id) => {
+      const newTarget = searchParams.get(getQVKeyForNewTarget(id));
+      return [id, newTarget != null ? Number(newTarget) : null];
+    })
+  );
+}
+
 export const load: LayoutLoad = async ({ params, url }) => {
   const regionSlug = params.slug as string;
   const regionData = getRegionData(regionSlug);
-  if (url.searchParams.toString()) {
-    // Rechargement des paramètres du réalisé
-    const currentCompletionRegionData = get(completionLevels)[regionSlug];
-    const completionDataFromQS = getCompletionLevelsFromURL(url.searchParams);
-    if (!isEqual(currentCompletionRegionData, completionDataFromQS)) {
+  if (initialLoad) {
+    // Ce code est appelé au chargement initial, mais pas lors de la navigation
+    // c'est le seul moment ou les paramètres de l'URL sont pris en compte
+    if (url.searchParams.toString()) {
+      // Rechargement des paramètres du réalisé
+      const completionDataFromQS = getCompletionLevelsFromURL(url.searchParams);
       completionLevels.update((cls) => ({
         ...cls,
         [regionSlug]: completionDataFromQS,
       }));
-    }
 
-    // Rechargement des nouveaux objectifs
-    const currentTargetRegionData = get(newTargets)[regionSlug];
-    const newTargetDataFromQS = getNewTargetsFromURL(url.searchParams);
-    if (!isEqual(currentTargetRegionData, newTargetDataFromQS)) {
+      // Rechargement des nouveaux objectifs
+      const newTargetDataFromQS = getNewTargetsFromURL(url.searchParams);
       newTargets.update((cls) => ({
         ...cls,
         [regionSlug]: newTargetDataFromQS,
@@ -35,23 +51,8 @@ export const load: LayoutLoad = async ({ params, url }) => {
     }
   }
 
-  // Mise à jour des nouveaux objectifs à partir des objectifs initiaux
-  regionData.forEach((action) => {
-    if (get(newTargets)[regionSlug][action.id] == null) {
-      newTargets.update((cls) => ({
-        ...cls,
-        [regionSlug]: {
-          ...cls[regionSlug],
-          // Si le realisé est déjà supérieur à l’objectif initial, on ne veut
-          // pas proposer un chiffre négatif comme objectif futur !
-          [action.id]: Math.max(
-            0,
-            action.objPhys - get(completionLevels)[regionSlug][action.id]
-          ),
-        },
-      }));
-    }
-  });
+  initialLoad = false;
+
   return {
     regionSlug,
     regionData,

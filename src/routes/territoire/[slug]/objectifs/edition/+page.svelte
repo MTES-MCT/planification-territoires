@@ -1,10 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { page } from "$app/stores";
-  import { goto } from "$app/navigation";
-
-  import { getQVKeyForNewTarget, getRegionName } from "$lib/utils";
+  import { getRegionName } from "$lib/utils";
+  import { updateURLfromStores } from "$lib/url-utils";
   import { completionLevels, newTargets } from "$lib/stores";
   import ActionsForm from "$lib/actions-form.svelte";
 
@@ -15,33 +13,32 @@
 
   export let data;
 
-  function updateURL() {
-    const newSearchParams = new URLSearchParams($page.url.searchParams);
-
-    Object.entries($newTargets[data.regionSlug]).forEach(([key, value]) => {
-      if (value != null) {
-        newSearchParams.set(
-          getQVKeyForNewTarget(key),
-          Number(value.toFixed(4)).toString()
-        );
-      } else {
-        newSearchParams.delete(getQVKeyForNewTarget(key));
-      }
-    });
-    goto(`?${newSearchParams.toString()}`, {
-      keepFocus: true,
-      noScroll: true,
-      replaceState: true,
-    });
-  }
-
   function handleInputUpdate(newValuePhys: number, action: Action) {
     $newTargets[data.regionSlug][action.id] = newValuePhys;
-    updateURL();
+    return updateURLfromStores(data.regionSlug);
   }
 
   onMount(() => {
-    updateURL();
+    const regionSlug = data.regionSlug;
+    // Mise à jour des nouveaux objectifs à partir des objectifs initiaux
+    data.regionData.forEach((action) => {
+      if ($newTargets[regionSlug][action.id] == null) {
+        newTargets.update((targets) => ({
+          ...targets,
+          [regionSlug]: {
+            ...targets[regionSlug],
+            // Si le realisé est déjà supérieur à l’objectif initial, on ne veut
+            // pas proposer un chiffre négatif comme objectif futur !
+            [action.id]: Math.max(
+              0,
+              action.objPhys - $completionLevels[regionSlug][action.id]
+            ),
+          },
+        }));
+      }
+    });
+
+    updateURLfromStores(data.regionSlug);
   });
 
   $: initialValuesPhys = $newTargets[data.regionSlug];
@@ -57,11 +54,9 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Réajustez votre ambition"
   nextLabel="Visualisez l’ambition de votre territoire"
-  nextUrl={`/territoire/${
-    data.regionSlug
-  }/objectifs?${$page.url.searchParams.toString()}`}
+  nextUrl="/territoire/{data.regionSlug}/objectifs"
   backLabel="Visualiser le panorama des leviers actualisé"
-  backUrl="/territoire/{data.regionSlug}/diagnostic?{$page.url.searchParams.toString()}"
+  backUrl="/territoire/{data.regionSlug}/diagnostic"
   step="4"
   stickyFooter
 >

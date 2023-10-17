@@ -10,7 +10,7 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Présentation de vos objectifs territoriaux pour 2030"
   nextLabel="Réaliser le diagnostic territorial"
-  nextUrl={`/territoire/${data.regionSlug}/diagnostic/edition`}
+  nextUrl="/territoire/{data.regionSlug}/diagnostic/edition"
   backUrl="/#territoires"
   backLabel="Choisir un autre territoire"
   step="1"

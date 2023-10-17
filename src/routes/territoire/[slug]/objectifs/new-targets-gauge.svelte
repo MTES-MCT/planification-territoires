@@ -1,5 +1,5 @@
 <script lang="ts">
-  import sum from "lodash/sum";
+  import { sum } from "$lib/utils";
 
   import { prettyNum } from "$lib/utils.js";
   import { completionLevels, newTargets } from "$lib/stores";
