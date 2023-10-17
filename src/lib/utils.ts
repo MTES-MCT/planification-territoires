@@ -13,17 +13,26 @@ const actionsData = rawActionsData.map((row) => ({
 
 export function prettyNum(
   number: number,
-  { roundBig = false, roundAll = true, unitCO2 = true, negate = false } = {}
+  {
+    roundBig = false,
+    roundAll = true,
+    unitCO2 = true,
+    negate = false,
+    forceSign = false,
+  } = {}
 ) {
   const absNumber = Math.abs(number);
   const numberStr = absNumber.toLocaleString("fr-FR", {
     maximumFractionDigits: roundAll ? 0 : absNumber < 1000 || !roundBig ? 2 : 0,
   });
   let prefix = "";
-  if (negate && numberStr !== "0") {
-    if (number > 0) {
+  if (negate) {
+    number = -number;
+  }
+  if (numberStr !== "0") {
+    if (number < 0) {
       prefix = "−";
-    } else if (number < 0) {
+    } else if (number > 0 && forceSign) {
       prefix = "+";
     }
   }

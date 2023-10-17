@@ -42,8 +42,12 @@ export const load: LayoutLoad = async ({ params, url }) => {
         ...cls,
         [regionSlug]: {
           ...cls[regionSlug],
-          [action.id]:
-            action.objPhys - get(completionLevels)[regionSlug][action.id],
+          // Si le realisé est déjà supérieur à l’objectif initial, on ne veut
+          // pas proposer un chiffre négatif comme objectif futur !
+          [action.id]: Math.max(
+            0,
+            action.objPhys - get(completionLevels)[regionSlug][action.id]
+          ),
         },
       }));
     }

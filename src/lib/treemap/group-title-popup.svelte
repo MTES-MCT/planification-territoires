@@ -28,7 +28,7 @@
   <div class="value-row">
     <div class="desc">Objectif initial :</div>
     <div class="value">
-      {prettyNum(groupData.totalObjCO2, { negate: true })}
+      {prettyNum(groupData.totalObjCO2, { negate: true, forceSign: true })}
     </div>
   </div>
 
@@ -36,7 +36,7 @@
     <div class="value-row">
       <div class="desc">Réalisé :</div>
       <div class="value">
-        {prettyNum(groupData.totalCompleted, { negate: true })}
+        {prettyNum(groupData.totalCompleted, { negate: true, forceSign: true })}
       </div>
     </div>
 
@@ -45,6 +45,7 @@
       <div class="value">
         {prettyNum(groupData.totalObjCO2 - groupData.totalCompleted, {
           negate: true,
+          forceSign: true,
         })}
       </div>
     </div>

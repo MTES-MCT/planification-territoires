@@ -15,14 +15,19 @@
 
   <div class="value-row">
     <div class="desc">Objectif initial :</div>
-    <div class="value">{prettyNum(data.lever.objCO2, { negate: true })}</div>
+    <div class="value">
+      {prettyNum(data.lever.objCO2, { negate: true, forceSign: true })}
+    </div>
   </div>
 
   {#if data.showProgression && data.lever.progressionCO2}
     <div class="value-row">
       <div class="desc">Réalisé :</div>
       <div class="value">
-        {prettyNum(data.lever.progressionCO2, { negate: true })}
+        {prettyNum(data.lever.progressionCO2, {
+          negate: true,
+          forceSign: true,
+        })}
       </div>
     </div>
 
@@ -31,6 +36,7 @@
       <div class="value">
         {prettyNum(data.lever.objCO2 - data.lever.progressionCO2, {
           negate: true,
+          forceSign: true,
         })}
       </div>
     </div>

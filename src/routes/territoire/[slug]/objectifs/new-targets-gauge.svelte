@@ -36,7 +36,9 @@
 {:else if targetMiss < 0}
   <div class="fr-alert fr-alert--success">
     <h3 class="fr-alert__title">Objectifs dépassés</h3>
-    <p>Vos objectifs sont dépassés de {prettyNum(targetMiss)}</p>
+    <p>
+      Vos objectifs sont dépassés de {prettyNum(targetMiss, { negate: true })}
+    </p>
   </div>
 {:else if !hideWhenOk}
   <div class="fr-alert fr-alert--info">

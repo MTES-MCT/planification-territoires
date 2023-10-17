@@ -27,9 +27,13 @@
     if (showProgression && $displayOptions.showRemainingOnly) {
       return `${lever.name}\n${prettyNum(lever.objCO2 - lever.progressionCO2, {
         negate: true,
+        forceSign: true,
       })}`;
     }
-    return `${lever.name}\n${prettyNum(lever.objCO2, { negate: true })}`;
+    return `${lever.name}\n${prettyNum(lever.objCO2, {
+      negate: true,
+      forceSign: true,
+    })}`;
   }
 
   function getValue(lever: Lever) {
@@ -80,9 +84,10 @@
     if (showProgression && $displayOptions.showRemainingOnly) {
       return `${prettyNum(total.totalObjCO2 - total.totalCompleted, {
         negate: true,
+        forceSign: true,
       })}`;
     }
-    return `${prettyNum(total.totalObjCO2, { negate: true })}`;
+    return `${prettyNum(total.totalObjCO2, { negate: true, forceSign: true })}`;
   }
 
   function getSectorTotalInGroup(sector: string, group: string) {
