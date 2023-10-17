@@ -34,12 +34,12 @@
 
   $: hierarchy = d3.stratify().path((row) => getPath(row as Row))(data);
 
-  let columnTotalHeight = 96;
+  let columnTotalHeight = 64;
 
   $: root = d3
     .treemap()
     .tile(tile)
-    .size([width + 12, height])
+    .size([width + 12, height + columnTotalHeight])
     .paddingRight(6)
     .paddingInner(1)
     .paddingBottom(columnTotalHeight)
@@ -105,7 +105,7 @@
               class="flex h-full flex-col justify-end border-l-2 pl-2 pt-2 font-semibold tracking-tighter"
             >
               <div
-                class="mb-1 max-h-8 overflow-hidden truncate hyphens-auto text-sm uppercase leading-[1.1] md:whitespace-normal"
+                class="mb-1 max-h-8 overflow-hidden truncate break-normal text-sm uppercase leading-[1.1] md:whitespace-normal"
               >
                 {getGroupName(d.id)}
               </div>
