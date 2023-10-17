@@ -33,7 +33,7 @@
   $: valueCO2 = +(initialValuePhys / action.ratioCO2toPhys).toFixed(4);
 </script>
 
-<div class="flex flex-col">
+<div class="flex break-inside-avoid flex-col">
   <svg width="100%" height={50}>
     <style>
       .title {
