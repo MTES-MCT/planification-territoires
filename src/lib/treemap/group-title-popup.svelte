@@ -7,7 +7,8 @@
   export let data: {
     path: string;
     leversData: Lever[];
-    showProgression: boolean;
+    showCompleted: boolean;
+    showNewTargets: boolean;
   };
 
   $: group = data.path.split("/")[1];
@@ -26,13 +27,15 @@
 <div class="rounded border border-gray-300 bg-white px-4 py-2 text-sm">
   <div class="text-base font-semibold">{groupData.group}</div>
   <div class="value-row">
-    <div class="desc">Objectif initial :</div>
+    <div class="desc">
+      {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
+    </div>
     <div class="value">
       {prettyNum(groupData.totalObjCO2, { negate: true, forceSign: true })}
     </div>
   </div>
 
-  {#if data.showProgression && groupData.totalCompleted}
+  {#if data.showCompleted && groupData.totalCompleted}
     <div class="value-row">
       <div class="desc">Réalisé :</div>
       <div class="value">

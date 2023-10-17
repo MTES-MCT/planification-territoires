@@ -39,6 +39,6 @@
     <NewTargetsGauge regionData={data.regionData}></NewTargetsGauge>
   </div>
 
-  <MainViz data={targetData} />
+  <MainViz data={targetData} showNewTargets />
   <ShareButtons />
 </NavigationBar>

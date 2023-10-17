@@ -25,7 +25,7 @@
     </span>
   </p>
 
-  <MainViz data={data.regionData} showProgression />
+  <MainViz data={data.regionData} showCompleted />
 
   <ShareButtons />
 </NavigationBar>

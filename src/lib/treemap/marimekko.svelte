@@ -20,13 +20,14 @@
   export let getLabel: (row: Row) => string;
   export let getColor: (row: Row) => string;
   export let getProgressionRatio: (row: Row) => number;
-  export let showProgression: boolean;
   export let getGroupName: (path: string) => string;
   export let getGroupTotal: (path: string) => string;
   export let getSectorTotalInGroup: (sector: string, group: string) => number;
   export let tile = d3.treemapSliceDice;
   export let titleComponent: ComponentType;
   export let groupTitleComponent: ComponentType;
+  export let showCompleted: boolean;
+  export let showNewTargets: boolean;
 
   export let width: number;
   export let height: number;
@@ -71,7 +72,7 @@
         <g
           transform="translate({d.x0},{d.y0})"
           use:tooltipAction={{
-            data: { lever: d.data, showProgression },
+            data: { lever: d.data, showCompleted, showNewTargets },
             innerComponent: titleComponent,
           }}
         >
@@ -91,7 +92,12 @@
             {width}
             height={columnTotalHeight}
             use:tooltipAction={{
-              data: { path: d.id, leversData: data, showProgression },
+              data: {
+                path: d.id,
+                leversData: data,
+                showCompleted,
+                showNewTargets,
+              },
               innerComponent: groupTitleComponent,
             }}
           >

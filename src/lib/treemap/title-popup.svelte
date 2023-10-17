@@ -4,7 +4,8 @@
 
   export let data: {
     lever: Lever;
-    showProgression: boolean;
+    showCompleted: boolean;
+    showNewTargets: boolean;
   };
 </script>
 
@@ -14,13 +15,15 @@
   <div class="mb-3">{data.lever.name}</div>
 
   <div class="value-row">
-    <div class="desc">Objectif initial :</div>
+    <div class="desc">
+      {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
+    </div>
     <div class="value">
       {prettyNum(data.lever.objCO2, { negate: true, forceSign: true })}
     </div>
   </div>
 
-  {#if data.showProgression && data.lever.progressionCO2}
+  {#if data.showCompleted && data.lever.progressionCO2}
     <div class="value-row">
       <div class="desc">Réalisé :</div>
       <div class="value">

@@ -21,10 +21,11 @@
   import GroupTitlePopup from "$lib/treemap/group-title-popup.svelte";
 
   export let data: Action[];
-  export let showProgression = false;
+  export let showCompleted = false;
+  export let showNewTargets = false;
 
   function getLabel(lever: Lever) {
-    if (showProgression && $displayOptions.showRemainingOnly) {
+    if (showCompleted && $displayOptions.showRemainingOnly) {
       return `${lever.name}\n${prettyNum(lever.objCO2 - lever.progressionCO2, {
         negate: true,
         forceSign: true,
@@ -37,7 +38,7 @@
   }
 
   function getValue(lever: Lever) {
-    if (showProgression && $displayOptions.showRemainingOnly) {
+    if (showCompleted && $displayOptions.showRemainingOnly) {
       return lever.objCO2 - lever.progressionCO2;
     }
     return lever.objCO2;
@@ -52,7 +53,7 @@
   }
 
   function getProgressionRatio(lever: Lever) {
-    if ($displayOptions.showRemainingOnly || !showProgression) {
+    if ($displayOptions.showRemainingOnly || !showCompleted) {
       return 0;
     }
     if (lever.progressionCO2) {
@@ -81,7 +82,7 @@
       ]),
       filter((row) => row.group === group)
     )[0];
-    if (showProgression && $displayOptions.showRemainingOnly) {
+    if (showCompleted && $displayOptions.showRemainingOnly) {
       return `${prettyNum(total.totalObjCO2 - total.totalCompleted, {
         negate: true,
         forceSign: true,
@@ -94,7 +95,7 @@
     const sectorTotal = groupedSectors.find(
       (row) => row.group === group && row.sector === sector
     );
-    return showProgression && $displayOptions.showRemainingOnly
+    return showCompleted && $displayOptions.showRemainingOnly
       ? sectorTotal.totalRemaining
       : sectorTotal.totalObjCO2;
   }
@@ -114,7 +115,7 @@
         totalCompleted: sum("progressionCO2"),
       })
     )?.[0];
-    if (showProgression && $displayOptions.showRemainingOnly) {
+    if (showCompleted && $displayOptions.showRemainingOnly) {
       return objectives?.totalObjCO2 - objectives?.totalCompleted;
     }
     return objectives?.totalObjCO2;
@@ -190,7 +191,7 @@
   );
 
   $: canHideCompletedObjectives =
-    showProgression && leversData.some((level) => !!level.progressionCO2);
+    showCompleted && leversData.some((level) => !!level.progressionCO2);
 </script>
 
 {#key $displayOptions.showRemainingOnly}
@@ -214,7 +215,7 @@
       </div>
 
       <div class="flex flex-1 flex-col justify-between">
-        {#if showProgression}
+        {#if showCompleted}
           <div class="mb-2 flex items-center gap-3 lg:mb-0">
             <svg
               width="38"
@@ -294,7 +295,8 @@
             {getColor}
             {getValue}
             {getProgressionRatio}
-            {showProgression}
+            {showCompleted}
+            {showNewTargets}
             titleComponent={TitlePopup}
             width={1248}
             height={520}
@@ -308,7 +310,8 @@
             {getColor}
             {getValue}
             {getProgressionRatio}
-            {showProgression}
+            {showCompleted}
+            {showNewTargets}
             titleComponent={TitlePopup}
             width={720}
             height={720}
@@ -323,7 +326,8 @@
             {getColor}
             {getValue}
             {getProgressionRatio}
-            {showProgression}
+            {showCompleted}
+            {showNewTargets}
             {getGroupName}
             {getGroupTotal}
             {getSectorTotalInGroup}
@@ -341,7 +345,8 @@
             {getColor}
             {getValue}
             {getProgressionRatio}
-            {showProgression}
+            {showCompleted}
+            {showNewTargets}
             {getGroupName}
             {getGroupTotal}
             {getSectorTotalInGroup}
