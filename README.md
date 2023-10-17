@@ -10,26 +10,57 @@ Sauf mention explicite de propriété intellectuelle détenue par des tiers, les
 
 ## Développement
 
-Installation des dépendances :
+- Installation des dépendances :
 
-```bash
-npm install
-```
+  ```bash
+  npm install
+  ```
 
-Démarrage du serveur de développement
+- Préparation des variables d’environnement :
 
-```bash
-npm run dev
-```
+  ```bash
+  cp .env.example .env
+  ```
+
+- Démarrage du serveur de développement
+
+  ```bash
+  npm run dev
+  ```
 
 ## Création d’une version de production
 
-```bash
+- génération des fichiers statiques
+  `bash
 npm run build
-```
+`
 
-Prévisualisation de la version de production
+                Cette commande génère un répertoire `build` à la racine du projet, qu’il suffit de servir avec un serveur statique.
 
-```bash
-npm run preview
-```
+  Le fichier `nginx.conf` propose une configuration minimale, adaptée à l’environnement Scalingo, et qui s’occupe de gérer
+
+  - la CSP
+  - la mise en cache des fichiers immuables
+
+- Prévisualisation de la version de production
+
+  ```bash
+  npm run preview
+  ```
+
+## Déploiement
+
+- La production doit être déployée à partir de la branche `release`
+
+- Les variables d’environnement suivantes doivent être présentes :
+
+  ```bash
+  PUBLIC_ENVIRONMENT=production
+  # Mettre à `true` uniquement si le site doit être visible des moteurs de recherche
+  PUBLIC_ALLOW_INDEXING=false
+
+  # L’URL du serveur Matomo. Pour l’instance beta.gouv :
+  PUBLIC_MATOMO_URL=https://stats.beta.gouv.fr/
+  # L’id du site sur le serveur Matomo. Pour l’instance beta.gouv :
+  PUBLIC_MATOMO_ID=48
+  ```
