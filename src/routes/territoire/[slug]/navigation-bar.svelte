@@ -85,7 +85,10 @@
   <div>
     <slot />
 
-    <div class:sticky-footer={stickyFooter}>
+    <div
+      class:sticky-footer={stickyFooter}
+      class="print:!static print:!border-0"
+    >
       <slot name="sticky-top" />
       <ul
         class="fr-btns-group fr-btns-group--inline-sm fr-btns-group--icon-left mb-16 flex justify-end print:!hidden"
