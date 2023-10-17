@@ -27,22 +27,19 @@
 </script>
 
 {#if targetMiss > 0}
-  <div class="fr-alert fr-alert--error">
-    <h3 class="fr-alert__title">Objectifs insuffisants</h3>
+  <div class="fr-alert fr-alert--error fr-alert--sm">
     <p>
       Vous devez assigner {prettyNum(targetMiss)} supplémentaire{#if targetMiss >= 2}s{/if}
     </p>
   </div>
 {:else if targetMiss < 0}
-  <div class="fr-alert fr-alert--success">
-    <h3 class="fr-alert__title">Objectifs dépassés</h3>
+  <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
       Vos objectifs sont dépassés de {prettyNum(targetMiss, { negate: true })}
     </p>
   </div>
 {:else if !hideWhenOk}
-  <div class="fr-alert fr-alert--info">
-    <h3 class="fr-alert__title">Objectifs satisfaisants</h3>
+  <div class="fr-alert fr-alert--info fr-alert--sm">
     <p>Vos objectifs répondent aux attentes</p>
   </div>
 {/if}
