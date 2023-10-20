@@ -23,8 +23,9 @@
   nextUrl="/territoire/{data.regionSlug}/objectifs/edition"
   step="3"
 >
-  <p class="mb-2">
-    Voici les nouveaux objectifs actualisés sur la base des données renseignées.
+  <p class="mb-2 max-w-3xl">
+    Voici l’impact des changements d’ordres de grandeur renseignés lors de
+    l’étape précédente sur le panorama des leviers du territoire.
     <span class="print:hidden">
       Vous pouvez ensuite visualiser les objectifs restants.
     </span>
