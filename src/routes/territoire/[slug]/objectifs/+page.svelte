@@ -36,8 +36,7 @@
   step="5"
 >
   <p class="mb-2">
-    Voici les objectifs finaux ajustés sur la base de votre ambition
-    territoriale
+    Voici les objectifs finaux ajustés sur la base des objectifs revus.
   </p>
 
   <div class="mb-4">
