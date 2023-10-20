@@ -315,7 +315,7 @@
             {showNewTargets}
             titleComponent={TitlePopup}
             width={720}
-            height={680}
+            height={900}
           />
         </div>
       {:else}
@@ -354,7 +354,7 @@
             titleComponent={TitlePopup}
             groupTitleComponent={GroupTitlePopup}
             width={720}
-            height={680}
+            height={900}
           />
         </div>
       {/if}
