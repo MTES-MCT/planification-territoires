@@ -29,7 +29,7 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Votre diagnostic territorial"
+  title="Comprendre les ordres de grandeur"
   nextLabel="Visualiser le panorama des leviers actualisé"
   nextUrl="/territoire/{data.regionSlug}/diagnostic"
   backLabel="Voir les objectifs territoriaux"

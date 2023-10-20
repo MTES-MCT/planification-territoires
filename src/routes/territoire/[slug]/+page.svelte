@@ -9,7 +9,7 @@
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Présentation de vos objectifs territoriaux pour 2030"
-  nextLabel="Réaliser le diagnostic territorial"
+  nextLabel="Comprendre les ordres de grandeur"
   nextUrl="/territoire/{data.regionSlug}/diagnostic/edition"
   backUrl="/#territoires"
   backLabel="Choisir un autre territoire"
