@@ -9,10 +9,11 @@
   <h2>Quel est le produit concerné par le présent document ?</h2>
   <p>
     Le simulateur territorial est un outil qui vous permet de comprendre et de
-    s'approprier les objectifs de baisse des émissions de GES à l'échelle de son
-    territoire (en France). L’outil donne des ordres de grandeur indicatifs qui
-    pourront être affinés et permet de les illustrer par des grandeurs
-    physiques.
+    vous approprier les objectifs de baisse des émissions de gaz à effet de
+    serre à l’échelle de votre territoire. L’outil donne des ordres de grandeur
+    physiques indicatifs qui permettent d’illustrer les choix stratégiques. Les
+    données présentées sont des données de travail qui n'engagent en rien
+    l'État.
   </p>
   <p>
     Vous vous engagez à respecter l’ensemble de ses dispositions, ainsi que ses
