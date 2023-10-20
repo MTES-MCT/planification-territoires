@@ -29,17 +29,21 @@
 {#if targetMiss > 0}
   <div class="fr-alert fr-alert--error fr-alert--sm">
     <p>
-      Vous devez assigner {prettyNum(targetMiss)} supplémentaire{#if targetMiss >= 2}s{/if}
+      Vous devez assigner {prettyNum(targetMiss)} supplémentaire
+      {#if targetMiss >= 2}s{/if}
     </p>
   </div>
 {:else if targetMiss < 0}
   <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
-      Vos objectifs sont dépassés de {prettyNum(targetMiss, { negate: true })}
+      Vos objectifs permettent de dépasser l'ambition globale de {prettyNum(
+        targetMiss,
+        { negate: true }
+      )}
     </p>
   </div>
 {:else if !hideWhenOk}
   <div class="fr-alert fr-alert--info fr-alert--sm">
-    <p>Vos objectifs répondent aux attentes</p>
+    <p>Vos objectifs permettent d'atteindre l'ambition globale</p>
   </div>
 {/if}
