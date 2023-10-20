@@ -38,7 +38,7 @@
   stickyFooter
 >
   <div slot="no-sticky">
-    <p class="max-w-2xl text-lg">
+    <p class="max-w-3xl">
       Pour chaque secteur, traduisez les objectifs de baisse des émissions de
       gaz à effet de serre en ordres de grandeur physiques pour en mesurer
       l’impact. Ces ordres de grandeur sont illustratifs et indicatifs, chaque

@@ -42,7 +42,7 @@
   stickyFooter
 >
   <div slot="no-sticky">
-    <p class="max-w-2xl text-lg">
+    <p class="max-w-3xl">
       Pour chaque secteur, renseignez l’objectif que vous estimez atteignable
       pour votre territoire. Vous avez ainsi la possibilité d'être plus ou moins
       ambitieux que l’objectif initialement indiqué et mis à jour dans l'étape
