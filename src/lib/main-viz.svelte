@@ -211,7 +211,7 @@
         <div
           class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
         >
-          {prettyNum(getTotalObjectives())}
+          {prettyNum(getTotalObjectives(), { negate: true })}
         </div>
       </div>
 
@@ -237,7 +237,7 @@
           <div
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
-            {prettyNum(getTotalCompleted())}
+            {prettyNum(getTotalCompleted(), { negate: true })}
           </div>
         {/if}
       </div>
