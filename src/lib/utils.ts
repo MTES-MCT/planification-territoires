@@ -1,3 +1,5 @@
+import showdown from "showdown";
+
 import rawActionsData from "$lib/assets/data.json";
 import type { Action } from "$lib/types";
 import { arrange, distinct, filter, select, tidy } from "@tidyjs/tidy";
@@ -129,4 +131,14 @@ export function normalizeString(str: string): string {
 
 export function sum(array: number[]): number {
   return array.reduce((a, b) => a + b, 0);
+}
+
+export function markdownToHtml(markdownText: string, titleLevel = 3) {
+  const mdConverter = new showdown.Converter({
+    headerLevelStart: titleLevel,
+    openLinksInNewWindow: true,
+    simplifiedAutoLink: true,
+  });
+
+  return mdConverter.makeHtml(markdownText);
 }

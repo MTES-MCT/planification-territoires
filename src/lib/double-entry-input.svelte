@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getColor } from "$lib/utils.js";
+  import { getColor, markdownToHtml } from "$lib/utils.js";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
@@ -120,5 +120,23 @@
         />
       </div>
     </div>
+
+    {#if action.comment1}
+      <div
+        class="markdown mt-4 flex flex-row items-baseline gap-8 border-t p-2 !text-xl leading-tight text-gray-800"
+      >
+        <div class="text-base font-semibold">Commentaire</div>
+        <div>
+          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+          {@html markdownToHtml(action.comment1)}
+        </div>
+      </div>
+    {/if}
   </div>
 </div>
+
+<style lang="postcss">
+  .markdown > :global(p) {
+    @apply text-xs leading-tight text-gray-800 md:text-sm;
+  }
+</style>
