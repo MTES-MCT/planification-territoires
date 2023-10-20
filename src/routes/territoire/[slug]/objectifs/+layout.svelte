@@ -20,7 +20,9 @@
             // pas proposer un chiffre négatif comme objectif futur !
             [action.id]: Math.max(
               0,
-              action.objPhys - $completionLevels[regionSlug][action.id]
+              Math.round(
+                action.objPhys - $completionLevels[regionSlug][action.id]
+              )
             ),
           },
         }));

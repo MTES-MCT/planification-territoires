@@ -8,9 +8,9 @@
 <div class="flex flex-1 flex-col items-end justify-end border-r text-right">
   <div class="pr-4">
     <div
-      class="-mt-1 text-base font-semibold leading-tight tracking-tight text-gray-900 md:text-lg"
+      class="-mt-1 text-base font-semibold leading-tight text-gray-900 md:text-lg"
     >
-      {prettyNum(value, { roundBig: true, roundAll: false, unitCO2: false })}
+      {prettyNum(value, { unitCO2: false })}
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">{unit}</div>
   </div>

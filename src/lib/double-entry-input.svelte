@@ -18,7 +18,7 @@
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    const newValuePhys = Number(target.value) || 0;
+    const newValuePhys = Math.round(Number(target.value) || 0);
     valueCO2 = +(newValuePhys / action.ratioCO2toPhys).toFixed(4);
     onUpdate(newValuePhys, action);
   }
@@ -26,7 +26,7 @@
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     valueCO2 = Number(target.value) || 0;
-    const newValuePhys = +(valueCO2 * action.ratioCO2toPhys).toFixed(4);
+    const newValuePhys = Math.round(valueCO2 * action.ratioCO2toPhys);
     onUpdate(newValuePhys, action);
   }
 
@@ -76,7 +76,7 @@
           class="fr-input"
           name={action.id}
           type="number"
-          step="any"
+          step={1}
           min={0}
           id={action.id}
           value={initialValuePhys}

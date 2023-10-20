@@ -9,17 +9,11 @@ const actionsData = rawActionsData.map((row) => ({
 
 export function prettyNum(
   number: number,
-  {
-    roundBig = false,
-    roundAll = true,
-    unitCO2 = true,
-    negate = false,
-    forceSign = false,
-  } = {}
+  { roundAll = true, unitCO2 = true, negate = false, forceSign = false } = {}
 ) {
   const absNumber = Math.abs(number);
   const numberStr = absNumber.toLocaleString("fr-FR", {
-    maximumFractionDigits: roundAll ? 0 : absNumber < 1000 || !roundBig ? 2 : 0,
+    maximumFractionDigits: roundAll ? 0 : 2,
   });
   let prefix = "";
   if (negate) {
