@@ -8,11 +8,11 @@
   import { groupBy, tidy } from "@tidyjs/tidy";
   import DoubleEntryInput from "$lib/double-entry-input.svelte";
 
-  export let onUpdate: (newValuePhys: number, action: Action) => void;
+  export let onUpdate: (newValueCO2: number, action: Action) => void;
   export let inputLabel: string;
   export let regionData: Action[];
-  export let initialValuesPhys: RegionCompletionLevels | RegionNewTargets;
-  export let targetValuesPhys: { [leverName: string]: number };
+  export let initialValuesCO2: RegionCompletionLevels | RegionNewTargets;
+  export let targetValuesCO2: { [leverName: string]: number };
   export let noProgress = false;
 
   const sectors = tidy(
@@ -29,17 +29,17 @@
 
     <div class="mb-4 grid gap-6 md:grid-cols-2">
       {#each sector.values as action}
-        {@const initialValuePhys = initialValuesPhys[action.id]}
-        {@const targetValuePhys = targetValuesPhys[action.id]}
+        {@const initialValueCO2 = initialValuesCO2[action.id]}
+        {@const targetValueCO2 = targetValuesCO2[action.id]}
         <DoubleEntryInput
           {action}
-          progress={targetValuePhys && !noProgress
-            ? clamp((initialValuePhys ?? 0) / targetValuePhys, 0, 1)
+          progress={targetValueCO2 && !noProgress
+            ? clamp((initialValueCO2 ?? 0) / targetValueCO2, 0, 1)
             : 0}
           {inputLabel}
-          onUpdate={(newValuePhys, action) => onUpdate(newValuePhys, action)}
-          initialValuePhys={initialValuePhys ?? 0}
-          {targetValuePhys}
+          onUpdate={(newValueCO2, action) => onUpdate(newValueCO2, action)}
+          initialValueCO2={initialValueCO2 ?? 0}
+          {targetValueCO2}
         />
       {/each}
     </div>

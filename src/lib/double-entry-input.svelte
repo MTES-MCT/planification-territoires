@@ -9,28 +9,28 @@
   export let action: Action;
   export let progress: number | undefined = undefined;
   export let inputLabel: string;
-  export let initialValuePhys: number;
-  export let targetValuePhys: number;
+  export let initialValueCO2: number;
+  export let targetValueCO2: number;
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  let valueCO2: number;
-
-  function handlePhysInputChanged(evt: Event) {
-    const target = evt.target as HTMLInputElement;
-    const newValuePhys = Math.round(Number(target.value) || 0);
-    valueCO2 = +(newValuePhys / action.ratioCO2toPhys).toFixed(4);
-    onUpdate(newValuePhys, action);
-  }
+  let valuePhys: number;
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    valueCO2 = Number(target.value) || 0;
-    const newValuePhys = Math.round(valueCO2 * action.ratioCO2toPhys);
-    onUpdate(newValuePhys, action);
+    const newValueCO2 = Math.round(Number(target.value) || 0);
+    valuePhys = +(newValueCO2 * action.ratioCO2toPhys).toFixed(4);
+    onUpdate(newValueCO2, action);
   }
 
-  $: valueCO2 = +(initialValuePhys / action.ratioCO2toPhys).toFixed(4);
+  function handlePhysInputChanged(evt: Event) {
+    const target = evt.target as HTMLInputElement;
+    valuePhys = Number(target.value) || 0;
+    const newValueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
+    onUpdate(newValueCO2, action);
+  }
+
+  $: valuePhys = +(initialValueCO2 * action.ratioCO2toPhys).toFixed(4);
 </script>
 
 <div class="flex break-inside-avoid flex-col">
@@ -67,10 +67,7 @@
     </div>
 
     <div class="flex gap-x-4">
-      <DataDescription
-        value={targetValuePhys / action.ratioCO2toPhys}
-        unit={action.unitCO2}
-      />
+      <DataDescription value={targetValueCO2} unit={action.unitCO2} />
       <div class="flex-1">
         <label class="sr-only" for={`${action.id}-co2`}>
           {action.unitCO2}
@@ -82,7 +79,7 @@
           step="any"
           min={0}
           id={`${action.id}-co2`}
-          value={valueCO2}
+          value={initialValueCO2}
           on:input={handleCO2InputChanged}
           disabled={action.editionDisabled}
         />
@@ -101,7 +98,10 @@
         </div>
       </div>
       <div class="flex gap-x-4">
-        <DataDescription value={targetValuePhys} unit={action.unitPhys} />
+        <DataDescription
+          value={targetValueCO2 * action.ratioCO2toPhys}
+          unit={action.unitPhys}
+        />
         <div class="flex-1">
           <label class="sr-only" for={action.id}>
             {action.unitPhys}
@@ -113,7 +113,7 @@
             step={1}
             min={0}
             id={action.id}
-            value={initialValuePhys}
+            value={valuePhys}
             on:input={handlePhysInputChanged}
             disabled={action.editionDisabled}
           />

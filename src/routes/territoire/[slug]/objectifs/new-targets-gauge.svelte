@@ -11,16 +11,10 @@
 
   $: expectedCO2 = sum(regionData.map((action) => action.objCO2));
   $: completedCO2 = sum(
-    regionData.map(
-      (action) =>
-        $completionLevels[action.regionSlug][action.id] / action.ratioCO2toPhys
-    )
+    regionData.map((action) => $completionLevels[action.regionSlug][action.id])
   );
   $: targetCO2 = sum(
-    regionData.map(
-      (action) =>
-        ($newTargets[action.regionSlug][action.id] ?? 0) / action.ratioCO2toPhys
-    )
+    regionData.map((action) => $newTargets[action.regionSlug][action.id] ?? 0)
   );
 
   $: targetMiss = Math.round(expectedCO2 - completedCO2 - targetCO2);

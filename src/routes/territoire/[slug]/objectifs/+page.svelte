@@ -19,11 +19,11 @@
   });
 
   $: targetData = data.regionData.map((action: Action) => {
-    const valuePhys = $newTargets[action.regionSlug][action.id] ?? 0;
+    const valueCO2 = $newTargets[action.regionSlug][action.id] ?? 0;
     return {
       ...action,
-      objPhys: valuePhys,
-      objCO2: +(valuePhys / action.ratioCO2toPhys).toFixed(4),
+      objCO2: valueCO2,
+      objPhys: Math.round(valueCO2 * action.ratioCO2toPhys),
     };
   });
 </script>

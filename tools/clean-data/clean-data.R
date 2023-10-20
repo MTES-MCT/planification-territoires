@@ -35,7 +35,7 @@ final_data <- data |>
          sector = secteur,
          group = chantier,
          ratioCO2toPhys = cle_de_traduction,
-         objPhys = ordre_de_grandeur_donnee,
+         objCO2 = objectifs_sgpe_en_k_tco2,
          unitPhys = texte_dans_l_interface_unite_physique,
          unitCO2 = texte_dans_l_interface_unite_k_tco2,
          editionDisabled = case_grisee,

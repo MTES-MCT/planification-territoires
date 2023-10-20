@@ -13,8 +13,8 @@
 
   export let data;
 
-  function handleInputUpdate(newValuePhys: number, action: Action) {
-    $newTargets[data.regionSlug][action.id] = newValuePhys;
+  function handleInputUpdate(newValueCO2: number, action: Action) {
+    $newTargets[data.regionSlug][action.id] = newValueCO2;
     return updateURLfromStores(data.regionSlug);
   }
 
@@ -22,11 +22,11 @@
     updateURLfromStores(data.regionSlug);
   });
 
-  $: initialValuesPhys = $newTargets[data.regionSlug];
-  $: targetValuesPhys = Object.fromEntries(
+  $: initialValuesCO2 = $newTargets[data.regionSlug];
+  $: targetValuesCO2 = Object.fromEntries(
     data.regionData.map((action) => [
       action.id,
-      action.objPhys - $completionLevels[data.regionSlug][action.id],
+      action.objCO2 - $completionLevels[data.regionSlug][action.id],
     ])
   );
 </script>
@@ -60,8 +60,8 @@
       onUpdate={handleInputUpdate}
       regionData={data.regionData}
       inputLabel="Objectif estimé comme atteignable en 2030"
-      {initialValuesPhys}
-      {targetValuesPhys}
+      {initialValuesCO2}
+      {targetValuesCO2}
       noProgress
     />
   </form>

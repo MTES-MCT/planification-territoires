@@ -38,7 +38,7 @@ export function updateURLfromStores(regionSlug: string) {
   Object.entries(newTargetsValue[regionSlug]).forEach(([key, value]) => {
     if (value != null) {
       const action = regionData.find((action) => action.id === key) as Action;
-      const defaultTargetValue = (action.objPhys -
+      const defaultTargetValue = (action.objCO2 -
         completionLevelsValue[regionSlug][key]) as number;
       if (value?.toFixed(0) != defaultTargetValue.toFixed(0)) {
         newSearchParams.set(

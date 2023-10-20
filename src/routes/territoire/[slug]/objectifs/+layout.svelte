@@ -21,7 +21,7 @@
             [action.id]: Math.max(
               0,
               Math.round(
-                action.objPhys - $completionLevels[regionSlug][action.id]
+                action.objCO2 - $completionLevels[regionSlug][action.id]
               )
             ),
           },

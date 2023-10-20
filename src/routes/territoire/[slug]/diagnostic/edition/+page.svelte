@@ -12,8 +12,8 @@
 
   export let data;
 
-  function handleInputUpdate(newValuePhys: number, action: Action) {
-    $completionLevels[data.regionSlug][action.id] = newValuePhys;
+  function handleInputUpdate(newValueCO2: number, action: Action) {
+    $completionLevels[data.regionSlug][action.id] = newValueCO2;
     return updateURLfromStores(data.regionSlug);
   }
 
@@ -21,9 +21,9 @@
     updateURLfromStores(data.regionSlug);
   });
 
-  $: initialValuesPhys = $completionLevels[data.regionSlug];
-  $: targetValuesPhys = Object.fromEntries(
-    data.regionData.map((action) => [action.id, action.objPhys])
+  $: initialValuesCO2 = $completionLevels[data.regionSlug];
+  $: targetValuesCO2 = Object.fromEntries(
+    data.regionData.map((action) => [action.id, action.objCO2])
   );
 </script>
 
@@ -54,8 +54,8 @@
       onUpdate={handleInputUpdate}
       regionData={data.regionData}
       inputLabel="Action"
-      {initialValuesPhys}
-      {targetValuesPhys}
+      {initialValuesCO2}
+      {targetValuesCO2}
     />
   </form>
 </NavigationBar>

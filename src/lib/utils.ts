@@ -6,7 +6,7 @@ import { arrange, distinct, filter, select, tidy } from "@tidyjs/tidy";
 
 const actionsData = rawActionsData.map((row) => ({
   ...row,
-  objCO2: row.objPhys / row.ratioCO2toPhys,
+  objPhys: row.objCO2 * row.ratioCO2toPhys,
   regionSlug: normalizeString(row.region),
 })) as Action[];
 

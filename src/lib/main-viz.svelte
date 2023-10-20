@@ -159,8 +159,7 @@
   $: leversData = tidy(
     data.map((action: Action) => ({
       ...action,
-      progressionCO2:
-        $completionLevels[action.regionSlug][action.id] / action.ratioCO2toPhys,
+      progressionCO2: $completionLevels[action.regionSlug][action.id],
     })),
     groupBy(
       ["leverName", "group", "sector", "pathSector", "pathGroup"],

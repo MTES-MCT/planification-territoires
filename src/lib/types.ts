@@ -28,8 +28,8 @@ export interface Lever {
   progressionCO2: number;
 }
 
-// Part de l’objectif déjà réalisée ou planifiée, en unités physiques
-// à diviser par ratioCO2toPhys pour l'obtenir en ktCO₂e
+// Part de l’objectif déjà réalisée ou planifiée, en ktCO₂e
+// à multiplier par ratioCO2toPhys pour l'obtenir en unités physiques
 export type RegionCompletionLevels = {
   [leverName: string]: number;
 };
@@ -37,8 +37,8 @@ export type CompletionLevels = {
   [region: string]: RegionCompletionLevels;
 };
 
-// Cible définie par l'utilisateur, en unités physiques
-// à diviser par ratioCO2toPhys pour l'obtenir en ktCO₂e
+// Cible définie par l'utilisateur, en en ktCO₂e
+// // à multiplier par ratioCO2toPhys pour l'obtenir en unités physiques
 export type RegionNewTargets = {
   [leverName: string]: number | null;
 };
