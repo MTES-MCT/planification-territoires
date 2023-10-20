@@ -23,49 +23,37 @@ file_path <- args
 
 # Chargement des onglets, et nettoyage initial
 
-data <- read_excel(file_path, "Table des Données") |>
+data <- read_excel(file_path, "Sheet1") |>
   clean_names()
-corr1 <- read_excel(file_path, "Table de Correspondance (1)") |>
-  clean_names()
-corr2 <- read_excel(file_path, "Table de Correspondance (2)") |>
-  clean_names()
-formulae <- read_excel(file_path, "Formules (traduction physique)") |>
-  clean_names() |>
-  rename(levier = leviers_en_vert_leviers_avec_deux_traductions_physiques) |>
-  select(traduction_physique, cle_de_traduction)
 
 
 # Jointures
 final_data <- data |>
-  left_join(corr1, by = join_by(traduction_physique, leviers==lien_leviers)) |>
-  rename(lien_leviers = leviers,
-         leviers = leviers.y) |>
-  left_join(corr2, by = join_by(lien_leviers)) |>
-  left_join(formulae, by = join_by(traduction_physique))|>
-  select(-lien_leviers) |>
-
-# Rename columns
-  rename(id = identifiant_stable,
+  rename(
+         id = identifiant_stable,
          leverName = leviers,
-         sector = secteurs,
-         group = correspondance_secteurs,
+         sector = secteur,
+         group = chantier,
          ratioCO2toPhys = cle_de_traduction,
-         objCO2 = objectifs_sgpe_en_k_tco2,
-         objPhys = objectifs_sgpe_en_unite_physique,
+         objPhys = ordre_de_grandeur_donnee,
          unitPhys = texte_dans_l_interface_unite_physique,
-         unitCO2 = texte_dans_l_interface_unite_k_tco2) |>
+         unitCO2 = texte_dans_l_interface_unite_k_tco2,
+         disable = case_grisee,
+         no_translation = case_sans_traduction) |>
+  mutate(disable = case_when(disable=='OUI' ~TRUE, TRUE ~ FALSE),
+         no_translation = case_when(no_translation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
 
-# Corrections des valeurs en pourcentage
-  mutate(ratioCO2toPhys = case_when(
-    traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~1,
-    traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~1,
-    traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~1,
-    TRUE ~ ratioCO2toPhys)) |>
-  mutate(objPhys = case_when(
-    traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~objCO2,
-    traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~objCO2,
-    traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~objCO2,
-    TRUE ~ objPhys)) |>
+# # Corrections des valeurs en pourcentage
+#   mutate(ratioCO2toPhys = case_when(
+#     traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~1,
+#     traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~1,
+#     traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~1,
+#     TRUE ~ ratioCO2toPhys)) |>
+#   mutate(objPhys = case_when(
+#     traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~objCO2,
+#     traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~objCO2,
+#     traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~objCO2,
+#     TRUE ~ objPhys)) |>
 
 # Corrections des textes
   mutate(unitCO2 = str_replace(unitCO2, "kTCO2 évités", "ktCO₂e évitées")) |>
@@ -74,10 +62,10 @@ final_data <- data |>
 
 # Ajout du chemin pour la création du treemap
   mutate(pathSector = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(leverName, '/', '-'))) |>
-  mutate(pathGroup = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(leverName, '/', '-'))) |>
+  mutate(pathGroup = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(leverName, '/', '-')))
 
-# Suppression de la colonne name
-  select(-traduction_physique)
+# # Suppression de la colonne name
+#   select(-traduction_physique)
 
 # Export
 write_json(final_data, here('../../src/lib/assets/data.json'), pretty = TRUE)

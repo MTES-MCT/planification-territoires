@@ -4,6 +4,7 @@ import { arrange, distinct, filter, select, tidy } from "@tidyjs/tidy";
 
 const actionsData = rawActionsData.map((row) => ({
   ...row,
+  objCO2: row.objPhys / row.ratioCO2toPhys,
   regionSlug: normalizeString(row.region),
 })) as Action[];
 
@@ -88,7 +89,7 @@ export function getColor(sector: string) {
   switch (sector) {
     case "Transport":
       return "#9fceef";
-    case "Agriculture/Forêts/Sols":
+    case "Agriculture, Forêts et Sols":
       return "#b3de69";
 
     case "Industrie":
