@@ -197,7 +197,7 @@
 {#key $displayOptions.showRemainingOnly}
   <div class="flex h-full flex-col">
     <div
-      class="mb-4 border p-3 text-sm font-medium text-gray-600 sm:flex xl:text-base"
+      class="mb-4 border p-3 pb-2 text-sm font-medium text-gray-600 sm:flex xl:text-base"
     >
       <div
         class="mb-8 mr-4 flex flex-1 flex-col justify-between sm:mb-0 sm:border-r sm:pr-4 md:min-h-[68px]"
@@ -316,7 +316,7 @@
             {showNewTargets}
             titleComponent={TitlePopup}
             width={720}
-            height={720}
+            height={680}
           />
         </div>
       {:else}
@@ -355,7 +355,7 @@
             titleComponent={TitlePopup}
             groupTitleComponent={GroupTitlePopup}
             width={720}
-            height={720}
+            height={680}
           />
         </div>
       {/if}
