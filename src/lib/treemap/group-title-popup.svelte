@@ -37,7 +37,7 @@
 
   {#if data.showCompleted && groupData.totalCompleted}
     <div class="value-row">
-      <div class="desc">Réalisé :</div>
+      <div class="desc">Action :</div>
       <div class="value">
         {prettyNum(groupData.totalCompleted, { negate: true, forceSign: true })}
       </div>

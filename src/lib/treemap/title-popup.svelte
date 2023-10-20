@@ -25,7 +25,7 @@
 
   {#if data.showCompleted && data.lever.progressionCO2}
     <div class="value-row">
-      <div class="desc">Réalisé :</div>
+      <div class="desc">Action :</div>
       <div class="value">
         {prettyNum(data.lever.progressionCO2, {
           negate: true,
