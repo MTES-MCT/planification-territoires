@@ -39,19 +39,21 @@
 >
   <div slot="no-sticky">
     <p class="max-w-2xl text-lg">
-      Pour chaque secteur, renseignez le résultat des actions déjà menées,
-      contractualisées ou planifiées. En conséquence, le panorama des leviers se
-      mettra mécaniquement à jour. Pour permettre une harmonisation de
-      l’évaluation de la baisse des émissions de GES, nous avons utilisé un
-      traducteur de vos politiques publiques qui convertit le résultat d’actions
-      concrètes en ktCO₂e évitées.
+      Pour chaque secteur, traduisez les objectifs de baisse des émissions de
+      gaz à effet de serre en ordres de grandeur physiques pour en mesurer
+      l’impact. Ces ordres de grandeur sont illustratifs et indicatifs, chaque
+      levier reposant dans les faits sur plusieurs données physiques, mais
+      permettent de rendre tangible la marche à franchir. Lorsque la donnée
+      était disponible pour toutes les régions, des informations sur le point de
+      départ sont indiquées à titre d’information. Jouez avec ces ordres de
+      grandeur pour mesurer l’impact sur l’objectif 2030.
     </p>
   </div>
   <form class="mb-6">
     <ActionsForm
       onUpdate={handleInputUpdate}
       regionData={data.regionData}
-      inputLabel="Action déjà menée ou contractualisée"
+      inputLabel="Action"
       {initialValuesPhys}
       {targetValuesPhys}
     />

@@ -59,7 +59,7 @@
   >
     <div class="flex gap-x-4">
       <div class="flex-1 border-r pb-6">
-        <div class="max-w-[180px] pr-4">
+        <div class="pr-4">
           <SubTitle label="Objectif à atteindre en 2030" />
         </div>
       </div>
