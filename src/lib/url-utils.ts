@@ -24,10 +24,7 @@ export function updateURLfromStores(regionSlug: string) {
   // Réalisé ; on ne met à jour l'URL que pour les valeurs non nulles
   Object.entries(completionLevelsValue[regionSlug]).forEach(([key, value]) => {
     if (value) {
-      newSearchParams.set(
-        getQVKeyForCompleted(key),
-        Number(value.toFixed(4)).toString()
-      );
+      newSearchParams.set(getQVKeyForCompleted(key), Number(value).toFixed(0));
     } else {
       newSearchParams.delete(getQVKeyForCompleted(key));
     }
@@ -38,8 +35,9 @@ export function updateURLfromStores(regionSlug: string) {
   Object.entries(newTargetsValue[regionSlug]).forEach(([key, value]) => {
     if (value != null) {
       const action = regionData.find((action) => action.id === key) as Action;
-      const defaultTargetValue = (action.objCO2 -
-        completionLevelsValue[regionSlug][key]) as number;
+      const defaultTargetValue = Math.round(
+        action.objCO2 - completionLevelsValue[regionSlug][key]
+      );
       if (value?.toFixed(0) != defaultTargetValue.toFixed(0)) {
         newSearchParams.set(
           getQVKeyForNewTarget(key),

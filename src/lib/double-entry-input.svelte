@@ -14,23 +14,29 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  let valuePhys: number;
+  $: valuePhys = Math.round(initialValueCO2 * action.ratioCO2toPhys);
+  $: valueCO2 = initialValueCO2;
+
+  function sanitizeNumber(numberStr: string): number {
+    if (numberStr) {
+      return Math.round(Number(numberStr));
+    }
+    return 0;
+  }
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    const newValueCO2 = Math.round(Number(target.value) || 0);
-    valuePhys = +(newValueCO2 * action.ratioCO2toPhys).toFixed(4);
-    onUpdate(newValueCO2, action);
+    valueCO2 = sanitizeNumber(target.value);
+    valuePhys = Math.round(valueCO2 * action.ratioCO2toPhys);
+    onUpdate(valueCO2, action);
   }
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    valuePhys = Number(target.value) || 0;
-    const newValueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
-    onUpdate(newValueCO2, action);
+    valuePhys = sanitizeNumber(target.value);
+    valueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
+    onUpdate(valueCO2, action);
   }
-
-  $: valuePhys = +(initialValueCO2 * action.ratioCO2toPhys).toFixed(4);
 </script>
 
 <div class="flex break-inside-avoid flex-col">
@@ -76,11 +82,11 @@
           class="fr-input"
           name={`${action.id}-co2`}
           type="number"
-          step="any"
+          step={1}
           min={0}
           id={`${action.id}-co2`}
-          value={initialValueCO2}
-          on:input={handleCO2InputChanged}
+          value={valueCO2}
+          on:change={handleCO2InputChanged}
           disabled={action.editionDisabled}
         />
       </div>
@@ -107,6 +113,7 @@
             {action.unitPhys}
           </label>
           <input
+            lang="fr"
             class="fr-input"
             name={action.id}
             type="number"
@@ -114,7 +121,7 @@
             min={0}
             id={action.id}
             value={valuePhys}
-            on:input={handlePhysInputChanged}
+            on:change={handlePhysInputChanged}
             disabled={action.editionDisabled}
           />
         </div>
