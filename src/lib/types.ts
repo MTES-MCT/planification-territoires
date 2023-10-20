@@ -12,6 +12,10 @@ export interface Action {
   pathSector: string;
   pathGroup: string;
   regionSlug: string;
+  editionDisabled: boolean;
+  noTranslation: boolean;
+  comment1: string;
+  comment2: string;
 }
 
 export interface Lever {

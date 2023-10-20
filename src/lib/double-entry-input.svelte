@@ -66,36 +66,38 @@
       <SubTitle label={inputLabel} />
     </div>
 
-    <div class="flex gap-x-4">
-      <DataDescription value={targetValuePhys} unit={action.unitPhys} />
-      <div class="flex-1">
-        <label class="sr-only" for={action.id}>
-          {action.unitPhys}
-        </label>
-        <input
-          class="fr-input"
-          name={action.id}
-          type="number"
-          step={1}
-          min={0}
-          id={action.id}
-          value={initialValuePhys}
-          on:input={handlePhysInputChanged}
-        />
+    {#if !action.noTranslation}
+      <div class="flex gap-x-4">
+        <DataDescription value={targetValuePhys} unit={action.unitPhys} />
+        <div class="flex-1">
+          <label class="sr-only" for={action.id}>
+            {action.unitPhys}
+          </label>
+          <input
+            class="fr-input"
+            name={action.id}
+            type="number"
+            step={1}
+            min={0}
+            id={action.id}
+            value={initialValuePhys}
+            on:input={handlePhysInputChanged}
+            disabled={action.editionDisabled}
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="flex gap-x-4">
-      <div
-        class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
-      >
-        <span class="pr-4">Soit</span>
+      <div class="flex gap-x-4">
+        <div
+          class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
+        >
+          <span class="pr-4">Soit</span>
+        </div>
+        <div class="flex-1 py-2 text-right text-xs font-medium text-gray-500">
+          Soit
+        </div>
       </div>
-      <div class="flex-1 py-2 text-right text-xs font-medium text-gray-500">
-        Soit
-      </div>
-    </div>
-
+    {/if}
     <div class="flex gap-x-4">
       <DataDescription
         value={targetValuePhys / action.ratioCO2toPhys}
@@ -114,6 +116,7 @@
           id={`${action.id}-co2`}
           value={valueCO2}
           on:input={handleCO2InputChanged}
+          disabled={action.editionDisabled}
         />
       </div>
     </div>

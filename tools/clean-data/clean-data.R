@@ -38,10 +38,12 @@ final_data <- data |>
          objPhys = ordre_de_grandeur_donnee,
          unitPhys = texte_dans_l_interface_unite_physique,
          unitCO2 = texte_dans_l_interface_unite_k_tco2,
-         disable = case_grisee,
-         no_translation = case_sans_traduction) |>
-  mutate(disable = case_when(disable=='OUI' ~TRUE, TRUE ~ FALSE),
-         no_translation = case_when(no_translation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
+         editionDisabled = case_grisee,
+         noTranslation = case_sans_traduction,
+         comment1 = commentaire_1,
+         comment2 = commentaire_2) |>
+  mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
+         noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
 
 # # Corrections des valeurs en pourcentage
 #   mutate(ratioCO2toPhys = case_when(
