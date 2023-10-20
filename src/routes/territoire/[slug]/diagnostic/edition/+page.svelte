@@ -22,7 +22,7 @@
   });
 
   $: initialValuesCO2 = $completionLevels[data.regionSlug];
-  $: targetValuesCO2 = Object.fromEntries(
+  const targetValuesCO2 = Object.fromEntries(
     data.regionData.map((action) => [action.id, action.objCO2])
   );
 </script>

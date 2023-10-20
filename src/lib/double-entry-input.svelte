@@ -14,8 +14,8 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  $: valuePhys = Math.round(initialValueCO2 * action.ratioCO2toPhys);
-  $: valueCO2 = initialValueCO2;
+  let valuePhys = Math.round(initialValueCO2 * action.ratioCO2toPhys);
+  let valueCO2 = initialValueCO2;
 
   function sanitizeNumber(numberStr: string): number {
     if (numberStr) {
