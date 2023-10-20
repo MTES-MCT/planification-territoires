@@ -78,12 +78,7 @@ export function getSectorsNames(): string[] {
 }
 
 export function getIdNames(): string[] {
-  return tidy(
-    actionsData,
-    select("id"),
-    distinct("id"),
-    arrange((a, b) => a.id.localeCompare(b.id, "fr"))
-  ).map((row) => row.id);
+  return tidy(actionsData, select("id"), distinct("id")).map((row) => row.id);
 }
 
 export function getColor(sector: string) {
