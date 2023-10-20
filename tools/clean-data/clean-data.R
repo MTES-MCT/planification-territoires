@@ -11,12 +11,13 @@ library(jsonlite)
 
 args <- commandArgs(trailingOnly=TRUE)
 
-if (length(args)==0) {
-  stop("missing input filename", call.=FALSE)
-}
+# if (length(args)==0) {
+#   stop("missing input filename", call.=FALSE)
+# }
 
 
 file_path <- args
+# file_path <- "../../../../data.xlsx"
 
 # Vérification des noms des onglets
 # print(excel_sheets(file_path))
@@ -45,17 +46,7 @@ final_data <- data |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
 
-# # Corrections des valeurs en pourcentage
-#   mutate(ratioCO2toPhys = case_when(
-#     traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~1,
-#     traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~1,
-#     traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~1,
-#     TRUE ~ ratioCO2toPhys)) |>
-#   mutate(objPhys = case_when(
-#     traduction_physique=="réduction d'emissions du secteur (annuel) (Industrie)" ~objCO2,
-#     traduction_physique=="réduction d'emissions du secteur (annuel) (Captage méthane ISDND)" ~objCO2,
-#     traduction_physique=="réduction de consommation d'énergie annuelle (/2010)" ~objCO2,
-#     TRUE ~ objPhys)) |>
+
 
 # Corrections des textes
   mutate(unitCO2 = str_replace(unitCO2, "kTCO2 évités", "ktCO₂e évitées")) |>
