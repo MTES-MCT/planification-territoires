@@ -30,7 +30,7 @@
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Comprendre les ordres de grandeur"
-  nextLabel="Visualiser le panorama des leviers actualisé"
+  nextLabel="Visualiser l’impact des changements d’ordres de grandeur"
   nextUrl="/territoire/{data.regionSlug}/diagnostic"
   backLabel="Voir les objectifs territoriaux"
   backUrl="/territoire/{data.regionSlug}"

@@ -36,7 +36,7 @@
   title="Réajustez votre ambition"
   nextLabel="Visualisez l’ambition de votre territoire"
   nextUrl="/territoire/{data.regionSlug}/objectifs"
-  backLabel="Visualiser le panorama des leviers actualisé"
+  backLabel="Visualiser l’impact des changements d’ordres de grandeur"
   backUrl="/territoire/{data.regionSlug}/diagnostic"
   step="4"
   stickyFooter
