@@ -60,13 +60,32 @@
 
   <h1 class="sr-only">{action.leverName}</h1>
   <div
-    class="flex flex-col border border-t-0 p-4"
+    class="flex flex-col border border-t-0 px-4 pb-2 pt-3"
     style={`border-color:${getColor(action.sector)}`}
   >
     <div class="flex gap-x-4">
       <div class="flex-1 border-r pb-6">
-        <div class="pr-4">
+        <div class="inline-flex items-center pr-1">
           <SubTitle label="Objectif à atteindre en 2030" />
+          {#if action.comment2}
+            <button
+              class="fr-btn--tooltip fr-btn"
+              id="button-tooltip-{action.id}"
+              type="button"
+              aria-describedby="tooltip-{action.id}"
+            >
+              Information contextuelle
+            </button>
+            <div
+              class="fr-tooltip fr-placement [&>p]:mb-0 [&>p]:text-sm"
+              id="tooltip-{action.id}"
+              role="tooltip"
+              aria-hidden="true"
+            >
+              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+              {@html markdownToHtml(action.comment2)}
+            </div>
+          {/if}
         </div>
       </div>
       <SubTitle label={inputLabel} />
