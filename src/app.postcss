@@ -50,3 +50,9 @@
     @apply bg-white font-sans;
   }
 }
+
+@media print {
+  .fr-alert::before {
+    print-color-adjust: exact;
+  }
+}
