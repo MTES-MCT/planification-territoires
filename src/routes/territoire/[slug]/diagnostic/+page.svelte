@@ -19,7 +19,7 @@
   title="Impact des changements d’ordres de grandeur"
   backLabel="Comprendre les ordres de grandeur"
   backUrl="/territoire/{data.regionSlug}/diagnostic/edition"
-  nextLabel="Réajustez votre ambition"
+  nextLabel="Réajuster votre ambition"
   nextUrl="/territoire/{data.regionSlug}/objectifs/edition"
   step="3"
 >

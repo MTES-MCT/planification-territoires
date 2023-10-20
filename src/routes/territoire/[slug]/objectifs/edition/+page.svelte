@@ -33,8 +33,8 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Réajustez votre ambition"
-  nextLabel="Visualisez l’ambition de votre territoire"
+  title="Réajuster votre ambition"
+  nextLabel="Visualiser l’ambition revue de votre territoire"
   nextUrl="/territoire/{data.regionSlug}/objectifs"
   backLabel="Visualiser l’impact des changements d’ordres de grandeur"
   backUrl="/territoire/{data.regionSlug}/diagnostic"
