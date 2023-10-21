@@ -5,7 +5,7 @@
   export let fill: string;
 </script>
 
-<rect {fill} width={width ?? "100%"} {height} />
+<rect {fill} width={width ?? "100%"} {height} stroke="white" />
 {#if progress !== undefined}
   <rect
     fill="url(#diagonalHatch)"
