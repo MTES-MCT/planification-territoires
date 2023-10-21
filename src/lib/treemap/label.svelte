@@ -1,8 +1,10 @@
 <script lang="ts">
+  import PrettyNumber from "$lib/pretty-number.svelte";
+
   export let width: number;
   export let height: number;
   export let title: string;
-  export let value: string;
+  export let value: number;
 </script>
 
 <foreignObject {width} {height}>
@@ -11,14 +13,16 @@
       <div class="mb-1 hyphens-auto text-base leading-[1.2]">
         {title}
       </div>
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      <div class="truncate text-sm font-normal">{@html value}</div>
+      <div class="truncate text-sm font-normal">
+        <PrettyNumber number={value} negate forceSign />
+      </div>
     {:else if height > 40 && width > 40}
       <div class="mb-0.5 truncate text-sm leading-none">
         {title}
       </div>
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      <div class="truncate text-xs font-normal">{@html value}</div>
+      <div class="truncate text-xs font-normal">
+        <PrettyNumber number={value} negate forceSign />
+      </div>
     {:else if height > 16 && width > 50}
       <div class="-mt-[3px] truncate text-xs leading-tight">
         {title}

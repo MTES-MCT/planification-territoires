@@ -4,6 +4,7 @@
   // Released under the ISC license.
   // https://observablehq.com/@d3/treemap
 
+  import PrettyNumber from "$lib/pretty-number.svelte";
   import DiagonalHatchPattern from "./diagonalHatchPattern.svelte";
   import ProgressBlock from "./progressBlock.svelte";
   import * as d3 from "d3";
@@ -66,7 +67,6 @@
     <svg viewBox="0 0 {width} {height}">
       <DiagonalHatchPattern />
       {#each root.leaves() as d}
-        {@const lines = getLabel(d.data).split(/\n/g)}
         {@const width = d.x1 - d.x0}
         {@const height = d.y1 - d.y0}
         <g
@@ -82,7 +82,12 @@
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
-          <Label {height} {width} title={lines[0]} value={lines[1]} />
+          <Label
+            {height}
+            {width}
+            title={getLabel(d.data)}
+            value={getValue(d.data)}
+          />
         </g>
       {/each}
       {#each root.descendants().filter((d) => d.depth === 1) as d}
@@ -110,8 +115,7 @@
                 {getGroupName(d.id)}
               </div>
               <div class="truncate text-sm font-normal">
-                <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-                {@html getGroupTotal(d.id)}
+                <PrettyNumber number={getGroupTotal(d.id)} negate forceSign />
               </div>
             </div>
           </foreignObject>

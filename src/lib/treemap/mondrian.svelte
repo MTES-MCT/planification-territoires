@@ -48,7 +48,6 @@
     <svg viewBox="0 0 {width} {height}">
       <DiagonalHatchPattern />
       {#each root.leaves() as d}
-        {@const lines = getLabel(d.data).split(/\n/g)}
         {@const leafWidth = d.x1 - d.x0}
         {@const leafHeight = d.y1 - d.y0}
         <g
@@ -67,8 +66,8 @@
           <Label
             height={leafHeight}
             width={leafWidth}
-            title={lines[0]}
-            value={lines[1]}
+            title={getLabel(d.data)}
+            value={getValue(d.data)}
           />
         </g>
       {/each}

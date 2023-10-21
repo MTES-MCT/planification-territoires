@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { prettyNum } from "$lib/utils";
+  import PrettyNumber from "$lib/pretty-number.svelte";
 
   export let value: number;
   export let unit: string;
@@ -10,8 +10,7 @@
     <div
       class="-mt-1 text-base font-semibold leading-tight text-gray-900 md:text-lg"
     >
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      {@html prettyNum(value, { unitCO2: false })}
+      <PrettyNumber number={value} withUnitCO2={false} />
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">
       {#each unit.split("(") as line, i}

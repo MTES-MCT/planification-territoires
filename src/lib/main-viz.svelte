@@ -1,4 +1,5 @@
 <script lang="ts">
+  import PrettyNumber from "$lib/pretty-number.svelte";
   import {
     tidy,
     groupBy,
@@ -14,13 +15,7 @@
   import Mondrian from "$lib/treemap/mondrian.svelte";
   import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
-  import {
-    clamp,
-    getColor,
-    getSectorsNames,
-    mtmEvent,
-    prettyNum,
-  } from "$lib/utils";
+  import { clamp, getColor, getSectorsNames, mtmEvent } from "$lib/utils";
   import type { Action, Lever } from "$lib/types";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import TitlePopup from "$lib/treemap/title-popup.svelte";
@@ -31,16 +26,7 @@
   export let showNewTargets = false;
 
   function getLabel(lever: Lever) {
-    if (showCompleted && $displayOptions.showRemainingOnly) {
-      return `${lever.name}\n${prettyNum(lever.objCO2 - lever.progressionCO2, {
-        negate: true,
-        forceSign: true,
-      })}`;
-    }
-    return `${lever.name}\n${prettyNum(lever.objCO2, {
-      negate: true,
-      forceSign: true,
-    })}`;
+    return lever.name;
   }
 
   function getValue(lever: Lever) {
@@ -89,12 +75,9 @@
       filter((row) => row.group === group)
     )[0];
     if (showCompleted && $displayOptions.showRemainingOnly) {
-      return `${prettyNum(total.totalObjCO2 - total.totalCompleted, {
-        negate: true,
-        forceSign: true,
-      })}`;
+      return total.totalObjCO2 - total.totalCompleted;
     }
-    return `${prettyNum(total.totalObjCO2, { negate: true, forceSign: true })}`;
+    return total.totalObjCO2;
   }
 
   function getSectorTotalInGroup(sector: string, group: string) {
@@ -206,11 +189,7 @@
         <div
           class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
         >
-          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-          {@html prettyNum(getTotalObjectives(), {
-            negate: true,
-            forceSign: true,
-          })}
+          <PrettyNumber number={getTotalObjectives()} negate forceSign />
         </div>
       </div>
 
@@ -236,11 +215,7 @@
           <div
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
-            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-            {@html prettyNum(getTotalCompleted(), {
-              negate: true,
-              forceSign: true,
-            })}
+            <PrettyNumber number={getTotalCompleted()} negate forceSign />
           </div>
         {:else}
           <div
@@ -252,8 +227,7 @@
           <div
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
-            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-            {@html prettyNum(201000, { negate: true })}
+            <PrettyNumber number={201000} negate />
           </div>
         {/if}
       </div>

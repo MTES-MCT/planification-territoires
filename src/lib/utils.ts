@@ -10,29 +10,6 @@ const actionsData = rawActionsData.map((row) => ({
   regionSlug: normalizeString(row.region),
 })) as Action[];
 
-export function prettyNum(
-  number: number,
-  { roundAll = true, unitCO2 = true, negate = false, forceSign = false } = {}
-) {
-  const absNumber = Math.abs(number);
-  const numberStr = absNumber.toLocaleString("fr-FR", {
-    maximumFractionDigits: roundAll ? 0 : 2,
-  });
-  let prefix = "";
-  if (negate) {
-    number = -number;
-  }
-  if (numberStr !== "0") {
-    if (number < 0) {
-      prefix = "−";
-    } else if (number > 0 && forceSign) {
-      prefix = "+";
-    }
-  }
-  const suffix = unitCO2 ? ` ktCO₂e` : "";
-  return `<span class="tracking-normal">${prefix}${numberStr}</span>${suffix}`;
-}
-
 export function clamp(x: number, min: number, max: number) {
   return Math.max(min, Math.min(max, x));
 }

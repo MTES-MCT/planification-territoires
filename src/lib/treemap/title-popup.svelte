@@ -1,6 +1,6 @@
 <script lang="ts">
+  import PrettyNumber from "$lib/pretty-number.svelte";
   import type { Lever } from "$lib/types";
-  import { prettyNum } from "$lib/utils";
 
   export let data: {
     lever: Lever;
@@ -19,8 +19,7 @@
       {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
     </div>
     <div class="value">
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      {@html prettyNum(data.lever.objCO2, { negate: true, forceSign: true })}
+      <PrettyNumber number={data.lever.objCO2} negate forceSign />
     </div>
   </div>
 
@@ -28,22 +27,18 @@
     <div class="value-row">
       <div class="desc">Action :</div>
       <div class="value">
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html prettyNum(data.lever.progressionCO2, {
-          negate: true,
-          forceSign: true,
-        })}
+        <PrettyNumber number={data.lever.progressionCO2} negate forceSign />
       </div>
     </div>
 
     <div class="value-row">
       <div class="desc">Objectif restant :</div>
       <div class="value">
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html prettyNum(data.lever.objCO2 - data.lever.progressionCO2, {
-          negate: true,
-          forceSign: true,
-        })}
+        <PrettyNumber
+          number={data.lever.objCO2 - data.lever.progressionCO2}
+          negate
+          forceSign
+        />
       </div>
     </div>
   {/if}

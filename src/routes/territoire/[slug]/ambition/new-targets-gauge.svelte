@@ -1,7 +1,7 @@
 <script lang="ts">
+  import PrettyNumber from "$lib/pretty-number.svelte";
   import { sum } from "$lib/utils";
 
-  import { prettyNum } from "$lib/utils.js";
   import { completionLevels, newTargets } from "$lib/stores";
 
   import type { Action } from "$lib/types";
@@ -23,8 +23,7 @@
 {#if targetMiss > 0}
   <div class="fr-alert fr-alert--error fr-alert--sm">
     <p>
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      Vous devez assigner {@html prettyNum(targetMiss)}
+      Vous devez assigner <PrettyNumber number={targetMiss} />
       {#if targetMiss < 2}supplémentaire{:else}supplémentaires{/if}
     </p>
   </div>
@@ -32,8 +31,7 @@
   <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
       Vos objectifs permettent de dépasser l'ambition globale de
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      {@html prettyNum(targetMiss, { negate: true })}
+      <PrettyNumber number={targetMiss} negate />
     </p>
   </div>
 {:else if !hideWhenOk}

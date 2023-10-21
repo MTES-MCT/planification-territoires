@@ -1,8 +1,8 @@
 <script lang="ts">
+  import PrettyNumber from "$lib/pretty-number.svelte";
   import { tidy, groupBy, sum, summarize, filter } from "@tidyjs/tidy";
 
   import type { Lever } from "$lib/types";
-  import { prettyNum } from "$lib/utils";
 
   export let data: {
     path: string;
@@ -31,11 +31,7 @@
       {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
     </div>
     <div class="value">
-      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-      {@html prettyNum(groupData.totalObjCO2, {
-        negate: true,
-        forceSign: true,
-      })}
+      <PrettyNumber number={groupData.totalObjCO2} negate forceSign />
     </div>
   </div>
 
@@ -43,22 +39,18 @@
     <div class="value-row">
       <div class="desc">Action :</div>
       <div class="value">
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html prettyNum(groupData.totalCompleted, {
-          negate: true,
-          forceSign: true,
-        })}
+        <PrettyNumber number={groupData.totalCompleted} negate forceSign />
       </div>
     </div>
 
     <div class="value-row">
       <div class="desc">Objectif restant :</div>
       <div class="value">
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html prettyNum(groupData.totalObjCO2 - groupData.totalCompleted, {
-          negate: true,
-          forceSign: true,
-        })}
+        <PrettyNumber
+          number={groupData.totalObjCO2 - groupData.totalCompleted}
+          negate
+          forceSign
+        />
       </div>
     </div>
   {/if}
