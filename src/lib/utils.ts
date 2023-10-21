@@ -147,3 +147,9 @@ export function markdownToHtml(markdownText: string, titleLevel = 3) {
 
   return mdConverter.makeHtml(correctedText);
 }
+
+export function mtmEvent(category: string, action: string, name: string) {
+  if (window._paq) {
+    window._paq.push(["trackEvent", category, action, name]);
+  }
+}

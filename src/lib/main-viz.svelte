@@ -14,7 +14,13 @@
   import Mondrian from "$lib/treemap/mondrian.svelte";
   import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
-  import { clamp, getColor, getSectorsNames, prettyNum } from "$lib/utils";
+  import {
+    clamp,
+    getColor,
+    getSectorsNames,
+    mtmEvent,
+    prettyNum,
+  } from "$lib/utils";
   import type { Action, Lever } from "$lib/types";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import TitlePopup from "$lib/treemap/title-popup.svelte";
@@ -133,25 +139,15 @@
   }
 
   function handleSelectVizVersion(_evt: Event) {
-    if (window._paq) {
-      window._paq.push([
-        "trackEvent",
-        "Options",
-        "Choix visualisation",
-        $displayOptions.selectedViz,
-      ]);
-    }
+    mtmEvent("Options", "Choix visualisation", $displayOptions.selectedViz);
   }
 
   function handleShowRemainingToggle(_evt: Event) {
-    if (window._paq) {
-      window._paq.push([
-        "trackEvent",
-        "Options",
-        "Masquer le réalisé",
-        !$displayOptions.showRemainingOnly,
-      ]);
-    }
+    mtmEvent(
+      "Options",
+      "Masquer le réalisé",
+      (!$displayOptions.showRemainingOnly).toString()
+    );
   }
 
   // On injecte le niveau de progression, en ktCO2, et groupe les traductions physiques par nom de levier
