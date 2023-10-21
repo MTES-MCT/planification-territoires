@@ -238,6 +238,18 @@
           >
             {prettyNum(getTotalCompleted(), { negate: true })}
           </div>
+        {:else}
+          <div
+            class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
+          >
+            Flux annuel de baisse des émissions de gaz à effet de serre que la
+            France doit atteindre d’ici 2030
+          </div>
+          <div
+            class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
+          >
+            {prettyNum(23000000, { negate: true })}
+          </div>
         {/if}
       </div>
     </div>
