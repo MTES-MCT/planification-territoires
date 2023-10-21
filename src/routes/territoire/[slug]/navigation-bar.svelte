@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let territoryName;
   export let title;
   export let step;

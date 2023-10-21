@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
   <button
     class="fr-breadcrumb__button"
