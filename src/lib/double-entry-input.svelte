@@ -27,6 +27,7 @@
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     valueCO2 = sanitizeNumber(target.value);
+    target.value = valueCO2;
     valuePhys = Math.round(valueCO2 * action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
@@ -34,6 +35,7 @@
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     valuePhys = sanitizeNumber(target.value);
+    target.value = valuePhys;
     valueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
