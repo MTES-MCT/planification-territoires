@@ -27,7 +27,7 @@
     effet de serre.
   </p>
 </div>
-<div class="fr-grid-row fr-grid-row--gutters !mb-16 w-full">
+<div class="fr-grid-row fr-grid-row--gutters !mb-16 w-full" id="territoires">
   {#each regionNames as regionName}
     <RegionCard {regionName} regionSlug={normalizeString(regionName)} />
   {/each}
