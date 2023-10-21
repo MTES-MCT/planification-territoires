@@ -1,11 +1,11 @@
 <script lang="ts">
-  export let territoryName;
-  export let title;
-  export let step;
+  export let territoryName: string;
+  export let title: string;
+  export let step: string;
   export let nextLabel = "";
   export let nextUrl = "";
-  export let backLabel;
-  export let backUrl;
+  export let backLabel: string;
+  export let backUrl: string;
   export let stickyFooter = false;
 
   let totalSteps = 5;

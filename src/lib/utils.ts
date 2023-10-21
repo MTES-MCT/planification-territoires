@@ -143,7 +143,7 @@ export function markdownToHtml(markdownText: string, titleLevel = 3) {
     // espace fine insécable avant `;!?»`
     .replace(/ [;!?»]/g, " $1")
     // espace fine insécable après `«`
-    .replace(/[«] /g, "$1 ");
+    .replace(/« /g, "$1 ");
 
   return mdConverter.makeHtml(correctedText);
 }
