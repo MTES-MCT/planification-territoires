@@ -133,7 +133,17 @@ export function markdownToHtml(markdownText: string, titleLevel = 3) {
     headerLevelStart: titleLevel,
     openLinksInNewWindow: true,
     simplifiedAutoLink: true,
+    simpleLineBreaks: true,
   });
 
-  return mdConverter.makeHtml(markdownText);
+  // corrections typographiques
+  const correctedText = markdownText
+    // espace insécable avant `:`
+    .replace(/ :/g, " :")
+    // espace fine insécable avant `;!?»`
+    .replace(/ [;!?»]/g, " $1")
+    // espace fine insécable après `«`
+    .replace(/[«] /g, "$1 ");
+
+  return mdConverter.makeHtml(correctedText);
 }

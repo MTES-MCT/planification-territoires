@@ -12,6 +12,8 @@
     >
       {prettyNum(value, { unitCO2: false })}
     </div>
-    <div class="text-xs leading-tight text-gray-800 md:text-sm">{unit}</div>
+    <div class="text-xs leading-tight text-gray-800 md:text-sm">
+      {#each unit.split("\n") as line}{line}<br />{/each}
+    </div>
   </div>
 </div>
