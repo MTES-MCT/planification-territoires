@@ -64,7 +64,12 @@
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
-          <Label height={leafHeight} width={leafWidth} {lines} />
+          <Label
+            height={leafHeight}
+            width={leafWidth}
+            title={lines[0]}
+            value={lines[1]}
+          />
         </g>
       {/each}
     </svg>

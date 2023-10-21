@@ -10,7 +10,8 @@
     <div
       class="-mt-1 text-base font-semibold leading-tight text-gray-900 md:text-lg"
     >
-      {prettyNum(value, { unitCO2: false })}
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      {@html prettyNum(value, { unitCO2: false })}
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">
       {#each unit.split("\n") as line}{line}<br />{/each}

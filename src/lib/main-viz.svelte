@@ -210,7 +210,11 @@
         <div
           class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
         >
-          {prettyNum(getTotalObjectives(), { negate: true })}
+          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+          {@html prettyNum(getTotalObjectives(), {
+            negate: true,
+            forceSign: true,
+          })}
         </div>
       </div>
 
@@ -236,7 +240,11 @@
           <div
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
-            {prettyNum(getTotalCompleted(), { negate: true })}
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+            {@html prettyNum(getTotalCompleted(), {
+              negate: true,
+              forceSign: true,
+            })}
           </div>
         {:else}
           <div
@@ -248,7 +256,8 @@
           <div
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
-            {prettyNum(23000000, { negate: true })}
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+            {@html prettyNum(23000000, { negate: true })}
           </div>
         {/if}
       </div>

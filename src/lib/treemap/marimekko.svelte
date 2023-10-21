@@ -82,7 +82,7 @@
             fill={getColor(d.data.sector)}
             progress={getProgressionRatio(d.data)}
           />
-          <Label {height} {width} {lines} />
+          <Label {height} {width} title={lines[0]} value={lines[1]} />
         </g>
       {/each}
       {#each root.descendants().filter((d) => d.depth === 1) as d}
@@ -110,7 +110,8 @@
                 {getGroupName(d.id)}
               </div>
               <div class="truncate text-sm font-normal">
-                {getGroupTotal(d.id)}
+                <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+                {@html getGroupTotal(d.id)}
               </div>
             </div>
           </foreignObject>

@@ -31,7 +31,11 @@
       {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
     </div>
     <div class="value">
-      {prettyNum(groupData.totalObjCO2, { negate: true, forceSign: true })}
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      {@html prettyNum(groupData.totalObjCO2, {
+        negate: true,
+        forceSign: true,
+      })}
     </div>
   </div>
 
@@ -39,14 +43,19 @@
     <div class="value-row">
       <div class="desc">Action :</div>
       <div class="value">
-        {prettyNum(groupData.totalCompleted, { negate: true, forceSign: true })}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+        {@html prettyNum(groupData.totalCompleted, {
+          negate: true,
+          forceSign: true,
+        })}
       </div>
     </div>
 
     <div class="value-row">
       <div class="desc">Objectif restant :</div>
       <div class="value">
-        {prettyNum(groupData.totalObjCO2 - groupData.totalCompleted, {
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+        {@html prettyNum(groupData.totalObjCO2 - groupData.totalCompleted, {
           negate: true,
           forceSign: true,
         })}

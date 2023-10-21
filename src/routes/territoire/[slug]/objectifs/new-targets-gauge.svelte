@@ -23,17 +23,17 @@
 {#if targetMiss > 0}
   <div class="fr-alert fr-alert--error fr-alert--sm">
     <p>
-      Vous devez assigner {prettyNum(targetMiss)} supplémentaire
-      {#if targetMiss >= 2}s{/if}
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      Vous devez assigner {@html prettyNum(targetMiss)}
+      {#if targetMiss < 2}supplémentaire{:else}supplémentaires{/if}
     </p>
   </div>
 {:else if targetMiss < 0}
   <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
-      Vos objectifs permettent de dépasser l'ambition globale de {prettyNum(
-        targetMiss,
-        { negate: true }
-      )}
+      Vos objectifs permettent de dépasser l'ambition globale de
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      {@html prettyNum(targetMiss, { negate: true })}
     </p>
   </div>
 {:else if !hideWhenOk}

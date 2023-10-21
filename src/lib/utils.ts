@@ -30,7 +30,7 @@ export function prettyNum(
     }
   }
   const suffix = unitCO2 ? ` ktCO₂e` : "";
-  return `${prefix}${numberStr}${suffix}`;
+  return `<span class="tracking-normal">${prefix}${numberStr}</span>${suffix}`;
 }
 
 export function clamp(x: number, min: number, max: number) {
