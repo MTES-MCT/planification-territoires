@@ -257,7 +257,7 @@
             class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
           >
             <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-            {@html prettyNum(23000000, { negate: true })}
+            {@html prettyNum(201000, { negate: true })}
           </div>
         {/if}
       </div>
