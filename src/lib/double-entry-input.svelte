@@ -154,17 +154,19 @@
         class="markdown mt-4 flex flex-row items-baseline gap-8 border-t p-2 !text-xl leading-tight text-gray-800"
       >
         <div class="text-base font-semibold">Commentaire</div>
-        <div class="[&>p]:mb-0">
-          <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-          {@html markdownToHtml(action.comment1)}
-        </div>
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+        {@html markdownToHtml(action.comment1)}
       </div>
     {/if}
   </div>
 </div>
 
 <style lang="postcss">
-  .markdown > :global(p) {
+  .markdown :global(p) {
     @apply text-xs leading-tight text-gray-800 md:text-sm;
+  }
+
+  .markdown > :global(p:last-of-type) {
+    @apply mb-0;
   }
 </style>
