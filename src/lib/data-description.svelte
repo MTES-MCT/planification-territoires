@@ -14,7 +14,10 @@
       {@html prettyNum(value, { unitCO2: false })}
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">
-      {#each unit.split("\n") as line}{line}<br />{/each}
+      {#each unit.split("(") as line, i}
+        {#if i === 0}{line}<br />{:else}
+          <span class="italic text-gray-500">{line.replace(")", "")}</span>
+        {/if}{/each}
     </div>
   </div>
 </div>
