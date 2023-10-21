@@ -18,9 +18,9 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Impact des changements d’ordres de grandeur"
   backLabel="Comprendre les ordres de grandeur"
-  backUrl="/territoire/{data.regionSlug}/diagnostic/edition"
+  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
   nextLabel="Réajuster votre ambition"
-  nextUrl="/territoire/{data.regionSlug}/objectifs/edition"
+  nextUrl="/territoire/{data.regionSlug}/ambition/edition"
   step="3"
 >
   <p class="mb-2 max-w-3xl">

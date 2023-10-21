@@ -31,9 +31,9 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Comprendre les ordres de grandeur"
   nextLabel="Visualiser l’impact des changements d’ordres de grandeur"
-  nextUrl="/territoire/{data.regionSlug}/diagnostic"
+  nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur"
   backLabel="Voir les objectifs territoriaux"
-  backUrl="/territoire/{data.regionSlug}"
+  backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"
   stickyFooter
 >

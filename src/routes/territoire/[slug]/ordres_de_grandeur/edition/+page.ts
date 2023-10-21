@@ -4,7 +4,7 @@ import type { PageLoad } from "./$types";
 export const load: PageLoad = async ({ parent }) => {
   const { regionSlug } = await parent();
   return {
-    title: `Diagnostic | ${getRegionName(regionSlug)}`,
+    title: `Édition | Ordres de grandeur | ${getRegionName(regionSlug)}`,
     hasNavigation: true,
   };
 };

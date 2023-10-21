@@ -1,11 +1,10 @@
-import type { PageLoad } from "./$types";
 import { getRegionName } from "$lib/utils";
+import type { PageLoad } from "./$types";
 
 export const load: PageLoad = async ({ parent }) => {
   const { regionSlug } = await parent();
-
   return {
-    title: getRegionName(regionSlug),
+    title: `Ambition | ${getRegionName(regionSlug)}`,
     hasNavigation: true,
   };
 };

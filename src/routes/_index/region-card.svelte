@@ -11,7 +11,7 @@
     <div class="fr-tile__body">
       <div class="fr-tile__content">
         <h3 class="fr-tile__title">
-          <a href="/territoire/{regionSlug}">{regionName}</a>
+          <a href="/territoire/{regionSlug}/objectifs">{regionName}</a>
         </h3>
       </div>
     </div>

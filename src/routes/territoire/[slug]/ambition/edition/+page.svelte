@@ -35,9 +35,9 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Réajuster votre ambition"
   nextLabel="Visualiser l’ambition revue de votre territoire"
-  nextUrl="/territoire/{data.regionSlug}/objectifs"
+  nextUrl="/territoire/{data.regionSlug}/ambition"
   backLabel="Visualiser l’impact des changements d’ordres de grandeur"
-  backUrl="/territoire/{data.regionSlug}/diagnostic"
+  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur"
   step="4"
   stickyFooter
 >

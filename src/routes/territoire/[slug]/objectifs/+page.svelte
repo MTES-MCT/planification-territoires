@@ -1,48 +1,26 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-
-  import { updateURLfromStores } from "$lib/url-utils";
   import MainViz from "$lib/main-viz.svelte";
-  import ShareButtons from "$lib/share-buttons.svelte";
   import { getRegionName } from "$lib/utils";
-  import { newTargets } from "$lib/stores";
-
   import NavigationBar from "../navigation-bar.svelte";
-  import NewTargetsGauge from "./new-targets-gauge.svelte";
-
-  import type { Action } from "$lib/types";
 
   export let data;
-
-  onMount(() => {
-    updateURLfromStores(data.regionSlug);
-  });
-
-  $: targetData = data.regionData.map((action: Action) => {
-    const valueCO2 = $newTargets[action.regionSlug][action.id] ?? 0;
-    return {
-      ...action,
-      objCO2: valueCO2,
-      objPhys: Math.round(valueCO2 * action.ratioCO2toPhys),
-    };
-  });
 </script>
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Visualiser l’ambition revue de votre territoire"
-  backLabel="Réajuster votre ambition"
-  backUrl="/territoire/{data.regionSlug}/objectifs/edition"
-  step="5"
+  title="Présentation de vos objectifs territoriaux pour 2030"
+  nextLabel="Comprendre les ordres de grandeur"
+  nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
+  backUrl="/#territoires"
+  backLabel="Choisir un autre territoire"
+  step="1"
 >
-  <p class="mb-2">
-    Voici les objectifs finaux ajustés sur la base des objectifs revus.
+  <p class="mb-2 print:leading-tight">
+    Voici le flux annuel de baisse des émissions de gaz à effet de serre par
+    rapport à 2019 que vous devriez atteindre d'ici 2030.
   </p>
 
-  <div class="mb-4">
-    <NewTargetsGauge regionData={data.regionData}></NewTargetsGauge>
+  <div class="my-8 block print:my-0">
+    <MainViz data={data.regionData} />
   </div>
-
-  <MainViz data={targetData} showNewTargets />
-  <ShareButtons />
 </NavigationBar>
