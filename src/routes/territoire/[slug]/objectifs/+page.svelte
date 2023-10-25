@@ -8,7 +8,7 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Présentation de vos objectifs territoriaux pour 2030"
+  title="Présentation des objectifs territoriaux pour 2030"
   nextLabel="Comprendre les ordres de grandeur"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
   backUrl="/#territoires"
@@ -16,8 +16,11 @@
   step="1"
 >
   <p class="mb-2 print:leading-tight">
-    Voici le flux annuel de baisse des émissions de gaz à effet de serre par
-    rapport à 2019 que vous devriez atteindre d'ici 2030.
+    Voici la baisse des émissions de gaz à effet de serre attendue en 2030 par
+    rapport à 2019. Les différents gaz à effet de serre sont comptabilisés en
+    équivalent CO₂ (CO2₂e), une unité commune introduite par le GIEC pour
+    permettre des comparaisons basées sur le pouvoir de réchauffement global de
+    chacun des gaz à effet de serre.
   </p>
 
   <div class="my-8 block print:my-0">

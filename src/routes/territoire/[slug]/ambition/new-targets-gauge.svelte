@@ -30,7 +30,7 @@
 {:else if targetMiss < 0}
   <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
-      Vos objectifs permettent de dépasser l'ambition globale de
+      Les objectifs permettent de dépasser l'ambition globale 2030 de
       <PrettyNumber number={targetMiss} negate />
     </p>
   </div>

@@ -33,8 +33,8 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Réajuster votre ambition"
-  nextLabel="Visualiser l’ambition revue de votre territoire"
+  title="Proposer une nouvelle ambition pour le territoire"
+  nextLabel="Visualiser une nouvelle ambition pour le territoire"
   nextUrl="/territoire/{data.regionSlug}/ambition"
   backLabel="Visualiser l’impact des changements d’ordres de grandeur"
   backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur"
@@ -43,8 +43,8 @@
 >
   <div slot="no-sticky">
     <p class="max-w-3xl">
-      Pour chaque secteur, renseignez l’objectif que vous estimez atteignable
-      pour votre territoire. Vous avez ainsi la possibilité d'être plus ou moins
+      Pour chaque secteur, proposez un objectif que vous estimez atteignable
+      pour le territoire. Vous avez ainsi la possibilité d'être plus ou moins
       ambitieux que l’objectif initialement indiqué et mis à jour dans l'étape
       précédente. En conséquence, une jauge apparaîtra vous permettant de suivre
       les ktCO₂e qu’il vous reste à répartir.

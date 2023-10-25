@@ -40,13 +40,13 @@
   <div slot="no-sticky">
     <p class="max-w-3xl">
       Pour chaque secteur, traduisez les objectifs de baisse des émissions de
-      gaz à effet de serre en ordres de grandeur physiques pour en mesurer
-      l’impact. Ces ordres de grandeur sont illustratifs et indicatifs, chaque
-      levier reposant dans les faits sur plusieurs données physiques, mais
-      permettent de rendre tangible la marche à franchir. Lorsque la donnée
-      était disponible pour toutes les régions, des informations sur le point de
-      départ sont indiquées à titre d’information. Jouez avec ces ordres de
-      grandeur pour mesurer l’impact sur l’objectif 2030.
+      gaz à effet de serre en ordres de grandeur physiques. Ces ordres de
+      grandeur sont illustratifs et indicatifs, chaque levier reposant dans les
+      faits sur un ensemble de politiques publiques qui doivent être combinées
+      pour atteindre l’objectif. Lorsque la donnée était disponible pour toutes
+      les régions, les points de départ des ordres de grandeur sont indiqués à
+      titre d’information. Jouez avec ces ordres de grandeur pour estimer
+      l’impact sur l’objectif 2030.
     </p>
   </div>
   <form class="mb-6">
