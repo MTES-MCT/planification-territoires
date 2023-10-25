@@ -35,7 +35,7 @@
   backUrl="/territoire/{data.regionSlug}/ambition/edition"
   step="5"
 >
-  <p class="mb-2">
+  <p class="mb-2 max-w-3xl">
     Voici les objectifs finaux ajustés sur la base de nouveaux objectifs.
   </p>
 

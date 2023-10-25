@@ -23,6 +23,7 @@
   <p>
     Les données présentées sont des données de travail qui n'engagent en rien
     l'État.
+    <br />
     <a class="fr-link" href="/a-propos"
       >En savoir plus sur le simulateur territorial</a
     >.
