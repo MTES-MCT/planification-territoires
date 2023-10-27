@@ -3,7 +3,7 @@
   export let regionName: string;
 </script>
 
-<div class="fr-col-md-3 fr-col-12">
+<div class="fr-col-md-3 fr-col-12 break-inside-avoid">
   <div
     class="fr-tile fr-tile--sm fr-tile--horizontal fr-enlarge-link"
     id="tile-6661"
