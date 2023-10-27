@@ -5,12 +5,12 @@
   const regionNames = getRegionsNames();
 </script>
 
-<h1 class="mt-12 max-w-xl">
+<h1 class="mt-12 max-w-3xl">
   Visualiser les leviers de baisse des émissions de gaz à effet de serre sur son
   territoire dans le cadre des COP territoriales
 </h1>
-<div class="mb-8 max-w-2xl">
-  <p class="max-w-2xl">
+<div class="mb-12 max-w-3xl">
+  <p class="mb-3">
     Le simulateur territorial vous permet de comprendre et de vous approprier
     les objectifs de baisse des émissions de gaz à effet de serre pour 2030 à
     l’échelle territoriale. La démarche consiste à :
@@ -28,6 +28,8 @@
       >En savoir plus sur le simulateur territorial</a
     >.
   </p>
+</div>
+<div class="mb-8 max-w-3xl">
   <p>
     Sélectionner sa région pour visualiser à titre indicatif la part de son
     territoire dans les objectifs nationaux de baisse des émissions de gaz à
