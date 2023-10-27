@@ -39,25 +39,22 @@
     valueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
+  let titleHeight = 50;
 </script>
 
 <div class="flex break-inside-avoid flex-col">
-  <svg width="100%" height={50}>
-    <style>
-      .title {
-        font-size: 18px;
-        font-weight: bold;
-        fill-opacity: 0.75;
-      }
-    </style>
+  <svg width="100%" height={titleHeight + 10}>
     <DiagonalHatchPattern />
     <ProgressBlock height={200} fill={getColor(action.sector)} {progress} />
     <title>{action.leverName}</title>
-    <text>
-      <tspan class="title" x="16" y="32">
+    <foreignObject width="100%" height="100%">
+      <h3
+        class="px-4 pt-3 text-lg font-bold opacity-75"
+        bind:clientHeight={titleHeight}
+      >
         {action.leverName}
-      </tspan>
-    </text>
+      </h3>
+    </foreignObject>
   </svg>
 
   <h1 class="sr-only">{action.leverName}</h1>
