@@ -14,7 +14,10 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  let valuePhys = Math.round(initialValueCO2 * action.ratioCO2toPhys);
+  const startPoint = Math.round(action.point_de_depart_2019 ?? 0);
+
+  let valuePhys =
+    startPoint + Math.round(initialValueCO2 * action.ratioCO2toPhys);
   let valueCO2 = initialValueCO2;
 
   function sanitizeNumber(numberStr: string): number {
@@ -28,15 +31,15 @@
     const target = evt.target as HTMLInputElement;
     valueCO2 = sanitizeNumber(target.value);
     target.value = valueCO2;
-    valuePhys = Math.round(valueCO2 * action.ratioCO2toPhys);
+    valuePhys = startPoint + Math.round(valueCO2 * action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    valuePhys = sanitizeNumber(target.value);
+    valuePhys = Math.max(sanitizeNumber(target.value), startPoint);
     target.value = valuePhys;
-    valueCO2 = Math.round(valuePhys / action.ratioCO2toPhys);
+    valueCO2 = Math.round((valuePhys - startPoint) / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
   let titleHeight = 50;
@@ -123,7 +126,7 @@
       </div>
       <div class="flex gap-x-4">
         <DataDescription
-          value={targetValueCO2 * action.ratioCO2toPhys}
+          value={startPoint + targetValueCO2 * action.ratioCO2toPhys}
           unit={action.unitPhys}
         />
         <div class="flex-1">
@@ -136,7 +139,7 @@
             name={action.id}
             type="number"
             step={1}
-            min={0}
+            min={startPoint}
             id={action.id}
             value={valuePhys}
             on:change={handlePhysInputChanged}

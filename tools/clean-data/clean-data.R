@@ -57,8 +57,6 @@ final_data <- data |>
   mutate(pathSector = str_c(str_replace_all(sector, '/', '-'), '/', str_replace_all(leverName, '/', '-'))) |>
   mutate(pathGroup = str_c(str_replace_all(group, '/', '-'), '/', str_replace_all(leverName, '/', '-')))
 
-# # Suppression de la colonne name
-#   select(-traduction_physique)
 
 # Export
 write_json(final_data, here('../../src/lib/assets/data.json'), pretty = TRUE)
