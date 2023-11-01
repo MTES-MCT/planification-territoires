@@ -14,8 +14,7 @@ export interface Action {
   regionSlug: string;
   editionDisabled: boolean;
   noTranslation: boolean;
-  comment1: string;
-  comment2: string;
+  comment: string;
 }
 
 export interface Lever {

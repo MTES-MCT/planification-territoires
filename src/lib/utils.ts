@@ -61,8 +61,12 @@ export function getIdNames(): string[] {
 export function getColor(sector: string) {
   // Couleurs issues de https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12
   switch (sector) {
-    case "Transport":
-      return "#9fceef";
+    case "Transport de voyageurs":
+      return "#c6dbef";
+
+    case "Transport de marchandises":
+      return "#6baed6";
+
     case "Agriculture, Forêts et Sols":
       return "#b3de69";
 

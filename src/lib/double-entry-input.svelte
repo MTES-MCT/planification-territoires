@@ -92,22 +92,12 @@
           role="tooltip"
           aria-hidden="true"
         >
-          {#if action.comment1}
+          {#if action.comment}
             <div
               class="markdown gap-8 p-2 !text-xl leading-tight text-gray-800"
             >
-              <h3 class="text-base font-semibold">Ordre de grandeur</h3>
               <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment1)}
-            </div>
-          {/if}
-          {#if action.comment2}
-            <div
-              class="markdown gap-8 p-2 !text-xl leading-tight text-gray-800"
-            >
-              <h3 class="text-base font-semibold">Leviers</h3>
-              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment2 || "")}
+              {@html markdownToHtml(action.comment)}
             </div>
           {/if}
         </div>
