@@ -14,7 +14,7 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  const startPoint = Math.round(action.point_de_depart_2019 ?? 0);
+  const startPoint = Math.round(action.pointDeDepart2019 ?? 0);
 
   let valuePhys =
     startPoint + Math.round(initialValueCO2 * action.ratioCO2toPhys);

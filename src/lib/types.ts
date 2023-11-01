@@ -6,7 +6,7 @@ export interface Action {
   objPhys: number;
   unitPhys: string;
   unitCO2: string;
-  point_de_depart_2019?: number;
+  pointDeDepart2019?: number;
   sector: string;
   group: string;
   ratioCO2toPhys: number;
