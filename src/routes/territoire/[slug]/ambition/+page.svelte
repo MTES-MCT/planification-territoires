@@ -23,7 +23,6 @@
     return {
       ...action,
       objCO2: valueCO2,
-      objPhys: Math.round(valueCO2 * action.ratioCO2toPhys),
     };
   });
 </script>
