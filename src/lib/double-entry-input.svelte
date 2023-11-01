@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { getColor, markdownToHtml } from "$lib/utils.js";
+  import { clamp, getColor, markdownToHtml } from "$lib/utils.js";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
@@ -14,12 +14,6 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
-  const startPoint = Math.round(action.pointDeDepart2019 ?? 0);
-
-  let valuePhys =
-    startPoint + Math.round(initialValueCO2 * action.ratioCO2toPhys);
-  let valueCO2 = initialValueCO2;
-
   function sanitizeNumber(numberStr: string): number {
     if (numberStr) {
       return Math.round(Number(numberStr));
@@ -27,17 +21,30 @@
     return 0;
   }
 
+  function getValuePhysFromCO2(value: number) {
+    return Math.max(0, startPoint + Math.round(value * action.ratioCO2toPhys));
+  }
+
+  const startPoint = Math.round(action.pointDeDepart2019 ?? 0);
+  const inverted = action.ratioCO2toPhys < 0;
+
+  let valuePhys = getValuePhysFromCO2(initialValueCO2);
+  let valueCO2 = initialValueCO2;
+
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
     valueCO2 = sanitizeNumber(target.value);
     target.value = valueCO2;
-    valuePhys = startPoint + Math.round(valueCO2 * action.ratioCO2toPhys);
+    valuePhys = getValuePhysFromCO2(valueCO2);
     onUpdate(valueCO2, action);
   }
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    valuePhys = Math.max(sanitizeNumber(target.value), startPoint);
+
+    valuePhys = inverted
+      ? clamp(sanitizeNumber(target.value), 0, startPoint)
+      : Math.max(sanitizeNumber(target.value), startPoint);
     target.value = valuePhys;
     valueCO2 = Math.round((valuePhys - startPoint) / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
@@ -126,7 +133,7 @@
       </div>
       <div class="flex gap-x-4">
         <DataDescription
-          value={startPoint + targetValueCO2 * action.ratioCO2toPhys}
+          value={getValuePhysFromCO2(targetValueCO2)}
           unit={action.unitPhys}
         />
         <div class="flex-1">
@@ -139,12 +146,17 @@
             name={action.id}
             type="number"
             step={1}
-            min={startPoint}
+            min={inverted ? 0 : startPoint}
+            max={inverted ? startPoint : undefined}
             id={action.id}
             value={valuePhys}
             on:change={handlePhysInputChanged}
             disabled={action.editionDisabled}
           />
+          {#if inverted}
+            <div class="mt-1 text-xs italic text-gray-500">
+              Les émissions évitées augmentent quand cette valeur diminue
+            </div>{/if}
         </div>
       </div>
     {/if}

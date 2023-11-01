@@ -3,7 +3,6 @@ export interface Action {
   leverName: string;
   region: string;
   objCO2: number;
-  objPhys: number;
   unitPhys: string;
   unitCO2: string;
   pointDeDepart2019?: number;
@@ -30,7 +29,6 @@ export interface Lever {
 }
 
 // Part de l’objectif déjà réalisée ou planifiée, en ktCO₂e
-// à multiplier par ratioCO2toPhys pour l'obtenir en unités physiques
 export type RegionCompletionLevels = {
   [leverName: string]: number;
 };
@@ -39,7 +37,6 @@ export type CompletionLevels = {
 };
 
 // Cible définie par l'utilisateur, en en ktCO₂e
-// // à multiplier par ratioCO2toPhys pour l'obtenir en unités physiques
 export type RegionNewTargets = {
   [leverName: string]: number | null;
 };
