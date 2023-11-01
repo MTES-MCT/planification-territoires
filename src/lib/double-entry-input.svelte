@@ -72,32 +72,46 @@
     class="flex flex-col border border-t-0 px-4 pb-2 pt-3"
     style={`border-color:${getColor(action.sector)}`}
   >
-    <div class="flex gap-x-4">
+    <div class="flex items-baseline gap-x-4">
       <div class="flex-1 border-r pb-6">
-        <div class="inline-flex items-center pr-1">
-          <SubTitle label="Objectif à atteindre en 2030" />
-          {#if action.comment2}
-            <button
-              class="fr-btn--tooltip fr-btn"
-              id="button-tooltip-{action.id}"
-              type="button"
-              aria-describedby="tooltip-{action.id}"
-            >
-              Information contextuelle
-            </button>
+        <SubTitle label="Objectif à atteindre en 2030" />
+      </div>
+      <div class="flex flex-1 items-baseline">
+        <SubTitle label={inputLabel} />
+        <button
+          class="fr-btn--tooltip fr-btn"
+          id="button-tooltip-{action.id}"
+          type="button"
+          aria-describedby="tooltip-{action.id}"
+        >
+          Information contextuelle
+        </button>
+        <div
+          class="fr-tooltip fr-placement"
+          id="tooltip-{action.id}"
+          role="tooltip"
+          aria-hidden="true"
+        >
+          {#if action.comment1}
             <div
-              class="fr-tooltip fr-placement [&>p]:mb-0 [&>p]:text-sm"
-              id="tooltip-{action.id}"
-              role="tooltip"
-              aria-hidden="true"
+              class="markdown gap-8 p-2 !text-xl leading-tight text-gray-800"
             >
+              <h3 class="text-base font-semibold">Ordre de grandeur</h3>
               <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment2)}
+              {@html markdownToHtml(action.comment1)}
+            </div>
+          {/if}
+          {#if action.comment2}
+            <div
+              class="markdown gap-8 p-2 !text-xl leading-tight text-gray-800"
+            >
+              <h3 class="text-base font-semibold">Leviers</h3>
+              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+              {@html markdownToHtml(action.comment2 || "")}
             </div>
           {/if}
         </div>
       </div>
-      <SubTitle label={inputLabel} />
     </div>
 
     <div class="flex gap-x-4">
@@ -158,16 +172,6 @@
               Les émissions évitées augmentent quand cette valeur diminue
             </div>{/if}
         </div>
-      </div>
-    {/if}
-
-    {#if action.comment1}
-      <div
-        class="markdown mt-4 flex flex-row items-baseline gap-8 border-t p-2 !text-xl leading-tight text-gray-800"
-      >
-        <div class="text-base font-semibold">Commentaire</div>
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html markdownToHtml(action.comment1)}
       </div>
     {/if}
   </div>
