@@ -3,6 +3,7 @@
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
+  import TextClamp from "$lib/text-clamp.svelte";
   import DataDescription from "$lib/data-description.svelte";
   import type { Action } from "$lib/types";
 
@@ -149,19 +150,9 @@
       <!-- Colonne de droite : explications -->
       <div class="basis-1/3">
         <div class="flex flex-col gap-4">
-          {#if action.comment1}
-            <SubTitle label="Ordre de grandeur" muted />
+          {#if action.comment}
             <div class="markdown">
-              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment1)}
-            </div>
-          {/if}
-
-          {#if action.comment2}
-            <SubTitle label="Leviers" muted />
-            <div class="markdown">
-              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment2)}
+              <TextClamp htmlText={markdownToHtml(action.comment)} />
             </div>
           {/if}
         </div>
@@ -169,16 +160,3 @@
     </div>
   </div>
 </div>
-
-<style lang="postcss">
-  .markdown :global(p) {
-    @apply text-xs leading-tight text-gray-500 md:text-sm;
-  }
-
-  .markdown :global(li) {
-    @apply text-xs leading-tight text-gray-500 md:text-sm;
-  }
-  .markdown > :global(p:last-of-type) {
-    @apply mb-0;
-  }
-</style>
