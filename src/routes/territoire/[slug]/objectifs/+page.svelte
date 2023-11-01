@@ -18,7 +18,7 @@
   <p class="mb-2 max-w-3xl print:leading-tight">
     Voici la baisse des émissions de gaz à effet de serre attendue en 2030 par
     rapport à 2019. Les différents gaz à effet de serre sont comptabilisés en
-    équivalent CO₂ (CO2₂e), une unité commune introduite par le GIEC pour
+    équivalent CO₂ (CO₂e), une unité commune introduite par le GIEC pour
     permettre des comparaisons basées sur le pouvoir de réchauffement global de
     chacun des gaz à effet de serre.
   </p>
