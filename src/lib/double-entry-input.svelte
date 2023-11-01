@@ -166,6 +166,9 @@
     @apply text-xs leading-tight text-gray-800 md:text-sm;
   }
 
+  .markdown :global(li) {
+    @apply text-xs leading-tight text-gray-500 md:text-sm;
+  }
   .markdown > :global(p:last-of-type) {
     @apply mb-0;
   }
