@@ -65,9 +65,9 @@
     class="flex flex-col border border-t-0 px-4 pb-2 pt-3"
     style={`border-color:${getColor(action.sector)}`}
   >
-    <div class="flex gap-x-4">
+    <div class="flex items-baseline gap-x-4">
       <div class="flex-1 border-r pb-6">
-        <div class="inline-flex items-center pr-1">
+        <div class="inline-flex items-baseline pr-1">
           <SubTitle label="Objectif à atteindre en 2030" />
           {#if action.comment2}
             <button
