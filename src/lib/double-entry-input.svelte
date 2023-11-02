@@ -3,6 +3,7 @@
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
+  import TextClamp from "$lib/text-clamp.svelte";
   import DataDescription from "$lib/data-description.svelte";
   import type { Action } from "$lib/types";
 
@@ -72,116 +73,90 @@
     class="flex flex-col border border-t-0 px-4 pb-2 pt-3"
     style={`border-color:${getColor(action.sector)}`}
   >
-    <div class="flex items-baseline gap-x-4">
-      <div class="flex-1 border-r pb-6">
-        <div class="inline-flex items-baseline pr-1">
-          <SubTitle label="Objectif à atteindre en 2030" />
-          {#if action.comment2}
-            <button
-              class="fr-btn--tooltip fr-btn"
-              id="button-tooltip-{action.id}"
-              type="button"
-              aria-describedby="tooltip-{action.id}"
-            >
-              Information contextuelle
-            </button>
+    <div class="flex gap-8">
+      <!-- Colonne de gauche : saisie -->
+      <div class="basis-2/3 border-r pr-6">
+        <div class="flex gap-x-4">
+          <div class="flex-1 border-r pb-6">
+            <SubTitle label="Objectif à atteindre en 2030" />
+          </div>
+          <SubTitle label={inputLabel} />
+        </div>
+        <!--  Emissions évitées ktCO₂ -->
+        <div class="flex gap-x-4">
+          <DataDescription value={targetValueCO2} unit={action.unitCO2} />
+          <div class="flex-1">
+            <label class="sr-only" for={`${action.id}-co2`}>
+              {action.unitCO2}
+            </label>
+            <input
+              class="fr-input"
+              name={`${action.id}-co2`}
+              type="number"
+              step={1}
+              min={0}
+              id={`${action.id}-co2`}
+              value={valueCO2}
+              on:change={handleCO2InputChanged}
+              disabled={action.editionDisabled}
+            />
+          </div>
+        </div>
+        <!--  soit -->
+        {#if !action.noTranslation}
+          <div class="flex gap-x-4">
             <div
-              class="fr-tooltip fr-placement [&>p]:mb-0 [&>p]:text-sm"
-              id="tooltip-{action.id}"
-              role="tooltip"
-              aria-hidden="true"
+              class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
             >
-              <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-              {@html markdownToHtml(action.comment2)}
+              <span class="pr-4">Soit</span>
+            </div>
+            <div
+              class="flex-1 py-2 text-right text-xs font-medium text-gray-500"
+            >
+              Soit
+            </div>
+          </div>
+          <!--  Unités physiques -->
+          <div class="flex gap-x-4">
+            <DataDescription
+              value={getValuePhysFromCO2(targetValueCO2)}
+              unit={action.unitPhys}
+            />
+            <div class="flex-1">
+              <label class="sr-only" for={action.id}>
+                {action.unitPhys}
+              </label>
+              <input
+                lang="fr"
+                class="fr-input"
+                name={action.id}
+                type="number"
+                step={1}
+                min={inverted ? 0 : startPoint}
+                max={inverted ? startPoint : undefined}
+                id={action.id}
+                value={valuePhys}
+                on:change={handlePhysInputChanged}
+                disabled={action.editionDisabled}
+              />
+              {#if inverted}
+                <div class="mt-1 text-xs italic text-gray-500">
+                  Les émissions évitées augmentent quand cette valeur diminue
+                </div>{/if}
+            </div>
+          </div>
+        {/if}
+      </div>
+      <!-- Colonne de droite : explications -->
+      <div class="basis-1/3">
+        <div class="flex flex-col gap-4">
+          {#if action.comment}
+            <div class="markdown">
+              <TextClamp htmlText={markdownToHtml(action.comment)} />
             </div>
           {/if}
         </div>
       </div>
-      <SubTitle label={inputLabel} />
     </div>
-
-    <div class="flex gap-x-4">
-      <DataDescription value={targetValueCO2} unit={action.unitCO2} />
-      <div class="flex-1">
-        <label class="sr-only" for={`${action.id}-co2`}>
-          {action.unitCO2}
-        </label>
-        <input
-          class="fr-input"
-          name={`${action.id}-co2`}
-          type="number"
-          step={1}
-          min={0}
-          id={`${action.id}-co2`}
-          value={valueCO2}
-          on:change={handleCO2InputChanged}
-          disabled={action.editionDisabled}
-        />
-      </div>
-    </div>
-
-    {#if !action.noTranslation}
-      <div class="flex gap-x-4">
-        <div
-          class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
-        >
-          <span class="pr-4">Soit</span>
-        </div>
-        <div class="flex-1 py-2 text-right text-xs font-medium text-gray-500">
-          Soit
-        </div>
-      </div>
-      <div class="flex gap-x-4">
-        <DataDescription
-          value={getValuePhysFromCO2(targetValueCO2)}
-          unit={action.unitPhys}
-        />
-        <div class="flex-1">
-          <label class="sr-only" for={action.id}>
-            {action.unitPhys}
-          </label>
-          <input
-            lang="fr"
-            class="fr-input"
-            name={action.id}
-            type="number"
-            step={1}
-            min={inverted ? 0 : startPoint}
-            max={inverted ? startPoint : undefined}
-            id={action.id}
-            value={valuePhys}
-            on:change={handlePhysInputChanged}
-            disabled={action.editionDisabled}
-          />
-          {#if inverted}
-            <div class="mt-1 text-xs italic text-gray-500">
-              Les émissions évitées augmentent quand cette valeur diminue
-            </div>{/if}
-        </div>
-      </div>
-    {/if}
-
-    {#if action.comment1}
-      <div
-        class="markdown mt-4 flex flex-row items-baseline gap-8 border-t p-2 !text-xl leading-tight text-gray-800"
-      >
-        <div class="text-base font-semibold">Commentaire</div>
-        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
-        {@html markdownToHtml(action.comment1)}
-      </div>
-    {/if}
   </div>
 </div>
-
-<style lang="postcss">
-  .markdown :global(p) {
-    @apply text-xs leading-tight text-gray-800 md:text-sm;
-  }
-
-  .markdown :global(li) {
-    @apply text-xs leading-tight text-gray-500 md:text-sm;
-  }
-  .markdown > :global(p:last-of-type) {
-    @apply mb-0;
-  }
-</style>

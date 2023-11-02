@@ -42,8 +42,7 @@ final_data <- data |>
          pointDeDepart2019=point_de_depart_2019,
          editionDisabled = case_grisee,
          noTranslation = case_sans_traduction,
-         comment1 = commentaire_1,
-         comment2 = commentaire_2) |>
+         comment = commentaire) |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
 
