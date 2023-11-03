@@ -65,7 +65,7 @@ export function getColor(sector: string) {
       return "#c6dbef";
 
     case "Transport de marchandises":
-      return "#6baed6";
+      return "#80b1d3";
 
     case "Agriculture, Forêts et Sols":
       return "#b3de69";
