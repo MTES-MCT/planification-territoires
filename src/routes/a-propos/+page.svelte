@@ -1,3 +1,11 @@
+<script lang="ts">
+  import { markdownToHtml } from "$lib/utils";
+
+  import etapesCopImg from "$lib/assets/imgs/etapes-cop.png";
+  import couvSynthImg from "$lib/assets/imgs/couverture-synthese.png";
+  import content from "./content.md?raw";
+</script>
+
 <nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
   <button
     class="fr-breadcrumb__button"
@@ -17,30 +25,42 @@
   </div>
 </nav>
 
-<h1 class="mt-4">À propos</h1>
-<p class="max-w-2xl">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-  eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-  in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<h1 class="mb-8 mt-4">À propos</h1>
 
-<p class="max-w-2xl">
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-  veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-  ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-  consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-  porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-  adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-  dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-  nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-  ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-  voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
-  eum fugiat quo voluptas nulla pariatur?
-</p>
-<p class="mb-16">
-  <a class="fr-btn" href="/#territoires">Choisir un territoire</a>
-</p>
+<div class="markdown max-w-3xl">
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html markdownToHtml(
+    content
+      .replace(
+        "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/91db9cb2-a5f1-4a2c-9f7d-d1b8e8becd59.PNG",
+        etapesCopImg
+      )
+      .replace(
+        "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/76912b67-0879-47cd-9d79-08a56e2b87c3.png",
+        couvSynthImg
+      )
+  )}
+</div>
+
+<style lang="postcss">
+  .markdown :global(p) {
+    @apply max-w-3xl;
+  }
+
+  .markdown :global(table) {
+    @apply mb-4 max-w-3xl;
+  }
+
+  .markdown :global(table th) {
+    @apply font-bold;
+  }
+
+  .markdown :global(table th),
+  .markdown :global(table td) {
+    @apply border px-3 py-2 text-left;
+  }
+
+  .markdown :global(table tr:nth-child(2n)) {
+    background-color: #f8f8f8;
+  }
+</style>

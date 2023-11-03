@@ -115,6 +115,7 @@ export function markdownToHtml(markdownText: string, titleLevel = 1) {
     openLinksInNewWindow: true,
     simplifiedAutoLink: true,
     simpleLineBreaks: true,
+    tables: true,
   });
 
   // corrections typographiques
