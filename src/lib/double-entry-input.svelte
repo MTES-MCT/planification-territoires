@@ -15,39 +15,40 @@
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
 
+  const startPoint = action.startPoint2019 ?? 0;
+  const inverted = action.ratioCO2toPhys < 0;
+
   function sanitizeNumber(numberStr: string): number {
     if (numberStr) {
-      return Math.round(Number(numberStr));
+      return Number(numberStr);
     }
     return 0;
   }
 
   function getValuePhysFromCO2(value: number) {
-    return Math.max(0, startPoint + Math.round(value * action.ratioCO2toPhys));
+    return Math.max(0, startPoint + value * action.ratioCO2toPhys);
   }
 
-  const startPoint = Math.round(action.startPoint2019 ?? 0);
-  const inverted = action.ratioCO2toPhys < 0;
-
-  let valuePhys = getValuePhysFromCO2(initialValueCO2);
+  let valuePhys = Math.round(getValuePhysFromCO2(initialValueCO2));
   let valueCO2 = initialValueCO2;
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    valueCO2 = sanitizeNumber(target.value);
+    const rawValueCO2 = sanitizeNumber(target.value);
+    valueCO2 = Math.round(rawValueCO2);
     target.value = valueCO2;
-    valuePhys = getValuePhysFromCO2(valueCO2);
+    valuePhys = Math.round(getValuePhysFromCO2(rawValueCO2));
     onUpdate(valueCO2, action);
   }
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-
-    valuePhys = inverted
+    const rawValuePhys = inverted
       ? clamp(sanitizeNumber(target.value), 0, startPoint)
       : Math.max(sanitizeNumber(target.value), startPoint);
+    valuePhys = Math.round(rawValuePhys);
     target.value = valuePhys;
-    valueCO2 = Math.round((valuePhys - startPoint) / action.ratioCO2toPhys);
+    valueCO2 = Math.round((rawValuePhys - startPoint) / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
   }
 
@@ -134,8 +135,8 @@
                 name={action.id}
                 type="number"
                 step={1}
-                min={inverted ? 0 : startPoint}
-                max={inverted ? startPoint : undefined}
+                min={inverted ? 0 : Math.floor(startPoint)}
+                max={inverted ? Math.ceil(startPoint) : undefined}
                 id={action.id}
                 value={valuePhys}
                 on:change={handlePhysInputChanged}
