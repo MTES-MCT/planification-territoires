@@ -5,7 +5,7 @@ export interface Action {
   objCO2: number;
   unitPhys: string;
   unitCO2: string;
-  pointDeDepart2019?: number;
+  startPoint2019?: number;
   sector: string;
   group: string;
   ratioCO2toPhys: number;
@@ -13,6 +13,7 @@ export interface Action {
   pathGroup: string;
   regionSlug: string;
   editionDisabled: boolean;
+  disabledComment: string;
   noTranslation: boolean;
   comment: string;
 }

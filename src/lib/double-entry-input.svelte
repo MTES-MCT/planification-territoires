@@ -3,7 +3,7 @@
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
-  import TextClamp from "$lib/text-clamp.svelte";
+  import RichText from "$lib/rich-text.svelte";
   import DataDescription from "$lib/data-description.svelte";
   import type { Action } from "$lib/types";
 
@@ -26,7 +26,7 @@
     return Math.max(0, startPoint + Math.round(value * action.ratioCO2toPhys));
   }
 
-  const startPoint = Math.round(action.pointDeDepart2019 ?? 0);
+  const startPoint = Math.round(action.startPoint2019 ?? 0);
   const inverted = action.ratioCO2toPhys < 0;
 
   let valuePhys = getValuePhysFromCO2(initialValueCO2);
@@ -75,74 +75,82 @@
       class="flex flex-1 flex-col border border-t-0 px-6 py-6"
       style={`border-color:${getColor(action.sector)}`}
     >
-      <div class="flex gap-x-5">
-        <div class="flex-1 border-r pb-8">
-          <SubTitle label="Objectif à atteindre en 2030" />
+      {#if !action.editionDisabled}
+        <div class="flex gap-x-5">
+          <div class="flex-1 border-r pb-8">
+            <SubTitle label="Objectif à atteindre en 2030" />
+          </div>
+          <SubTitle label={inputLabel} />
         </div>
-        <SubTitle label={inputLabel} />
-      </div>
+      {/if}
       <!--  Emissions évitées ktCO₂ -->
-      <div class="flex gap-x-5">
-        <DataDescription value={targetValueCO2} unit={action.unitCO2} />
-        <div class="flex-1">
-          <label class="sr-only" for={`${action.id}-co2`}>
-            {action.unitCO2}
-          </label>
-          <input
-            class="fr-input"
-            name={`${action.id}-co2`}
-            type="number"
-            step={1}
-            min={0}
-            id={`${action.id}-co2`}
-            value={valueCO2}
-            on:change={handleCO2InputChanged}
-            disabled={action.editionDisabled}
-          />
-        </div>
-      </div>
-      <!--  soit -->
-      {#if !action.noTranslation}
+      {#if !action.editionDisabled}
         <div class="flex gap-x-5">
-          <div
-            class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
-          >
-            <span class="pr-5">Soit</span>
-          </div>
-          <div class="flex-1 py-2 text-right text-xs font-medium text-gray-500">
-            Soit
-          </div>
-        </div>
-        <!--  Unités physiques -->
-        <div class="flex gap-x-5">
-          <DataDescription
-            value={getValuePhysFromCO2(targetValueCO2)}
-            unit={action.unitPhys}
-          />
+          <DataDescription value={targetValueCO2} unit={action.unitCO2} />
           <div class="flex-1">
-            <label class="sr-only" for={action.id}>
-              {action.unitPhys}
+            <label class="sr-only" for={`${action.id}-co2`}>
+              {action.unitCO2}
             </label>
             <input
-              lang="fr"
               class="fr-input"
-              name={action.id}
+              name={`${action.id}-co2`}
               type="number"
               step={1}
-              min={inverted ? 0 : startPoint}
-              max={inverted ? startPoint : undefined}
-              id={action.id}
-              value={valuePhys}
-              on:change={handlePhysInputChanged}
+              min={0}
+              id={`${action.id}-co2`}
+              value={valueCO2}
+              on:change={handleCO2InputChanged}
               disabled={action.editionDisabled}
             />
-            {#if inverted}
-              <div class="mt-1 text-xs italic text-gray-500">
-                Les émissions évitées augmentent quand cette valeur diminue
-              </div>
-            {/if}
           </div>
         </div>
+        <!--  soit -->
+        {#if !action.noTranslation}
+          <div class="flex gap-x-5">
+            <div
+              class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
+            >
+              <span class="pr-5">Soit</span>
+            </div>
+            <div
+              class="flex-1 py-2 text-right text-xs font-medium text-gray-500"
+            >
+              Soit
+            </div>
+          </div>
+          <!--  Unités physiques -->
+          <div class="flex gap-x-5">
+            <DataDescription
+              value={getValuePhysFromCO2(targetValueCO2)}
+              unit={action.unitPhys}
+            />
+            <div class="flex-1">
+              <label class="sr-only" for={action.id}>
+                {action.unitPhys}
+              </label>
+              <input
+                lang="fr"
+                class="fr-input"
+                name={action.id}
+                type="number"
+                step={1}
+                min={inverted ? 0 : startPoint}
+                max={inverted ? startPoint : undefined}
+                id={action.id}
+                value={valuePhys}
+                on:change={handlePhysInputChanged}
+                disabled={action.editionDisabled}
+              />
+              {#if inverted}
+                <div class="mt-1 text-xs italic text-gray-500">
+                  Les émissions évitées augmentent quand cette valeur diminue
+                </div>
+              {/if}
+            </div>
+          </div>
+        {/if}
+      {:else}
+        <RichText mdText={markdownToHtml(action.disabledComment)} />
       {/if}
     </div>
   </div>
@@ -150,7 +158,7 @@
   <div class="mt-4 basis-2/5">
     {#if action.comment}
       <div class="markdown">
-        <TextClamp htmlText={markdownToHtml(action.comment)} />
+        <RichText mdText={markdownToHtml(action.comment)} clamp />
       </div>
     {/if}
   </div>

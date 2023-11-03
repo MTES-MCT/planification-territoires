@@ -1,5 +1,8 @@
 <script lang="ts">
-  export let htmlText = "";
+  import { markdownToHtml } from "$lib/utils";
+
+  export let mdText = "";
+  export let clamp = false;
 
   const id = `text-clamp-${crypto.randomUUID()}`;
 
@@ -11,8 +14,9 @@
 
   let textIsTooLong, height;
 
-  $: textIsTooLong = height > 320;
+  $: textIsTooLong = clamp && height > 320;
   $: label = showAll ? "Réduire" : "Lire la suite";
+  $: htmlText = markdownToHtml(mdText);
 </script>
 
 <div class="hidden print:inline">
@@ -22,7 +26,11 @@
   </div>
 </div>
 <div class="print:hidden">
-  <div {id} class:sm:h-[320px]={!showAll} class="relative overflow-hidden">
+  <div
+    {id}
+    class:sm:h-[320px]={!showAll && textIsTooLong}
+    class="relative overflow-hidden"
+  >
     <div class="markdown" bind:clientHeight={height}>
       <!-- eslint-disable-next-line svelte/no-at-html-tags -->
       {@html htmlText}
