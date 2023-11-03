@@ -39,11 +39,12 @@ final_data <- data |>
          objCO2 = objectifs_sgpe_en_k_tco2,
          unitPhys = texte_dans_l_interface_unite_physique,
          unitCO2 = texte_dans_l_interface_unite_k_tco2,
-         pointDeDepart2019=point_de_depart_2019,
+         startPoint2019 =point_de_depart_2019,
          editionDisabled = case_grisee,
+         disabledComment = explication_pour_les_cases_grisees,
          noTranslation = case_sans_traduction,
-         comment1 = commentaire_1,
-         comment2 = commentaire_2) |>
+         comment = commentaire,
+         ) |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
 

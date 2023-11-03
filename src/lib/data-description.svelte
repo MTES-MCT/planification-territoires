@@ -5,8 +5,10 @@
   export let unit: string;
 </script>
 
-<div class="flex flex-1 flex-col items-end justify-end border-r text-right">
-  <div class="pr-4">
+<div
+  class="flex flex-1 flex-col items-end justify-end border-r pb-4 text-right"
+>
+  <div class="pr-5">
     <div
       class="-mt-1 text-base font-semibold leading-tight text-gray-900 md:text-lg"
     >
@@ -16,7 +18,8 @@
       {#each unit.split("(") as line, i}
         {#if i === 0}{line}<br />{:else}
           <span class="italic text-gray-500">{line.replace(")", "")}</span>
-        {/if}{/each}
+        {/if}
+      {/each}
     </div>
   </div>
 </div>

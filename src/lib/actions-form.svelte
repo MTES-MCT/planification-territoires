@@ -27,7 +27,7 @@
       <h2 class="mb-1">{sector.key}</h2>
     </legend>
 
-    <div class="mb-4 grid gap-6 md:grid-cols-2">
+    <div class="mb-4 flex flex-col gap-y-10">
       {#each sector.values as action}
         {@const initialValueCO2 = initialValuesCO2[action.id]}
         {@const targetValueCO2 = targetValuesCO2[action.id]}

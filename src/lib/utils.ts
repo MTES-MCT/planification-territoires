@@ -7,7 +7,6 @@ import { arrange, distinct, filter, select, tidy } from "@tidyjs/tidy";
 const actionsData = rawActionsData.map((row) => ({
   ...row,
   objCO2: Math.round(row.objCO2),
-  objPhys: Math.round(row.objCO2 * row.ratioCO2toPhys),
   regionSlug: normalizeString(row.region),
 })) as Action[];
 
@@ -62,8 +61,12 @@ export function getIdNames(): string[] {
 export function getColor(sector: string) {
   // Couleurs issues de https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12
   switch (sector) {
-    case "Transport":
-      return "#9fceef";
+    case "Transport de voyageurs":
+      return "#c6dbef";
+
+    case "Transport de marchandises":
+      return "#6baed6";
+
     case "Agriculture, Forêts et Sols":
       return "#b3de69";
 
@@ -106,7 +109,7 @@ export function sum(array: number[]): number {
   return array.reduce((a, b) => a + b, 0);
 }
 
-export function markdownToHtml(markdownText: string, titleLevel = 3) {
+export function markdownToHtml(markdownText: string, titleLevel = 1) {
   const mdConverter = new showdown.Converter({
     headerLevelStart: titleLevel,
     openLinksInNewWindow: true,
