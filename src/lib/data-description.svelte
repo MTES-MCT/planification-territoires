@@ -3,6 +3,7 @@
 
   export let value: number;
   export let unit: string;
+  export let round: boolean = true;
 </script>
 
 <div
@@ -12,7 +13,7 @@
     <div
       class="-mt-1 text-base font-semibold leading-tight text-gray-900 md:text-lg"
     >
-      <PrettyNumber number={value} withUnitCO2={false} />
+      <PrettyNumber number={value} withUnitCO2={false} {round} />
     </div>
     <div class="text-xs leading-tight text-gray-800 md:text-sm">
       {#each unit.split("(") as line, i}

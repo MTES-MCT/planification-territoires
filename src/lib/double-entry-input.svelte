@@ -25,11 +25,15 @@
     return 0;
   }
 
+  function roundTo1D(num: number) {
+    return Math.round(num * 10) / 10;
+  }
+
   function getValuePhysFromCO2(value: number) {
     return Math.max(0, startPoint + value * action.ratioCO2toPhys);
   }
 
-  let valuePhys = Math.round(getValuePhysFromCO2(initialValueCO2));
+  let valuePhys = roundTo1D(getValuePhysFromCO2(initialValueCO2));
   let valueCO2 = initialValueCO2;
 
   function handleCO2InputChanged(evt: Event) {
@@ -37,7 +41,7 @@
     const rawValueCO2 = sanitizeNumber(target.value);
     valueCO2 = Math.round(rawValueCO2);
     target.value = valueCO2;
-    valuePhys = Math.round(getValuePhysFromCO2(rawValueCO2));
+    valuePhys = roundTo1D(getValuePhysFromCO2(rawValueCO2));
     onUpdate(valueCO2, action);
   }
 
@@ -46,7 +50,7 @@
     const rawValuePhys = inverted
       ? clamp(sanitizeNumber(target.value), 0, startPoint)
       : Math.max(sanitizeNumber(target.value), startPoint);
-    valuePhys = Math.round(rawValuePhys);
+    valuePhys = roundTo1D(rawValuePhys);
     target.value = valuePhys;
     valueCO2 = Math.round((rawValuePhys - startPoint) / action.ratioCO2toPhys);
     onUpdate(valueCO2, action);
@@ -122,8 +126,9 @@
           <!--  Unités physiques -->
           <div class="flex gap-x-5">
             <DataDescription
-              value={getValuePhysFromCO2(targetValueCO2)}
+              value={roundTo1D(getValuePhysFromCO2(targetValueCO2))}
               unit={action.unitPhys}
+              round={false}
             />
             <div class="flex-1">
               <label class="sr-only" for={action.id}>
@@ -134,7 +139,7 @@
                 class="fr-input"
                 name={action.id}
                 type="number"
-                step={1}
+                step={0.1}
                 min={inverted ? 0 : Math.floor(startPoint)}
                 max={inverted ? Math.ceil(startPoint) : undefined}
                 id={action.id}
