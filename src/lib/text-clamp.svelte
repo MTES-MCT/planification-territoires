@@ -11,7 +11,7 @@
 
   let textIsTooLong, height;
 
-  $: textIsTooLong = height > 192;
+  $: textIsTooLong = height > 320;
   $: label = showAll ? "Réduire" : "Lire la suite";
 </script>
 
@@ -22,7 +22,7 @@
   </div>
 </div>
 <div class="print:hidden">
-  <div {id} class:h-48={!showAll} class="relative overflow-hidden">
+  <div {id} class:sm:h-[320px]={!showAll} class="relative overflow-hidden">
     <div class="markdown" bind:clientHeight={height}>
       <!-- eslint-disable-next-line svelte/no-at-html-tags -->
       {@html htmlText}
@@ -55,11 +55,11 @@
   }
 
   .markdown :global(h4) {
-    @apply text-base font-semibold leading-tight text-gray-700;
+    @apply mb-1 text-base font-semibold leading-tight text-gray-700;
   }
 
   .markdown :global(p) {
-    @apply text-xs leading-tight text-gray-500 md:text-sm;
+    @apply mb-3 text-xs leading-tight text-gray-500 md:text-sm;
   }
 
   .markdown > :global(p:last-of-type) {
@@ -67,6 +67,6 @@
   }
 
   .markdown :global(li) {
-    @apply text-xs leading-tight text-gray-500 md:text-sm;
+    @apply pb-0 text-xs leading-tight text-gray-500 md:text-sm;
   }
 </style>
