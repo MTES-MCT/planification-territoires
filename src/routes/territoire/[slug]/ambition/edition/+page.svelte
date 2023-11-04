@@ -26,7 +26,7 @@
   const targetValuesCO2 = Object.fromEntries(
     data.regionData.map((action) => [
       action.id,
-      Math.round(action.objCO2 - $completionLevels[data.regionSlug][action.id]),
+      action.objCO2 - $completionLevels[data.regionSlug][action.id],
     ])
   );
 </script>

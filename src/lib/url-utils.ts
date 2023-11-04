@@ -35,13 +35,12 @@ export function updateURLfromStores(regionSlug: string) {
   Object.entries(newTargetsValue[regionSlug]).forEach(([key, value]) => {
     if (value != null) {
       const action = regionData.find((action) => action.id === key) as Action;
-      const defaultTargetValue = Math.round(
-        action.objCO2 - completionLevelsValue[regionSlug][key]
-      );
+      const defaultTargetValue =
+        action.objCO2 - completionLevelsValue[regionSlug][key];
       if (value?.toFixed(0) != defaultTargetValue.toFixed(0)) {
         newSearchParams.set(
           getQVKeyForNewTarget(key),
-          Number(value.toFixed(4)).toString()
+          Number(value.toFixed(0)).toString()
         );
       } else {
         newSearchParams.delete(getQVKeyForNewTarget(key));

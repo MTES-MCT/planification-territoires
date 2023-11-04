@@ -34,7 +34,7 @@
   }
 
   let valuePhys = roundTo1D(getValuePhysFromCO2(initialValueCO2));
-  let valueCO2 = initialValueCO2;
+  let valueCO2 = Math.round(initialValueCO2);
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;

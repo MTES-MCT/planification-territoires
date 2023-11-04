@@ -17,9 +17,7 @@ export const load: LayoutLoad = async ({ parent }) => {
           // pas proposer un chiffre négatif comme objectif futur !
           [action.id]: Math.max(
             0,
-            Math.round(
-              action.objCO2 - get(completionLevels)[regionSlug][action.id]
-            )
+            action.objCO2 - get(completionLevels)[regionSlug][action.id]
           ),
         },
       }));
