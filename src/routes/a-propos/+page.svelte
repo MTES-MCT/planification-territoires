@@ -25,9 +25,7 @@
   </div>
 </nav>
 
-<h1 class="mb-8 mt-4">À propos</h1>
-
-<div class="markdown max-w-3xl">
+<div class="markdown mt-4 max-w-3xl">
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html markdownToHtml(
     content

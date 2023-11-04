@@ -1,3 +1,5 @@
+# À propos
+
 ## Le simulateur territorial
 
 Le **simulateur territorial** a pour but d'aider à comprendre et à prendre en main la trajectoire de baisse des émissions de gaz à effet de serre à l'échelle de son territoire.
@@ -52,15 +54,15 @@ Pour que la planification soit le plus concrète possible, une nouvelle étape c
 
 **_Elle permet de .._**
 
-**\*... prendre en compte les spécificités** de chaque territoire dans le plan national pour que les deux exercices (national et territorial) soient mis en cohérence et se nourrissent mutuellement\*
+_**... prendre en compte les spécificités** de chaque territoire dans le plan national pour que les deux exercices (national et territorial) soient mis en cohérence et se nourrissent mutuellement_
 
-**\*... harmoniser les démarches** infra régionales existantes, en posant un cadre commun qui permet un dialogue articulé et une vision commune entre les différents acteurs territoriaux\*
+_**... harmoniser les démarches** infra régionales existantes, en posant un cadre commun qui permet un dialogue articulé et une vision commune entre les différents acteurs territoriaux_
 
-**\*... permettre l'appropriation** au niveau territorial de la nécessité de la décarbonation, la préservation de la biodiversité et la gestion des ressources et de l’impact spécifique à chaque territoire\*
+_**... permettre l'appropriation** au niveau territorial de la nécessité de la décarbonation, la préservation de la biodiversité et la gestion des ressources et de l’impact spécifique à chaque territoire_
 
-**\*... mobiliser** l’ensemble des collectivités territoriales, mais aussi des entreprises et des citoyens, en vue d’un partage de l’effort équilibré\*
+_**... mobiliser** l’ensemble des collectivités territoriales, mais aussi des entreprises et des citoyens, en vue d’un partage de l’effort équilibré_
 
-**\*... accélérer la mise en œuvre** des actions qui relèvent des compétences des collectivités territoriales\*
+_**... accélérer la mise en œuvre** des actions qui relèvent des compétences des collectivités territoriales_
 
 ## La méthodologie utilisée pour le simulateur territorial
 
