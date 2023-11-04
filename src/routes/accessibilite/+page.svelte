@@ -1,4 +1,16 @@
-<div class="my-12 max-w-4xl">
+<script lang="ts">
+  import Breadcrumbs from "$lib/breadcrumbs.svelte";
+</script>
+
+<Breadcrumbs>
+  <li>
+    <span class="fr-breadcrumb__link" aria-current="page"
+      >Déclaration d’accessibilité</span
+    >
+  </li>
+</Breadcrumbs>
+
+<div id="contenu" class="max-w-3xl">
   <h1>Déclaration d’accessibilité</h1>
   <p>Établie le <span>16 octobre 2023</span>.</p>
   <p>

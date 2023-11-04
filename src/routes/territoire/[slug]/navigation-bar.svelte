@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Breadcrumbs from "$lib/breadcrumbs.svelte";
   export let territoryName: string;
   export let title: string;
   export let step: string;
@@ -11,34 +12,15 @@
   let totalSteps = 5;
 </script>
 
-<nav
-  class="fr-breadcrumb !mb-3 !mt-6 print:hidden"
-  aria-label="vous êtes ici :"
->
-  <button
-    class="fr-breadcrumb__button"
-    aria-expanded="false"
-    aria-controls="breadcrumb-1"
-    >Voir le fil d’Ariane
-  </button>
-  <div class="fr-collapse" id="breadcrumb-1">
-    <ol class="fr-breadcrumb__list">
-      <li>
-        <a class="fr-breadcrumb__link" href="/">Accueil</a>
-      </li>
-      <li>
-        <a class="fr-breadcrumb__link" href="/#territoires"
-          >Choisir un territoire</a
-        >
-      </li>
-      <li>
-        <span class="fr-breadcrumb__link" aria-current="page"
-          >{territoryName}</span
-        >
-      </li>
-    </ol>
-  </div>
-</nav>
+<Breadcrumbs>
+  <li>
+    <a class="fr-breadcrumb__link" href="/#territoires">Choisir un territoire</a
+    >
+  </li>
+  <li>
+    <span class="fr-breadcrumb__link" aria-current="page">{territoryName}</span>
+  </li>
+</Breadcrumbs>
 
 <h1 class="mb-1 hidden text-lg tracking-tight print:block">
   {territoryName} : {title}

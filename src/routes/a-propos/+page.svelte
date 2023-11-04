@@ -1,31 +1,18 @@
 <script lang="ts">
   import { markdownToHtml } from "$lib/utils";
-
+  import Breadcrumbs from "$lib/breadcrumbs.svelte";
   import etapesCopImg from "$lib/assets/imgs/etapes-cop.png";
   import couvSynthImg from "$lib/assets/imgs/couverture-synthese.png";
   import content from "./content.md?raw";
 </script>
 
-<nav class="fr-breadcrumb !mb-3 !mt-0" aria-label="vous êtes ici :">
-  <button
-    class="fr-breadcrumb__button"
-    aria-expanded="false"
-    aria-controls="breadcrumb-1"
-    >Voir le fil d’Ariane
-  </button>
-  <div class="fr-collapse" id="breadcrumb-1">
-    <ol class="fr-breadcrumb__list">
-      <li>
-        <a class="fr-breadcrumb__link" href="/">Accueil</a>
-      </li>
-      <li>
-        <span class="fr-breadcrumb__link" aria-current="page">À propos</span>
-      </li>
-    </ol>
-  </div>
-</nav>
+<Breadcrumbs>
+  <li>
+    <span class="fr-breadcrumb__link" aria-current="page">À propos</span>
+  </li>
+</Breadcrumbs>
 
-<div class="markdown mt-4 max-w-3xl">
+<div id="contenu" class="markdown mt-4 max-w-3xl">
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html markdownToHtml(
     content
