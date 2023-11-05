@@ -1,5 +1,10 @@
 <script lang="ts">
-  import { clamp, getColor, markdownToHtml } from "$lib/utils.js";
+  import {
+    clamp,
+    getColor,
+    markdownToHtml,
+    sanitizeValueCO2,
+  } from "$lib/utils.js";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import ProgressBlock from "$lib/treemap/progressBlock.svelte";
   import SubTitle from "$lib/sub-title.svelte";
@@ -18,11 +23,11 @@
   const startPoint = action.startPoint2019 ?? 0;
   const inverted = action.ratioCO2toPhys < 0;
 
-  function sanitizeNumber(numberStr: string): number {
-    if (numberStr) {
-      return Number(numberStr);
-    }
-    return 0;
+  export function sanitizeValuePhys(value: string | number | null): number {
+    const numValue = Number(value) || 0;
+    return inverted
+      ? clamp(numValue, 0, startPoint)
+      : Math.max(numValue, startPoint);
   }
 
   function roundTo1D(num: number) {
@@ -38,7 +43,7 @@
 
   function handleCO2InputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    const rawValueCO2 = sanitizeNumber(target.value);
+    const rawValueCO2 = sanitizeValueCO2(target.value);
     valueCO2 = Math.round(rawValueCO2);
     target.value = valueCO2;
     valuePhys = roundTo1D(getValuePhysFromCO2(rawValueCO2));
@@ -47,9 +52,7 @@
 
   function handlePhysInputChanged(evt: Event) {
     const target = evt.target as HTMLInputElement;
-    const rawValuePhys = inverted
-      ? clamp(sanitizeNumber(target.value), 0, startPoint)
-      : Math.max(sanitizeNumber(target.value), startPoint);
+    const rawValuePhys = sanitizeValuePhys(target.value);
     valuePhys = roundTo1D(rawValuePhys);
     target.value = valuePhys;
     valueCO2 = Math.round((rawValuePhys - startPoint) / action.ratioCO2toPhys);

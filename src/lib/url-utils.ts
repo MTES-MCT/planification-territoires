@@ -37,11 +37,8 @@ export function updateURLfromStores(regionSlug: string) {
       const action = regionData.find((action) => action.id === key) as Action;
       const defaultTargetValue =
         action.objCO2 - completionLevelsValue[regionSlug][key];
-      if (value?.toFixed(0) != defaultTargetValue.toFixed(0)) {
-        newSearchParams.set(
-          getQVKeyForNewTarget(key),
-          Number(value.toFixed(0)).toString()
-        );
+      if (Math.round(value) != Math.round(defaultTargetValue)) {
+        newSearchParams.set(getQVKeyForNewTarget(key), value.toFixed(0));
       } else {
         newSearchParams.delete(getQVKeyForNewTarget(key));
       }

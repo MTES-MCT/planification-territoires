@@ -1,7 +1,7 @@
 import type { RegionCompletionLevels, RegionNewTargets } from "$lib/types";
 import { getQVKeyForCompleted, getQVKeyForNewTarget } from "$lib/url-utils";
 
-import { getIdNames, getRegionData } from "$lib/utils";
+import { getIdNames, getRegionData, sanitizeValueCO2 } from "$lib/utils";
 import { completionLevels, newTargets } from "$lib/stores";
 
 import type { LayoutLoad } from "./$types";
@@ -14,17 +14,19 @@ function getCompletionLevelsFromURL(
   return Object.fromEntries(
     getIdNames().map((id) => [
       id,
-      Number(searchParams.get(getQVKeyForCompleted(id))) || 0,
+      sanitizeValueCO2(searchParams.get(getQVKeyForCompleted(id))),
     ])
   );
 }
 
 function getNewTargetsFromURL(searchParams: URLSearchParams): RegionNewTargets {
   return Object.fromEntries(
-    getIdNames().map((id) => {
-      const newTarget = searchParams.get(getQVKeyForNewTarget(id));
-      return [id, newTarget != null ? Number(newTarget) : null];
-    })
+    getIdNames().map((id) => [
+      id,
+      sanitizeValueCO2(searchParams.get(getQVKeyForNewTarget(id)), {
+        keepNull: true,
+      }),
+    ])
   );
 }
 

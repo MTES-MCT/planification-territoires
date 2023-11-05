@@ -14,6 +14,17 @@ export function clamp(x: number, min: number, max: number) {
   return Math.max(min, Math.min(max, x));
 }
 
+export function sanitizeValueCO2(
+  value: string | number | null,
+  { keepNull = false } = {}
+): number | null {
+  if (keepNull && (value == null || Number.isNaN(Number(value)))) {
+    return null;
+  }
+  const numericValue = Number(value) || 0;
+  return Math.max(numericValue, 0);
+}
+
 export function getRegionData(regionSlug: string): Action[] {
   return tidy(
     actionsData,
