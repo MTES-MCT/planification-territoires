@@ -24,7 +24,7 @@ file_path <- args
 
 # Chargement des onglets, et nettoyage initial
 
-data <- read_excel(file_path, "DATA") |>
+data <- read_excel(file_path, "OUTPUT") |>
   clean_names()
 
 
