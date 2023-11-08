@@ -16,6 +16,7 @@
   export let data: Row[];
   export let getPath: (row: Row) => string;
   export let getValue: (row: Row) => number;
+  export let getDisplayValue: (row: Row) => number;
   export let getLabel: (row: Row) => string;
   export let getColor: (row: Row) => string;
   export let getProgressionRatio: (row: Row) => number;
@@ -67,7 +68,7 @@
             height={leafHeight}
             width={leafWidth}
             title={getLabel(d.data)}
-            value={getValue(d.data)}
+            value={getDisplayValue(d.data)}
           />
         </g>
       {/each}

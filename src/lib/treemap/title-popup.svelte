@@ -14,33 +14,35 @@
   <div class="mb-1 font-semibold">{data.lever.sector}</div>
   <div class="mb-3">{data.lever.name}</div>
 
-  <div class="value-row">
-    <div class="desc">
-      {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
-    </div>
-    <div class="value">
-      <PrettyNumber number={data.lever.objCO2} negate forceSign />
-    </div>
-  </div>
-
-  {#if data.showCompleted && data.lever.progressionCO2}
+  {#if data.lever.showTarget}
     <div class="value-row">
-      <div class="desc">Action :</div>
+      <div class="desc">
+        {#if data.showNewTargets}Objectif final{:else}Objectif initial{/if} :
+      </div>
       <div class="value">
-        <PrettyNumber number={data.lever.progressionCO2} negate forceSign />
+        <PrettyNumber number={data.lever.objCO2} negate forceSign />
       </div>
     </div>
 
-    <div class="value-row">
-      <div class="desc">Objectif restant :</div>
-      <div class="value">
-        <PrettyNumber
-          number={data.lever.objCO2 - data.lever.progressionCO2}
-          negate
-          forceSign
-        />
+    {#if data.showCompleted && data.lever.progressionCO2}
+      <div class="value-row">
+        <div class="desc">Action :</div>
+        <div class="value">
+          <PrettyNumber number={data.lever.progressionCO2} negate forceSign />
+        </div>
       </div>
-    </div>
+
+      <div class="value-row">
+        <div class="desc">Objectif restant :</div>
+        <div class="value">
+          <PrettyNumber
+            number={data.lever.objCO2 - data.lever.progressionCO2}
+            negate
+            forceSign
+          />
+        </div>
+      </div>
+    {/if}
   {/if}
 </div>
 

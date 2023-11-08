@@ -46,11 +46,13 @@ final_data <- data |>
          comment = commentaire,
          regionName = region,
          regionEnabled = region_accessible,
-         regionComment = commentaire_region
+         regionComment = commentaire_region,
+         showTarget = affichage_des_objectifs
          ) |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE),
-         regionEnabled = case_when(regionEnabled=='OUI' ~TRUE, TRUE ~ FALSE)
+         regionEnabled = case_when(regionEnabled=='OUI' ~TRUE, TRUE ~ FALSE),
+         showTarget = case_when(showTarget=='OUI' ~FALSE, TRUE ~ TRUE),
          ) |>
 
 

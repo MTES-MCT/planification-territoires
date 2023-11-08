@@ -36,6 +36,17 @@
     return lever.objCO2;
   }
 
+  function getDisplayValue(lever: Lever) {
+    if (lever.showTarget) {
+      if (showCompleted && $displayOptions.showRemainingOnly) {
+        return lever.objCO2 - lever.progressionCO2;
+      }
+      return lever.objCO2;
+    } else {
+      return "?";
+    }
+  }
+
   function getPathMondrian(lever: Lever) {
     return lever.pathSector;
   }
@@ -141,7 +152,7 @@
       progressionCO2: $completionLevels[action.regionSlug][action.id],
     })),
     groupBy(
-      ["leverName", "group", "sector", "pathSector", "pathGroup"],
+      ["leverName", "group", "sector", "pathSector", "pathGroup", "showTarget"],
       [
         summarize({
           objCO2: sum("objCO2"),
@@ -151,7 +162,6 @@
     ),
     rename({ leverName: "name" })
   );
-
   $: groupedSectors = tidy(
     leversData,
     groupBy(
@@ -286,6 +296,7 @@
             {getLabel}
             {getColor}
             {getValue}
+            {getDisplayValue}
             {getProgressionRatio}
             {showCompleted}
             {showNewTargets}
@@ -301,6 +312,7 @@
             {getLabel}
             {getColor}
             {getValue}
+            {getDisplayValue}
             {getProgressionRatio}
             {showCompleted}
             {showNewTargets}
@@ -317,6 +329,7 @@
             {getLabel}
             {getColor}
             {getValue}
+            {getDisplayValue}
             {getProgressionRatio}
             {showCompleted}
             {showNewTargets}
@@ -336,6 +349,7 @@
             {getLabel}
             {getColor}
             {getValue}
+            {getDisplayValue}
             {getProgressionRatio}
             {showCompleted}
             {showNewTargets}

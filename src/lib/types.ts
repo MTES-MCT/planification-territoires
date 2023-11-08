@@ -18,6 +18,7 @@ export interface Action {
   comment: string;
   regionEnabled: boolean;
   regionComment?: string;
+  showTarget: boolean;
 }
 
 export interface Lever {
@@ -28,6 +29,7 @@ export interface Lever {
   pathGroup: string;
   objCO2: number;
   progressionCO2: number;
+  showTarget: boolean;
 }
 
 export interface Region {

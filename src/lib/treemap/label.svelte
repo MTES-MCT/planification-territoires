@@ -14,14 +14,22 @@
         {title}
       </div>
       <div class="truncate text-sm font-normal">
-        <PrettyNumber number={value} negate forceSign />
+        {#if typeof value === "string"}
+          {value}
+        {:else}
+          <PrettyNumber number={value} negate forceSign />
+        {/if}
       </div>
     {:else if height > 40 && width > 40}
       <div class="mb-0.5 truncate text-sm leading-none">
         {title}
       </div>
       <div class="truncate text-xs font-normal">
-        <PrettyNumber number={value} negate forceSign />
+        {#if typeof value === "string"}
+          {value}
+        {:else}
+          <PrettyNumber number={value} negate forceSign />
+        {/if}
       </div>
     {:else if height > 16 && width > 50}
       <div class="-mt-[3px] truncate text-xs leading-tight">
