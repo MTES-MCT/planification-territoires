@@ -53,11 +53,6 @@
           >
         </li>
         <li class="fr-footer__bottom-item">
-          <a class="fr-footer__bottom-link" href="/cgu"
-            >Conditions générales d’utilisation</a
-          >
-        </li>
-        <li class="fr-footer__bottom-item">
           <a class="fr-footer__bottom-link" href="/accessibilite"
             >Accessibilité : non conforme</a
           >
