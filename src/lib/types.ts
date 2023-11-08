@@ -1,9 +1,9 @@
 export interface Action {
   id: string;
   leverName: string;
-  region: string;
+  regionName: string;
   objCO2: number;
-  unitPhys: string;
+  unitPhys?: string;
   unitCO2: string;
   startPoint2019?: number;
   sector: string;
@@ -13,9 +13,11 @@ export interface Action {
   pathGroup: string;
   regionSlug: string;
   editionDisabled: boolean;
-  disabledComment: string;
+  disabledComment?: string;
   noTranslation: boolean;
   comment: string;
+  regionEnabled: boolean;
+  regionComment?: string;
 }
 
 export interface Lever {
@@ -26,6 +28,12 @@ export interface Lever {
   pathGroup: string;
   objCO2: number;
   progressionCO2: number;
+}
+
+export interface Region {
+  regionName: string;
+  regionEnabled: boolean;
+  regionComment?: string;
 }
 
 // Part de l’objectif déjà réalisée ou planifiée, en ktCO₂e

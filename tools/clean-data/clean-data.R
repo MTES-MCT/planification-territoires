@@ -24,7 +24,7 @@ file_path <- args
 
 # Chargement des onglets, et nettoyage initial
 
-data <- read_excel(file_path, "OUTPUT") |>
+data <- read_excel(file_path, "OUTPUT", na="N/A") |>
   clean_names()
 
 
@@ -44,9 +44,14 @@ final_data <- data |>
          disabledComment = explication_pour_les_cases_grisees,
          noTranslation = case_sans_traduction,
          comment = commentaire,
+         regionName = region,
+         regionEnabled = region_accessible,
+         regionComment = commentaire_region
          ) |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
-         noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE)) |>
+         noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE),
+         regionEnabled = case_when(regionEnabled=='OUI' ~TRUE, TRUE ~ FALSE)
+         ) |>
 
 
 

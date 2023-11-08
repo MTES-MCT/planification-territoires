@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { getRegionsNames, normalizeString } from "$lib/utils";
+  import { normalizeString, getRegions } from "$lib/utils";
   import RegionCard from "./_index/region-card.svelte";
 
-  const regionNames = getRegionsNames();
+  const regions = getRegions();
 </script>
 
 <h1 class="mt-12 max-w-3xl">
@@ -37,7 +37,7 @@
   </p>
 </div>
 <div class="fr-grid-row fr-grid-row--gutters !mb-16 w-full" id="territoires">
-  {#each regionNames as regionName}
-    <RegionCard {regionName} regionSlug={normalizeString(regionName)} />
+  {#each regions as region}
+    <RegionCard {region} regionSlug={normalizeString(region.regionName)} />
   {/each}
 </div>

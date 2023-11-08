@@ -1,13 +1,13 @@
 import showdown from "showdown";
 
 import rawActionsData from "$lib/assets/data.json";
-import type { Action } from "$lib/types";
+import type { Action, Region } from "$lib/types";
 import { arrange, distinct, filter, select, tidy } from "@tidyjs/tidy";
 
 const actionsData = rawActionsData.map((row) => ({
   ...row,
   objCO2: row.objCO2,
-  regionSlug: normalizeString(row.region),
+  regionSlug: normalizeString(row.regionName),
 })) as Action[];
 
 export function clamp(x: number, min: number, max: number) {
@@ -32,13 +32,13 @@ export function getRegionData(regionSlug: string): Action[] {
   );
 }
 
-export function getRegionsNames(): string[] {
+export function getRegions(): Region[] {
   return tidy(
     actionsData,
-    select("region"),
-    distinct("region"),
-    arrange((a, b) => a.region.localeCompare(b.region, "fr"))
-  ).map((row) => row.region);
+    select(["regionName", "regionEnabled", "regionComment"]),
+    distinct(["regionName"]),
+    arrange((a, b) => a.regionName.localeCompare(b.regionName, "fr"))
+  );
 }
 
 export function getRegionsSlugs(): string[] {
@@ -51,9 +51,9 @@ export function getRegionsSlugs(): string[] {
 }
 
 export function getRegionName(regionSlug: string): string {
-  return getRegionsNames().find(
-    (name) => normalizeString(name) === regionSlug
-  ) as string;
+  return getRegions().find(
+    (region) => normalizeString(region.regionName) === regionSlug
+  )?.regionName as string;
 }
 
 export function getSectorsNames(): string[] {
