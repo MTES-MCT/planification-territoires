@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
 
   import { getRegionName } from "$lib/utils";
@@ -42,9 +43,10 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Proposer une nouvelle ambition pour le territoire"
   nextLabel="Visualiser une nouvelle ambition pour le territoire"
-  nextUrl="/territoire/{data.regionSlug}/ambition"
+  nextUrl="/territoire/{data.regionSlug}/ambition?{$page.url.searchParams}"
   backLabel="Visualiser l’impact des changements d’ordres de grandeur"
-  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur"
+  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
+    .searchParams}"
   step="4"
   stickyFooter
 >

@@ -16,6 +16,7 @@ export function getQVKeyForCompleted(key: string) {
 
 export function updateURLfromStores(regionSlug: string) {
   const newSearchParams = new URLSearchParams(get(page).url.searchParams);
+  const initialSearchParamsString = newSearchParams.toString();
 
   const regionData = getRegionData(regionSlug);
   const completionLevelsValue = get(completionLevels);
@@ -45,9 +46,11 @@ export function updateURLfromStores(regionSlug: string) {
     }
   });
 
-  return goto(`?${newSearchParams.toString()}`, {
-    keepFocus: true,
-    noScroll: true,
-    replaceState: true,
-  });
+  if (newSearchParams.toString() !== initialSearchParamsString) {
+    return goto(`?${newSearchParams.toString()}`, {
+      keepFocus: true,
+      noScroll: true,
+      replaceState: true,
+    });
+  }
 }

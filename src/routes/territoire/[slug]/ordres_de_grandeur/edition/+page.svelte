@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
 
   import { getRegionName } from "$lib/utils";
@@ -35,7 +36,8 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Comprendre les ordres de grandeur"
   nextLabel="Visualiser l’impact des changements d’ordres de grandeur"
-  nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur"
+  nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
+    .searchParams}"
   backLabel="Voir les objectifs territoriaux"
   backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"

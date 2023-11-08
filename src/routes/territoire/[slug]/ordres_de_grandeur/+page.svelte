@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
   import MainViz from "$lib/main-viz.svelte";
   import ShareButtons from "$lib/share-buttons.svelte";
@@ -18,9 +19,11 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Impact des changements d’ordres de grandeur"
   backLabel="Comprendre les ordres de grandeur"
-  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
+  backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition?{$page.url
+    .searchParams}"
   nextLabel="Réajuster votre ambition"
-  nextUrl="/territoire/{data.regionSlug}/ambition/edition"
+  nextUrl="/territoire/{data.regionSlug}/ambition/edition?{$page.url
+    .searchParams}"
   step="3"
 >
   <p class="mb-2 max-w-3xl">

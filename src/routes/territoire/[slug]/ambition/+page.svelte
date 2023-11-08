@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
 
   import { updateURLfromStores } from "$lib/url-utils";
@@ -31,7 +32,8 @@
   territoryName={getRegionName(data.regionSlug)}
   title="Visualiser une nouvelle ambition pour le territoire"
   backLabel="Réajuster votre ambition"
-  backUrl="/territoire/{data.regionSlug}/ambition/edition"
+  backUrl="/territoire/{data.regionSlug}/ambition/edition?{$page.url
+    .searchParams}"
   step="5"
 >
   <p class="mb-2 max-w-3xl">
