@@ -47,7 +47,7 @@ final_data <- data |>
          regionName = region,
          regionEnabled = region_accessible,
          regionComment = commentaire_region,
-         showTarget = affichage_des_objectifs
+         showTarget = masquer_lobjectif
          ) |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE),
