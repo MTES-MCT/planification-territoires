@@ -12,6 +12,7 @@
   export let inputLabel: string;
   export let regionData: Action[];
   export let initialValuesCO2: RegionCompletionLevels | RegionNewTargets;
+  export let completedValuesCO2: RegionCompletionLevels | RegionNewTargets;
   export let targetValuesCO2: { [leverName: string]: number };
   export let noProgress = false;
 
@@ -31,6 +32,8 @@
       {#each sector.values as action}
         {@const initialValueCO2 = initialValuesCO2[action.id]}
         {@const targetValueCO2 = targetValuesCO2[action.id]}
+        {@const completedValueCO2 = completedValuesCO2[action.id]}
+
         <DoubleEntryInput
           {action}
           progress={targetValueCO2 && !noProgress
@@ -39,6 +42,7 @@
           {inputLabel}
           onUpdate={(newValueCO2, action) => onUpdate(newValueCO2, action)}
           initialValueCO2={initialValueCO2 ?? 0}
+          {completedValueCO2}
           {targetValueCO2}
         />
       {/each}

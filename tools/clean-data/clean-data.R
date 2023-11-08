@@ -53,6 +53,7 @@ final_data <- data |>
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE),
          regionEnabled = case_when(regionEnabled=='OUI' ~TRUE, TRUE ~ FALSE),
          showTarget = case_when(showTarget=='OUI' ~FALSE, TRUE ~ TRUE),
+         relative = case_when(startPoint2019!=0 ~TRUE, TRUE ~ FALSE)
          ) |>
 
 

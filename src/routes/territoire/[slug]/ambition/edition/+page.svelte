@@ -23,6 +23,13 @@
   });
 
   $: initialValuesCO2 = $newTargets[data.regionSlug];
+
+  $: completedValuesCO2 = Object.fromEntries(
+    data.regionData.map((action) => [
+      action.id,
+      $completionLevels[data.regionSlug][action.id],
+    ])
+  );
   const targetValuesCO2 = Object.fromEntries(
     data.regionData.map((action) => [
       action.id,
@@ -62,6 +69,7 @@
       inputLabel="Objectif estimé comme atteignable en 2030"
       {initialValuesCO2}
       {targetValuesCO2}
+      {completedValuesCO2}
       noProgress
     />
   </form>

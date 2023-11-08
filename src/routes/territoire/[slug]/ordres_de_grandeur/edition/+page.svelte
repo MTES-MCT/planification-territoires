@@ -22,6 +22,10 @@
   });
 
   $: initialValuesCO2 = $completionLevels[data.regionSlug];
+
+  const completedValuesCO2 = Object.fromEntries(
+    data.regionData.map((action) => [action.id, 0])
+  );
   const targetValuesCO2 = Object.fromEntries(
     data.regionData.map((action) => [action.id, action.objCO2])
   );
@@ -56,6 +60,7 @@
       inputLabel="Action"
       {initialValuesCO2}
       {targetValuesCO2}
+      {completedValuesCO2}
     />
   </form>
 </NavigationBar>

@@ -16,6 +16,7 @@
   export let progress: number | undefined = undefined;
   export let inputLabel: string;
   export let initialValueCO2: number;
+  export let completedValueCO2: number;
   export let targetValueCO2: number;
 
   export let onUpdate: (newValuePhys: number, action: Action) => void;
@@ -35,7 +36,17 @@
   }
 
   function getValuePhysFromCO2(value: number) {
+    if (action.relative) {
+      value += completedValueCO2;
+    }
     return Math.max(0, startPoint + value * action.ratioCO2toPhys);
+  }
+
+  function getValueCO2FromPhys(valuePhys: number) {
+    return Math.round(
+      (valuePhys - startPoint) / action.ratioCO2toPhys -
+        (action.relative ? completedValueCO2 : 0)
+    );
   }
 
   let valuePhys = roundTo1D(getValuePhysFromCO2(initialValueCO2));
@@ -55,7 +66,7 @@
     const rawValuePhys = sanitizeValuePhys(target.value);
     valuePhys = roundTo1D(rawValuePhys);
     target.value = valuePhys;
-    valueCO2 = Math.round((rawValuePhys - startPoint) / action.ratioCO2toPhys);
+    valueCO2 = getValueCO2FromPhys(rawValuePhys);
     onUpdate(valueCO2, action);
   }
 

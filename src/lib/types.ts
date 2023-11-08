@@ -19,6 +19,7 @@ export interface Action {
   regionEnabled: boolean;
   regionComment?: string;
   showTarget: boolean;
+  relative: boolean;
 }
 
 export interface Lever {
