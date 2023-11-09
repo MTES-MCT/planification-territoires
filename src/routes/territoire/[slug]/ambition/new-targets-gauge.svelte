@@ -23,19 +23,23 @@
 {#if targetMiss > 0}
   <div class="fr-alert fr-alert--error fr-alert--sm">
     <p>
-      Vous devez assigner <PrettyNumber number={targetMiss} />
-      {#if targetMiss < 2}supplémentaire{:else}supplémentaires{/if}
+      Il reste <PrettyNumber number={targetMiss} />
+      {#if targetMiss < 2}supplémentaire{:else}supplémentaires{/if} à assigner
     </p>
   </div>
 {:else if targetMiss < 0}
   <div class="fr-alert fr-alert--success fr-alert--sm">
     <p>
-      Les objectifs permettent de dépasser l'ambition globale 2030 de
+      Les objectifs proposés permettent de dépasser l’ambition globale 2030 du
+      territoire de
       <PrettyNumber number={targetMiss} negate />
     </p>
   </div>
 {:else if !hideWhenOk}
   <div class="fr-alert fr-alert--info fr-alert--sm">
-    <p>Vos objectifs permettent d'atteindre l'ambition globale</p>
+    <p>
+      Les objectifs proposés permettent d’atteindre l’ambition globale du
+      territoire
+    </p>
   </div>
 {/if}
