@@ -8,19 +8,18 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Présentation des objectifs territoriaux pour 2030"
-  nextLabel="Comprendre les ordres de grandeur"
+  title="Découvrir une première indication des objectifs territoriaux répartis par levier"
+  nextLabel="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
   backUrl="/#territoires"
   backLabel="Choisir un autre territoire"
   step="1"
 >
   <p class="mb-2 max-w-3xl print:leading-tight">
-    Voici la baisse des émissions de gaz à effet de serre attendue en 2030 par
-    rapport à 2019. Les différents gaz à effet de serre sont comptabilisés en
-    équivalent CO₂ (CO₂e), une unité commune introduite par le GIEC pour
-    permettre des comparaisons basées sur le pouvoir de réchauffement global de
-    chacun des gaz à effet de serre.
+    Voici à titre indicatif la contribution du territoire à la trajectoire
+    nationale de baisse des émissions de gaz à effet de serre en 2030 par
+    rapport à 2019. Les objectifs correspondants sont répartis dans le panorama
+    des leviers du territoire présenté ci-dessous.
   </p>
 
   <div class="my-8 block print:my-0">
