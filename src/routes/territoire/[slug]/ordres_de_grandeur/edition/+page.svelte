@@ -4,7 +4,7 @@
 
   import { getRegionName } from "$lib/utils";
   import { updateURLfromStores } from "$lib/url-utils";
-  import { completionLevels } from "$lib/stores";
+  import { completionLevels, newTargets } from "$lib/stores";
   import ActionsForm from "$lib/actions-form.svelte";
 
   import NavigationBar from "../../navigation-bar.svelte";
@@ -15,6 +15,7 @@
 
   function handleInputUpdate(newValueCO2: number, action: Action) {
     $completionLevels[data.regionSlug][action.id] = newValueCO2;
+    $newTargets[data.regionSlug][action.id] = null;
     return updateURLfromStores(data.regionSlug);
   }
 

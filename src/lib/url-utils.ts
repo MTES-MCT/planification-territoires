@@ -43,6 +43,8 @@ export function updateURLfromStores(regionSlug: string) {
       } else {
         newSearchParams.delete(getQVKeyForNewTarget(key));
       }
+    } else {
+      newSearchParams.delete(getQVKeyForNewTarget(key));
     }
   });
 
