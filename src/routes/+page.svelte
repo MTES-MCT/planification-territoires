@@ -50,7 +50,7 @@
     >.
   </p>
 </div>
-<div class="mb-8 max-w-3xl">
+<div class="mb-8 max-w-3xl print:hidden">
   <p>
     Sélectionner sa région pour découvrir à titre indicatif la contribution de
     son territoire à la trajectoire nationale de baisse des émissions de gaz à
