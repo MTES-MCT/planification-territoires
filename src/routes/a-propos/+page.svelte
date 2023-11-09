@@ -3,6 +3,7 @@
   import Breadcrumbs from "$lib/breadcrumbs.svelte";
   import etapesCopImg from "$lib/assets/imgs/etapes-cop.png";
   import couvSynthImg from "$lib/assets/imgs/couverture-synthese.png";
+  import panoramaImg from "$lib/assets/imgs/panorama.png";
   import content from "./content.md?raw";
 </script>
 
@@ -23,6 +24,10 @@
       .replace(
         "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/76912b67-0879-47cd-9d79-08a56e2b87c3.png",
         couvSynthImg
+      )
+      .replace(
+        "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/57210b44-0d3b-4a35-b111-2a5903116ca8.PNG",
+        panoramaImg
       )
   )}
 </div>
