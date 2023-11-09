@@ -30,14 +30,15 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Visualiser une nouvelle ambition pour le territoire"
-  backLabel="Réajuster votre ambition"
+  title="Partager les objectifs qui forment une nouvelle ambition pour le territoire"
+  backLabel="Proposer de nouveaux objectifs par levier"
   backUrl="/territoire/{data.regionSlug}/ambition/edition?{$page.url
     .searchParams}"
   step="5"
 >
   <p class="mb-2 max-w-3xl">
-    Voici les objectifs finaux ajustés sur la base de nouveaux objectifs.
+    Voici les nouveaux objectifs proposés répartis dans le panorama des leviers
+    du territoire.
   </p>
 
   <div class="mb-4">
