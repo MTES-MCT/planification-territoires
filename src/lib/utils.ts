@@ -37,7 +37,11 @@ export function getRegions(): Region[] {
     actionsData,
     select(["regionName", "regionEnabled", "regionComment"]),
     distinct(["regionName"]),
-    arrange((a, b) => a.regionName.localeCompare(b.regionName, "fr"))
+    arrange((a, b) =>
+      a.regionName === "Région exemple"
+        ? -1
+        : a.regionName.localeCompare(b.regionName, "fr")
+    )
   );
 }
 
