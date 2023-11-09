@@ -1,6 +1,6 @@
 # À propos
 
-## Les COP territoriales <a id="cop"> </a>
+## <a id="cop"></a>Les COP territoriales
 
 Les COP territoriales permettent d’engager une discussion à l’échelle du territoire pour un plan d’actions territoriales cohérent et partagé.
 
@@ -66,7 +66,7 @@ _**... mobiliser** l’ensemble des collectivités territoriales, mais aussi des
 
 _**... accélérer la mise en œuvre** des actions qui relèvent des compétences des collectivités territoriales_
 
-## Le simulateur territorial <a id="simulateur"> </a>
+## <a id="simulateur"></a>Le simulateur territorial
 
 Le **simulateur territorial** a pour but d'aider à comprendre la contribution de son territoire à la trajectoire nationale de baisse des émissions de gaz à effet de serre en 2030 par rapport à 2019.
 
