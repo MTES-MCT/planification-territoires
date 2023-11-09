@@ -23,6 +23,7 @@
           var u = "%sveltekit.env.PUBLIC_MATOMO_URL%";
           _paq.push(["setTrackerUrl", u + "matomo.php"]);
           _paq.push(["setSiteId", "%sveltekit.env.PUBLIC_MATOMO_ID%"]);
+          _paq.push(["enableLinkTracking"]);
           var d = document,
             g = d.createElement("script"),
             s = d.getElementsByTagName("script")[0];
