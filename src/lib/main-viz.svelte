@@ -193,8 +193,8 @@
         <div
           class="!leading-tight print:text-sm print:font-normal md:mb-2 lg:mb-0"
         >
-          Baisse attendue des émissions de gaz à effet de serre en 2030 par
-          rapport à 2019
+          Contribution du territoire à la baisse nationale des émissions de gaz
+          à effet de serre en 2030 par rapport à 2019
         </div>
         <div
           class="text-right text-xl font-semibold leading-tight text-gray-900 print:!text-base lg:text-2xl"
