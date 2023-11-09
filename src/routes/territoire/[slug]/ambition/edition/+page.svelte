@@ -41,10 +41,10 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Proposer une nouvelle ambition pour le territoire"
-  nextLabel="Visualiser une nouvelle ambition pour le territoire"
+  title="Proposer de nouveaux objectifs par levier sur la base des étapes précédentes"
+  nextLabel="Partager les objectifs qui forment une nouvelle ambition pour le territoire"
   nextUrl="/territoire/{data.regionSlug}/ambition?{$page.url.searchParams}"
-  backLabel="Visualiser l’impact des changements d’ordres de grandeur"
+  backLabel="Visualiser l’impact qu’un changement d’ordre de grandeur peut avoir sur les objectifs"
   backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
     .searchParams}"
   step="4"
@@ -52,11 +52,11 @@
 >
   <div slot="no-sticky">
     <p class="max-w-3xl">
-      Pour chaque secteur, proposez un objectif que vous estimez atteignable
-      pour le territoire. Vous avez ainsi la possibilité d'être plus ou moins
-      ambitieux que l’objectif initialement indiqué et mis à jour dans l'étape
-      précédente. En conséquence, une jauge apparaîtra vous permettant de suivre
-      les ktCO₂e qu’il vous reste à répartir.
+      Pour chaque secteur et pour chaque levier, proposez un objectif que vous
+      estimez atteignable pour le territoire. Vous avez ainsi la possibilité
+      d'être plus ou moins ambitieux que l’objectif initialement indiqué et mis
+      à jour dans l'étape précédente. En conséquence, une jauge apparaîtra vous
+      permettant de suivre les ktCO₂e qu’il vous reste à répartir.
     </p>
   </div>
   <div slot="sticky-top" class="mb-4">
