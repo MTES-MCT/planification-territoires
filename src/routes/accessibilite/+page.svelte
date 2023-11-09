@@ -48,7 +48,7 @@
     <li>
       E-mail&nbsp;: <a
         href="mailto:sec.planification-ecologique@pm.gouv.frsec.planification-ecologique@pm.gouv.fr"
-        >sec.planification-ecologique@pm.gouv.fr</a
+        >planification-ecologique@pm.gouv.fr</a
       >
     </li>
 
