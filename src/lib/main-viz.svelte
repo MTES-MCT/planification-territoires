@@ -217,9 +217,10 @@
               <rect fill="url(#diagonalHatch)" width="100%" height="100%" />
             </svg>
             <div class="!leading-tight print:text-sm print:font-normal">
-              Flux annuel de baisse des émissions de gaz à effet de serre
-              provoquée par les changements d’ordres de grandeur renseignés lors
-              de l’étape précédente
+              Contribution du territoire à la baisse nationale des émissions de
+              gaz à effet de serre en 2030 par rapport à 2019 provoquée par les
+              changements d’ordres de grandeur renseignés lors de l’étape
+              précédente
             </div>
           </div>
           <div

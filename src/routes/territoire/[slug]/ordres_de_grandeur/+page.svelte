@@ -17,11 +17,11 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Impact des changements d’ordres de grandeur"
-  backLabel="Comprendre les ordres de grandeur"
+  title="Visualiser l’impact qu'un changement d'ordre de grandeur peut avoir sur les objectifs"
+  backLabel="Continuer de changer les ordres de grandeur"
   backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition?{$page.url
     .searchParams}"
-  nextLabel="Réajuster votre ambition"
+  nextLabel="Proposer de nouveaux objectifs par levier sur la base des étapes précédentes"
   nextUrl="/territoire/{data.regionSlug}/ambition/edition?{$page.url
     .searchParams}"
   step="3"
