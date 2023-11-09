@@ -61,7 +61,7 @@
     <ActionsForm
       onUpdate={handleInputUpdate}
       regionData={data.regionData}
-      inputLabel="Action"
+      inputLabel="Simulateur"
       {initialValuesCO2}
       {targetValuesCO2}
       {completedValuesCO2}

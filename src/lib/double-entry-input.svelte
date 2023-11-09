@@ -129,12 +129,12 @@
             <div
               class="flex-1 border-r py-2 text-right text-xs font-medium text-gray-500"
             >
-              <span class="pr-5">Soit</span>
+              <span class="pr-5">Ce qui représente</span>
             </div>
             <div
               class="flex-1 py-2 text-right text-xs font-medium text-gray-500"
             >
-              Soit
+              Ce qui représente
             </div>
           </div>
           <!--  Unités physiques -->
