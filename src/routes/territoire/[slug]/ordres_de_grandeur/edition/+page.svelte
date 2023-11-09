@@ -35,25 +35,26 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Comprendre les ordres de grandeur"
-  nextLabel="Visualiser l’impact des changements d’ordres de grandeur"
+  title="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
+  nextLabel="Visualiser l’impact qu’un changement d’ordre de grandeur peut avoir sur les objectifs"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
     .searchParams}"
-  backLabel="Voir les objectifs territoriaux"
+  backLabel="Retourner à la première indication des objectifs territoriaux répartis par levier"
   backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"
   stickyFooter
 >
   <div slot="no-sticky">
     <p class="max-w-3xl">
-      Pour chaque secteur, traduisez les objectifs de baisse des émissions de
-      gaz à effet de serre en ordres de grandeur physiques. Ces ordres de
-      grandeur sont illustratifs et indicatifs, chaque levier reposant dans les
-      faits sur un ensemble de politiques publiques qui doivent être combinées
-      pour atteindre l’objectif. Lorsque la donnée était disponible pour toutes
-      les régions, les points de départ des ordres de grandeur sont indiqués à
-      titre d’information. Jouez avec ces ordres de grandeur pour estimer
-      l’impact sur l’objectif 2030.
+      Pour chaque secteur et pour chaque levier, les objectifs de baisse des
+      émissions de gaz à effet de serre sont illustrés par des ordres de
+      grandeur physiques. Ces ordres de grandeur sont indicatifs, chaque levier
+      reposant sur un ensemble de politiques publiques qui doivent être
+      combinées pour atteindre l’objectif. Lorsque la donnée est disponible pour
+      toutes les régions, les points de départ des ordres de grandeur sont
+      pré-remplis à titre d’information. Jouez avec ces ordres de grandeur pour
+      visualiser l’impact qu'un changement d’ordre de grandeur peut avoir sur
+      les objectifs.
     </p>
   </div>
   <form class="mb-6">
