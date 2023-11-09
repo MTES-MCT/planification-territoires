@@ -20,7 +20,7 @@
 
   function trackPageView() {
     if (window._paq) {
-      window._paq.push(["setCustomUrl", $page.url.pathname]);
+      window._paq.push(["setCustomUrl", $page.url.href]);
       window._paq.push(["setDocumentTitle", $page.data.title]);
       window._paq.push(["trackPageView"]);
     }
