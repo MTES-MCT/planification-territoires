@@ -11,7 +11,7 @@
   title="Découvrir à titre indicatif les objectifs du territoire répartis par levier"
   nextLabel="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
-  backUrl="/#territoires"
+  backUrl="/"
   step="1"
 >
   <p class="mb-2 max-w-3xl print:leading-tight">
