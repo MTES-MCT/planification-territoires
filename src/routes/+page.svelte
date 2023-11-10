@@ -18,8 +18,8 @@
   </p>
   <ol>
     <li>
-      <strong>Découvrir</strong> une première indication des objectifs territoriaux
-      répartis par levier
+      <strong>Découvrir</strong> à titre indicatif les objectifs du territoire répartis
+      par levier
     </li>
     <li>
       <strong>Comprendre</strong> quels sont les ordres de grandeur qui illustrent

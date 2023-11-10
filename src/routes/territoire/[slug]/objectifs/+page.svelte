@@ -8,7 +8,7 @@
 
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
-  title="Découvrir une première indication des objectifs territoriaux répartis par levier"
+  title="Découvrir à titre indicatif les objectifs du territoire répartis par levier"
   nextLabel="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
   backUrl="/#territoires"
