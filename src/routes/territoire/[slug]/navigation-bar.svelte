@@ -1,11 +1,11 @@
 <script lang="ts">
   import Breadcrumbs from "$lib/breadcrumbs.svelte";
+
   export let territoryName: string;
   export let title: string;
   export let step: string;
   export let nextLabel = "";
   export let nextUrl = "";
-  export let backLabel: string;
   export let backUrl: string;
   export let stickyFooter = false;
 
@@ -48,14 +48,14 @@
     <li>
       <a
         class="fr-btn fr-btn--sm fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-        href={backUrl}>{backLabel}</a
+        href={backUrl}>Étape précédente</a
       >
     </li>
     {#if nextLabel}
       <li>
         <a
           class="fr-btn fr-btn--tertiary fr-icon-arrow-right-line fr-btn--icon-right"
-          href={nextUrl}>{nextLabel}</a
+          href={nextUrl}>Étape suivante</a
         >
       </li>
     {/if}
@@ -78,14 +78,14 @@
         <li>
           <a
             class="fr-btn fr-btn--tertiary fr-icon-arrow-left-line fr-btn--icon-left"
-            href={backUrl}>{backLabel}</a
+            href={backUrl}>Étape précédente</a
           >
         </li>
         {#if nextLabel}
           <li>
             <a
               class="fr-btn fr-btn--primary fr-icon-arrow-right-line fr-btn--icon-right"
-              href={nextUrl}>{nextLabel}</a
+              href={nextUrl}>Étape suivante</a
             >
           </li>
         {/if}

@@ -12,7 +12,6 @@
   nextLabel="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
   backUrl="/#territoires"
-  backLabel="Choisir un autre territoire"
   step="1"
 >
   <p class="mb-2 max-w-3xl print:leading-tight">

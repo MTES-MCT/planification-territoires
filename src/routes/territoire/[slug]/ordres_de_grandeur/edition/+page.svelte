@@ -39,7 +39,6 @@
   nextLabel="Visualiser l’impact qu’un changement d’ordre de grandeur peut avoir sur les objectifs"
   nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
     .searchParams}"
-  backLabel="Retourner à la première indication des objectifs territoriaux répartis par levier"
   backUrl="/territoire/{data.regionSlug}/objectifs"
   step="2"
   stickyFooter

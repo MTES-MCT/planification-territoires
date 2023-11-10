@@ -44,7 +44,6 @@
   title="Proposer de nouveaux objectifs par levier sur la base des étapes précédentes"
   nextLabel="Partager les objectifs qui forment une nouvelle ambition pour le territoire"
   nextUrl="/territoire/{data.regionSlug}/ambition?{$page.url.searchParams}"
-  backLabel="Visualiser l’impact qu’un changement d’ordre de grandeur peut avoir sur les objectifs"
   backUrl="/territoire/{data.regionSlug}/ordres_de_grandeur?{$page.url
     .searchParams}"
   step="4"

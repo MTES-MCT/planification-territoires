@@ -31,7 +31,6 @@
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Partager les objectifs qui forment une nouvelle ambition pour le territoire"
-  backLabel="Proposer de nouveaux objectifs par levier"
   backUrl="/territoire/{data.regionSlug}/ambition/edition?{$page.url
     .searchParams}"
   step="5"
