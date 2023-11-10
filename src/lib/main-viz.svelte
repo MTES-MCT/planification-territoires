@@ -290,7 +290,7 @@
     <!--  Visualisation -->
     <div class="min-h-0 flex-1">
       {#if $displayOptions.selectedViz === "secteurs"}
-        <div class="hidden md:block">
+        <div class="hidden min-[680px]:block">
           <Mondrian
             data={leversData}
             getPath={getPathMondrian}
@@ -306,7 +306,7 @@
             height={520}
           />
         </div>
-        <div class="block md:hidden">
+        <div class="block min-[680px]:hidden">
           <Mondrian
             data={leversData}
             getPath={getPathMondrian}
@@ -318,12 +318,12 @@
             {showCompleted}
             {showNewTargets}
             titleComponent={TitlePopup}
-            width={720}
+            width={680}
             height={900}
           />
         </div>
       {:else}
-        <div class="hidden md:block">
+        <div class="hidden min-[680px]:block">
           <Marimekko
             data={leversData}
             getPath={getPathMarimekko}
@@ -343,7 +343,7 @@
             height={520}
           />
         </div>
-        <div class="block md:hidden">
+        <div class="block min-[680px]:hidden">
           <Marimekko
             data={leversData}
             getPath={getPathMarimekko}
@@ -359,7 +359,7 @@
             {getSectorTotalInGroup}
             titleComponent={TitlePopup}
             groupTitleComponent={GroupTitlePopup}
-            width={720}
+            width={680}
             height={900}
           />
         </div>
