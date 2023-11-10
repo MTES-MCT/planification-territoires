@@ -5,7 +5,12 @@
   export let fill: string;
 </script>
 
-<rect {fill} width={width ?? "100%"} {height} stroke="white" />
+<rect
+  {fill}
+  width={width ?? "100%"}
+  {height}
+  stroke={width ? "white" : "transparent"}
+/>
 {#if progress !== undefined}
   <rect
     fill="url(#diagonalHatch)"
