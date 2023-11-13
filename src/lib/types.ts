@@ -18,6 +18,8 @@ export interface Action {
   comment: string;
   regionEnabled: boolean;
   regionComment?: string;
+  regionLocked: boolean;
+  regionLockedComment?: string;
   showTarget: boolean;
   relative: boolean;
 }

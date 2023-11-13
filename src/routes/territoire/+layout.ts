@@ -1,3 +1,4 @@
+import { error } from "@sveltejs/kit";
 import type { RegionCompletionLevels, RegionNewTargets } from "$lib/types";
 import { getQVKeyForCompleted, getQVKeyForNewTarget } from "$lib/url-utils";
 
@@ -33,6 +34,11 @@ function getNewTargetsFromURL(searchParams: URLSearchParams): RegionNewTargets {
 export const load: LayoutLoad = async ({ params, url }) => {
   const regionSlug = params.slug as string;
   const regionData = getRegionData(regionSlug);
+  if (!regionData.length) {
+    throw error(404, {
+      message: "Cette page n’existe pas",
+    });
+  }
   if (initialLoad) {
     // Ce code est appelé au chargement initial, mais pas lors de la navigation
     // c'est le seul moment ou les paramètres de l'URL sont pris en compte

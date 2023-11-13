@@ -28,7 +28,9 @@ export function sanitizeValueCO2(
 export function getRegionData(regionSlug: string): Action[] {
   return tidy(
     actionsData,
-    filter((d) => d.regionSlug === regionSlug)
+    filter(
+      (d) => d.regionSlug === regionSlug && d.regionEnabled && !d.regionLocked
+    )
   );
 }
 
