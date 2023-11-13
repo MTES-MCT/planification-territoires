@@ -84,13 +84,13 @@ Ces objectifs sont exprimés en kilotonnes équivalent CO2 (ktCO2e), une unité 
 
 #### Première étape : retraitement des leviers nationaux
 
-Les leviers liés aux soutes ont été supprimés et certains leviers ont été regroupés pour faciliter la territorialisation.
+Les leviers liés aux soutes internationales (consommations des navires et avions assurant des liaisons internationales) ont été supprimés et certains leviers ont été regroupés pour faciliter la visualisation de la territorialisation.
 
 Cette étape implique le passage de 52 à 30 leviers.
 
 #### Deuxième étape : choix de clés de répartitions simples
 
-Des clés de répartition ont été utilisées pour répartir l’effort entre régions.
+Des clés de répartition simples ont été utilisées pour répartir la contribution à la trajectoire nationale entre les différentes régions.
 
 **Le but a été de choisir des clés de répartition :**
 
@@ -98,7 +98,7 @@ Des clés de répartition ont été utilisées pour répartir l’effort entre r
 - Dont la donnée est disponible à la maille régionale sur l’ensemble du territoire et issue de sources de référence
 - Dont la donnée est dans la mesure du possible disponible pour 2019
 
-**Les clés de répartition permettant le passage du niveau national au niveau régional sont les suivantes :**
+**Les clés de répartition permettant le passage de l'échelon national à l'échelon régional sont les suivantes :**
 
 | Leviers                                                  | Clé de répartition régionale                                                     | Source              |
 | -------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------- |
@@ -108,8 +108,8 @@ Des clés de répartition ont été utilisées pour répartir l’effort entre r
 | Réduction des déplacements                               | Population                                                                       | INSEE               |
 | Covoiturage                                              | Population                                                                       | INSEE               |
 | Vélo et transports en commun                             | Population                                                                       | INSEE               |
-| Fret : carburants décarbonés et multimodalité            | Tonnes km marchandises (1)                                                       | SDES                |
-| Fret : efficacité et sobriété logistique                 | Tonnes km marchandises (1)                                                       | SDES                |
+| Fret : carburants décarbonés et multimodalité            | Tonnes-km marchandises (1)                                                       | SDES                |
+| Fret : efficacité et sobriété logistique                 | Tonnes-km marchandises (1)                                                       | SDES                |
 | Sobriété et isolation (résidentiel)                      | Consommation d’énergie finale dans le résidentiel                                | SDES                |
 | Chaudières fioul (résidentiel)                           | Logements chauffés au fioul (résidences principales)                             | INSEE               |
 | Chaudières gaz (résidentiel)                             | Logements chauffés au gaz (résidences principales)                               | INSEE               |
