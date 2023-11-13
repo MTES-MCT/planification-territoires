@@ -1,3 +1,5 @@
+import { PUBLIC_INTERNAL_COP } from "$env/static/public";
+
 import showdown from "showdown";
 
 import rawActionsData from "$lib/assets/data.json";
@@ -25,19 +27,36 @@ export function sanitizeValueCO2(
   return Math.max(numericValue, 0);
 }
 
+export function canShowRegion(region: Region) {
+  return (
+    (region.regionEnabled || PUBLIC_INTERNAL_COP === "true") &&
+    !region.regionLocked
+  );
+}
+
+export function getRegionDisabledComment(region: Region) {
+  return PUBLIC_INTERNAL_COP === "true"
+    ? region.regionLockedComment
+    : region.regionComment;
+}
+
 export function getRegionData(regionSlug: string): Action[] {
   return tidy(
     actionsData,
-    filter(
-      (d) => d.regionSlug === regionSlug && d.regionEnabled && !d.regionLocked
-    )
+    filter((d) => d.regionSlug === regionSlug && canShowRegion(d))
   );
 }
 
 export function getRegions(): Region[] {
   return tidy(
     actionsData,
-    select(["regionName", "regionEnabled", "regionComment"]),
+    select([
+      "regionName",
+      "regionEnabled",
+      "regionComment",
+      "regionLocked",
+      "regionLockedComment",
+    ]),
     distinct(["regionName"]),
     arrange((a, b) => {
       const first = "Région exemple";
