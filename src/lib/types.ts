@@ -39,6 +39,8 @@ export interface Region {
   regionName: string;
   regionEnabled: boolean;
   regionComment?: string;
+  regionLocked: boolean;
+  regionLockedComment?: string;
 }
 
 // Part de l’objectif déjà réalisée ou planifiée, en ktCO₂e
