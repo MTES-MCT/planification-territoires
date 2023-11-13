@@ -57,7 +57,11 @@ final_data <- data |>
          ) |>
 
 
-
+# Correction des sauts de ligne
+  mutate(comment = str_replace_all(comment, "\r\n", "\n"),
+         unitPhys = str_replace_all(unitPhys, "\r\n", "\n"),
+         unitCO2 = str_replace_all(unitCO2, "\r\n", "\n"),
+         ) |>
 # Corrections des textes
   mutate(unitCO2 = str_replace(unitCO2, "kTCO2 évités", "ktCO₂e évitées")) |>
   mutate(unitPhys = str_replace(unitPhys, "kTCO2 évités", "ktCO₂e évitées")) |>
