@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { PUBLIC_INTERNAL_COP } from "$env/static/public";
+</script>
+
 <header class="fr-header print:!hidden">
   <div class="fr-header__body">
     <div class="fr-container">
@@ -28,7 +32,8 @@
               <p class="fr-header__service-title">
                 Simulateur territorial <span
                   class="fr-badge fr-badge--error fr-badge--sm fr-badge--no-icon"
-                  >Version Beta - Ne pas diffuser</span
+                  >Version Beta{#if PUBLIC_INTERNAL_COP === "true"}
+                    - Ne pas diffuser{/if}</span
                 >
               </p>
             </a>
