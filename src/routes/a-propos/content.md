@@ -125,13 +125,12 @@ Des clés de répartition simples ont été utilisées pour répartir la contrib
 | Sobriété matière des déchets                             | Quantité de DMA produite par région                                              | ADEME               |
 | Fertilisation azotée                                     | Tonnes d’engrais azotés consommés                                                | UNIFA               |
 | Elevage durable                                          | Taille du cheptel bovin                                                          | AGRESTE             |
-| Bâtiments et machines agricoles                          | Surface Agricole Utile                                                           | AGRESTE             |
+| Bâtiments et machines agricoles                          | Surface agricole utile                                                           | AGRESTE             |
 | Gestion des forêts                                       | Objectif non régionalisé en absence de données comparables sur l’état des forêts | N/A                 |
 | Produit bois                                             | Surface de forêt hors outre mer                                                  | IGN                 |
 | Gestion des haies                                        | Surface agricole utile                                                           | AGRESTE             |
 | Gestion des prairies                                     | Emissions liées au retournement des prairies                                     | CITEPA              |
-| Pratiques stockantes                                     | Emissions des sols cultivés (2)                                                  | CITEPA              |
+| Pratiques stockantes                                     | Terres arables                                                                   | AGRESTE             |
 | Sobriété foncière                                        | Emissions liées à l'artificialisation des sols                                   | CITEPA              |
 
 (1) Tenant compte des régions de chargement et déchargement
-(2) Hors celles liées au retournement et au défrichement
