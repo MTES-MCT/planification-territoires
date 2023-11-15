@@ -19,8 +19,12 @@
   let previousPathName = "";
 
   function trackPageView() {
+    const customURL =
+      PUBLIC_ALLOW_INDEXING === "true"
+        ? $page.url.href
+        : "https://interne.local" + $page.url.pathname + $page.url.search;
     if (window._paq) {
-      window._paq.push(["setCustomUrl", $page.url.href]);
+      window._paq.push(["setCustomUrl", customURL]);
       window._paq.push(["setDocumentTitle", $page.data.title]);
       window._paq.push(["trackPageView"]);
     }
