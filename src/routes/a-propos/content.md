@@ -46,9 +46,9 @@ Les travaux de planification écologique ont permis de construire un plan qui do
 
 Sur la base du plan, le SGPE a constitué un panorama des leviers qui permet une répartition provisoire des leviers de réduction des émissions de gaz à effet de serre entre 2019 et 2030, en kilotonnes équivalent CO2 économisées.
 
-![](https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/57210b44-0d3b-4a35-b111-2a5903116ca8.PNG)
+![](https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/3f6bb22f-6a0b-41c5-ba36-2db2e4e2a883.PNG)
 
-_Le visuel ci-desous correspond à une version du panorama des leviers national adaptée à la méthodologie du simulateur territorial (plus de détails dans la partie dédiée au simulateur)._
+_Le visuel ci-dessus correspond à une version du panorama des leviers national adaptée à la méthodologie du simulateur territorial (plus de détails dans la partie dédiée au simulateur)._
 
 ### La territorialisation de la planification
 
@@ -100,37 +100,37 @@ Des clés de répartition simples ont été utilisées pour répartir la contrib
 
 **Les clés de répartition permettant le passage de l'échelon national à l'échelon régional sont les suivantes :**
 
-| Leviers                                                  | Clé de répartition régionale                                                     | Source              |
-| -------------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------- |
-| Voitures électriques                                     | Parc de véhicules thermiques (>5 ans)                                            | SDES                |
-| Efficacité et carburants décarbonés des véhicules privés | Parc de véhicules thermiques (>5 ans)                                            | SDES                |
-| Bus et cars décarbonés                                   | Parc de bus et cars thermiques                                                   | SDES                |
-| Réduction des déplacements                               | Population                                                                       | INSEE               |
-| Covoiturage                                              | Population                                                                       | INSEE               |
-| Vélo et transports en commun                             | Population                                                                       | INSEE               |
-| Fret : carburants décarbonés et multimodalité            | Tonnes-km marchandises (1)                                                       | SDES                |
-| Fret : efficacité et sobriété logistique                 | Tonnes-km marchandises (1)                                                       | SDES                |
-| Sobriété et isolation (résidentiel)                      | Consommation d’énergie finale dans le résidentiel                                | SDES                |
-| Chaudières fioul (résidentiel)                           | Logements chauffés au fioul (résidences principales)                             | INSEE               |
-| Chaudières gaz (résidentiel)                             | Logements chauffés au gaz (résidences principales)                               | INSEE               |
-| Sobriété et isolation (tertiaire)                        | Consommation d’énergie finale dans le tertiaire                                  | SDES                |
-| Chaudières fioul (tertiaire)                             | Consommation d’énergie de p. pétroliers dans le tertiaire                        | SDES                |
-| Chaudières gaz (tertiaire)                               | Consommation de gaz naturel dans le tertiaire                                    | SDES                |
-| Electricité renouvelable                                 | Objectifs de déploiement d’électricité renouvelable                              | SRADDETs            |
-| Biogaz                                                   | Potentiel de biogaz                                                              | ADEME               |
-| Réseaux de chaleur décarbonés                            | Chaleur carbonée livrée                                                          | CEREMA              |
-| Production industrielle                                  | Emissions par région (+ grands sites et raffineries)                             | CITEPA / IREP / ETS |
-| Captage de méthane dans les ISDND                        | Emissions de méthane dans le secteur des déchets                                 | CITEPA              |
-| Valorisation matière des déchets                         | Quantité de DMA non valorisée par région                                         | ADEME               |
-| Sobriété matière des déchets                             | Quantité de DMA produite par région                                              | ADEME               |
-| Fertilisation azotée                                     | Tonnes d’engrais azotés consommés                                                | UNIFA               |
-| Elevage durable                                          | Taille du cheptel bovin                                                          | AGRESTE             |
-| Bâtiments et machines agricoles                          | Surface agricole utile                                                           | AGRESTE             |
-| Gestion des forêts                                       | Objectif non régionalisé en absence de données comparables sur l’état des forêts | N/A                 |
-| Produit bois                                             | Surface de forêt hors outre mer                                                  | IGN                 |
-| Gestion des haies                                        | Surface agricole utile                                                           | AGRESTE             |
-| Gestion des prairies                                     | Emissions liées au retournement des prairies                                     | CITEPA              |
-| Pratiques stockantes                                     | Terres arables                                                                   | AGRESTE             |
-| Sobriété foncière                                        | Emissions liées à l'artificialisation des sols                                   | CITEPA              |
+| Leviers                                                  | Clé de répartition régionale                                                     | Source   |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------- | -------- |
+| Voitures électriques                                     | Parc de véhicules thermiques (>5 ans)                                            | SDES     |
+| Efficacité et carburants décarbonés des véhicules privés | Parc de véhicules thermiques (>5 ans)                                            | SDES     |
+| Bus et cars décarbonés                                   | Parc de bus et cars thermiques                                                   | SDES     |
+| Réduction des déplacements                               | Population                                                                       | INSEE    |
+| Covoiturage                                              | Population                                                                       | INSEE    |
+| Vélo et transports en commun                             | Population                                                                       | INSEE    |
+| Fret : carburants décarbonés et multimodalité            | Tonnes-km marchandises (1)                                                       | SDES     |
+| Fret : efficacité et sobriété logistique                 | Tonnes-km marchandises (1)                                                       | SDES     |
+| Sobriété et isolation (résidentiel)                      | Consommation d’énergie finale dans le résidentiel                                | SDES     |
+| Chaudières fioul (résidentiel)                           | Logements chauffés au fioul (résidences principales)                             | INSEE    |
+| Chaudières gaz (résidentiel)                             | Logements chauffés au gaz (résidences principales)                               | INSEE    |
+| Sobriété et isolation (tertiaire)                        | Consommation d’énergie finale dans le tertiaire                                  | SDES     |
+| Chaudières fioul (tertiaire)                             | Consommation d’énergie de p. pétroliers dans le tertiaire                        | SDES     |
+| Chaudières gaz (tertiaire)                               | Consommation de gaz naturel dans le tertiaire                                    | SDES     |
+| Electricité renouvelable                                 | Objectifs de déploiement d’électricité renouvelable                              | SRADDETs |
+| Biogaz                                                   | Potentiel de biogaz                                                              | ADEME    |
+| Réseaux de chaleur décarbonés                            | Chaleur carbonée livrée                                                          | CEREMA   |
+| Production industrielle                                  | Emissions de GES dans l'industrie                                                | CITEPA   |
+| Captage de méthane dans les ISDND                        | Emissions de méthane dans le secteur des déchets                                 | CITEPA   |
+| Valorisation matière des déchets                         | Quantité de DMA non valorisée par région                                         | ADEME    |
+| Sobriété matière des déchets                             | Quantité de DMA produite par région                                              | ADEME    |
+| Fertilisation azotée                                     | Tonnes d’engrais azotés consommés                                                | UNIFA    |
+| Elevage durable                                          | Taille du cheptel bovin                                                          | AGRESTE  |
+| Bâtiments et machines agricoles                          | Surface agricole utile                                                           | AGRESTE  |
+| Gestion des forêts                                       | Objectif non régionalisé en absence de données comparables sur l’état des forêts | N/A      |
+| Produit bois                                             | Surface de forêt hors outre mer                                                  | IGN      |
+| Gestion des haies                                        | Surface agricole utile                                                           | AGRESTE  |
+| Gestion des prairies                                     | Emissions liées au retournement des prairies                                     | CITEPA   |
+| Pratiques stockantes                                     | Terres arables                                                                   | AGRESTE  |
+| Sobriété foncière                                        | Emissions liées à l'artificialisation des sols                                   | CITEPA   |
 
 (1) Tenant compte des régions de chargement et déchargement

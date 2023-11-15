@@ -26,7 +26,7 @@
         couvSynthImg
       )
       .replace(
-        "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/57210b44-0d3b-4a35-b111-2a5903116ca8.PNG",
+        "https://storage.gra.cloud.ovh.net/v1/AUTH_0f20d409cb2a4c9786c769e2edec0e06/padnumerique/uploads/3f6bb22f-6a0b-41c5-ba36-2db2e4e2a883.PNG",
         panoramaImg
       )
   )}
