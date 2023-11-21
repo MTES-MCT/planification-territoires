@@ -46,8 +46,7 @@
       Téléphone&nbsp;: <span>01 42 75 57 13 / 01 42 75 57 59</span>
     </li>
     <li>
-      E-mail&nbsp;: <a
-        href="mailto:sec.planification-ecologique@pm.gouv.frsec.planification-ecologique@pm.gouv.fr"
+      E-mail&nbsp;: <a href="mailto:planification-ecologique@pm.gouv.fr"
         >planification-ecologique@pm.gouv.fr</a
       >
     </li>
