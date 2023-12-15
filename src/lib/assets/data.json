@@ -5568,7 +5568,7 @@
     "showTarget": true,
     "ratioCO2toPhys": -0.0013,
     "startPoint2019": 2.9222,
-    "comment": "#### Levier\n\nLe levier porte sur la sortie des énergies fossiles et une meilleure efficacité énergétique pour les bâtiments et engins agricoles.\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en térawatt-heure (TWh) d'énergie fossile (gaz et fioul) consommés dans l'agriculture.\n\nDonnées disponibles sur la consommation annuelle d'énergie fossile dans l'agriculture :\n* en 2019 : **2,9** TWh\n* en 2021 : **** TWh",
+    "comment": "#### Levier\n\nLe levier porte sur la sortie des énergies fossiles et une meilleure efficacité énergétique pour les bâtiments et engins agricoles.\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en térawatt-heure (TWh) d'énergie fossile (gaz et fioul) consommés dans l'agriculture.\n\nDonnées disponibles sur la consommation annuelle d'énergie fossile dans l'agriculture :\n* en 2019 : **2,9** TWh\n* en 2021 : **N.D.**",
     "relative": true,
     "pathSector": "Agriculture, Forêts et Sols/Bâtiments et machines agricoles",
     "pathGroup": "Mieux se nourrir/Bâtiments et machines agricoles"
