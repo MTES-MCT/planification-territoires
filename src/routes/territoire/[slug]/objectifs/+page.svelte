@@ -9,10 +9,15 @@
 <NavigationBar
   territoryName={getRegionName(data.regionSlug)}
   title="Découvrir à titre indicatif les objectifs du territoire répartis par levier"
-  nextLabel="Comprendre quels sont les ordres de grandeur qui illustrent les leviers"
-  nextUrl="/territoire/{data.regionSlug}/ordres_de_grandeur/edition"
+  nextLabel={data.regionLimited
+    ? ""
+    : "Comprendre quels sont les ordres de grandeur qui illustrent les leviers"}
+  nextUrl={data.regionLimited
+    ? undefined
+    : `/territoire/${data.regionSlug}/ordres_de_grandeur/edition`}
   backUrl="/"
   step="1"
+  totalSteps={data.regionLimited ? 1 : undefined}
 >
   <p class="mb-2 max-w-3xl print:leading-tight">
     Voici à titre indicatif la contribution du territoire à la trajectoire

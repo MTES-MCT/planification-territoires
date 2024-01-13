@@ -46,6 +46,8 @@ final_data <- data |>
          comment = commentaire,
          regionName = region,
          regionEnabled = region_accessible,
+         regionHidden = region_cachee,
+         regionLimited = region_limitee,
          regionComment = commentaire_region_accessible,
          regionLocked = region_verrouillee,
          regionLockedComment = commentaire_region_verrouillee,
@@ -54,6 +56,8 @@ final_data <- data |>
   mutate(editionDisabled = case_when(editionDisabled=='OUI' ~TRUE, TRUE ~ FALSE),
          noTranslation = case_when(noTranslation=='OUI' ~TRUE, TRUE ~ FALSE),
          regionEnabled = case_when(regionEnabled=='OUI' ~TRUE, TRUE ~ FALSE),
+         regionHidden = case_when(regionHidden=='OUI' ~TRUE, TRUE ~ FALSE),
+         regionLimited = case_when(regionLimited=='OUI' ~TRUE, TRUE ~ FALSE),
          regionLocked = case_when(regionLocked=='OUI' ~TRUE, TRUE ~ FALSE),
          showTarget = case_when(showTarget=='OUI' ~FALSE, TRUE ~ TRUE),
          relative = case_when(startPoint2019!=0 ~TRUE, TRUE ~ FALSE)

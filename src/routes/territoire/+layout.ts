@@ -2,7 +2,12 @@ import { error } from "@sveltejs/kit";
 import type { RegionCompletionLevels, RegionNewTargets } from "$lib/types";
 import { getQVKeyForCompleted, getQVKeyForNewTarget } from "$lib/url-utils";
 
-import { getIdNames, getRegionData, sanitizeValueCO2 } from "$lib/utils";
+import {
+  getIdNames,
+  getRegionData,
+  isRegionLimited,
+  sanitizeValueCO2,
+} from "$lib/utils";
 import { completionLevels, newTargets } from "$lib/stores";
 
 import type { LayoutLoad } from "./$types";
@@ -64,5 +69,6 @@ export const load: LayoutLoad = async ({ params, url }) => {
   return {
     regionSlug,
     regionData,
+    regionLimited: isRegionLimited(regionSlug),
   };
 };

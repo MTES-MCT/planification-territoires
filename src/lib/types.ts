@@ -17,6 +17,8 @@ export interface Action {
   noTranslation: boolean;
   comment: string;
   regionEnabled: boolean;
+  regionHidden: boolean;
+  regionLimited: boolean;
   regionComment?: string;
   regionLocked: boolean;
   regionLockedComment?: string;
@@ -38,6 +40,8 @@ export interface Lever {
 export interface Region {
   regionName: string;
   regionEnabled: boolean;
+  regionHidden: boolean;
+  regionLimited: boolean;
   regionComment?: string;
   regionLocked: boolean;
   regionLockedComment?: string;

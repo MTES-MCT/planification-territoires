@@ -9,7 +9,7 @@
   export let backUrl: string;
   export let stickyFooter = false;
 
-  let totalSteps = 5;
+  export let totalSteps = 5;
 </script>
 
 <Breadcrumbs>
