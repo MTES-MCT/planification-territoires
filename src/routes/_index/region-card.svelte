@@ -26,7 +26,9 @@
       class="fr-tile fr-tile--sm fr-tile--horizontal relative z-0"
       id="tile-{region.regionName}"
       use:tooltipAction={{
-        data: { msg: getRegionDisabledComment(region) },
+        data: {
+          msg: getRegionDisabledComment(region),
+        },
         innerComponent: RegionPopup,
       }}
     >

@@ -29,16 +29,13 @@ export function sanitizeValueCO2(
 
 export function canShowRegion(region: Region) {
   return (
-    ((region.regionEnabled || PUBLIC_INTERNAL_COP === "true") &&
-      !region.regionLocked) ||
-    region.regionLimited
+    !region.regionLimited &&
+    (region.regionEnabled || PUBLIC_INTERNAL_COP === "true")
   );
 }
 
 export function getRegionDisabledComment(region: Region) {
-  return PUBLIC_INTERNAL_COP === "true"
-    ? region.regionLockedComment
-    : region.regionComment;
+  return region.regionComment || "*En cours de finalisation*";
 }
 
 export function getRegionData(regionSlug: string): Action[] {
@@ -65,8 +62,6 @@ export function getRegions(): Region[] {
       "regionHidden",
       "regionLimited",
       "regionComment",
-      "regionLocked",
-      "regionLockedComment",
     ]),
     distinct(["regionName"]),
     arrange((a, b) => {

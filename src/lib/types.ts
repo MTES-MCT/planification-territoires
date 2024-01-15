@@ -20,8 +20,6 @@ export interface Action {
   regionHidden: boolean;
   regionLimited: boolean;
   regionComment?: string;
-  regionLocked: boolean;
-  regionLockedComment?: string;
   showTarget: boolean;
   relative: boolean;
 }
@@ -43,8 +41,6 @@ export interface Region {
   regionHidden: boolean;
   regionLimited: boolean;
   regionComment?: string;
-  regionLocked: boolean;
-  regionLockedComment?: string;
 }
 
 // Part de l’objectif déjà réalisée ou planifiée, en ktCO₂e
