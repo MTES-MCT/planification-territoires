@@ -28,10 +28,7 @@ export function sanitizeValueCO2(
 }
 
 export function canShowRegion(region: Region) {
-  return (
-    !region.regionLimited &&
-    (region.regionEnabled || PUBLIC_INTERNAL_COP === "true")
-  );
+  return region.regionEnabled || PUBLIC_INTERNAL_COP === "true";
 }
 
 export function getRegionDisabledComment(region: Region) {

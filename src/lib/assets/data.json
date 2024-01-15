@@ -8875,7 +8875,7 @@
     "leverName": "Décarbonation du transport de marchandises",
     "id": "co2_transpmarch",
     "regionName": "Guyane",
-    "regionEnabled": true,
+    "regionEnabled": false,
     "regionLimited": true,
     "regionHidden": false,
     "editionDisabled": true,
