@@ -8,6 +8,9 @@
     filter,
     rename,
     mutate,
+    select,
+    distinct,
+    arrange,
   } from "@tidyjs/tidy";
 
   import { completionLevels } from "$lib/stores";
@@ -15,7 +18,7 @@
   import Mondrian from "$lib/treemap/mondrian.svelte";
   import Marimekko from "$lib/treemap/marimekko.svelte";
   import ColorLegend from "$lib/color-legend.svelte";
-  import { clamp, getColor, getSectorsNames, mtmEvent } from "$lib/utils";
+  import { clamp, getColor, mtmEvent } from "$lib/utils";
   import type { Action, Lever } from "$lib/types";
   import DiagonalHatchPattern from "$lib/treemap/diagonalHatchPattern.svelte";
   import TitlePopup from "$lib/treemap/title-popup.svelte";
@@ -98,6 +101,15 @@
     return showCompleted && $displayOptions.showRemainingOnly
       ? sectorTotal.totalRemaining
       : sectorTotal.totalObjCO2;
+  }
+
+  function getSectorsNames(): string[] {
+    return tidy(
+      leversData,
+      select("sector"),
+      distinct("sector"),
+      arrange((a, b) => a.sector.localeCompare(b.sector, "fr"))
+    ).map((row) => row.sector);
   }
 
   function getLegendItems() {

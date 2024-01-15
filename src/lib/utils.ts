@@ -85,15 +85,6 @@ export function getRegionName(regionSlug: string): string {
   )?.regionName as string;
 }
 
-export function getSectorsNames(): string[] {
-  return tidy(
-    actionsData,
-    select("sector"),
-    distinct("sector"),
-    arrange((a, b) => a.sector.localeCompare(b.sector, "fr"))
-  ).map((row) => row.sector);
-}
-
 export function getIdNames(): string[] {
   return tidy(actionsData, select("id"), distinct("id")).map((row) => row.id);
 }
@@ -101,6 +92,7 @@ export function getIdNames(): string[] {
 export function getColor(sector: string) {
   // Couleurs issues de https://colorbrewer2.org/#type=qualitative&scheme=Set3&n=12
   switch (sector) {
+    case "Transport":
     case "Transport de voyageurs":
       return "#c6dbef";
 
@@ -123,6 +115,7 @@ export function getColor(sector: string) {
       return "#ffed6f";
 
     case "Résidentiel":
+    case "Bâtiment":
       return "#fdb462";
 
     default:
