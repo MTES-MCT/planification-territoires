@@ -13,8 +13,8 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "2.0.3",
-    "@sveltejs/kit": "1.26.0",
+    "@sveltejs/adapter-static": "3.0.1",
+    "@sveltejs/kit": "2.5.0",
     "@tidyjs/tidy": "2.5.2",
     "@types/d3": "7.4.1",
     "@types/showdown": "2.0.3",
