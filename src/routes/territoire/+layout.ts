@@ -40,7 +40,7 @@ export const load: LayoutLoad = async ({ params, url }) => {
   const regionSlug = params.slug as string;
   const regionData = getRegionData(regionSlug);
   if (!regionData.length) {
-    throw error(404, {
+    error(404, {
       message: "Cette page n’existe pas",
     });
   }
