@@ -4894,7 +4894,7 @@
     "showTarget": true,
     "ratioCO2toPhys": -0.0746,
     "startPoint2019": 74.451,
-    "comment": "#### Levier\n\nLe levier porte sur un changement des pratiques de fertilisation azotée. Cela passe par une optimisation de l'usage, l'amélioration des modes d'épandage ou encore le développement de l'azote organique (agriculture biologique) ou symbiotique (culture de légumineuses - dans les rotations, en engrais vert et en couvert par exemple).\n\n*En complément de ces mesures, il est aussi possible de recourir à des engrais azotés minéraux moins polluants (par exemple: les ammonitrates à favoriser par rapport à l'urée).*\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en kilotonnes (kt) d'engrais azotés livrées.\n\nDonnées disponibles sur la quantité annuelle d'engrais azotés livrée :\n* pour la campagne juin 19-juillet 20 : **74,5** kt\n* pour la campagne juin 21-juillet 22 : **58,7** kt",
+    "comment": "#### Levier\n\nLe levier porte sur un changement des pratiques de fertilisation azotée. Cela passe par une optimisation de l'usage, l'amélioration des modes d'épandage ou encore le développement de l'azote organique (agriculture biologique) ou symbiotique (culture de légumineuses - dans les rotations, en engrais vert et en couvert par exemple).\n\n*En complément de ces mesures, il est aussi possible de recourir à des engrais azotés minéraux moins polluants (par exemple: les ammonitrates à favoriser par rapport à l'urée).*\n\n#### Ordre de grandeur\n\nIl n’y a pas d’ordre de grandeur pour ce levier \n\nDonnées disponibles sur la quantité annuelle d'engrais azotés livrée :\n* pour la campagne juin 19-juillet 20 : **74,5** kt\n* pour la campagne juin 21-juillet 22 : **58,7** kt",
     "relative": true,
     "pathSector": "Agriculture, Forêts et Sols/Changements de pratiques de fertilisation azotée",
     "pathGroup": "Mieux se nourrir/Changements de pratiques de fertilisation azotée"
@@ -5046,7 +5046,7 @@
     "showTarget": true,
     "ratioCO2toPhys": -0.0101,
     "startPoint2019": 0.7291,
-    "comment": "#### Levier\n\nLe levier porte sur l'atteinte de l'objectif de \"Zéro Artificialisation Nette\" en 2050, soit la réduction du rythme d'artificialisation des sols de 50 % sur la prochaine décennie.\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en kilohectares (kha) d'espace naturel, agricole ou forestier artificalisés.\n\nDonnées disponibles sur la surface annuelle d'espace naturel, agricole ou forestier artificalisée :\n* en 2019 : **0,7** kha\n* en 2021 : **0,8** kha",
+    "comment": "#### Levier\n\nPour l’Ile-de-France,  la loi Climat et Résilience n’a pas fixé d’objectif intermédiaire de réduction de la consommation d’espaces naturels, agricoles et forestiers d’ici 2030. La région et l’Etat se sont mis d’accord pour une réduction de 20% en 2030 par rapport à la décennie précédente \n\n#### Ordre de grandeur\n\nIl n'y a pas d'ordre de grandeur pour ce levier.\n\nDonnées disponibles sur la surface annuelle d'espace naturel, agricole ou forestier artificalisée :\n* en 2019 : **0,7** kha\n* en 2021 : **0,8** kha",
     "relative": true,
     "pathSector": "Agriculture, Forêts et Sols/Sobriété foncière",
     "pathGroup": "Mieux préserver/Sobriété foncière"
