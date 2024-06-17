@@ -2778,28 +2778,6 @@
     "pathGroup": "Mieux produire/Fret"
   },
   {
-    "leverName": "Sobriété et isolation des bâtiments",
-    "id": "reduc_rconso",
-    "regionName": "Corse",
-    "regionEnabled": true,
-    "regionLimited": false,
-    "regionHidden": false,
-    "unitPhys": "TWh corr. consommés dans le secteur résidentiel\n(en 2030)",
-    "unitCO2": "ktCO₂e d'émissions évitées\n(en 2030 par rapport à 2019)",
-    "editionDisabled": false,
-    "noTranslation": false,
-    "sector": "Résidentiel",
-    "group": "Mieux se loger",
-    "objCO2": 77.8269,
-    "showTarget": true,
-    "ratioCO2toPhys": -0.0111,
-    "startPoint2019": 5.9299,
-    "comment": "#### Levier\n\nLe levier porte sur les efforts individuels et collectifs de sobriété sur le chauffage et sur la climatisation ainsi que les rénovations profondes permettant d'obtenir de meilleurs résultats en matière de performance énergétique.\n\n#### Ordres de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en térawatt-heure corrigés des variations du climat (TWh corr.) consommées dans le secteur résidentiel.\n\nDonnées disponibles sur la consommation annuelle d’énergie du secteur résidentiel corrigée des variations du climat :\n* en 2019 : **5,9** TWh corr.\n* en 2021 : **1,9** TWh corr.\n\nDonnées disponibles sur le nombre annuel moyen de rénovations à aider sur le pilier «performance» de Ma Prime Rénov’ : \n* entre 2023 et 2030 : **0,6** milliers de rénovations *(contre moins de 10 mille rénovations en 2019)*",
-    "relative": true,
-    "pathSector": "Résidentiel/Sobriété et isolation des bâtiments",
-    "pathGroup": "Mieux se loger/Sobriété et isolation des bâtiments"
-  },
-  {
     "leverName": "Changement de chaudière à fioul",
     "id": "reduc_rfioul",
     "regionName": "Corse",
@@ -4894,7 +4872,7 @@
     "showTarget": true,
     "ratioCO2toPhys": -0.0746,
     "startPoint2019": 74.451,
-    "comment": "#### Levier\n\nLe levier porte sur un changement des pratiques de fertilisation azotée. Cela passe par une optimisation de l'usage, l'amélioration des modes d'épandage ou encore le développement de l'azote organique (agriculture biologique) ou symbiotique (culture de légumineuses - dans les rotations, en engrais vert et en couvert par exemple).\n\n*En complément de ces mesures, il est aussi possible de recourir à des engrais azotés minéraux moins polluants (par exemple: les ammonitrates à favoriser par rapport à l'urée).*\n\n#### Ordre de grandeur\n\nIl n’y a pas d’ordre de grandeur pour ce levier \n\nDonnées disponibles sur la quantité annuelle d'engrais azotés livrée :\n* pour la campagne juin 19-juillet 20 : **74,5** kt\n* pour la campagne juin 21-juillet 22 : **58,7** kt",
+    "comment": "#### Levier\n\nLe levier porte sur un changement des pratiques de fertilisation azotée. Cela passe par une optimisation de l'usage, l'amélioration des modes d'épandage ou encore le développement de l'azote organique (agriculture biologique) ou symbiotique (culture de légumineuses - dans les rotations, en engrais vert et en couvert par exemple).\n\n*En complément de ces mesures, il est aussi possible de recourir à des engrais azotés minéraux moins polluants (par exemple: les ammonitrates à favoriser par rapport à l'urée).*\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en kilotonnes (kt) d'engrais azotés livrées.\n\nDonnées disponibles sur la quantité annuelle d'engrais azotés livrée :\n* pour la campagne juin 19-juillet 20 : **74,5** kt\n* pour la campagne juin 21-juillet 22 : **58,7** kt",
     "relative": true,
     "pathSector": "Agriculture, Forêts et Sols/Changements de pratiques de fertilisation azotée",
     "pathGroup": "Mieux se nourrir/Changements de pratiques de fertilisation azotée"
@@ -5046,7 +5024,7 @@
     "showTarget": true,
     "ratioCO2toPhys": -0.0101,
     "startPoint2019": 0.7291,
-    "comment": "#### Levier\n\nPour l’Ile-de-France,  la loi Climat et Résilience n’a pas fixé d’objectif intermédiaire de réduction de la consommation d’espaces naturels, agricoles et forestiers d’ici 2030. La région et l’Etat se sont mis d’accord pour une réduction de 20% en 2030 par rapport à la décennie précédente \n\n#### Ordre de grandeur\n\nIl n'y a pas d'ordre de grandeur pour ce levier.\n\nDonnées disponibles sur la surface annuelle d'espace naturel, agricole ou forestier artificalisée :\n* en 2019 : **0,7** kha\n* en 2021 : **0,8** kha",
+    "comment": "#### Levier\n\nLe levier porte sur l'atteinte de l'objectif de \"Zéro Artificialisation Nette\" en 2050, soit la réduction du rythme d'artificialisation des sols de 50 % sur la prochaine décennie.\n\n#### Ordre de grandeur\n\nPour ce levier, les kilotonnes équivalent CO2 (ktCO2e) d'émissions évitées sont traduites à titre illustratif en kilohectares (kha) d'espace naturel, agricole ou forestier artificalisés.\n\nDonnées disponibles sur la surface annuelle d'espace naturel, agricole ou forestier artificalisée :\n* en 2019 : **0,7** kha\n* en 2021 : **0,8** kha",
     "relative": true,
     "pathSector": "Agriculture, Forêts et Sols/Sobriété foncière",
     "pathGroup": "Mieux préserver/Sobriété foncière"
@@ -7785,7 +7763,7 @@
   {
     "leverName": "Véhicules électriques",
     "id": "augm_voitelec",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7807,7 +7785,7 @@
   {
     "leverName": "Efficacité et carburants décarbonés des véhicules privés",
     "id": "reduc_consovp",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7829,7 +7807,7 @@
   {
     "leverName": "Bus et cars décarbonés",
     "id": "augm_buselec",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7851,7 +7829,7 @@
   {
     "leverName": "Réduction des déplacements",
     "id": "augm_depla",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7873,7 +7851,7 @@
   {
     "leverName": "Covoiturage",
     "id": "augm_covoit",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7895,7 +7873,7 @@
   {
     "leverName": "Vélo et transport en commun",
     "id": "augm_vélotc",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7917,7 +7895,7 @@
   {
     "leverName": "Fret : carburants décarbonés et multimodalité",
     "id": "augm_fret",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7939,7 +7917,7 @@
   {
     "leverName": "Fret : efficacité et sobriété logistique",
     "id": "augm_logi",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7961,7 +7939,7 @@
   {
     "leverName": "Sobriété et isolation des bâtiments",
     "id": "reduc_rconso",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -7983,7 +7961,7 @@
   {
     "leverName": "Changement de chaudière à fioul",
     "id": "reduc_rfioul",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8005,7 +7983,7 @@
   {
     "leverName": "Changement de chaudière à gaz",
     "id": "reduc_rgaz",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8027,7 +8005,7 @@
   {
     "leverName": "Sobriété et isolation des bâtiments",
     "id": "reduc_tconso",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8049,7 +8027,7 @@
   {
     "leverName": "Changement de chaudière à fioul",
     "id": "reduc_tfioul",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8071,7 +8049,7 @@
   {
     "leverName": "Changement de chaudière à gaz",
     "id": "reduc_tgaz",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8093,7 +8071,7 @@
   {
     "leverName": "Valorisation matière des déchets",
     "id": "augm_valodma",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8115,7 +8093,7 @@
   {
     "leverName": "Sobriété matière des déchets",
     "id": "reduc_proddma",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8137,7 +8115,7 @@
   {
     "leverName": "Captage de méthane dans les ISDND",
     "id": "co2_isdnd",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8158,7 +8136,7 @@
   {
     "leverName": "Changements de pratiques de fertilisation azotée",
     "id": "reduc_azote",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8180,7 +8158,7 @@
   {
     "leverName": "Elevage durable",
     "id": "co2_elevage",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8201,7 +8179,7 @@
   {
     "leverName": "Bâtiments et machines agricoles",
     "id": "reduc_eneragri",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8222,7 +8200,7 @@
   {
     "leverName": "Pratiques stockantes",
     "id": "augm_couverts",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8244,7 +8222,7 @@
   {
     "leverName": "Gestion des haies",
     "id": "augm_haies",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8266,7 +8244,7 @@
   {
     "leverName": "Gestion des prairies",
     "id": "augm_prairies",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8288,7 +8266,7 @@
   {
     "leverName": "Gestion des forêts",
     "id": "co2_foret",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8310,7 +8288,7 @@
   {
     "leverName": "Sobriété foncière",
     "id": "reduc_artif",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8332,7 +8310,7 @@
   {
     "leverName": "Production industrielle",
     "id": "co2_indus",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8353,7 +8331,7 @@
   {
     "leverName": "Produits bois",
     "id": "co2_prodbois",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8374,7 +8352,7 @@
   {
     "leverName": "Electricité renouvelable",
     "id": "co2_enr",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8396,7 +8374,7 @@
   {
     "leverName": "Biogaz",
     "id": "co2_biogaz",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
@@ -8418,7 +8396,7 @@
   {
     "leverName": "Réseaux de chaleur décarbonés",
     "id": "reduc_chal",
-    "regionName": "Région Sud",
+    "regionName": "PACA",
     "regionEnabled": true,
     "regionLimited": false,
     "regionHidden": false,
